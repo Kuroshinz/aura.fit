@@ -14,7 +14,7 @@ export default function DashboardLayout({
 
       <ResponsiveNav />
       {/* Fix Sidebar Overlap Spacing with md:pl-64 */}
-      <main className="flex-1 md:pl-64 p-4 md:p-8 pb-28 md:pb-8 max-w-7xl mx-auto w-full relative z-20">
+      <main className="flex-1 lg:pl-64 p-4 lg:p-8 pb-28 md:pb-8 max-w-7xl mx-auto w-full relative z-20">
         {children}
       </main>
       <RestTimer />

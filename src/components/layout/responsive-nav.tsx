@@ -22,7 +22,7 @@ export function ResponsiveNav() {
   return (
     <>
       {/* Desktop Sidebar Nav */}
-      <aside className="hidden md:flex flex-col w-64 aura-glass min-h-screen p-6 border-r border-slate-700/80 fixed left-0 top-0 z-30">
+      <aside className="hidden lg:flex flex-col w-64 aura-glass min-h-screen p-6 border-r border-slate-700/80 fixed left-0 top-0 z-30">
         <div className="flex items-center gap-3 mb-10">
           <div className="w-10 h-10 rounded-2xl btn-aura-gold flex items-center justify-center font-extrabold text-xl text-black shadow-lg">
             A
@@ -82,7 +82,7 @@ export function ResponsiveNav() {
       </aside>
 
       {/* Mobile Bottom Glass Nav Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-40 aura-glass border-t border-slate-700/80 px-4 py-3 flex justify-around items-center">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-40 aura-glass border-t border-slate-700/80 px-4 py-3 flex justify-around items-center">
         {navItems.map((item) => {
           const Icon = item.icon
           const isActive = pathname === item.href
