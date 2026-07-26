@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   description: 'Antigravity 3D Spatial Gym Workout Tracker Interface',
 }
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
+
 export default function RootLayout({
   children,
 }: {
