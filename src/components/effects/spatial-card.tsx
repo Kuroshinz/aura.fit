@@ -14,6 +14,7 @@ export function SpatialCard({ children, className = '', intensity = 12 }: Spatia
   const [rotateY, setRotateY] = useState(0)
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (window.innerWidth < 768) return // Disable 3D tilt on mobile for performance
     if (!cardRef.current) return
     const rect = cardRef.current.getBoundingClientRect()
     const centerX = rect.left + rect.width / 2

@@ -38,10 +38,12 @@ h1, h2, h3, .font-display {
   box-shadow: 
     0 20px 40px -10px rgba(0, 0, 0, 0.5),
     0 0 20px rgba(99, 102, 241, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
-  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   transform-style: preserve-3d;
   position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform, backdrop-filter;
 }
 
 .aura-glass:hover {

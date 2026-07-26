@@ -25,14 +25,17 @@ export function SnowEffect() {
   const [flakes, setFlakes] = useState<Snowflake[]>([])
 
   useEffect(() => {
-    const generatedFlakes: Snowflake[] = Array.from({ length: 55 }).map((_, i) => ({
+    const isMobile = window.innerWidth < 768;
+    const flakeCount = isMobile ? 12 : 35; // Reduce drastically for mobile performance
+    
+    const generatedFlakes: Snowflake[] = Array.from({ length: flakeCount }).map((_, i) => ({
       id: i,
       x: Math.random() * 100,
-      size: Math.random() * 7 + 2,
-      opacity: Math.random() * 0.8 + 0.2,
+      size: Math.random() * (isMobile ? 4 : 7) + 2, // Smaller on mobile
+      opacity: Math.random() * 0.6 + 0.1, // Less bright
       duration: Math.random() * 12 + 8,
       delay: Math.random() * 10,
-      blur: Math.random() * 2,
+      blur: isMobile ? 0 : Math.random() * 2, // Disable blur on mobile for performance
       color: SNOW_COLORS[Math.floor(Math.random() * SNOW_COLORS.length)],
     }))
     setFlakes(generatedFlakes)
