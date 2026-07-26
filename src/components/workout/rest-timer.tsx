@@ -64,16 +64,16 @@ export function RestTimer() {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 50, scale: 0.9 }}
         whileDrag={{ scale: 1.05, cursor: "grabbing" }}
-        className="fixed bottom-24 right-6 z-[100] bg-[#070714] bg-opacity-95 rounded-full px-5 py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-amber-400/50 flex items-center gap-5 cursor-grab active:cursor-grabbing backdrop-blur-xl"
+        className="fixed bottom-20 right-2 sm:bottom-24 sm:right-6 z-[100] bg-[#070714] bg-opacity-95 rounded-full px-3 py-2 sm:px-5 sm:py-3 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-amber-400/50 flex items-center gap-2 sm:gap-5 cursor-grab active:cursor-grabbing backdrop-blur-xl scale-90 sm:scale-100 origin-bottom-right"
       >
         <div className="flex items-center gap-3">
           <Timer className="w-6 h-6 text-amber-400 animate-pulse pointer-events-none" />
-          <div className="font-mono text-2xl font-extrabold text-white tracking-wider gold-gradient-text w-[75px] pointer-events-none select-none">
+          <div className="font-mono text-xl sm:text-2xl font-extrabold text-white tracking-wider gold-gradient-text w-[60px] sm:w-[75px] pointer-events-none select-none">
             {formatTime(validSeconds)}
           </div>
         </div>
 
-        <div className="flex items-center gap-3 border-l border-slate-700/80 pl-5">
+        <div className="flex items-center gap-1 sm:gap-3 border-l border-slate-700/80 pl-2 sm:pl-5">
           <button
             onClick={() => setSoundEnabled(!soundEnabled)}
             className={`p-2 rounded-full transition-colors ${soundEnabled ? 'text-amber-400 bg-amber-500/10' : 'text-slate-500 hover:bg-slate-800'}`}

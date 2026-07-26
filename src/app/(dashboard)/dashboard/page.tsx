@@ -116,9 +116,9 @@ export default function DashboardPage() {
       </motion.div>
 
       {/* Spatial Luxury Stats Cards */}
-      <motion.div variants={itemVariants} className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+      <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         <motion.div whileHover={{ y: -5 }} className="h-full">
-          <SpatialCard className="p-6 rounded-3xl relative overflow-hidden group h-full">
+          <SpatialCard className="p-4 sm:p-6 rounded-3xl relative overflow-hidden group h-full">
             <div className="flex items-center justify-between mb-4">
               <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">BUỔI TẬP TUẦN</span>
               <div className="p-3 bg-amber-500/20 border border-amber-400 rounded-2xl text-amber-400">
@@ -134,7 +134,7 @@ export default function DashboardPage() {
         </motion.div>
 
         <motion.div whileHover={{ y: -5 }} className="h-full">
-          <SpatialCard className="p-6 rounded-3xl relative overflow-hidden group h-full">
+          <SpatialCard className="p-4 sm:p-6 rounded-3xl relative overflow-hidden group h-full">
             <div className="flex items-center justify-between mb-4">
               <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">VOLUME TUẦN</span>
               <div className="p-3 bg-indigo-500/20 border border-indigo-400 rounded-2xl text-indigo-300">
@@ -150,7 +150,7 @@ export default function DashboardPage() {
         </motion.div>
 
         <motion.div whileHover={{ y: -5 }} className="h-full">
-          <SpatialCard className="p-6 rounded-3xl relative overflow-hidden group h-full">
+          <SpatialCard className="p-4 sm:p-6 rounded-3xl relative overflow-hidden group h-full">
             <div className="flex items-center justify-between mb-4">
               <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">BEST 1RM</span>
               <div className="p-3 bg-cyan-500/20 border border-cyan-400 rounded-2xl text-cyan-300">
@@ -165,7 +165,7 @@ export default function DashboardPage() {
         </motion.div>
 
         <motion.div whileHover={{ y: -5 }} className="h-full">
-          <SpatialCard className="p-6 rounded-3xl relative overflow-hidden group h-full">
+          <SpatialCard className="p-4 sm:p-6 rounded-3xl relative overflow-hidden group h-full">
             <div className="flex items-center justify-between mb-4">
               <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">CHUỖI STREAK</span>
               <div className="p-3 bg-emerald-500/20 border border-emerald-400 rounded-2xl text-emerald-300">
