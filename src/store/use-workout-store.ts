@@ -70,16 +70,24 @@ export const useWorkoutStore = create<WorkoutState>()(
       lastCompletedWorkout: null,
 
       startWorkout: (routineId, routineName) => {
+        const newWorkout: ActiveWorkout = {
+          routine_id: routineId,
+          routine_name: routineName || 'Buổi tập tự do',
+          start_time: new Date().toISOString(),
+          exercises: [],
+        }
+
         set({
-          activeWorkout: {
-            routine_id: routineId,
-            routine_name: routineName || 'Buổi tập tự do',
-            start_time: new Date().toISOString(),
-            exercises: [],
-          },
+          activeWorkout: newWorkout,
           showSummary: false,
           lastCompletedWorkout: null,
         })
+
+        // Sync to account DB
+        if (typeof window !== 'undefined') {
+          const email = getCurrentSessionEmail()
+          if (email) saveAccountData(email, { activeWorkout: newWorkout })
+        }
       },
 
       finishWorkout: () => {
@@ -155,12 +163,18 @@ export const useWorkoutStore = create<WorkoutState>()(
           ],
         }
 
-        set({
-          activeWorkout: {
-            ...activeWorkout,
-            exercises: [...activeWorkout.exercises, newExercise],
-          },
-        })
+        const updated = {
+          ...activeWorkout,
+          exercises: [...activeWorkout.exercises, newExercise],
+        }
+
+        set({ activeWorkout: updated })
+
+        // Sync to account DB
+        if (typeof window !== 'undefined') {
+          const email = getCurrentSessionEmail()
+          if (email) saveAccountData(email, { activeWorkout: updated })
+        }
       },
 
       addSet: (exerciseId) => {
@@ -188,12 +202,14 @@ export const useWorkoutStore = create<WorkoutState>()(
           return ex
         })
 
-        set({
-          activeWorkout: {
-            ...activeWorkout,
-            exercises: updatedExercises,
-          },
-        })
+        const updated = { ...activeWorkout, exercises: updatedExercises }
+        set({ activeWorkout: updated })
+
+        // Sync to account DB
+        if (typeof window !== 'undefined') {
+          const email = getCurrentSessionEmail()
+          if (email) saveAccountData(email, { activeWorkout: updated })
+        }
       },
 
       updateSet: (exerciseId, setId, field, value) => {
@@ -210,12 +226,14 @@ export const useWorkoutStore = create<WorkoutState>()(
           return ex
         })
 
-        set({
-          activeWorkout: {
-            ...activeWorkout,
-            exercises: updatedExercises,
-          },
-        })
+        const updated = { ...activeWorkout, exercises: updatedExercises }
+        set({ activeWorkout: updated })
+
+        // Debounced sync to account DB
+        if (typeof window !== 'undefined') {
+          const email = getCurrentSessionEmail()
+          if (email) saveAccountData(email, { activeWorkout: updated })
+        }
       },
 
       toggleCompleteSet: (exerciseId, setId) => {
@@ -240,12 +258,14 @@ export const useWorkoutStore = create<WorkoutState>()(
           return ex
         })
 
-        set({
-          activeWorkout: {
-            ...activeWorkout,
-            exercises: updatedExercises,
-          },
-        })
+        const updated = { ...activeWorkout, exercises: updatedExercises }
+        set({ activeWorkout: updated })
+
+        // Sync to account DB
+        if (typeof window !== 'undefined') {
+          const email = getCurrentSessionEmail()
+          if (email) saveAccountData(email, { activeWorkout: updated })
+        }
 
         if (wasCompleted) {
           set({ isRestTimerRunning: true })

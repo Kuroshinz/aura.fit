@@ -1,8 +1,10 @@
 'use client'
 
-import { useState } from 'react'
-import { Search, Plus, Dumbbell, Sparkles, X, Check } from 'lucide-react'
+import { useState, useEffect } from 'react'
+import { Search, Plus, Dumbbell, Sparkles, X, Check, AlertCircle } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { SpatialCard } from '@/components/effects/spatial-card'
+import { createClient } from '@/lib/supabase/client'
 
 export interface ExerciseItem {
   id: string
@@ -12,89 +14,89 @@ export interface ExerciseItem {
   isCustom?: boolean
 }
 
-const initialExercises: ExerciseItem[] = [
-  // CHEST
-  { id: 'c1', name: 'Barbell Bench Press', muscle: 'Chest', equipment: 'Barbell' },
-  { id: 'c2', name: 'Incline Dumbbell Press', muscle: 'Chest', equipment: 'Dumbbell' },
-  { id: 'c3', name: 'Machine Chest Press', muscle: 'Chest', equipment: 'Machine' },
-  { id: 'c4', name: 'Pec Deck Fly (Ép Ngực)', muscle: 'Chest', equipment: 'Machine' },
-  { id: 'c5', name: 'Cable Chest Fly', muscle: 'Chest', equipment: 'Cable' },
-  { id: 'c6', name: 'Incline Barbell Press', muscle: 'Chest', equipment: 'Barbell' },
-  { id: 'c7', name: 'Weighted Dips', muscle: 'Chest', equipment: 'Bodyweight' },
-  { id: 'c8', name: 'Push Ups', muscle: 'Chest', equipment: 'Bodyweight' },
-
-  // BACK
-  { id: 'b1', name: 'Lat Pulldown', muscle: 'Back', equipment: 'Cable' },
-  { id: 'b2', name: 'Chest Supported Row', muscle: 'Back', equipment: 'Machine' },
-  { id: 'b3', name: 'Seated Cable Row', muscle: 'Back', equipment: 'Cable' },
-  { id: 'b4', name: 'Barbell Bent Over Row', muscle: 'Back', equipment: 'Barbell' },
-  { id: 'b5', name: 'Pull Ups (Hít Xô)', muscle: 'Back', equipment: 'Bodyweight' },
-  { id: 'b6', name: 'T-Bar Row', muscle: 'Back', equipment: 'Barbell' },
-  { id: 'b7', name: 'Single Arm Dumbbell Row', muscle: 'Back', equipment: 'Dumbbell' },
-  { id: 'b8', name: 'Straight Arm Cable Pulldown', muscle: 'Back', equipment: 'Cable' },
-
-  // LEGS
-  { id: 'l1', name: 'Barbell Squat', muscle: 'Legs', equipment: 'Barbell' },
-  { id: 'l2', name: 'Leg Press', muscle: 'Legs', equipment: 'Machine' },
-  { id: 'l3', name: 'Hack Squat', muscle: 'Legs', equipment: 'Machine' },
-  { id: 'l4', name: 'Romanian Deadlift (RDL)', muscle: 'Legs', equipment: 'Barbell' },
-  { id: 'l5', name: 'Lying Leg Curl', muscle: 'Legs', equipment: 'Machine' },
-  { id: 'l6', name: 'Leg Extension', muscle: 'Legs', equipment: 'Machine' },
-  { id: 'l7', name: 'Hip Abduction Machine', muscle: 'Legs', equipment: 'Machine' },
-  { id: 'l8', name: 'Standing Calf Raise', muscle: 'Legs', equipment: 'Machine' },
-  { id: 'l9', name: 'Bulgarian Split Squat', muscle: 'Legs', equipment: 'Dumbbell' },
-
-  // SHOULDERS
-  { id: 's1', name: 'Overhead Barbell Press (OHP)', muscle: 'Shoulders', equipment: 'Barbell' },
-  { id: 's2', name: 'Machine Shoulder Press', muscle: 'Shoulders', equipment: 'Machine' },
-  { id: 's3', name: 'Dumbbell Lateral Raise', muscle: 'Shoulders', equipment: 'Dumbbell' },
-  { id: 's4', name: 'Cable Lateral Raise', muscle: 'Shoulders', equipment: 'Cable' },
-  { id: 's5', name: 'Face Pull', muscle: 'Shoulders', equipment: 'Cable' },
-  { id: 's6', name: 'Rear Delt Pec Deck Fly', muscle: 'Shoulders', equipment: 'Machine' },
-  { id: 's7', name: 'Dumbbell Front Raise', muscle: 'Shoulders', equipment: 'Dumbbell' },
-
-  // ARMS
-  { id: 'a1', name: 'Barbell Bicep Curl', muscle: 'Arms', equipment: 'Barbell' },
-  { id: 'a2', name: 'Dumbbell Hammer Curl', muscle: 'Arms', equipment: 'Dumbbell' },
-  { id: 'a3', name: 'Rope Cable Curl', muscle: 'Arms', equipment: 'Cable' },
-  { id: 'a4', name: 'Preacher Curl', muscle: 'Arms', equipment: 'Machine' },
-  { id: 'a5', name: 'Cable Tricep Pushdown', muscle: 'Arms', equipment: 'Cable' },
-  { id: 'a6', name: 'Overhead Cable Tricep Extension', muscle: 'Arms', equipment: 'Cable' },
-  { id: 'a7', name: 'Skullcrusher (Lying Tricep Ext)', muscle: 'Arms', equipment: 'Barbell' },
-  { id: 'a8', name: 'Incline Dumbbell Curl', muscle: 'Arms', equipment: 'Dumbbell' },
-
-  // CORE
-  { id: 'r1', name: 'Cable Crunch', muscle: 'Core', equipment: 'Cable' },
-  { id: 'r2', name: 'Hanging Leg Raise', muscle: 'Core', equipment: 'Bodyweight' },
-  { id: 'r3', name: 'Ab Wheel Rollout', muscle: 'Core', equipment: 'Bodyweight' },
-  { id: 'r4', name: 'Weighted Decline Sit-up', muscle: 'Core', equipment: 'Bodyweight' },
-  { id: 'r5', name: 'Plank', muscle: 'Core', equipment: 'Bodyweight' },
-]
-
 export default function ExercisesPage() {
-  const [exercisesList, setExercisesList] = useState<ExerciseItem[]>(initialExercises)
+  const [exercisesList, setExercisesList] = useState<ExerciseItem[]>([])
+  const [isLoading, setIsLoading] = useState(true)
+  const [errorMsg, setErrorMsg] = useState('')
   const [search, setSearch] = useState('')
   const [filterMuscle, setFilterMuscle] = useState<string>('All')
   const [showCreateModal, setShowCreateModal] = useState(false)
+  const [visibleCount, setVisibleCount] = useState(24)
 
   // New Exercise Form State
   const [newName, setNewName] = useState('')
   const [newMuscle, setNewMuscle] = useState<ExerciseItem['muscle']>('Chest')
   const [newEquipment, setNewEquipment] = useState<ExerciseItem['equipment']>('Barbell')
 
+  useEffect(() => {
+    const fetchExercises = async () => {
+      try {
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+        const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+        if (!supabaseUrl || !supabaseKey) {
+          setErrorMsg('Thiếu cấu hình Supabase (NEXT_PUBLIC_SUPABASE_URL/ANON_KEY) trong file .env.local')
+          setIsLoading(false)
+          return
+        }
+
+        const supabase = createClient()
+        const { data, error } = await supabase.from('exercises_catalog').select('*').limit(1000)
+        
+        if (error) throw error
+
+        if (data) {
+          const formatted = data.map((ex: any) => {
+            let mappedMuscle = 'Core'
+            const bp = (ex.body_part || '').toLowerCase()
+            if (bp.includes('chest')) mappedMuscle = 'Chest'
+            else if (bp.includes('back')) mappedMuscle = 'Back'
+            else if (bp.includes('leg') || bp.includes('thigh') || bp.includes('calf')) mappedMuscle = 'Legs'
+            else if (bp.includes('shoulder')) mappedMuscle = 'Shoulders'
+            else if (bp.includes('arm') || bp.includes('bicep') || bp.includes('tricep') || bp.includes('lower arms') || bp.includes('upper arms')) mappedMuscle = 'Arms'
+            
+            let eq = 'Bodyweight'
+            const exEq = (ex.equipment || '').toLowerCase()
+            if (exEq.includes('barbell')) eq = 'Barbell'
+            else if (exEq.includes('dumbbell')) eq = 'Dumbbell'
+            else if (exEq.includes('cable')) eq = 'Cable'
+            else if (exEq.includes('machine') || exEq.includes('leverage')) eq = 'Machine'
+            
+            return {
+              id: ex.id,
+              name: ex.name.toUpperCase(),
+              muscle: mappedMuscle,
+              equipment: eq,
+              isCustom: false
+            }
+          })
+          setExercisesList(formatted)
+        }
+      } catch (err: any) {
+        console.error('Fetch error:', err)
+        setErrorMsg('Lỗi khi tải dữ liệu từ Supabase: ' + err.message)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+    fetchExercises()
+  }, [])
+
+  useEffect(() => {
+    setVisibleCount(24)
+  }, [search, filterMuscle])
+
   const filtered = exercisesList.filter((ex) => {
-    const matchesSearch = ex.name.toLowerCase().includes(search.toLowerCase())
-    const matchesMuscle = filterMuscle === 'All' || ex.muscle === filterMuscle
-    return matchesSearch && matchesMuscle
+    const matchSearch = ex.name.toLowerCase().includes(search.toLowerCase())
+    const matchMuscle = filterMuscle === 'All' || ex.muscle === filterMuscle
+    return matchSearch && matchMuscle
   })
 
   const handleCreateCustomExercise = (e: React.FormEvent) => {
     e.preventDefault()
-    if (!newName.trim()) return
-
     const newEx: ExerciseItem = {
       id: `custom_${Date.now()}`,
-      name: newName.trim(),
+      name: newName.trim().toUpperCase(),
       muscle: newMuscle,
       equipment: newEquipment,
       isCustom: true,
@@ -107,9 +109,9 @@ export default function ExercisesPage() {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Top Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-700/80 pb-6">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-4">
         <div>
           <span className="text-sm font-mono font-bold text-amber-400 uppercase tracking-widest block mb-1">
             EXERCISE DATABASE ({exercisesList.length}+ EXERCISES)
@@ -127,6 +129,16 @@ export default function ExercisesPage() {
           TẠO BÀI TẬP CÁ NHÂN
         </button>
       </div>
+
+      {/* Glow Divider */}
+      <div className="glow-divider" />
+
+      {errorMsg && (
+        <div className="mb-6 p-4 rounded-2xl bg-red-500/10 border border-red-500/30 flex items-center gap-3 text-red-400 text-sm font-mono">
+          <AlertCircle className="w-5 h-5 shrink-0" />
+          <span>{errorMsg}</span>
+        </div>
+      )}
 
       {/* Search & Filter Controls */}
       <div className="flex flex-col sm:flex-row gap-4">
@@ -147,7 +159,7 @@ export default function ExercisesPage() {
             <button
               key={muscle}
               onClick={() => setFilterMuscle(muscle)}
-              className={`px-5 py-3 rounded-2xl text-sm font-bold whitespace-nowrap tracking-wider transition-all ${
+              className={`px-5 py-3 rounded-2xl text-sm font-bold whitespace-nowrap tracking-wider transition-[background-color,color,box-shadow,border-color] duration-150 ${
                 filterMuscle === muscle
                   ? 'bg-amber-400 text-black font-black shadow-[0_0_15px_rgba(251,191,36,0.4)]'
                   : 'aura-glass text-slate-300 hover:text-white border-slate-700'
@@ -160,46 +172,72 @@ export default function ExercisesPage() {
       </div>
 
       {/* Exercise Cards Grid with Framer Motion */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <AnimatePresence>
-          {filtered.map((ex) => (
-            <motion.div
-              layout
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.25 }}
-              key={ex.id}
-              className="aura-glass rounded-3xl p-6 flex flex-col justify-between hover:border-amber-400/60 transition-all duration-300 group border-slate-700 shadow-xl"
-            >
-              <div className="flex items-center gap-3.5 mb-4">
-                <div className="p-3 bg-amber-500/20 border border-amber-400 rounded-2xl text-amber-400">
-                  <Dumbbell className="w-6 h-6" />
+      <div className="section-container section-glow-amber rounded-3xl p-6 sm:p-8 bg-slate-900/20 border border-slate-700/40">
+        <h2 className="text-xl font-extrabold text-white tracking-tight flex items-center gap-3 mb-6">
+          <span className="w-2 h-2 rounded-full bg-amber-400 shadow-[0_0_8px_rgba(251,191,36,0.6)]" />
+          EXERCISE CARDS
+        </h2>
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {isLoading ? (
+            <div className="col-span-full py-12 flex flex-col justify-center items-center gap-4">
+              <div className="w-10 h-10 border-4 border-amber-400 border-t-transparent rounded-full animate-spin"></div>
+              <p className="text-slate-400 font-mono text-sm animate-pulse">Đang tải thư viện bài tập...</p>
+            </div>
+          ) : (
+            <AnimatePresence>
+            {filtered.slice(0, visibleCount).map((ex) => (
+              <motion.div
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+                key={ex.id}
+                className="group h-full"
+              >
+                <SpatialCard intensity={8} className="h-full rounded-3xl p-6 flex flex-col justify-between border-slate-700/50 shadow-xl group-hover:border-amber-400/50 group-hover:shadow-[0_0_30px_rgba(251,191,36,0.15)] transition-all duration-300 bg-slate-900/40">
+                <div className="flex items-center gap-3.5 mb-4">
+                  <div className="p-3 bg-amber-500/20 border border-amber-400 rounded-2xl text-amber-400">
+                    <Dumbbell className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <h3 className="font-extrabold text-xl text-white group-hover:text-amber-300 transition-colors">
+                      {ex.name}
+                    </h3>
+                    {ex.isCustom && (
+                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 rounded-md uppercase">
+                        Custom Exercise
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <div>
-                  <h3 className="font-extrabold text-xl text-white group-hover:text-amber-300 transition-colors">
-                    {ex.name}
-                  </h3>
-                  {ex.isCustom && (
-                    <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 rounded-md uppercase">
-                      Custom Exercise
-                    </span>
-                  )}
-                </div>
-              </div>
 
-              <div className="flex items-center gap-2.5 mt-2">
-                <span className="text-xs font-mono font-bold px-3 py-1 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full uppercase">
-                  {ex.muscle}
-                </span>
-                <span className="text-xs font-mono font-bold px-3 py-1 bg-slate-900 text-slate-300 border border-slate-700 rounded-full uppercase">
-                  {ex.equipment}
-                </span>
-              </div>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </motion.div>
+                <div className="flex items-center gap-2.5 mt-2">
+                  <span className="text-xs font-mono font-bold px-3 py-1 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full uppercase">
+                    {ex.muscle}
+                  </span>
+                  <span className="text-xs font-mono font-bold px-3 py-1 bg-slate-900 text-slate-300 border border-slate-700 rounded-full uppercase">
+                    {ex.equipment}
+                  </span>
+                </div>
+                </SpatialCard>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+          )}
+        </motion.div>
+
+        {!isLoading && visibleCount < filtered.length && (
+          <div className="mt-10 flex justify-center">
+            <button
+              onClick={() => setVisibleCount(prev => prev + 24)}
+              className="px-8 py-3 rounded-full border border-amber-500/30 text-amber-400 font-bold font-mono hover:bg-amber-500/10 transition-colors shadow-[0_0_15px_rgba(251,191,36,0.1)] hover:shadow-[0_0_20px_rgba(251,191,36,0.3)]"
+            >
+              HIỂN THỊ THÊM ({filtered.length - visibleCount})
+            </button>
+          </div>
+        )}
+      </div>
 
       {/* CREATE CUSTOM EXERCISE MODAL */}
       {showCreateModal && (
@@ -261,7 +299,7 @@ export default function ExercisesPage() {
                   onChange={(e) => setNewEquipment(e.target.value as any)}
                   className="w-full bg-slate-950 border border-slate-700 focus:border-amber-400 rounded-2xl px-4 py-3.5 text-white font-mono text-base focus:outline-none"
                 >
-                  <option value="Barbell">Barbell (Tạ đơn dài)</option>
+                  <option value="Barbell">Barbell (Tạ đòn dài)</option>
                   <option value="Dumbbell">Dumbbell (Tạ đôi)</option>
                   <option value="Cable">Cable (Dây cáp)</option>
                   <option value="Machine">Machine (Máy tập)</option>

@@ -161,9 +161,9 @@ export default function RoutinesPage() {
   ) || importedRoutine?.days[0]
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-700/80 pb-6">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-4">
         <div>
           <span className="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest block mb-1">
             AUTOMATIC CALENDAR SCHEDULER
@@ -188,7 +188,7 @@ export default function RoutinesPage() {
             className="px-5 py-3.5 aura-glass border-indigo-400/50 text-indigo-300 font-bold rounded-2xl text-sm flex items-center gap-2 hover:bg-indigo-500/10 transition-all shadow-xl cursor-pointer"
           >
             <PlusCircle className="w-5 h-5 text-indigo-400" />
-            TẠO LỊCH TẬP MỚI
+            TẠO LỊCH CÁ NHÂN
           </button>
 
           {/* Export Routine Excel Button */}
@@ -209,9 +209,12 @@ export default function RoutinesPage() {
         </div>
       </div>
 
-      {/* TODAY CARD */}
+      {/* Glow Divider */}
+      <div className="glow-divider" />
+
+      {/* Today's Schedule Section */}
       {todaySchedule && (
-        <div className="aura-glass rounded-3xl p-6 md:p-8 border-amber-400/50 shadow-2xl">
+        <div className="section-container section-glow-amber rounded-3xl p-6 md:p-8 bg-slate-900/20 border border-amber-400/30">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700/80 pb-6 mb-6">
             <div className="flex items-center gap-4">
               <div className="p-3.5 bg-amber-500/20 border border-amber-400 rounded-2xl text-amber-400">

@@ -1,44 +1,190 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================
+   Design System CSS Custom Properties
+   ============================================ */
 :root {
   --font-display: 'Syne', sans-serif;
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Space Grotesk', monospace;
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+
+  /* Safe Area Insets (set by JS/native) */
+  --sat: env(safe-area-inset-top, 0px);
+  --sar: env(safe-area-inset-right, 0px);
+  --sab: env(safe-area-inset-bottom, 0px);
+  --sal: env(safe-area-inset-left, 0px);
 }
 
+/* ============================================
+   Base Body
+   ============================================ */
 body {
   background-color: #020206;
   color: #ffffff;
   font-family: var(--font-sans);
-  background-image: 
+  background-image:
     radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.25) 0%, transparent 55%),
     radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.2) 0%, transparent 55%),
     radial-gradient(circle at 50% 10%, rgba(16, 185, 129, 0.12) 0%, transparent 60%);
   background-attachment: fixed;
 }
 
+/* ============================================
+   Fluid Typography Scale
+   ============================================ */
 h1, h2, h3, .font-display {
   font-family: var(--font-display);
   font-weight: 800;
   letter-spacing: -0.02em;
 }
 
+h1 {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+h2 {
+  font-size: clamp(1.35rem, 3vw, 1.875rem);
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
 .font-mono {
   font-family: var(--font-mono);
 }
 
-/* Spatial Glassmorphism 3D Card Floating */
+/* ============================================
+   Transition Defaults (respect reduced motion)
+   ============================================ */
+@media (prefers-reduced-motion: no-preference) {
+  *, *::before, *::after {
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    transition-property: background-color, border-color, color, opacity, transform, box-shadow, filter;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   Focus Visible Styles (Accessibility)
+   ============================================ */
+:focus-visible {
+  outline: 2px solid #fbbf24;
+  outline-offset: 2px;
+  border-radius: 0.5rem;
+}
+
+/* Remove default focus for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ============================================
+   Selection Highlight
+   ============================================ */
+::selection {
+  background-color: #fbbf24;
+  color: #000000;
+}
+
+/* ============================================
+   Safe Area Insets (iOS Notch Support)
+   ============================================ */
+@supports (padding-top: env(safe-area-inset-top)) {
+  .safe-area-top {
+    padding-top: var(--sat);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: var(--sab);
+  }
+
+  .safe-area-left {
+    padding-left: var(--sal);
+  }
+
+  .safe-area-right {
+    padding-right: var(--sar);
+  }
+
+  .safe-area-inset {
+    padding-top: var(--sat);
+    padding-bottom: var(--sab);
+    padding-left: var(--sal);
+    padding-right: var(--sar);
+  }
+}
+
+/* ============================================
+   Scrollbar Styles
+   ============================================ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020206;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #fbbf24, #6366f1);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #f59e0b, #4f46e5);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #fbbf24 #020206;
+}
+
+/* ============================================
+   Spatial Glassmorphism 3D Card
+   ============================================ */
 .aura-glass {
   background: rgba(12, 14, 30, 0.75);
   backdrop-filter: blur(24px) saturate(120%);
   -webkit-backdrop-filter: blur(24px) saturate(120%);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 
+  box-shadow:
     0 20px 40px -10px rgba(0, 0, 0, 0.5),
     0 0 20px rgba(99, 102, 241, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transform-style: preserve-3d;
   position: relative;
   -webkit-transform: translateZ(0);
@@ -49,13 +195,23 @@ h1, h2, h3, .font-display {
 .aura-glass:hover {
   border-color: rgba(251, 191, 36, 0.6);
   background: rgba(18, 20, 40, 0.85);
-  box-shadow: 
+  box-shadow:
     0 40px 90px -20px rgba(245, 158, 11, 0.35),
     0 0 40px rgba(245, 158, 11, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-/* Holographic Sheen Effect */
+/* Mobile: reduce glass effect for performance */
+@media (max-width: 767px) {
+  .aura-glass {
+    backdrop-filter: blur(12px) saturate(100%);
+    -webkit-backdrop-filter: blur(12px) saturate(100%);
+  }
+}
+
+/* ============================================
+   Holographic Sheen Effect
+   ============================================ */
 .hologram-border {
   position: relative;
   overflow: hidden;
@@ -93,11 +249,14 @@ h1, h2, h3, .font-display {
   100% { transform: translateY(-50%) rotate(30deg); }
 }
 
-/* Glowing Sparkle & Metallic Text */
+/* ============================================
+   Glowing Text Effects
+   ============================================ */
 .gold-gradient-text {
   background: linear-gradient(135deg, #ffffff 0%, #fef08a 35%, #fbbf24 70%, #d97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .shimmer-sparkle {
@@ -112,6 +271,7 @@ h1, h2, h3, .font-display {
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   animation: shimmer 4s linear infinite;
 }
 
@@ -120,25 +280,33 @@ h1, h2, h3, .font-display {
   100% { background-position: 200% 0; }
 }
 
-/* Neon Antigravity Buttons */
+/* ============================================
+   Aura Gold Button
+   ============================================ */
 .btn-aura-gold {
   background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
   color: #000000;
   font-weight: 900;
-  box-shadow: 
+  box-shadow:
     0 0 35px rgba(245, 158, 11, 0.6),
     inset 0 1px 0 rgba(255, 255, 255, 0.8);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .btn-aura-gold:hover {
-  box-shadow: 
+  box-shadow:
     0 0 55px 10px rgba(245, 158, 11, 0.85),
     inset 0 1px 0 rgba(255, 255, 255, 0.9);
   transform: translateY(-2px) scale(1.02);
 }
 
-/* Falling Glowing Snow Keyframes */
+.btn-aura-gold:active {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* ============================================
+   Snowfall Particles Animation
+   ============================================ */
 @keyframes snowFall {
   0% {
     transform: translateY(-20px) translateX(0) rotate(0deg);
@@ -155,14 +323,139 @@ h1, h2, h3, .font-display {
   animation: snowFall linear infinite;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
+/* ============================================
+   Responsive Utility Classes
+   ============================================ */
+/* Hide scrollbar for horizontal scroll containers */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
-::-webkit-scrollbar-track {
-  background: #020206;
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
 }
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #fbbf24, #6366f1);
-  border-radius: 9999px;
+
+/* Touch-friendly minimum button size */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
 }
+
+/* Safe area bottom padding for mobile nav */
+.safe-bottom {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom, 0px));
+}
+
+/* Prevent text overflow */
+.text-balance {
+  text-wrap: balance;
+}
+
+/* ============================================
+   Mobile Responsive Overrides
+   ============================================ */
+@media (max-width: 639px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .hide-desktop {
+    display: none !important;
+  }
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* ============================================
+   Edge-to-Edge Section Depth Utilities
+   ============================================ */
+
+/* Full-width section container with ambient glow */
+.section-container {
+  position: relative;
+  isolation: isolate;
+}
+
+.section-container::before {
+  content: '';
+  position: absolute;
+  inset: -60px -80px;
+  border-radius: 1000px;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.4;
+  filter: blur(80px);
+  transition: opacity 0.6s ease;
+}
+
+/* Ambient glow color variants */
+.section-glow-amber::before {
+  background: radial-gradient(ellipse at center, rgba(251,191,36,0.4) 0%, transparent 70%);
+}
+
+.section-glow-indigo::before {
+  background: radial-gradient(ellipse at center, rgba(99,102,241,0.35) 0%, transparent 70%);
+}
+
+.section-glow-cyan::before {
+  background: radial-gradient(ellipse at center, rgba(6,182,212,0.3) 0%, transparent 70%);
+}
+
+.section-glow-emerald::before {
+  background: radial-gradient(ellipse at center, rgba(16,185,129,0.3) 0%, transparent 70%);
+}
+
+.section-glow-purple::before {
+  background: radial-gradient(ellipse at center, rgba(168,85,247,0.3) 0%, transparent 70%);
+}
+
+/* Shimmer divider line */
+.glow-divider {
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(251,191,36,0.15) 20%,
+    rgba(251,191,36,0.4) 50%,
+    rgba(251,191,36,0.15) 80%,
+    transparent 100%
+  );
+  position: relative;
+}
+
+.glow-divider::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 9px;
+  background: radial-gradient(ellipse at center, rgba(251,191,36,0.25) 0%, transparent 70%);
+  filter: blur(4px);
+}
+
+/* ============================================
+   Input Autofill Override
+   ============================================ */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #070714 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+

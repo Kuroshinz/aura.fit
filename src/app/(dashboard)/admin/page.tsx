@@ -54,7 +54,7 @@ export default function AdminPage() {
   }, 0)
 
   return (
-    <div className="space-y-10 max-w-5xl mx-auto">
+    <div className="space-y-10">
       {/* Admin Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-amber-400/40 pb-6">
         <div>

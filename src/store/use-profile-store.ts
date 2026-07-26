@@ -1,5 +1,6 @@
-import { create } from 'zustand'
+﻿import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
+import { getCurrentSessionEmail, saveAccountData } from '@/lib/utils/account-db'
 
 export interface UserProfile {
   name: string
@@ -32,6 +33,14 @@ export const useProfileStore = create<ProfileState>()(
 
       setProfile: (profile) => {
         set({ profile, isOnboardingComplete: true })
+
+        // Sync to account DB to survive logout/refresh
+        if (typeof window !== 'undefined') {
+          const currentEmail = getCurrentSessionEmail()
+          if (currentEmail) {
+            saveAccountData(currentEmail, { profile })
+          }
+        }
       },
 
       updateProfile: (partial) => {
@@ -40,27 +49,39 @@ export const useProfileStore = create<ProfileState>()(
         const updated = { ...profile, ...partial }
         set({ profile: updated })
         
+        // Sync to account DB via shared utility
         if (typeof window !== 'undefined') {
-          const currentEmail = localStorage.getItem('aura_fit_current_session_email') || 'admin@aura.fit'
-          const raw = localStorage.getItem('aura_fit_accounts_db')
-          if (raw) {
-            try {
-              const db = JSON.parse(raw)
-              if (db[currentEmail]) {
-                db[currentEmail].profile = updated
-                localStorage.setItem('aura_fit_accounts_db', JSON.stringify(db))
-              }
-            } catch (e) {}
+          const currentEmail = getCurrentSessionEmail()
+          if (currentEmail) {
+            saveAccountData(currentEmail, { profile: updated })
           }
         }
       },
 
       resetProfile: () => {
         set({ profile: null, isOnboardingComplete: false })
+
+        // Clear from account DB
+        if (typeof window !== 'undefined') {
+          const currentEmail = getCurrentSessionEmail()
+          if (currentEmail) {
+            saveAccountData(currentEmail, { profile: null })
+          }
+        }
       },
 
       logout: () => {
+        // Save final state to account DB before clearing
+        const { profile } = get()
+        if (typeof window !== 'undefined') {
+          const currentEmail = getCurrentSessionEmail()
+          if (currentEmail && profile) {
+            saveAccountData(currentEmail, { profile })
+          }
+        }
+
         set({ profile: null, isOnboardingComplete: false })
+
         if (typeof window !== 'undefined') {
           localStorage.removeItem('gym-user-profile-storage')
           localStorage.removeItem('gym-active-workout-storage')

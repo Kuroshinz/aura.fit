@@ -1,9 +1,10 @@
 'use client'
 
 import { useState } from 'react'
+import dynamic from 'next/dynamic'
 import { VolumeChart } from '@/components/dashboard/volume-chart'
-import { HumanBodyHeatmap } from '@/components/dashboard/human-body-heatmap'
-import { ExerciseProgressChart } from '@/components/dashboard/exercise-progress-chart'
+const HumanBodyHeatmap = dynamic(() => import('@/components/dashboard/human-body-heatmap').then(m => m.HumanBodyHeatmap), { ssr: false, loading: () => <div className="h-[400px] w-full animate-pulse bg-slate-900/50 rounded-3xl"></div> })
+const ExerciseProgressChart = dynamic(() => import('@/components/dashboard/exercise-progress-chart').then(m => m.ExerciseProgressChart), { ssr: false, loading: () => <div className="h-[300px] w-full animate-pulse bg-slate-900/50 rounded-3xl"></div> })
 import { BodyMetricsTracker } from '@/components/dashboard/body-metrics-tracker'
 import { SpatialCard } from '@/components/effects/spatial-card'
 import { exportWorkoutDataCSV } from '@/lib/utils/export-data'
@@ -82,7 +83,7 @@ export default function DashboardPage() {
       className="space-y-10"
     >
       {/* CLEAN DASHBOARD HEADER BLOCK */}
-      <motion.div variants={itemVariants} className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700/80 pb-6">
+      <motion.div variants={itemVariants} className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
         <div>
           {profile ? (
             <>
@@ -114,6 +115,9 @@ export default function DashboardPage() {
           XUẤT FILE CSV SAO LƯU
         </button>
       </motion.div>
+
+      {/* Glow Divider */}
+      <div className="glow-divider" />
 
       {/* Spatial Luxury Stats Cards */}
       <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">

@@ -6,18 +6,24 @@ import Link from 'next/link'
 import { useProfileStore } from '@/store/use-profile-store'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { saveAccountData, setCurrentSessionEmail, MASTER_ADMIN_EMAIL } from '@/lib/utils/account-db'
-import { Lock, Mail, User, ArrowRight, Sparkles, ShieldCheck } from 'lucide-react'
+import { Lock, Mail, User, ArrowRight, Sparkles, ShieldCheck, Loader2, AlertCircle } from 'lucide-react'
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
   const { resetProfile } = useProfileStore()
 
-  const handleRegister = (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault()
+    setErrorMessage('')
     if (!fullName.trim() || !email.trim()) return
+
+    setIsLoading(true)
+    await new Promise(resolve => setTimeout(resolve, 800))
 
     const cleanEmail = email.toLowerCase().trim()
     const cleanName = fullName.trim()
@@ -69,6 +75,13 @@ export default function RegisterPage() {
             <p className="text-slate-400 text-xs font-mono tracking-[0.2em] mt-2 uppercase">AURA.FIT SPATIAL SYSTEM</p>
           </div>
 
+          {errorMessage && (
+            <div className="mb-6 p-4 rounded-2xl bg-red-500/10 border border-red-500/30 flex items-center gap-3 text-red-400 text-xs font-mono">
+              <AlertCircle className="w-5 h-5 shrink-0 text-red-400" />
+              <span>{errorMessage}</span>
+            </div>
+          )}
+
           <form onSubmit={handleRegister} className="space-y-5">
             <div>
               <label className="text-xs font-mono font-bold text-slate-400 uppercase tracking-widest mb-2 block">FULL NAME</label>
@@ -107,7 +120,7 @@ export default function RegisterPage() {
                 <input
                   type="password"
                   required
-                  placeholder="••••••••"
+                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full bg-[#070714] border border-slate-800 rounded-2xl pl-12 pr-4 py-3.5 text-white font-mono font-bold focus:outline-none focus:border-amber-400 transition-all"
@@ -117,18 +130,28 @@ export default function RegisterPage() {
 
             <button
               type="submit"
-              className="w-full py-4.5 btn-aura-gold text-black font-display font-black text-sm uppercase tracking-widest rounded-2xl flex items-center justify-center gap-2 transition-all mt-6 shadow-2xl"
+              disabled={isLoading}
+              className="w-full py-4.5 btn-aura-gold text-black font-display font-black text-sm uppercase tracking-widest rounded-2xl flex items-center justify-center gap-2 transition-all mt-6 shadow-2xl disabled:opacity-70 disabled:cursor-not-allowed"
             >
-              CREATE ACCOUNT &amp; CONTINUE
-              <ArrowRight className="w-4 h-4" />
+              {isLoading ? (
+                <>
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                  ĐANG ĐĂNG KÝ...
+                </>
+              ) : (
+                <>
+                  ĐĂNG KÝ TÀI KHOẢN
+                  <ArrowRight className="w-4 h-4" />
+                </>
+              )}
             </button>
           </form>
 
           <div className="mt-6 text-center">
             <p className="text-xs font-mono text-slate-400">
-              Already have an account?{' '}
+              Đã có tài khoản?{' '}
               <Link href="/login" className="text-amber-400 font-bold hover:underline">
-                Log in
+                Đăng nhập
               </Link>
             </p>
           </div>
@@ -142,3 +165,5 @@ export default function RegisterPage() {
     </div>
   )
 }
+
+

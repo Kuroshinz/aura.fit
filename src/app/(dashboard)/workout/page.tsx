@@ -192,7 +192,7 @@ export default function WorkoutPage() {
   const totalVolume = calculateTotalVolume(allCompletedSets)
 
   return (
-    <div className="max-w-3xl mx-auto space-y-6">
+    <div className="space-y-6">
       {/* Sticky Header Banner with Elapsed Timer */}
       <div className="aura-glass rounded-3xl p-6 sticky top-4 z-30 border-amber-500/30 flex items-center justify-between shadow-2xl">
         <div className="flex items-center gap-4">

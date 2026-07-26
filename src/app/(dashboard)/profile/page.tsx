@@ -104,9 +104,9 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="space-y-8 max-w-4xl mx-auto">
+    <div className="space-y-8">
       {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-700/80 pb-6">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4">
         <div>
           <span className="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest block mb-1">
             ATHLETE ATHLETICS CARD
@@ -144,11 +144,14 @@ export default function ProfilePage() {
         </div>
       </div>
 
+      {/* Glow Divider */}
+      <div className="glow-divider" />
+
       {/* Main Profile Info Card */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="aura-glass rounded-3xl p-6 md:p-10 border-amber-400/40 relative overflow-hidden"
+        className="section-container section-glow-amber rounded-3xl p-6 md:p-10 bg-slate-900/20 border border-amber-400/30 relative overflow-hidden"
       >
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
           {/* Avatar Icon Box */}
@@ -284,7 +287,7 @@ export default function ProfilePage() {
         )}
       </motion.div>
 
-      {/* Body Metrics Stats Grid */}
+      {/* Stats Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
         <SpatialCard className="p-6 rounded-3xl border-slate-800">
           <div className="flex items-center justify-between mb-2">
@@ -320,6 +323,8 @@ export default function ProfilePage() {
           </p>
         </SpatialCard>
       </div>
+
+
 
       {/* Metabolism & Calorie Targets Card */}
       <div className="aura-glass rounded-3xl p-6 md:p-8 space-y-6">

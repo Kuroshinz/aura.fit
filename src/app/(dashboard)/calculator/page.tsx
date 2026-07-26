@@ -20,7 +20,7 @@ export default function CalculatorPage() {
   return (
     <div className="space-y-8">
       {/* Top Banner */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-slate-700/80 pb-6">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-4">
         <div>
           <span className="text-xs font-mono font-bold text-amber-400 uppercase tracking-widest block mb-1">
             POWER &amp; PROGRESSIVE OVERLOAD CALCULATOR
@@ -31,9 +31,12 @@ export default function CalculatorPage() {
         </div>
       </div>
 
+      {/* Glow Divider */}
+      <div className="glow-divider" />
+
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Input Controls Card */}
-        <div className="lg:col-span-5 aura-glass rounded-3xl p-6 md:p-8 space-y-6">
+        <div className="lg:col-span-5 section-container section-glow-amber rounded-3xl p-6 md:p-8 space-y-6 bg-slate-900/20 border border-slate-700/40">
           <h3 className="text-xl font-bold text-white flex items-center gap-2 border-b border-slate-700 pb-4">
             <span>🧮</span> NHẬP THÔNG SỐ TẬP
           </h3>
@@ -78,32 +81,37 @@ export default function CalculatorPage() {
           </div>
         </div>
 
-        {/* Results Card */}
-        <div className="lg:col-span-7 aura-glass rounded-3xl p-6 md:p-8 space-y-6">
-          <h3 className="text-xl font-bold text-white flex items-center gap-2 border-b border-slate-700 pb-4">
-            <span>✨</span> KẾT QUẢ SỨC MẠNH TỐI ĐA (1RM)
-          </h3>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-700 text-center">
-              <span className="text-xs font-mono text-slate-400 block mb-1">EPLEY FORMULA</span>
-              <p className="text-3xl font-extrabold text-amber-400 font-mono">{epley1RM} kg</p>
-            </div>
-            <div className="p-5 rounded-2xl bg-slate-900/90 border border-slate-700 text-center">
-              <span className="text-xs font-mono text-slate-400 block mb-1">BRZYCKI FORMULA</span>
-              <p className="text-3xl font-extrabold text-cyan-300 font-mono">{brzycki1RM} kg</p>
-            </div>
-            <div className="p-5 rounded-2xl bg-gradient-to-br from-amber-500/20 to-indigo-500/20 border border-amber-400 text-center shadow-lg">
-              <span className="text-xs font-mono text-amber-300 font-bold block mb-1">TRUNG BÌNH 1RM</span>
-              <p className="text-3xl font-extrabold text-white font-mono">{average1RM} kg</p>
+        {/* Results Cards Grid */}
+        <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="section-container section-glow-indigo rounded-3xl p-6 md:p-8 bg-slate-900/20 border border-slate-700/40 space-y-5">
+            <h3 className="text-xl font-bold text-white flex items-center gap-2 pb-3 border-b border-slate-700/60">
+              <span className="w-2 h-2 rounded-full bg-indigo-400 shadow-[0_0_6px_rgba(99,102,241,0.6)]" />
+              EPLEY FORMULA
+            </h3>
+            <div className="text-center">
+              <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider">Ước tính 1RM</span>
+              <p className="text-5xl font-black text-indigo-300 mt-1">{epley1RM} <span className="text-lg text-slate-400 font-mono">Kg</span></p>
+              <p className="text-xs text-slate-400 font-mono mt-2">1RM = W × (1 + R/30)</p>
             </div>
           </div>
 
-          {/* Percentage Target Table */}
-          <div className="space-y-3 pt-2">
-            <h4 className="text-xs font-mono font-bold text-slate-300 uppercase tracking-widest">
-              BẢNG PHÂN CHIA NĂNG LƯỢNG TẬP LUYỆN
-            </h4>
+          <div className="section-container section-glow-cyan rounded-3xl p-6 md:p-8 bg-slate-900/20 border border-slate-700/40 space-y-5">
+            <h3 className="text-xl font-bold text-white flex items-center gap-2 pb-3 border-b border-slate-700/60">
+              <span className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_6px_rgba(6,182,212,0.6)]" />
+              BRZYCKI FORMULA
+            </h3>
+            <div className="text-center">
+              <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-wider">Ước tính 1RM</span>
+              <p className="text-5xl font-black text-cyan-300 mt-1">{brzycki1RM} <span className="text-lg text-slate-400 font-mono">Kg</span></p>
+              <p className="text-xs text-slate-400 font-mono mt-2">1RM = W × 36/(37-R)</p>
+            </div>
+          </div>
+
+          <div className="section-container section-glow-emerald rounded-3xl p-6 md:p-8 sm:col-span-2 bg-slate-900/20 border border-slate-700/40 space-y-5">
+            <h3 className="text-xl font-bold text-white flex items-center gap-2 pb-3 border-b border-slate-700/60">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(10,185,129,0.6)]" />
+              KẾT QUẢ TRUNG BÌNH &amp; PHÂN TÍCH
+            </h3>
             <div className="space-y-2 font-mono text-sm">
               <div className="flex justify-between items-center p-3 rounded-xl bg-slate-900/80 border border-slate-800">
                 <span className="font-bold text-amber-400">90% 1RM (Sức Mạnh Tối Đa 2-3 Reps)</span>

@@ -3,13 +3,21 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'AURA.FIT | Ultra-Luxury Spatial Athletics',
-  description: 'Antigravity 3D Spatial Gym Workout Tracker Interface',
+  description: 'Antigravity 3D Spatial Gym Workout Tracker Interface — Track workouts, monitor progress, and optimize your fitness journey with real-time analytics.',
+  openGraph: {
+    title: 'AURA.FIT | Spatial Athletics System',
+    description: 'Next-gen gym workout tracker with real-time analytics and 3D spatial interface.',
+    type: 'website',
+    siteName: 'AURA.FIT',
+  },
 }
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
+  viewportFit: 'cover',
+  themeColor: '#020206',
 }
 
 export default function RootLayout({
@@ -23,6 +31,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
       <body className="bg-[#020206] text-white font-sans selection:bg-amber-400 selection:text-black antialiased overflow-x-hidden">
         {children}

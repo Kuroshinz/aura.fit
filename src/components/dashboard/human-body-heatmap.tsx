@@ -1,5 +1,5 @@
 'use client'
-
+import { useState, useMemo } from 'react'
 import { useWorkoutStore } from '@/store/use-workout-store'
 
 interface MuscleIntensity {
@@ -19,7 +19,7 @@ export function HumanBodyHeatmap() {
   const [view, setView] = useState<'front' | 'back'>('front')
 
   // Tính toán Volume thực từ tất cả các buổi tập đã hoàn thành trong lịch sử
-  const intensities: MuscleIntensity = workoutHistory.reduce(
+  const intensities: MuscleIntensity = useMemo(() => workoutHistory.reduce(
     (acc, w) => {
       w.exercises.forEach((ex) => {
         const completedSets = ex.sets.filter((s) => s.is_completed)
@@ -40,7 +40,7 @@ export function HumanBodyHeatmap() {
       return acc
     },
     { chest: 0, back: 0, shoulders: 0, biceps: 0, triceps: 0, quads: 0, hamstrings: 0, calves: 0, abs: 0 }
-  )
+  ), [workoutHistory])
 
   const getColor = (val: number) => {
     if (val === 0) return '#334155' // Grey (Chưa tập / Trống)
@@ -168,4 +168,3 @@ export function HumanBodyHeatmap() {
     </div>
   )
 }
-import { useState } from 'react'
