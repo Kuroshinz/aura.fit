@@ -92,7 +92,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"• `/stats` \\- View volume, streak, and PRs\n"
         f"• `/routine` \\- Get today's workout plan\n"
         f"• `/help` \\- Show command menu\n\n"
-        f"🔗 *Account Linking:* Register on `http://localhost:3000/register` to sync your workout history\\."
+        f"🔗 *Account Linking:* Register on `https://aurafitiris.vercel.app/register` to sync your workout history\\."
     )
     await msg_obj.reply_text(msg, parse_mode="MarkdownV2")
 

@@ -1,0 +1,10 @@
+-- Add body metrics and goals to profiles table
+ALTER TABLE public.profiles 
+  ADD COLUMN IF NOT EXISTS age INT DEFAULT 20,
+  ADD COLUMN IF NOT EXISTS gender TEXT DEFAULT 'male',
+  ADD COLUMN IF NOT EXISTS height_cm NUMERIC(5,2) DEFAULT 170,
+  ADD COLUMN IF NOT EXISTS weight_kg NUMERIC(5,2) DEFAULT 65,
+  ADD COLUMN IF NOT EXISTS body_fat NUMERIC(5,2),
+  ADD COLUMN IF NOT EXISTS experience TEXT DEFAULT 'beginner',
+  ADD COLUMN IF NOT EXISTS goal TEXT DEFAULT 'recomposition',
+  ADD COLUMN IF NOT EXISTS sessions_per_week INT DEFAULT 3;

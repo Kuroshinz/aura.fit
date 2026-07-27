@@ -6,120 +6,48 @@ import { parseExcelRoutine, ParsedRoutine } from '@/lib/utils/excel-parser'
 import { getTodayWorkoutMapping } from '@/lib/utils/date-schedule'
 import { exportRoutineToExcel } from '@/lib/utils/export-data'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { FileSpreadsheet, Upload, Play, Calendar, Eye, Download, PlusCircle, Trash2, X, Plus, Send, CheckCircle } from 'lucide-react'
+import { FileSpreadsheet, Upload, Play, Calendar, Eye, Download, PlusCircle, Trash2, X, Plus, Send, CheckCircle, Loader2, Edit3, Save } from 'lucide-react'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { useProfileStore } from '@/store/use-profile-store'
-
-const samplePPLULMasterV7: ParsedRoutine = {
-  routineName: 'PPL-UL MASTER v7 (GymOS Master Program)',
-  days: [
-    {
-      dayName: 'PUSH (Ngực - Vai - Tay Sau)',
-      exercises: [
-        { exerciseName: 'Machine Chest Press', muscleGroup: 'Chest', sets: 3, reps: '8–10', weightKg: '--', notes: 'Form gồng vai chắc' },
-        { exerciseName: 'Incline DB Press', muscleGroup: 'Chest', sets: 3, reps: '8–10', weightKg: '--', notes: 'Góc ghế 30 độ' },
-        { exerciseName: 'Pec Deck (Ép Ngực)', muscleGroup: 'Chest', sets: 2, reps: '12–15', weightKg: '--', notes: 'Căng lồng ngực hết cỡ' },
-        { exerciseName: 'Machine Shoulder Press', muscleGroup: 'Shoulders', sets: 2, reps: '8–10', weightKg: '--', notes: 'Gồng bụng chắc chắn' },
-        { exerciseName: 'Lateral Raise', muscleGroup: 'Shoulders', sets: 4, reps: '12–15', weightKg: '--', notes: 'Cô lập vai giữa' },
-        { exerciseName: 'Cable Tricep Extension', muscleGroup: 'Arms', sets: 3, reps: '10–12', weightKg: '--', notes: 'Khóa cùi chỏ' },
-      ],
-    },
-    {
-      dayName: 'PULL (Lưng - Tay Trước)',
-      exercises: [
-        { exerciseName: 'Lat Pulldown', muscleGroup: 'Back', sets: 3, reps: '8–10', weightKg: 26, notes: 'Kéo cùi chỏ sát sườn' },
-        { exerciseName: 'Chest Supported Row', muscleGroup: 'Back', sets: 3, reps: '8–10', weightKg: 15, notes: 'Ép chặt xương vai' },
-        { exerciseName: 'Seated Cable Row', muscleGroup: 'Back', sets: 2, reps: '10', weightKg: 26, notes: 'Gồng thắt lưng' },
-        { exerciseName: 'Rear Delt Fly', muscleGroup: 'Shoulders', sets: 2, reps: '12–15', weightKg: 12, notes: 'Tập trung vai sau' },
-        { exerciseName: 'DB Curl', muscleGroup: 'Arms', sets: 2, reps: '10–12', weightKg: 5, notes: 'Xoay cổ tay khi cuộn' },
-        { exerciseName: 'Rope Hammer Curl', muscleGroup: 'Arms', sets: 2, reps: '10–12', weightKg: 19, notes: 'Cô lập cơ tay trước' },
-      ],
-    },
-    {
-      dayName: 'LEGS (Đùi - Mông - Bắp Chân)',
-      exercises: [
-        { exerciseName: 'Leg Press', muscleGroup: 'Legs', sets: 3, reps: '10', weightKg: 15, notes: 'Xuống đùi song song' },
-        { exerciseName: 'Lying Leg Curl', muscleGroup: 'Legs', sets: 4, reps: '10–12', weightKg: 19, notes: 'Căng hết cỡ đùi sau' },
-        { exerciseName: 'Leg Extension', muscleGroup: 'Legs', sets: 3, reps: '12', weightKg: 26, notes: 'Vắt kiệt đùi trước' },
-        { exerciseName: 'Hip Abduction Machine', muscleGroup: 'Legs', sets: 3, reps: '15–20', weightKg: 16, notes: 'Phát triển mông đùi' },
-        { exerciseName: 'Standing Calf Raise', muscleGroup: 'Legs', sets: 4, reps: '15', weightKg: 15, notes: 'Đẩy nhón bắp chân' },
-        { exerciseName: 'Cable Crunch', muscleGroup: 'Core', sets: 3, reps: '12–15', weightKg: 12, notes: 'Gập bụng dưới tạ' },
-      ],
-    },
-    {
-      dayName: 'UPPER (Thân Trên Toàn Diện)',
-      exercises: [
-        { exerciseName: 'Incline Machine Press', muscleGroup: 'Chest', sets: 3, reps: '8', weightKg: 12.5, notes: 'Phát triển ngực trên' },
-        { exerciseName: 'Lat Pulldown', muscleGroup: 'Back', sets: 3, reps: '8', weightKg: 26, notes: 'Kéo phát triển xô' },
-        { exerciseName: 'Seated Row Machine', muscleGroup: 'Back', sets: 3, reps: '10', weightKg: 26, notes: 'Tập trung lưng giữa' },
-        { exerciseName: 'Machine Shoulder Press', muscleGroup: 'Shoulders', sets: 3, reps: '8', weightKg: 7.5, notes: 'Đẩy vai dứt khoát' },
-        { exerciseName: 'Lateral Raise', muscleGroup: 'Shoulders', sets: 3, reps: '15', weightKg: 12, notes: 'Fail 12 nên về 10 thôi' },
-        { exerciseName: 'Cable Curl', muscleGroup: 'Arms', sets: 2, reps: '12', weightKg: 20, notes: 'Cuộn tay trước với cáp' },
-        { exerciseName: 'Tricep Extension', muscleGroup: 'Arms', sets: 2, reps: '12', weightKg: 20, notes: 'Duỗi tay sau' },
-      ],
-    },
-    {
-      dayName: 'LOWER (Thân Dưới + Core)',
-      exercises: [
-        { exerciseName: 'Hack Squat', muscleGroup: 'Legs', sets: 3, reps: '8–10', weightKg: '--', notes: 'Gập gối sâu gồng bụng' },
-        { exerciseName: 'Lying Leg Curl', muscleGroup: 'Legs', sets: 4, reps: '10–12', weightKg: '--', notes: 'Tác động đùi sau' },
-        { exerciseName: 'Leg Extension', muscleGroup: 'Legs', sets: 3, reps: '12', weightKg: '--', notes: 'Duỗi đùi trước' },
-        { exerciseName: 'Standing Calf Raise', muscleGroup: 'Legs', sets: 4, reps: '15', weightKg: '--', notes: 'Bắp chân' },
-        { exerciseName: 'Cable Crunch', muscleGroup: 'Core', sets: 3, reps: '12', weightKg: '--', notes: 'Gập bụng cáp' },
-      ],
-    },
-  ],
-}
+import { WORKOUT_SPLITS } from '@/data/workout-splits'
+import { getActiveRoutine, saveRoutine, updateRoutine, deleteRoutine, UserRoutine } from '@/lib/supabase/routine-service'
 
 export default function RoutinesPage() {
   const { profile } = useProfileStore()
-  const [importedRoutine, setImportedRoutine] = useState<ParsedRoutine | null>(null)
+  const [importedRoutine, setImportedRoutine] = useState<UserRoutine | null>(null)
   const [showFullSchedule, setShowFullSchedule] = useState(false)
   const [todaySchedule, setTodaySchedule] = useState<any>(null)
   const [sendingTeleRoutine, setSendingTeleRoutine] = useState(false)
+  const [selectedSplitId, setSelectedSplitId] = useState('ppl_ul_5d')
+  const [isLoading, setIsLoading] = useState(true)
 
-  // Custom Routine Creator Modal State
-  const [isCreatingRoutine, setIsCreatingRoutine] = useState(false)
-  const [newRoutineName, setNewRoutineName] = useState('My Custom PPL Routine')
-  const [newDays, setNewDays] = useState<
-    Array<{
-      dayName: string
-      exercises: Array<{ exerciseName: string; muscleGroup: string; sets: number; reps: string; weightKg: string | number; notes: string }>
-    }>
-  >([
-    {
-      dayName: 'Day 1: PUSH',
-      exercises: [{ exerciseName: 'Bench Press', muscleGroup: 'Chest', sets: 3, reps: '8-10', weightKg: 60, notes: '' }],
-    },
-    {
-      dayName: 'Day 2: PULL',
-      exercises: [{ exerciseName: 'Lat Pulldown', muscleGroup: 'Back', sets: 3, reps: '8-10', weightKg: 50, notes: '' }],
-    },
-    {
-      dayName: 'Day 3: LEGS',
-      exercises: [{ exerciseName: 'Squat', muscleGroup: 'Legs', sets: 3, reps: '8-10', weightKg: 70, notes: '' }],
-    },
-  ])
+  // Edit Mode States
+  const [isEditing, setIsEditing] = useState(false)
+  const [editableRoutine, setEditableRoutine] = useState<UserRoutine | null>(null)
 
   const { startWorkout, addExerciseToWorkout } = useWorkoutStore()
   const router = useRouter()
 
-  useEffect(() => {
-    const todayInfo = getTodayWorkoutMapping()
-    setTodaySchedule(todayInfo)
-
-    if (typeof window !== 'undefined') {
-      const savedRoutine = localStorage.getItem('aura_custom_routine')
-      if (savedRoutine) {
-        try {
-          setImportedRoutine(JSON.parse(savedRoutine))
-        } catch (e) {
-          setImportedRoutine(null)
-        }
-      } else {
-        setImportedRoutine(null)
-      }
+  const loadActiveRoutine = async () => {
+    setIsLoading(true)
+    const active = await getActiveRoutine()
+    if (active) {
+      setImportedRoutine(active)
+      setEditableRoutine(JSON.parse(JSON.stringify(active))) // deep copy
+      setSelectedSplitId(active.split_id)
+      const todayInfo = getTodayWorkoutMapping(active.split_id)
+      setTodaySchedule(todayInfo)
+    } else {
+      setImportedRoutine(null)
+      setEditableRoutine(null)
+      const todayInfo = getTodayWorkoutMapping('ppl_ul_5d')
+      setTodaySchedule(todayInfo)
     }
+    setIsLoading(false)
+  }
+
+  useEffect(() => {
+    loadActiveRoutine()
   }, [])
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -127,17 +55,31 @@ export default function RoutinesPage() {
     if (!file) return
 
     const reader = new FileReader()
-    reader.onload = (evt) => {
+    reader.onload = async (evt) => {
       const buffer = evt.target?.result as ArrayBuffer
       try {
         const parsed = parseExcelRoutine(buffer)
-        setImportedRoutine(parsed)
-        if (typeof window !== 'undefined') {
-          localStorage.setItem('aura_custom_routine', JSON.stringify(parsed))
+        
+        // --- VERIFY MAPPING ---
+        const splitDef = WORKOUT_SPLITS.find(s => s.id === selectedSplitId)
+        if (splitDef && parsed.days.length !== splitDef.days_per_week) {
+          alert(`Lỗi: File Excel của bạn có ${parsed.days.length} ngày tập, nhưng Mapping bạn chọn ("${splitDef.name}") yêu cầu đúng ${splitDef.days_per_week} ngày! Vui lòng chọn Mapping khác hoặc sửa file Excel.`)
+          return
         }
-        alert(`Đã nạp thành công file Excel: ${parsed.routineName} với ${parsed.days.length} ngày tập!`)
+        // ----------------------
+
+        setIsLoading(true)
+        const res = await saveRoutine(parsed.routineName, parsed, selectedSplitId)
+        if (res.success && res.data) {
+          alert(`Đã nạp thành công file Excel: ${parsed.routineName} với ${parsed.days.length} ngày tập!`)
+          loadActiveRoutine() // refresh mapping
+        } else {
+          alert('Lỗi lưu lịch tập: ' + res.error)
+        }
       } catch (err) {
         alert('File Excel không đúng định dạng. Vui lòng kiểm tra các cột!')
+      } finally {
+        setIsLoading(false)
       }
     }
     reader.readAsArrayBuffer(file)
@@ -145,20 +87,70 @@ export default function RoutinesPage() {
 
   const handleExportExcel = () => {
     if (!importedRoutine) return
-    exportRoutineToExcel(importedRoutine.routineName, importedRoutine.days)
+    exportRoutineToExcel(importedRoutine.name, importedRoutine.schedule_data.days)
   }
 
   const handleStartDaySession = (dayName: string, exercises: any[]) => {
-    startWorkout(crypto.randomUUID(), dayName)
+    startWorkout(importedRoutine?.id || crypto.randomUUID(), dayName)
     exercises.forEach((ex) => {
       addExerciseToWorkout(crypto.randomUUID(), ex.exerciseName, ex.muscleGroup)
     })
     router.push('/workout')
   }
 
-  const todayMatchedDay = importedRoutine?.days.find((d) =>
-    d.dayName.toUpperCase().includes(todaySchedule?.suggestedDayKey || 'PUSH')
-  ) || importedRoutine?.days[0]
+  const handleDeleteRoutine = async () => {
+    if (!importedRoutine) return
+    if (!confirm('Bạn có chắc chắn muốn xóa giáo án này không? Toàn bộ dữ liệu sẽ bị mất.')) return
+    setIsLoading(true)
+    const success = await deleteRoutine(importedRoutine.id)
+    if (success) {
+      alert('Đã xóa lịch tập thành công!')
+      loadActiveRoutine()
+    } else {
+      alert('Có lỗi xảy ra khi xóa lịch tập.')
+      setIsLoading(false)
+    }
+  }
+
+  const handleSaveChanges = async () => {
+    if (!editableRoutine) return
+    setIsLoading(true)
+    const res = await updateRoutine(
+      editableRoutine.id,
+      editableRoutine.name,
+      editableRoutine.schedule_data,
+      editableRoutine.split_id
+    )
+    if (res.success && res.data) {
+      setImportedRoutine(res.data)
+      setIsEditing(false)
+      alert('Đã lưu các thay đổi thành công!')
+      loadActiveRoutine()
+    } else {
+      alert('Lỗi khi lưu: ' + res.error)
+      setIsLoading(false)
+    }
+  }
+
+  const updateExerciseField = (dayIndex: number, exIndex: number, field: string, value: any) => {
+    if (!editableRoutine) return
+    const newRoutine = { ...editableRoutine }
+    // @ts-ignore
+    newRoutine.schedule_data.days[dayIndex].exercises[exIndex][field] = value
+    setEditableRoutine(newRoutine)
+  }
+
+  const deleteExercise = (dayIndex: number, exIndex: number) => {
+    if (!editableRoutine) return
+    if (!confirm('Xóa bài tập này?')) return
+    const newRoutine = { ...editableRoutine }
+    newRoutine.schedule_data.days[dayIndex].exercises.splice(exIndex, 1)
+    setEditableRoutine(newRoutine)
+  }
+
+  const todayMatchedDay = importedRoutine?.schedule_data.days.find((d) =>
+    d.dayName.toUpperCase().includes(todaySchedule?.suggestedDayKey.toUpperCase() || 'PUSH')
+  ) || importedRoutine?.schedule_data.days[0]
 
   return (
     <div className="space-y-6">
@@ -182,38 +174,51 @@ export default function RoutinesPage() {
             {showFullSchedule ? 'ẨN FULL LỊCH' : 'XEM FULL LỊCH TẬP'}
           </button>
 
-          {/* Create Custom Routine Button */}
-          <button
-            onClick={() => setIsCreatingRoutine(true)}
-            className="px-5 py-3.5 aura-glass border-indigo-400/50 text-indigo-300 font-bold rounded-2xl text-sm flex items-center gap-2 hover:bg-indigo-500/10 transition-all shadow-xl cursor-pointer"
-          >
-            <PlusCircle className="w-5 h-5 text-indigo-400" />
-            TẠO LỊCH CÁ NHÂN
-          </button>
-
-          {/* Export Routine Excel Button */}
           <button
             onClick={handleExportExcel}
             className="px-5 py-3.5 aura-glass border-emerald-400/50 text-emerald-400 font-bold rounded-2xl text-sm flex items-center gap-2 hover:bg-emerald-500/10 transition-all shadow-xl cursor-pointer"
           >
             <Download className="w-5 h-5" />
-            XUẤT EXCEL LỊCH TẬP
+            XUẤT EXCEL
           </button>
+        </div>
+      </div>
 
-          {/* Upload Excel Button */}
-          <label className="cursor-pointer px-6 py-3.5 btn-aura-gold text-black font-extrabold rounded-2xl text-sm flex items-center gap-2 shadow-xl">
-            <Upload className="w-5 h-5" />
-            <span>NHẬP FILE EXCEL</span>
-            <input type="file" accept=".xlsx, .xls" onChange={handleFileUpload} className="hidden" />
+      <div className="glow-divider" />
+
+      {/* Upload & Setup Section */}
+      <div className="aura-glass rounded-3xl p-6 border border-amber-400/30">
+        <h3 className="text-lg font-bold text-white mb-4">THIẾT LẬP LỊCH TẬP (UPLOAD EXCEL)</h3>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+          <div className="w-full max-w-xs">
+            <label className="text-xs font-mono font-bold text-slate-400 uppercase mb-2 block">CHỌN LOẠI SPLIT MAPPING</label>
+            <select
+              value={selectedSplitId}
+              onChange={(e) => setSelectedSplitId(e.target.value)}
+              className="w-full bg-[#070714] border border-slate-700 rounded-xl px-4 py-3 text-white font-mono text-sm focus:border-amber-400 focus:outline-none"
+            >
+              {WORKOUT_SPLITS.map((split) => (
+                <option key={split.id} value={split.id}>{split.name} ({split.days_per_week} Days)</option>
+              ))}
+            </select>
+          </div>
+
+          <label className="cursor-pointer px-6 py-3.5 mt-6 btn-aura-gold text-black font-extrabold rounded-xl text-sm flex items-center gap-2 shadow-xl shrink-0">
+            {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Upload className="w-5 h-5" />}
+            <span>{isLoading ? 'ĐANG XỬ LÝ...' : 'NHẬP FILE EXCEL VÀO ĐÁM MÂY'}</span>
+            <input type="file" accept=".xlsx, .xls" onChange={handleFileUpload} disabled={isLoading} className="hidden" />
           </label>
         </div>
       </div>
 
-      {/* Glow Divider */}
-      <div className="glow-divider" />
+      {isLoading && (
+        <div className="flex items-center justify-center p-12">
+          <Loader2 className="w-8 h-8 text-amber-400 animate-spin" />
+        </div>
+      )}
 
       {/* Today's Schedule Section */}
-      {todaySchedule && (
+      {todaySchedule && !isLoading && !isEditing && (
         <div className="section-container section-glow-amber rounded-3xl p-6 md:p-8 bg-slate-900/20 border border-amber-400/30">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-700/80 pb-6 mb-6">
             <div className="flex items-center gap-4">
@@ -228,12 +233,12 @@ export default function RoutinesPage() {
               </div>
             </div>
 
-            {todayMatchedDay && todaySchedule.suggestedDayKey !== 'REST' && (
+            {importedRoutine && todayMatchedDay && todaySchedule.suggestedDayKey !== 'Rest' && (
               <div className="flex flex-wrap items-center gap-3">
                 <button
                   onClick={async () => {
                     setSendingTeleRoutine(true)
-                    const exListText = todayMatchedDay.exercises.map((e) => `• ${e.exerciseName} (${e.sets} sets x ${e.reps})`).join('\n')
+                    const exListText = todayMatchedDay.exercises.map((e: any) => `• ${e.exerciseName} (${e.sets} sets x ${e.reps})`).join('\n')
                     const res = await sendTelegramWebhook({
                       event_type: 'workout_completed',
                       user_email: `${(profile?.name || 'athlete').toLowerCase().replace(/\s+/g, '')}@aura.fit`,
@@ -272,7 +277,12 @@ export default function RoutinesPage() {
           </div>
 
           {/* Today Exercises Preview */}
-          {todaySchedule.suggestedDayKey === 'REST' ? (
+          {!importedRoutine ? (
+            <div className="p-6 bg-slate-900/90 rounded-2xl border border-slate-700 text-center">
+              <p className="text-amber-400 font-bold text-xl mb-1">CHƯA CÓ LỊCH TẬP NÀO</p>
+              <p className="text-sm text-slate-300 font-medium">Vui lòng tải lên file Excel lịch tập của bạn ở mục Thiết Lập phía trên!</p>
+            </div>
+          ) : todaySchedule.suggestedDayKey === 'Rest' ? (
             <div className="p-6 bg-slate-900/90 rounded-2xl border border-slate-700 text-center">
               <p className="text-amber-400 font-bold text-xl mb-1">HÔM NAY LÀ NGÀY NGHỈ (REST DAY)</p>
               <p className="text-sm text-slate-300 font-medium">Nghỉ ngơi hồi phục cơ bắp và nạp đủ Protein!</p>
@@ -281,10 +291,10 @@ export default function RoutinesPage() {
             todayMatchedDay && (
               <div>
                 <h3 className="text-lg font-bold text-amber-400 mb-4 uppercase">
-                  Lịch Tập Gợi Ý: {todayMatchedDay.dayName}
+                  Lịch Tập Gợi Ý ({todaySchedule.suggestedDayKey}): {todayMatchedDay.dayName}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                  {todayMatchedDay.exercises.map((ex, eIdx) => (
+                  {todayMatchedDay.exercises.map((ex: any, eIdx: number) => (
                     <div key={eIdx} className="p-4 rounded-2xl bg-slate-900/90 border border-slate-700">
                       <p className="font-bold text-white text-base mb-1">{ex.exerciseName}</p>
                       <div className="flex items-center justify-between text-sm font-mono text-slate-300">
@@ -301,30 +311,95 @@ export default function RoutinesPage() {
       )}
 
       {/* FULL SCHEDULE SECTION */}
-      {(showFullSchedule || !todaySchedule) && importedRoutine && (
+      {(showFullSchedule || !todaySchedule) && importedRoutine && !isLoading && (
         <div className="space-y-6">
           <div className="aura-glass p-6 rounded-3xl flex items-center justify-between border-amber-400/40">
             <div>
-              <h2 className="text-2xl font-extrabold text-white">{importedRoutine.routineName}</h2>
-              <p className="text-sm font-mono text-amber-300 mt-1 font-bold">DANH SÁCH {importedRoutine.days.length} NGÀY TẬP CHUẨN KHOA HỌC</p>
+              {isEditing ? (
+                <input
+                  type="text"
+                  value={editableRoutine?.name || ''}
+                  onChange={(e) => {
+                    if(editableRoutine) setEditableRoutine({...editableRoutine, name: e.target.value})
+                  }}
+                  className="bg-transparent text-2xl font-extrabold text-white border-b-2 border-amber-400 focus:outline-none w-full max-w-md"
+                />
+              ) : (
+                <h2 className="text-2xl font-extrabold text-white">{importedRoutine.name}</h2>
+              )}
+              <p className="text-sm font-mono text-amber-300 mt-1 font-bold">
+                DANH SÁCH {importedRoutine.schedule_data.days.length} NGÀY TẬP (MAPPING: {WORKOUT_SPLITS.find(s => s.id === importedRoutine.split_id)?.name})
+              </p>
             </div>
-            <div className="p-3.5 bg-amber-500/20 border border-amber-400 rounded-2xl text-amber-400">
-              <FileSpreadsheet className="w-8 h-8" />
+            
+            <div className="flex items-center gap-3">
+              {isEditing ? (
+                <>
+                  <button
+                    onClick={handleSaveChanges}
+                    className="p-3 bg-emerald-500/20 text-emerald-400 border border-emerald-400 rounded-xl hover:bg-emerald-500/30 transition-all flex items-center gap-2 font-bold text-sm"
+                  >
+                    <Save className="w-5 h-5" />
+                    LƯU
+                  </button>
+                  <button
+                    onClick={() => {
+                      setIsEditing(false)
+                      setEditableRoutine(JSON.parse(JSON.stringify(importedRoutine)))
+                    }}
+                    className="p-3 bg-slate-800 text-slate-400 rounded-xl hover:bg-slate-700 transition-all font-bold text-sm"
+                  >
+                    HỦY
+                  </button>
+                </>
+              ) : (
+                <>
+                  <button
+                    onClick={() => setIsEditing(true)}
+                    className="p-3 bg-indigo-500/20 text-indigo-400 border border-indigo-400 rounded-xl hover:bg-indigo-500/30 transition-all"
+                    title="Sửa Lịch Tập"
+                  >
+                    <Edit3 className="w-5 h-5" />
+                  </button>
+                  <button
+                    onClick={handleDeleteRoutine}
+                    className="p-3 bg-red-500/20 text-red-400 border border-red-400 rounded-xl hover:bg-red-500/30 transition-all"
+                    title="Xóa Lịch Tập"
+                  >
+                    <Trash2 className="w-5 h-5" />
+                  </button>
+                </>
+              )}
             </div>
           </div>
 
           <div className="grid grid-cols-1 gap-6">
-            {importedRoutine.days.map((day, idx) => (
+            {(isEditing ? editableRoutine : importedRoutine)?.schedule_data.days.map((day, idx) => (
               <div key={idx} className="aura-glass rounded-3xl p-6 md:p-8 space-y-6">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-700/80 pb-4">
-                  <h3 className="text-2xl font-extrabold text-amber-400">{day.dayName}</h3>
-                  <button
-                    onClick={() => handleStartDaySession(day.dayName, day.exercises)}
-                    className="px-6 py-3.5 btn-aura-gold text-black font-extrabold rounded-2xl text-sm flex items-center justify-center gap-2"
-                  >
-                    <Play className="w-5 h-5 fill-current" />
-                    BẮT ĐẦU BUỔI TẬP NÀY
-                  </button>
+                  {isEditing ? (
+                    <input
+                      value={day.dayName}
+                      onChange={(e) => {
+                        const newR = { ...editableRoutine! }
+                        newR.schedule_data.days[idx].dayName = e.target.value
+                        setEditableRoutine(newR)
+                      }}
+                      className="text-2xl font-extrabold text-amber-400 bg-transparent border-b border-amber-400/50 focus:outline-none"
+                    />
+                  ) : (
+                    <h3 className="text-2xl font-extrabold text-amber-400">{day.dayName}</h3>
+                  )}
+                  
+                  {!isEditing && (
+                    <button
+                      onClick={() => handleStartDaySession(day.dayName, day.exercises)}
+                      className="px-6 py-3.5 btn-aura-gold text-black font-extrabold rounded-2xl text-sm flex items-center justify-center gap-2"
+                    >
+                      <Play className="w-5 h-5 fill-current" />
+                      BẮT ĐẦU
+                    </button>
+                  )}
                 </div>
 
                 <div className="overflow-x-auto">
@@ -335,220 +410,84 @@ export default function RoutinesPage() {
                         <th className="pb-3 px-3">NHÓM CƠ</th>
                         <th className="pb-3 px-3 text-center">SETS</th>
                         <th className="pb-3 px-3 text-center">REPS</th>
-                        <th className="pb-3 px-3 text-center">MỨC TẠ (KG)</th>
-                        <th className="pb-3 px-3">GHI CHÚ KĨ THUẬT</th>
+                        <th className="pb-3 px-3 text-center">MỨC TẠ</th>
+                        <th className="pb-3 px-3">GHI CHÚ</th>
+                        {isEditing && <th className="pb-3 px-3 text-center">XÓA</th>}
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-800 text-sm">
                       {day.exercises.map((ex, eIdx) => (
                         <tr key={eIdx} className="hover:bg-slate-900/60 transition-colors">
-                          <td className="py-4 px-3 font-bold text-white text-base">{ex.exerciseName}</td>
-                          <td className="py-4 px-3">
-                            <span className="text-xs font-mono font-bold px-3 py-1 bg-slate-900 text-amber-300 border border-slate-700 rounded-full uppercase">
-                              {ex.muscleGroup}
-                            </span>
+                          <td className="py-4 px-3 font-bold text-white text-base">
+                            {isEditing ? (
+                              <input value={ex.exerciseName} onChange={(e) => updateExerciseField(idx, eIdx, 'exerciseName', e.target.value)} className="bg-transparent border-b border-slate-700 w-full focus:outline-none focus:border-amber-400"/>
+                            ) : ex.exerciseName}
                           </td>
-                          <td className="py-4 px-3 text-center font-mono font-bold text-white text-base">{ex.sets}</td>
-                          <td className="py-4 px-3 text-center font-mono font-bold text-white text-base">{ex.reps}</td>
-                          <td className="py-4 px-3 text-center font-mono font-extrabold text-cyan-300 text-base">{ex.weightKg || '--'}</td>
-                          <td className="py-4 px-3 text-xs text-slate-300 font-medium">{ex.notes || '---'}</td>
+                          <td className="py-4 px-3">
+                            {isEditing ? (
+                              <input value={ex.muscleGroup} onChange={(e) => updateExerciseField(idx, eIdx, 'muscleGroup', e.target.value)} className="bg-transparent border-b border-slate-700 w-24 focus:outline-none focus:border-amber-400 text-xs font-mono uppercase text-amber-300"/>
+                            ) : (
+                              <span className="text-xs font-mono font-bold px-3 py-1 bg-slate-900 text-amber-300 border border-slate-700 rounded-full uppercase">
+                                {ex.muscleGroup}
+                              </span>
+                            )}
+                          </td>
+                          <td className="py-4 px-3 text-center font-mono font-bold text-white text-base">
+                            {isEditing ? (
+                              <input type="number" value={ex.sets} onChange={(e) => updateExerciseField(idx, eIdx, 'sets', parseInt(e.target.value)||0)} className="bg-transparent border-b border-slate-700 w-12 text-center focus:outline-none focus:border-amber-400"/>
+                            ) : ex.sets}
+                          </td>
+                          <td className="py-4 px-3 text-center font-mono font-bold text-white text-base">
+                            {isEditing ? (
+                              <input value={ex.reps} onChange={(e) => updateExerciseField(idx, eIdx, 'reps', e.target.value)} className="bg-transparent border-b border-slate-700 w-16 text-center focus:outline-none focus:border-amber-400"/>
+                            ) : ex.reps}
+                          </td>
+                          <td className="py-4 px-3 text-center font-mono font-extrabold text-cyan-300 text-base">
+                            {isEditing ? (
+                              <input value={ex.weightKg} onChange={(e) => updateExerciseField(idx, eIdx, 'weightKg', e.target.value)} className="bg-transparent border-b border-slate-700 w-16 text-center focus:outline-none focus:border-cyan-400"/>
+                            ) : (ex.weightKg || '--')}
+                          </td>
+                          <td className="py-4 px-3 text-xs text-slate-300 font-medium">
+                            {isEditing ? (
+                              <input value={ex.notes} onChange={(e) => updateExerciseField(idx, eIdx, 'notes', e.target.value)} className="bg-transparent border-b border-slate-700 w-full focus:outline-none focus:border-amber-400"/>
+                            ) : (ex.notes || '---')}
+                          </td>
+                          {isEditing && (
+                            <td className="py-4 px-3 text-center">
+                              <button onClick={() => deleteExercise(idx, eIdx)} className="text-red-400 hover:text-red-300 p-1">
+                                <X className="w-5 h-5" />
+                              </button>
+                            </td>
+                          )}
                         </tr>
                       ))}
                     </tbody>
                   </table>
+                  
+                  {isEditing && (
+                    <div className="mt-4 flex justify-center">
+                      <button
+                        onClick={() => {
+                          const newR = { ...editableRoutine! }
+                          newR.schedule_data.days[idx].exercises.push({
+                            exerciseName: 'Bài tập mới',
+                            muscleGroup: 'Chest',
+                            sets: 3,
+                            reps: '10',
+                            weightKg: '--',
+                            notes: ''
+                          })
+                          setEditableRoutine(newR)
+                        }}
+                        className="text-xs font-mono font-bold text-amber-400 hover:text-amber-300 flex items-center gap-1 border border-amber-400/30 px-4 py-2 rounded-xl"
+                      >
+                        <Plus className="w-4 h-4" /> THÊM BÀI TẬP VÀO NGÀY NÀY
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      )}
-
-      {/* CREATE CUSTOM ROUTINE MODAL */}
-      {isCreatingRoutine && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
-          <div className="aura-glass rounded-3xl p-6 md:p-8 w-full max-w-3xl space-y-6 max-h-[90vh] overflow-y-auto border border-amber-400/50 relative shadow-2xl">
-            <div className="flex items-center justify-between border-b border-slate-700/80 pb-4">
-              <div>
-                <h2 className="text-2xl font-extrabold text-white gold-gradient-text">TẠO GIÁO ÁN TẬP CÁ NHÂN (CUSTOM ROUTINE)</h2>
-                <p className="text-xs font-mono text-slate-400 mt-1">Tự thiết lập lịch Push Pull Legs, Upper Lower hoặc Split tùy chỉnh</p>
-              </div>
-              <button
-                onClick={() => setIsCreatingRoutine(false)}
-                className="p-2 bg-slate-900 text-slate-400 hover:text-white rounded-xl border border-slate-700 cursor-pointer"
-              >
-                <X className="w-5 h-5" />
-              </button>
-            </div>
-
-            <div className="space-y-4">
-              <div>
-                <label className="text-xs font-mono font-bold text-slate-400 uppercase block mb-1">TÊN GIÁO ÁN / ROUTINE NAME</label>
-                <input
-                  type="text"
-                  value={newRoutineName}
-                  onChange={(e) => setNewRoutineName(e.target.value)}
-                  placeholder="e.g. My Personal PPL 6 Days"
-                  className="w-full bg-[#070714] border border-slate-700 focus:border-amber-400 rounded-xl px-4 py-3 text-white font-mono font-bold"
-                />
-              </div>
-
-              {/* Days List */}
-              <div className="space-y-6">
-                {newDays.map((day, dIdx) => (
-                  <div key={dIdx} className="p-5 rounded-2xl bg-[#070714] border border-slate-800 space-y-4 relative">
-                    <div className="flex items-center justify-between gap-3">
-                      <input
-                        type="text"
-                        value={day.dayName}
-                        onChange={(e) => {
-                          const updated = [...newDays]
-                          updated[dIdx].dayName = e.target.value
-                          setNewDays(updated)
-                        }}
-                        placeholder={`Day ${dIdx + 1} Name`}
-                        className="bg-transparent text-lg font-extrabold text-amber-400 border-b border-amber-400/30 focus:border-amber-400 focus:outline-none px-1 py-1 w-full max-w-xs font-mono"
-                      />
-                      {newDays.length > 1 && (
-                        <button
-                          onClick={() => {
-                            setNewDays(newDays.filter((_, idx) => idx !== dIdx))
-                          }}
-                          className="p-1.5 bg-red-500/10 text-red-400 hover:bg-red-500/20 rounded-lg text-xs font-mono cursor-pointer"
-                        >
-                          Xóa ngày
-                        </button>
-                      )}
-                    </div>
-
-                    {/* Exercises in Day */}
-                    <div className="space-y-3">
-                      {day.exercises.map((ex, eIdx) => (
-                        <div key={eIdx} className="grid grid-cols-1 sm:grid-cols-6 gap-2 items-center p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                          <input
-                            type="text"
-                            placeholder="Bài tập (e.g. Bench Press)"
-                            value={ex.exerciseName}
-                            onChange={(e) => {
-                              const updated = [...newDays]
-                              updated[dIdx].exercises[eIdx].exerciseName = e.target.value
-                              setNewDays(updated)
-                            }}
-                            className="sm:col-span-2 bg-[#070714] border border-slate-700 rounded-lg px-3 py-1.5 text-xs text-white font-bold"
-                          />
-                          <select
-                            value={ex.muscleGroup}
-                            onChange={(e) => {
-                              const updated = [...newDays]
-                              updated[dIdx].exercises[eIdx].muscleGroup = e.target.value
-                              setNewDays(updated)
-                            }}
-                            className="bg-[#070714] border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-amber-300 font-bold"
-                          >
-                            <option value="Chest">Chest</option>
-                            <option value="Back">Back</option>
-                            <option value="Shoulders">Shoulders</option>
-                            <option value="Arms">Arms</option>
-                            <option value="Legs">Legs</option>
-                            <option value="Core">Core</option>
-                          </select>
-                          <input
-                            type="number"
-                            placeholder="Sets"
-                            value={ex.sets}
-                            onChange={(e) => {
-                              const updated = [...newDays]
-                              updated[dIdx].exercises[eIdx].sets = parseInt(e.target.value) || 3
-                              setNewDays(updated)
-                            }}
-                            className="bg-[#070714] border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-white text-center font-mono font-bold"
-                          />
-                          <input
-                            type="text"
-                            placeholder="Reps (e.g. 8-10)"
-                            value={ex.reps}
-                            onChange={(e) => {
-                              const updated = [...newDays]
-                              updated[dIdx].exercises[eIdx].reps = e.target.value
-                              setNewDays(updated)
-                            }}
-                            className="bg-[#070714] border border-slate-700 rounded-lg px-2 py-1.5 text-xs text-white text-center font-mono font-bold"
-                          />
-                          <button
-                            onClick={() => {
-                              const updated = [...newDays]
-                              updated[dIdx].exercises = updated[dIdx].exercises.filter((_, idx) => idx !== eIdx)
-                              setNewDays(updated)
-                            }}
-                            className="p-1.5 text-slate-500 hover:text-red-400 text-center cursor-pointer"
-                          >
-                            <X className="w-4 h-4 mx-auto" />
-                          </button>
-                        </div>
-                      ))}
-
-                      <button
-                        onClick={() => {
-                          const updated = [...newDays]
-                          updated[dIdx].exercises.push({
-                            exerciseName: 'New Exercise',
-                            muscleGroup: 'Chest',
-                            sets: 3,
-                            reps: '8-12',
-                            weightKg: 20,
-                            notes: '',
-                          })
-                          setNewDays(updated)
-                        }}
-                        className="text-xs font-mono text-amber-400 font-bold hover:underline flex items-center gap-1 cursor-pointer pt-1"
-                      >
-                        <Plus className="w-3.5 h-3.5" /> Thêm bài tập
-                      </button>
-                    </div>
-                  </div>
-                ))}
-
-                <button
-                  onClick={() => {
-                    setNewDays([
-                      ...newDays,
-                      {
-                        dayName: `Day ${newDays.length + 1}: NEW DAY`,
-                        exercises: [{ exerciseName: 'New Exercise', muscleGroup: 'Chest', sets: 3, reps: '10', weightKg: 20, notes: '' }],
-                      },
-                    ])
-                  }}
-                  className="w-full py-3 border border-dashed border-amber-400/40 rounded-2xl text-amber-400 font-mono text-xs font-bold hover:bg-amber-400/10 transition-all flex items-center justify-center gap-2 cursor-pointer"
-                >
-                  <Plus className="w-4 h-4" /> THÊM NGÀY TẬP MỚI IN GIÁO ÁN
-                </button>
-              </div>
-            </div>
-
-            <div className="flex items-center justify-end gap-3 pt-4 border-t border-slate-700/80">
-              <button
-                onClick={() => setIsCreatingRoutine(false)}
-                className="px-5 py-2.5 rounded-xl border border-slate-700 text-slate-400 font-bold text-xs hover:bg-slate-900 cursor-pointer"
-              >
-                HỦY BỎ
-              </button>
-              <button
-                onClick={() => {
-                  const customRoutineObj: ParsedRoutine = {
-                    routineName: newRoutineName.trim() || 'My Personal Routine',
-                    days: newDays,
-                  }
-                  setImportedRoutine(customRoutineObj)
-                  if (typeof window !== 'undefined') {
-                    localStorage.setItem('aura_custom_routine', JSON.stringify(customRoutineObj))
-                  }
-                  setIsCreatingRoutine(false)
-                  alert(`Đã tạo thành công lịch tập cá nhân: ${customRoutineObj.routineName}!`)
-                }}
-                className="px-6 py-3 btn-aura-gold text-black font-extrabold rounded-xl text-xs uppercase tracking-wider flex items-center gap-2 shadow-xl cursor-pointer"
-              >
-                LƯU &amp; ÁP DỤNG LỊCH TẬP
-              </button>
-            </div>
           </div>
         </div>
       )}

@@ -3,57 +3,57 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { useProfileStore } from '@/store/use-profile-store'
-import { useWorkoutStore } from '@/store/use-workout-store'
-import { saveAccountData, setCurrentSessionEmail, MASTER_ADMIN_EMAIL } from '@/lib/utils/account-db'
 import { Lock, Mail, User, ArrowRight, Sparkles, ShieldCheck, Loader2, AlertCircle } from 'lucide-react'
+import { createClient } from '@/lib/supabase/client'
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
-  const { resetProfile } = useProfileStore()
+  const supabase = createClient()
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault()
     setErrorMessage('')
+    setSuccessMessage('')
     if (!fullName.trim() || !email.trim()) return
 
     setIsLoading(true)
-    await new Promise(resolve => setTimeout(resolve, 800))
 
     const cleanEmail = email.toLowerCase().trim()
     const cleanName = fullName.trim()
 
-    // Strict Role Assignment: Only admin@aura.fit gets 'admin', all other accounts get 'user'
-    const role: 'admin' | 'user' = cleanEmail === MASTER_ADMIN_EMAIL ? 'admin' : 'user'
-
-    // Set active session for new user
-    setCurrentSessionEmail(cleanEmail)
-
-    // Initialize clean account data in DB
-    saveAccountData(cleanEmail, {
+    const { data, error } = await supabase.auth.signUp({
       email: cleanEmail,
-      fullName: cleanName,
-      role,
-      profile: null,
-      workoutHistory: [],
-      customRoutine: null,
-      activeWorkout: null,
+      password: password,
+      options: {
+        data: {
+          full_name: cleanName
+        }
+      }
     })
 
-    // Reset stores for fresh account onboarding
-    resetProfile()
-    useWorkoutStore.setState({ workoutHistory: [], activeWorkout: null })
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('aura_custom_routine')
-      localStorage.setItem('aura_register_temp_name', cleanName)
+    if (error) {
+      if (error.message.includes('rate limit')) {
+        setErrorMessage('Bạn đã thử quá nhiều lần. Vui lòng đợi một lát rồi thử lại.')
+      } else {
+        setErrorMessage(error.message === 'User already registered' ? 'Tài khoản đã tồn tại!' : error.message)
+      }
+      setIsLoading(false)
+      return
     }
 
-    // Redirect to onboarding
+    if (data.user && !data.session) {
+      setSuccessMessage('Đăng ký thành công! Vui lòng kiểm tra hộp thư email của bạn để xác nhận tài khoản.')
+      setIsLoading(false)
+      return
+    }
+
+    // Redirect to onboarding if they bypass email verification
     router.push('/onboarding')
   }
 
@@ -79,6 +79,13 @@ export default function RegisterPage() {
             <div className="mb-6 p-4 rounded-2xl bg-red-500/10 border border-red-500/30 flex items-center gap-3 text-red-400 text-xs font-mono">
               <AlertCircle className="w-5 h-5 shrink-0 text-red-400" />
               <span>{errorMessage}</span>
+            </div>
+          )}
+
+          {successMessage && (
+            <div className="mb-6 p-4 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center gap-3 text-emerald-400 text-xs font-mono">
+              <ShieldCheck className="w-5 h-5 shrink-0 text-emerald-400" />
+              <span>{successMessage}</span>
             </div>
           )}
 
@@ -120,7 +127,7 @@ export default function RegisterPage() {
                 <input
                   type="password"
                   required
-                  placeholder="â€¢â€¢â€¢â€¢â€¢â€¢â€¢â€¢"
+                  placeholder="••••••••"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full bg-[#070714] border border-slate-800 rounded-2xl pl-12 pr-4 py-3.5 text-white font-mono font-bold focus:outline-none focus:border-amber-400 transition-all"
@@ -165,5 +172,3 @@ export default function RegisterPage() {
     </div>
   )
 }
-
-

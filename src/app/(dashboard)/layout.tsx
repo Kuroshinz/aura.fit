@@ -9,6 +9,9 @@ import { PageTransition } from '@/components/effects/page-transition'
 import { ToastContainer } from '@/components/effects/toast'
 import { ArrowUp } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { useRouter, usePathname } from 'next/navigation'
+import { createClient } from '@/lib/supabase/client'
+import { useProfileStore } from '@/store/use-profile-store'
 
 export default function DashboardLayout({
   children,
@@ -16,6 +19,42 @@ export default function DashboardLayout({
   children: React.ReactNode
 }) {
   const [showBackToTop, setShowBackToTop] = useState(false)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
+  const supabase = createClient()
+  const { profile, setProfile } = useProfileStore()
+
+  // Protect Routes & Hydrate Profile
+  useEffect(() => {
+    const checkSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession()
+      if (!session) {
+        router.replace('/login')
+      } else {
+        setIsAuthenticated(true)
+        // Hydrate profile if not already loaded
+        if (!profile) {
+          const { data: profileData } = await supabase.from('profiles').select('*').eq('id', session.user.id).single()
+          if (profileData) {
+            setProfile({
+              name: profileData.full_name || session.user.email,
+              age: profileData.age || 20,
+              gender: profileData.gender || 'male',
+              height_cm: profileData.height_cm || 170,
+              weight_kg: profileData.weight_kg || 65,
+              body_fat: profileData.body_fat || null,
+              experience: profileData.experience || 'beginner',
+              goal: profileData.goal || 'recomposition',
+              sessions_per_week: profileData.sessions_per_week || 3,
+              role: 'user'
+            })
+          }
+        }
+      }
+    }
+    checkSession()
+  }, [pathname, router, profile, setProfile, supabase])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +66,15 @@ export default function DashboardLayout({
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  // Prevent flash of unauthenticated content
+  if (!isAuthenticated) {
+    return (
+      <div className="min-h-screen bg-[#030308] flex items-center justify-center">
+        <div className="w-10 h-10 border-4 border-amber-400 border-t-transparent rounded-full animate-spin" />
+      </div>
+    )
   }
 
   return (

@@ -1,8 +1,11 @@
+import { getWorkoutSplitById } from '@/data/workout-splits'
+
 /**
  * Maps Javascript Date.getDay() (0 = Sunday, 1 = Monday... 6 = Saturday)
- * to routine day names (PUSH, PULL, LEGS, UPPER, LOWER, REST)
+ * to routine day names based on the user's selected split plan.
+ * Returns the exact split target name (e.g. "Push", "Upper A", "Rest")
  */
-export function getTodayWorkoutMapping(): {
+export function getTodayWorkoutMapping(splitId: string = 'ppl_ul_5d'): {
   dayOfWeekName: string
   dateFormatted: string
   suggestedDayKey: string
@@ -10,7 +13,7 @@ export function getTodayWorkoutMapping(): {
   const now = new Date()
   const daysOfWeek = ['Chủ Nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy']
   
-  const dayIndex = now.getDay() // 0-6
+  const dayIndex = now.getDay() // 0-6 (Sunday is 0)
   const dayOfWeekName = daysOfWeek[dayIndex]
   
   // Format DD/MM/YYYY
@@ -19,42 +22,25 @@ export function getTodayWorkoutMapping(): {
   const year = now.getFullYear()
   const dateFormatted = `${dayOfWeekName}, ${day}/${month}/${year}`
 
-  // Standard PPL-UL 5 Day Schedule Mapping:
-  // Thứ 2: PUSH
-  // Thứ 3: PULL
-  // Thứ 4: LEGS
-  // Thứ 5: NGHỈ / REST
-  // Thứ 6: UPPER
-  // Thứ 7: LOWER
-  // Chủ Nhật: NGHỈ / REST
-  let suggestedDayKey = 'PUSH'
-  switch (dayIndex) {
-    case 1: // Monday
-      suggestedDayKey = 'PUSH'
-      break
-    case 2: // Tuesday
-      suggestedDayKey = 'PULL'
-      break
-    case 3: // Wednesday
-      suggestedDayKey = 'LEGS'
-      break
-    case 4: // Thursday
-      suggestedDayKey = 'REST'
-      break
-    case 5: // Friday
-      suggestedDayKey = 'UPPER'
-      break
-    case 6: // Saturday
-      suggestedDayKey = 'LOWER'
-      break
-    case 0: // Sunday
-      suggestedDayKey = 'REST'
-      break
+  // Fetch standard schedule array from JSON configuration
+  const split = getWorkoutSplitById(splitId)
+  
+  // By default, most schedules start on Monday. 
+  // In JS, Monday is 1, Sunday is 0.
+  // We map index 1 (Monday) -> array[0]
+  // index 2 (Tuesday) -> array[1]
+  // index 0 (Sunday) -> array[6]
+  const mappedArrayIndex = dayIndex === 0 ? 6 : dayIndex - 1
+
+  let suggestedDayKey = 'Rest'
+  
+  if (split && split.schedule && split.schedule.length === 7) {
+    suggestedDayKey = split.schedule[mappedArrayIndex]
   }
 
   return {
     dayOfWeekName,
     dateFormatted,
-    suggestedDayKey,
+    suggestedDayKey
   }
 }

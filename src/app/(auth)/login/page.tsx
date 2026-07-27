@@ -1,19 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useProfileStore } from '@/store/use-profile-store'
-import { useWorkoutStore } from '@/store/use-workout-store'
-import {
-  MASTER_ADMIN_EMAIL,
-  MASTER_ADMIN_PROFILE,
-  resetAllAndCreateMasterAdmin,
-  getAccountByEmail,
-  setCurrentSessionEmail,
-} from '@/lib/utils/account-db'
 import { Lock, Mail, ArrowRight, Sparkles, ShieldCheck, AlertCircle, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { createClient } from '@/lib/supabase/client'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -22,14 +15,7 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false)
   const router = useRouter()
   const { setProfile } = useProfileStore()
-
-  // Ensure Master Admin exists on first load
-  useEffect(() => {
-    const account = getAccountByEmail(MASTER_ADMIN_EMAIL)
-    if (!account) {
-      resetAllAndCreateMasterAdmin()
-    }
-  }, [])
+  const supabase = createClient()
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -41,36 +27,43 @@ export default function LoginPage() {
 
     setIsLoading(true)
 
-    // Simulate network delay for better UX
-    await new Promise(resolve => setTimeout(resolve, 800))
-
     const cleanEmail = email.toLowerCase().trim()
-    const account = getAccountByEmail(cleanEmail)
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email: cleanEmail,
+      password: password,
+    })
 
-    // Strictly validate that account exists in database before allowing login
-    if (!account) {
-      setErrorMessage('Tài khoản không tồn tại. Vui lòng kiểm tra lại email hoặc đăng ký mới.')
+    if (error) {
+      if (error.message === 'Email not confirmed') {
+        setErrorMessage('Tài khoản chưa được xác thực. Vui lòng kiểm tra email của bạn.')
+      } else if (error.message.includes('rate limit')) {
+        setErrorMessage('Bạn đã thử quá nhiều lần. Vui lòng đợi một lát rồi thử lại.')
+      } else {
+        setErrorMessage(error.message === 'Invalid login credentials' ? 'Tài khoản hoặc mật khẩu không chính xác.' : error.message)
+      }
       setIsLoading(false)
       return
     }
 
-    if (password !== '123456' && password !== 'admin123') { // Simple mock validation
-      // In a real app we'd check hash, here we just bypass for simplicity unless it's strictly wrong
-      // Actually we'll just let them in for the prototype, or you can add real auth
-    }
-
-    // Set active session for the verified user
-    setCurrentSessionEmail(cleanEmail)
-
-    if (account.profile) {
-      setProfile(account.profile)
-      useWorkoutStore.setState({
-        workoutHistory: account.workoutHistory || [],
-        activeWorkout: account.activeWorkout || null,
-      })
+    // Fetch profile
+    if (data.user) {
+      const { data: profileData } = await supabase.from('profiles').select('*').eq('id', data.user.id).single()
+      if (profileData) {
+        setProfile({
+          name: profileData.full_name || cleanEmail,
+          age: profileData.age || 20,
+          gender: profileData.gender || 'male',
+          height_cm: profileData.height_cm || 170,
+          weight_kg: profileData.weight_kg || 65,
+          body_fat: profileData.body_fat || null,
+          experience: profileData.experience || 'beginner',
+          goal: profileData.goal || 'recomposition',
+          sessions_per_week: profileData.sessions_per_week || 3,
+          role: 'user'
+        })
+      }
+      
       router.push('/dashboard')
-    } else {
-      router.push('/onboarding')
     }
   }
 

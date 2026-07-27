@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useProfileStore, UserProfile } from '@/store/use-profile-store'
-import { getCurrentSessionEmail, saveAccountData } from '@/lib/utils/account-db'
+import { createClient } from '@/lib/supabase/client'
 import { motion, AnimatePresence } from 'framer-motion'
 import { User, Ruler, Target, ArrowRight, ArrowLeft, Sparkles, CheckCircle2 } from 'lucide-react'
 
@@ -54,14 +54,47 @@ export default function OnboardingPage() {
   const [goal, setGoal] = useState('recomposition')
   const [sessionsPerWeek, setSessionsPerWeek] = useState(5)
 
+  const [isSaving, setIsSaving] = useState(false)
+
   const canProceedStep1 = name.trim().length > 0 && age.length > 0
   const canProceedStep2 = heightCm.length > 0 && weightKg.length > 0
 
-  const handleComplete = () => {
-    const currentEmail = getCurrentSessionEmail() || 'user@example.com'
-    const role: 'admin' | 'user' = currentEmail === 'admin@aura.fit' ? 'admin' : 'user'
+  const handleComplete = async () => {
+    setIsSaving(true)
+    const supabase = createClient()
+    const { data: { user } } = await supabase.auth.getUser()
 
-    const profile: UserProfile = {
+    if (!user) {
+      router.push('/login')
+      return
+    }
+
+    const role: 'admin' | 'user' = 'user' // Default role
+
+    const profileUpdates = {
+      full_name: name.trim(),
+      age: parseInt(age) || 20,
+      gender,
+      height_cm: parseFloat(heightCm) || 170,
+      weight_kg: parseFloat(weightKg) || 70,
+      body_fat: bodyFat ? parseFloat(bodyFat) : null,
+      experience: experience,
+      goal: goal,
+      sessions_per_week: sessionsPerWeek
+    }
+
+    // Save to Supabase
+    const { error } = await supabase.from('profiles').update(profileUpdates).eq('id', user.id)
+
+    if (error) {
+      console.error('Error saving profile:', error)
+      alert('Có lỗi xảy ra khi lưu thông tin. Vui lòng thử lại.')
+      setIsSaving(false)
+      return
+    }
+
+    // Update local Zustand store
+    const localProfile: UserProfile = {
       name: name.trim(),
       age: parseInt(age) || 20,
       gender,
@@ -71,17 +104,10 @@ export default function OnboardingPage() {
       experience: experience as UserProfile['experience'],
       goal: goal as UserProfile['goal'],
       sessions_per_week: sessionsPerWeek,
-      role,
+      role
     }
     
-    setProfile(profile)
-
-    // Lưu vào Account DB theo Email riêng biệt
-    saveAccountData(currentEmail, {
-      profile,
-      role,
-    })
-
+    setProfile(localProfile)
     router.push('/dashboard')
   }
 
@@ -383,10 +409,11 @@ export default function OnboardingPage() {
               ) : (
                 <button
                   onClick={handleComplete}
-                  className="flex-1 py-4 btn-aura-gold text-black font-display font-black text-sm uppercase tracking-widest rounded-2xl flex items-center justify-center gap-2 shadow-2xl"
+                  disabled={isSaving}
+                  className="w-full sm:w-auto px-8 py-4 btn-aura-gold text-black font-black rounded-2xl text-sm flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-xl disabled:opacity-50"
                 >
-                  <CheckCircle2 className="w-5 h-5 stroke-[3]" />
-                  HOÀN THÀNH HỒ SƠ
+                  {isSaving ? 'ĐANG LƯU...' : 'HOÀN THÀNH'}
+                  <CheckCircle2 className="w-5 h-5" />
                 </button>
               )}
             </div>
