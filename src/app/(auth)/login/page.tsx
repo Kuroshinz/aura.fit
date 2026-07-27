@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useProfileStore } from '@/store/use-profile-store'
+import { useWorkoutStore } from '@/store/use-workout-store'
 import { Lock, Mail, ArrowRight, Sparkles, ShieldCheck, AlertCircle, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { createClient } from '@/lib/supabase/client'
@@ -60,6 +61,11 @@ export default function LoginPage() {
           goal: profileData.goal || 'recomposition',
           sessions_per_week: profileData.sessions_per_week || 3,
           role: 'user'
+        })
+        useWorkoutStore.setState({
+          workoutHistory: profileData.workout_history || [],
+          personalRecords: profileData.personal_records || {},
+          activeWorkout: profileData.active_workout || null,
         })
       }
       

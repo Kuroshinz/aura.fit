@@ -12,6 +12,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useRouter, usePathname } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { useProfileStore } from '@/store/use-profile-store'
+import { useWorkoutStore } from '@/store/use-workout-store'
 
 export default function DashboardLayout({
   children,
@@ -48,6 +49,13 @@ export default function DashboardLayout({
               goal: profileData.goal || 'recomposition',
               sessions_per_week: profileData.sessions_per_week || 3,
               role: 'user'
+            })
+
+            // Hydrate workout history & PRs
+            useWorkoutStore.setState({
+              workoutHistory: profileData.workout_history || [],
+              personalRecords: profileData.personal_records || {},
+              activeWorkout: profileData.active_workout || null,
             })
           }
         }

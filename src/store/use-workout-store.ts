@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { getCurrentSessionEmail, saveAccountData } from '@/lib/utils/account-db'
+import { syncWorkoutStateToCloud } from '@/lib/supabase/workout-sync'
 
 export interface SetItem {
   id: string
@@ -39,11 +39,13 @@ export interface CompletedWorkout {
 interface WorkoutState {
   activeWorkout: ActiveWorkout | null
   workoutHistory: CompletedWorkout[]
+  personalRecords: Record<string, { weight: number, reps: number, oneRM: number, date: string }>
   restTimerSeconds: number
   isRestTimerRunning: boolean
   showSummary: boolean
   lastCompletedWorkout: CompletedWorkout | null
 
+  savePersonalRecord: (exerciseName: string, weight: number, reps: number, oneRM: number) => void
   startWorkout: (routineId?: string, routineName?: string) => void
   finishWorkout: () => void
   dismissSummary: () => void
@@ -64,10 +66,21 @@ export const useWorkoutStore = create<WorkoutState>()(
     (set, get) => ({
       activeWorkout: null,
       workoutHistory: [],
+      personalRecords: {},
       restTimerSeconds: 60,
       isRestTimerRunning: false,
       showSummary: false,
       lastCompletedWorkout: null,
+
+      savePersonalRecord: (exerciseName, weight, reps, oneRM) => {
+        const { personalRecords } = get()
+        const newPRs = {
+          ...personalRecords,
+          [exerciseName]: { weight, reps, oneRM, date: new Date().toISOString() }
+        }
+        set({ personalRecords: newPRs })
+        syncWorkoutStateToCloud({ personal_records: newPRs })
+      },
 
       startWorkout: (routineId, routineName) => {
         const newWorkout: ActiveWorkout = {
@@ -84,10 +97,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         })
 
         // Sync to account DB
-        if (typeof window !== 'undefined') {
-          const email = getCurrentSessionEmail()
-          if (email) saveAccountData(email, { activeWorkout: newWorkout })
-        }
+        syncWorkoutStateToCloud({ active_workout: newWorkout })
       },
 
       finishWorkout: () => {
@@ -126,15 +136,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         })
 
         // Đồng bộ lưu lịch sử buổi tập vào Database của email đang active
-        if (typeof window !== 'undefined') {
-          const currentEmail = getCurrentSessionEmail()
-          if (currentEmail) {
-            saveAccountData(currentEmail, {
-              workoutHistory: newHistory,
-              activeWorkout: null,
-            })
-          }
-        }
+        syncWorkoutStateToCloud({ workout_history: newHistory, active_workout: null })
       },
 
       dismissSummary: () => {
@@ -171,10 +173,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Sync to account DB
-        if (typeof window !== 'undefined') {
-          const email = getCurrentSessionEmail()
-          if (email) saveAccountData(email, { activeWorkout: updated })
-        }
+        syncWorkoutStateToCloud({ active_workout: updated })
       },
 
       addSet: (exerciseId) => {
@@ -206,10 +205,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Sync to account DB
-        if (typeof window !== 'undefined') {
-          const email = getCurrentSessionEmail()
-          if (email) saveAccountData(email, { activeWorkout: updated })
-        }
+        syncWorkoutStateToCloud({ active_workout: updated })
       },
 
       updateSet: (exerciseId, setId, field, value) => {
@@ -230,10 +226,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Debounced sync to account DB
-        if (typeof window !== 'undefined') {
-          const email = getCurrentSessionEmail()
-          if (email) saveAccountData(email, { activeWorkout: updated })
-        }
+        syncWorkoutStateToCloud({ active_workout: updated })
       },
 
       toggleCompleteSet: (exerciseId, setId) => {
@@ -262,10 +255,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Sync to account DB
-        if (typeof window !== 'undefined') {
-          const email = getCurrentSessionEmail()
-          if (email) saveAccountData(email, { activeWorkout: updated })
-        }
+        syncWorkoutStateToCloud({ active_workout: updated })
 
         if (wasCompleted) {
           set({ isRestTimerRunning: true })
