@@ -13,6 +13,7 @@ import { useRouter, usePathname } from 'next/navigation'
 import { createClient } from '@/lib/supabase/client'
 import { useProfileStore } from '@/store/use-profile-store'
 import { useWorkoutStore } from '@/store/use-workout-store'
+import { useExerciseStore } from '@/store/useExerciseStore'
 
 export default function DashboardLayout({
   children,
@@ -51,7 +52,15 @@ export default function DashboardLayout({
               role: 'user'
             })
 
-            // Hydrate workout history & PRs
+            // Hydrate all state
+            if (profileData.exercise_state) {
+              useExerciseStore.setState({
+                favoriteExerciseIds: profileData.exercise_state.favoriteExerciseIds || [],
+                recentlyViewedIds: profileData.exercise_state.recentlyViewedIds || [],
+                customExercises: profileData.exercise_state.customExercises || []
+              })
+            }
+            // Hydrate workout history
             useWorkoutStore.setState({
               workoutHistory: profileData.workout_history || [],
               personalRecords: profileData.personal_records || {},

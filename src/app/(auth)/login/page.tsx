@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { useProfileStore } from '@/store/use-profile-store'
 import { useWorkoutStore } from '@/store/use-workout-store'
+import { useExerciseStore } from '@/store/useExerciseStore'
 import { Lock, Mail, ArrowRight, Sparkles, ShieldCheck, AlertCircle, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { createClient } from '@/lib/supabase/client'
@@ -62,6 +63,13 @@ export default function LoginPage() {
           sessions_per_week: profileData.sessions_per_week || 3,
           role: 'user'
         })
+        if (profileData.exercise_state) {
+          useExerciseStore.setState({
+            favoriteExerciseIds: profileData.exercise_state.favoriteExerciseIds || [],
+            recentlyViewedIds: profileData.exercise_state.recentlyViewedIds || [],
+            customExercises: profileData.exercise_state.customExercises || []
+          })
+        }
         useWorkoutStore.setState({
           workoutHistory: profileData.workout_history || [],
           personalRecords: profileData.personal_records || {},

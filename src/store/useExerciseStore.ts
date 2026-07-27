@@ -2,6 +2,7 @@
 import { persist } from 'zustand/middleware';
 import type { Exercise } from '@/data/exercises-database';
 import { EXERCISES_DATABASE } from '@/data/exercises-database';
+import { syncStateToCloud } from '@/lib/supabase/user-sync';
 
 interface ExerciseFilters {
   muscleGroup: string | null;
@@ -64,12 +65,14 @@ export const useExerciseStore = create<ExerciseStore>()(
       resetFilters: () => set({ filters: initialFilters }),
 
       // Favorite actions
-      toggleFavorite: (exerciseId) =>
-        set((state) => ({
-          favoriteExerciseIds: state.favoriteExerciseIds.includes(exerciseId)
-            ? state.favoriteExerciseIds.filter((id) => id !== exerciseId)
-            : [...state.favoriteExerciseIds, exerciseId],
-        })),
+      toggleFavorite: (exerciseId) => {
+        const state = get();
+        const newFavs = state.favoriteExerciseIds.includes(exerciseId)
+          ? state.favoriteExerciseIds.filter((id) => id !== exerciseId)
+          : [...state.favoriteExerciseIds, exerciseId];
+        set({ favoriteExerciseIds: newFavs });
+        syncStateToCloud({ exercise_state: { favoriteExerciseIds: newFavs, recentlyViewedIds: state.recentlyViewedIds, customExercises: state.customExercises } });
+      },
 
       isFavorite: (exerciseId) => {
         return get().favoriteExerciseIds.includes(exerciseId);
@@ -85,16 +88,15 @@ export const useExerciseStore = create<ExerciseStore>()(
         }),
 
       // Custom exercise actions
-      addCustomExercise: (exercise) =>
-        set((state) => ({
-          customExercises: [
-            ...state.customExercises,
-            {
-              ...exercise,
-              id: `custom-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-            },
-          ],
-        })),
+      addCustomExercise: (exercise) => {
+        const state = get();
+        const newCustom = [
+          ...state.customExercises,
+          { ...exercise, id: `custom-${Date.now()}-${Math.random().toString(36).substr(2, 9)}` }
+        ];
+        set({ customExercises: newCustom });
+        syncStateToCloud({ exercise_state: { favoriteExerciseIds: state.favoriteExerciseIds, recentlyViewedIds: state.recentlyViewedIds, customExercises: newCustom } });
+      },
 
       updateCustomExercise: (id, updates) =>
         set((state) => ({

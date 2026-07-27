@@ -1,6 +1,6 @@
 ﻿import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { getCurrentSessionEmail, saveAccountData } from '@/lib/utils/account-db'
+import { syncStateToCloud } from '@/lib/supabase/user-sync'
 
 export interface UserProfile {
   name: string
@@ -33,14 +33,7 @@ export const useProfileStore = create<ProfileState>()(
 
       setProfile: (profile) => {
         set({ profile, isOnboardingComplete: true })
-
-        // Sync to account DB to survive logout/refresh
-        if (typeof window !== 'undefined') {
-          const currentEmail = getCurrentSessionEmail()
-          if (currentEmail) {
-            saveAccountData(currentEmail, { profile })
-          }
-        }
+        syncStateToCloud({ age: profile.age, gender: profile.gender, height_cm: profile.height_cm, weight_kg: profile.weight_kg, body_fat: profile.body_fat, experience: profile.experience, goal: profile.goal, sessions_per_week: profile.sessions_per_week })
       },
 
       updateProfile: (partial) => {

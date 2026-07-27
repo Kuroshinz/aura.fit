@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
-import { syncWorkoutStateToCloud } from '@/lib/supabase/workout-sync'
+import { syncStateToCloud } from '@/lib/supabase/user-sync'
 
 export interface SetItem {
   id: string
@@ -79,7 +79,7 @@ export const useWorkoutStore = create<WorkoutState>()(
           [exerciseName]: { weight, reps, oneRM, date: new Date().toISOString() }
         }
         set({ personalRecords: newPRs })
-        syncWorkoutStateToCloud({ personal_records: newPRs })
+        syncStateToCloud({ personal_records: newPRs })
       },
 
       startWorkout: (routineId, routineName) => {
@@ -97,7 +97,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         })
 
         // Sync to account DB
-        syncWorkoutStateToCloud({ active_workout: newWorkout })
+        syncStateToCloud({ active_workout: newWorkout })
       },
 
       finishWorkout: () => {
@@ -136,7 +136,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         })
 
         // Đồng bộ lưu lịch sử buổi tập vào Database của email đang active
-        syncWorkoutStateToCloud({ workout_history: newHistory, active_workout: null })
+        syncStateToCloud({ workout_history: newHistory, active_workout: null })
       },
 
       dismissSummary: () => {
@@ -173,7 +173,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Sync to account DB
-        syncWorkoutStateToCloud({ active_workout: updated })
+        syncStateToCloud({ active_workout: updated })
       },
 
       addSet: (exerciseId) => {
@@ -205,7 +205,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Sync to account DB
-        syncWorkoutStateToCloud({ active_workout: updated })
+        syncStateToCloud({ active_workout: updated })
       },
 
       updateSet: (exerciseId, setId, field, value) => {
@@ -226,7 +226,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Debounced sync to account DB
-        syncWorkoutStateToCloud({ active_workout: updated })
+        syncStateToCloud({ active_workout: updated })
       },
 
       toggleCompleteSet: (exerciseId, setId) => {
@@ -255,7 +255,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         set({ activeWorkout: updated })
 
         // Sync to account DB
-        syncWorkoutStateToCloud({ active_workout: updated })
+        syncStateToCloud({ active_workout: updated })
 
         if (wasCompleted) {
           set({ isRestTimerRunning: true })
