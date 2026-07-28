@@ -1,0 +1,30 @@
+# Render.com Blueprint for AURA.FIT Telegram Bot Backend
+
+services:
+  # Main Python Web Service (Telegram Bot + Webhook API)
+  - type: web
+    name: aura-fit-bot
+    env: docker
+    region: singapore
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false  # Set manually in dashboard
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_KEY
+        sync: false
+      - key: WEBHOOK_SECRET
+        sync: false
+      - key: DEFAULT_TELEGRAM_CHAT_ID
+        sync: false
+
+  # Cron Job to ping the bot every 5 min (prevents free tier sleep)
+  - type: cron
+    name: aura-fit-bot-keepalive
+    env: docker
+    plan: free
+    schedule: "*/5 * * * *"
+    dockerfilePath: ./Dockerfile
+    dockerCommand: "python -c \"import urllib.request; urllib.request.urlopen('https://aura-fit-bot.onrender.com')\""

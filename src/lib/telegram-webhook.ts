@@ -1,5 +1,5 @@
 export interface TelegramWebhookPayload {
-  event_type: 'workout_completed' | 'pr_achieved' | 'test_notification' | 'streak_milestone';
+  event_type: 'workout_completed' | 'pr_achieved' | 'test_notification' | 'streak_milestone' | 'routine_scheduled';
   user_email: string;
   user_name: string;
   title: string;
@@ -10,7 +10,8 @@ export interface TelegramWebhookPayload {
 
 export async function sendTelegramWebhook(payload: TelegramWebhookPayload): Promise<{ success: boolean; error?: string }> {
   try {
-    const res = await fetch('http://localhost:8000/api/webhook', {
+    const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'http://localhost:8000/api/webhook'
+    const res = await fetch(webhookUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

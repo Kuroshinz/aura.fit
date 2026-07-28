@@ -20,6 +20,7 @@ export interface UserProfile {
   sessions_per_week: number
   role?: 'admin' | 'user'
   telegram_chat_id?: string
+  auto_send_routine?: boolean
   metrics_history?: MetricLog[]
 }
 
@@ -49,6 +50,8 @@ export const useProfileStore = create<ProfileState>()(
           experience: profile.experience,
           goal: profile.goal,
           sessions_per_week: profile.sessions_per_week,
+          telegram_chat_id: profile.telegram_chat_id,
+          auto_send_routine: profile.auto_send_routine,
           metrics_history: profile.metrics_history
         })
       },
@@ -67,6 +70,8 @@ export const useProfileStore = create<ProfileState>()(
           experience: updated.experience,
           goal: updated.goal,
           sessions_per_week: updated.sessions_per_week,
+          telegram_chat_id: updated.telegram_chat_id,
+          auto_send_routine: updated.auto_send_routine,
           metrics_history: updated.metrics_history
         })
       },

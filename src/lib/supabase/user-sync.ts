@@ -17,6 +17,8 @@ export function syncStateToCloud(
     experience?: string,
     goal?: string,
     sessions_per_week?: number,
+    telegram_chat_id?: string,
+    auto_send_routine?: boolean,
     metrics_history?: any[]
   },
   immediate = false

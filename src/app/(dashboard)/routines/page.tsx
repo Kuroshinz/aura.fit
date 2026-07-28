@@ -68,6 +68,43 @@ export default function RoutinesPage() {
     loadActiveRoutine()
   }, [])
 
+  // Auto-send today's routine to Telegram on page load (once per day)
+  useEffect(() => {
+    if (!importedRoutine || !todaySchedule || !profile) return
+    if (todaySchedule.suggestedDayKey === 'Rest') return // Skip rest days
+    if (!profile.telegram_chat_id) return // No Telegram configured
+    if (!profile.auto_send_routine) return // Auto-send disabled
+
+    const todayStr = new Date().toDateString()
+    const storageKey = 'aura_last_auto_send_date'
+    const lastSent = localStorage.getItem(storageKey)
+    if (lastSent === todayStr) return // Already sent today
+
+    const todayMatchedDay = importedRoutine.schedule_data.days.find((d: any) =>
+      d.dayName?.toLowerCase().replace(/\s+/g, '') === todaySchedule.suggestedDayKey?.toLowerCase().replace(/\s+/g, '')
+    )
+    if (!todayMatchedDay) return
+
+    const exListText = todayMatchedDay.exercises.map((e: any) => `• ${e.exerciseName} (${e.sets} sets x ${e.reps})`).join('\\n')
+    sendTelegramWebhook({
+      event_type: 'routine_scheduled',
+      user_email: `${(profile?.name || 'athlete').toLowerCase().replace(/\\s+/g, '')}@aura.fit`,
+      user_name: profile?.name || 'Vận động viên AURA',
+      title: `📋 LỊCH TẬP HÔM NAY: ${todayMatchedDay.dayName}`,
+      message: `Lịch tập ngày ${todaySchedule.dateFormatted}:\\n\\n${exListText}`,
+      telegram_chat_id: profile?.telegram_chat_id || undefined,
+      metrics: {
+        'Ngày tập': todayMatchedDay.dayName,
+        'Số bài tập': todayMatchedDay.exercises.length
+      }
+    }).then((res) => {
+      if (res.success) {
+        localStorage.setItem(storageKey, todayStr)
+        console.log('✅ Auto-sent today routine to Telegram')
+      }
+    }).catch(() => {})
+  }, [importedRoutine, todaySchedule, profile])
+
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (!file) return

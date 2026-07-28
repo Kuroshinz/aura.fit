@@ -25,7 +25,6 @@ export default function ProfilePage() {
   const [autoSendRoutine, setAutoSendRoutine] = useState(profile?.auto_send_routine ?? true)
   const [testingTelegram, setTestingTelegram] = useState(false)
   const [telegramTestStatus, setTelegramTestStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
-  const [telegramSaveStatus, setTelegramSaveStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
   const [saveSuccess, setSaveSuccess] = useState(false)
 
   const currentProfile = profile || {
@@ -53,7 +52,7 @@ export default function ProfilePage() {
   // TDEE estimate (Moderate activity 1.55)
   const tdee = Math.round(bmr * 1.55)
 
-  const handleSave = async (e: React.FormEvent) => {
+  const handleSave = (e: React.FormEvent) => {
     e.preventDefault()
     const updated: UserProfile = {
       ...currentProfile,
@@ -71,35 +70,6 @@ export default function ProfilePage() {
     setIsEditing(false)
     setSaveSuccess(true)
     setTimeout(() => setSaveSuccess(false), 3000)
-
-    // If Telegram settings changed, send confirmation notification
-    if (telegramChatId.trim()) {
-      // Detect @username — Telegram cannot DM user @usernames, only numeric IDs
-      if (telegramChatId.trim().startsWith('@')) {
-        setTelegramSaveStatus({ type: 'error', message: '❌ Không thể gửi tin nhắn qua @username! Vui lòng dùng lệnh /myid trên Telegram Bot để lấy Chat ID số.' })
-        setTimeout(() => setTelegramSaveStatus(null), 8000)
-        return
-      }
-
-      setTelegramSaveStatus({ type: 'success', message: 'Đang xác thực kết nối Telegram...' })
-      const result = await sendTelegramWebhook({
-        event_type: 'test_notification',
-        user_email: `${updated.name.toLowerCase().replace(/\s+/g, '')}@aura.fit`,
-        user_name: updated.name,
-        title: '✅ CÀI ĐẶT TELEGRAM THÀNH CÔNG',
-        message: `Cài đặt Telegram của bạn đã được lưu thành công! Bạn sẽ nhận được lịch tập hằng ngày lúc 7:00 AM.`,
-        telegram_chat_id: telegramChatId.trim() || undefined,
-        metrics: {
-          'Tự động gửi lịch tập': autoSendRoutine ? 'BẬT (7:00 AM)' : 'TẮT'
-        }
-      })
-      if (result.success) {
-        setTelegramSaveStatus({ type: 'success', message: '✅ Đã lưu cài đặt Telegram và gửi tin nhắn xác nhận thành công!' })
-      } else {
-        setTelegramSaveStatus({ type: 'error', message: result.error || '⚠️ Đã lưu cài đặt nhưng không thể gửi tin nhắn xác nhận. Kiểm tra lại Chat ID!' })
-      }
-      setTimeout(() => setTelegramSaveStatus(null), 6000)
-    }
   }
 
   const handleTestTelegramNotification = async () => {
@@ -385,140 +355,4 @@ export default function ProfilePage() {
         </div>
       </div>
 
-      {/* Telegram Bot Integration Card */}
-      <div className="aura-glass rounded-3xl p-6 md:p-8 space-y-6 border-cyan-500/30 mb-12 relative z-10">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-5">
-          <div className="flex items-center gap-3">
-            <div className="p-3 bg-cyan-500/20 text-cyan-400 border border-cyan-400/40 rounded-2xl shrink-0">
-              <Send className="w-6 h-6" />
-            </div>
-            <div>
-              <h3 className="text-xl font-extrabold text-white flex items-center gap-2">
-                TELEGRAM BOT &amp; PUSH NOTIFICATION
-              </h3>
-              <p className="text-xs font-mono text-slate-400">Tự động nhận lịch tập hằng ngày lúc 7:00 AM + thông báo kết quả buổi tập qua Telegram Bot</p>
-            </div>
-          </div>
-
-          <span className="px-3.5 py-1 bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 rounded-full font-mono text-xs font-bold inline-flex items-center gap-1.5 self-start sm:self-center shrink-0">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-            BOT ONLINE
-          </span>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-2">
-          {/* Config Box */}
-          <div className="p-5 rounded-2xl bg-[#070714] border border-slate-800 space-y-4 flex flex-col justify-between">
-            <div>
-              <label className="text-xs font-mono text-slate-300 uppercase block font-bold mb-2 flex items-center gap-2">
-                TELEGRAM CHAT ID
-                <span className="bg-amber-400/20 text-amber-300 px-2 py-0.5 rounded text-[10px]">SỐ HOẶC @USERNAME</span>
-              </label>
-              <div className="flex flex-col gap-3">
-                <input
-                  type="text"
-                  placeholder="VD: 123456789 (Lấy từ lệnh /myid của bot)"
-                  value={telegramChatId}
-                  onChange={(e) => {
-                    const val = e.target.value.trim()
-                    setTelegramChatId(val.startsWith('@') ? val : val.replace(/[^0-9-]/g, ''))
-                  }}
-                  className="w-full bg-[#03030a] border border-slate-700 focus:border-cyan-400 rounded-xl px-4 py-3 text-white font-mono text-sm placeholder:text-slate-600 transition-colors"
-                />
-              </div>
-            </div>
-
-            {/* Auto-Send Toggle */}
-            <div className="flex items-center justify-between p-3 rounded-xl bg-slate-900/50 border border-slate-700/50">
-              <div className="flex items-center gap-2">
-                <Bell className="w-4 h-4 text-cyan-400" />
-                <span className="text-xs font-mono font-bold text-slate-300">TỰ ĐỘNG GỬI LỊCH TẬP LÚC 7:00 AM</span>
-              </div>
-              <button
-                type="button"
-                onClick={() => setAutoSendRoutine(!autoSendRoutine)}
-                className={`relative w-12 h-6 rounded-full transition-colors ${
-                  autoSendRoutine ? 'bg-cyan-500' : 'bg-slate-700'
-                }`}
-              >
-                <span
-                  className={`absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full shadow-md transition-transform ${
-                    autoSendRoutine ? 'translate-x-6' : 'translate-x-0'
-                  }`}
-                />
-              </button>
-            </div>
-
-            <button
-              onClick={handleSave}
-              disabled={!telegramChatId.trim()}
-              className="w-full py-3 bg-cyan-500 hover:bg-cyan-400 text-black font-extrabold font-mono text-xs rounded-xl transition-all shadow-md disabled:opacity-40"
-            >
-              LƯU CÀI ĐẶT TELEGRAM
-            </button>
-
-            <div className="text-[11px] text-slate-400 font-mono leading-relaxed space-y-1 mt-1">
-              <p>📌 Cách lấy Chat ID của bạn (bắt buộc dùng số):</p>
-              <p>1. Nhắn <code className="bg-slate-900 px-1.5 py-0.5 rounded text-amber-300">/start</code> cho <a href="https://t.me/Aura_fit_tele_bot" target="_blank" rel="noreferrer" className="text-cyan-400 hover:underline">@Aura_fit_tele_bot</a></p>
-              <p>2. Gửi lệnh <code className="bg-slate-900 px-1.5 py-0.5 rounded text-amber-300">/myid</code> → copy dãy số Chat ID</p>
-              <p>3. Dán số đó vào ô trên (<span className="text-red-400">@username không hoạt động</span> cho tin nhắn cá nhân)</p>
-            </div>
-          </div>
-
-          {/* Test Action Box */}
-          <div className="p-5 rounded-2xl bg-[#070714] border border-slate-800 flex flex-col justify-between space-y-4">
-            <div>
-              <span className="text-xs font-mono text-amber-400 uppercase block font-bold mb-1 flex items-center gap-1.5">
-                <Bell className="w-4 h-4" /> THỬ NGHIỆM KẾT NỐI LIVE
-              </span>
-              <p className="text-xs text-slate-400 leading-relaxed">Gửi ngay 1 thông báo thử nghiệm tới Telegram để kiểm tra luồng Webhook live của ứng dụng.</p>
-            </div>
-
-            <button
-              onClick={handleTestTelegramNotification}
-              disabled={testingTelegram || !telegramChatId.trim()}
-              className="w-full py-3.5 bg-gradient-to-r from-amber-400 via-yellow-400 to-amber-500 hover:from-amber-300 hover:to-yellow-300 text-black font-black font-display rounded-xl text-xs uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg shadow-amber-500/20 disabled:opacity-50 transition-all border border-amber-300/40"
-            >
-              <Send className="w-4 h-4 fill-current" />
-              {testingTelegram ? 'ĐANG GỬI THÔNG BÁO...' : 'THỬ GỬI THÔNG BÁO TELEGRAM'}
-            </button>
-
-            <div className="text-[11px] text-slate-500 font-mono leading-relaxed text-center">
-              ⏰ Bạn sẽ nhận được lịch tập hằng ngày vào <strong className="text-cyan-400">7:00 AM</strong> nếu đã bật tự động gửi!
-            </div>
-          </div>
-        </div>
-
-        {telegramSaveStatus && (
-          <div className={`p-4 rounded-2xl border flex items-center gap-3 text-xs font-mono ${
-            telegramSaveStatus.type === 'success'
-              ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-300'
-              : 'bg-red-500/10 border-red-500/40 text-red-300'
-          }`}>
-            {telegramSaveStatus.type === 'success' ? (
-              <CheckCircle className="w-5 h-5 shrink-0 text-emerald-400" />
-            ) : (
-              <AlertCircle className="w-5 h-5 shrink-0 text-red-400" />
-            )}
-            <span>{telegramSaveStatus.message}</span>
-          </div>
-        )}
-
-        {telegramTestStatus && (
-          <div className={`p-4 rounded-2xl border flex items-center gap-3 text-xs font-mono ${
-            telegramTestStatus.type === 'success'
-              ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-300'
-              : 'bg-red-500/10 border-red-500/40 text-red-300'
-          }`}>
-            {telegramTestStatus.type === 'success' ? (
-              <CheckCircle className="w-5 h-5 shrink-0 text-emerald-400" />
-            ) : (
-              <AlertCircle className="w-5 h-5 shrink-0 text-red-400" />
-            )}
-            <span>{telegramTestStatus.message}</span>
-          </div>
-        )}
-      </div>
-    </div>
-  )
-}
+      
