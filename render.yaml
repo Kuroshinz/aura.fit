@@ -7,10 +7,10 @@ services:
     env: docker
     region: singapore
     plan: free
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./python_backend/Dockerfile
     envVars:
       - key: TELEGRAM_TOKEN
-        sync: false  # Set manually in dashboard
+        sync: false
       - key: SUPABASE_URL
         sync: false
       - key: SUPABASE_KEY
@@ -26,5 +26,5 @@ services:
     env: docker
     plan: free
     schedule: "*/5 * * * *"
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./python_backend/Dockerfile
     dockerCommand: "python -c \"import urllib.request; urllib.request.urlopen('https://aura-fit-bot.onrender.com')\""
