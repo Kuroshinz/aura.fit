@@ -3,44 +3,60 @@ import { ActiveWorkout, CompletedWorkout } from '@/store/use-workout-store'
 
 let syncTimeout: any = null
 
-export function syncStateToCloud(updates: {
-  active_workout?: ActiveWorkout | null,
-  workout_history?: CompletedWorkout[],
-  personal_records?: Record<string, any>,
-  exercise_state?: any,
-  age?: number,
-  gender?: string,
-  height_cm?: number,
-  weight_kg?: number,
-  body_fat?: number | null,
-  experience?: string,
-  goal?: string,
-  sessions_per_week?: number
-}) {
+export function syncStateToCloud(
+  updates: {
+    active_workout?: ActiveWorkout | null,
+    workout_history?: CompletedWorkout[],
+    personal_records?: Record<string, any>,
+    exercise_state?: any,
+    age?: number,
+    gender?: string,
+    height_cm?: number,
+    weight_kg?: number,
+    body_fat?: number | null,
+    experience?: string,
+    goal?: string,
+    sessions_per_week?: number,
+    metrics_history?: any[]
+  },
+  immediate = false
+) {
   if (syncTimeout) {
     clearTimeout(syncTimeout)
   }
 
-  // Debounce the cloud sync by 1.5 seconds to prevent spamming API on rapid changes
-  syncTimeout = setTimeout(async () => {
+  const performSync = async () => {
     try {
       const supabase = createClient()
       const { data: { user } } = await supabase.auth.getUser()
       
       if (!user) return
 
+      const cleanUpdates = Object.fromEntries(
+        Object.entries(updates).filter(([_, v]) => v !== undefined)
+      )
+
+      if (Object.keys(cleanUpdates).length === 0) return
+
       const { error } = await supabase
         .from('profiles')
-        .update(updates)
+        .update(cleanUpdates)
         .eq('id', user.id)
 
       if (error) {
-        console.error('Failed to sync state to cloud:', error)
+        console.error('Failed to sync state to cloud:', error.message || JSON.stringify(error))
       } else {
         console.log('Successfully synced state to Supabase!')
       }
     } catch (err) {
       console.error('Error in syncStateToCloud:', err)
     }
-  }, 1500)
+  }
+
+  if (immediate) {
+    performSync()
+  } else {
+    // Debounce by 1.5s for keystrokes
+    syncTimeout = setTimeout(performSync, 1500)
+  }
 }

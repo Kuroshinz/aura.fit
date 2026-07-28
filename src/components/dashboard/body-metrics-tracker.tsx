@@ -12,7 +12,7 @@ interface MetricLog {
 }
 
 export function BodyMetricsTracker() {
-  const { profile } = useProfileStore()
+  const { profile, updateProfile } = useProfileStore()
   const [logs, setLogs] = useState<MetricLog[]>([])
   const [newWeight, setNewWeight] = useState('')
   const [newFat, setNewFat] = useState('')
@@ -21,12 +21,16 @@ export function BodyMetricsTracker() {
   // Đồng bộ chỉ số thực từ profile cá nhân vừa đăng ký/tạo mới
   useEffect(() => {
     if (profile) {
-      const todayLog: MetricLog = {
-        date: 'Hôm nay',
-        weight: profile.weight_kg,
-        bodyFat: profile.body_fat || 15.0,
+      if (profile.metrics_history && profile.metrics_history.length > 0) {
+        setLogs(profile.metrics_history)
+      } else {
+        const todayLog: MetricLog = {
+          date: 'Hôm nay',
+          weight: profile.weight_kg,
+          bodyFat: profile.body_fat || 15.0,
+        }
+        setLogs([todayLog])
       }
-      setLogs([todayLog])
     } else {
       setLogs([])
     }
@@ -46,7 +50,16 @@ export function BodyMetricsTracker() {
       bodyFat: fatNum,
     }
 
-    setLogs((prev) => [...prev, newLog])
+    const newLogs = [...logs, newLog]
+    setLogs(newLogs)
+    
+    // Push the entire history array and update the current profile weight/fat so it displays correctly elsewhere
+    updateProfile({
+      weight_kg: weightNum,
+      body_fat: fatNum,
+      metrics_history: newLogs
+    })
+
     setNewWeight('')
     setNewFat('')
     setShowAddForm(false)

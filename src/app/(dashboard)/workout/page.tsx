@@ -6,7 +6,8 @@ import { useProfileStore } from '@/store/use-profile-store'
 import { ExerciseLogCard } from '@/components/workout/exercise-log-card'
 import { calculateTotalVolume } from '@/lib/utils/workout-math'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight } from 'lucide-react'
+import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight, RefreshCw } from 'lucide-react'
+import { useToastStore } from '@/components/effects/toast'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
 
@@ -147,13 +148,40 @@ export default function WorkoutPage() {
             </div>
           </div>
 
-          <button
-            onClick={dismissSummary}
-            className="w-full py-4 btn-aura-gold text-black font-display font-black text-sm uppercase tracking-widest rounded-2xl flex items-center justify-center gap-2 shadow-2xl"
-          >
-            VỀ TRANG CHỦ
-            <ArrowRight className="w-5 h-5" />
-          </button>
+          <div className="flex flex-col sm:flex-row gap-3 w-full">
+            <button
+              onClick={() => {
+                const rId = lastCompletedWorkout.routine_id
+                const rName = lastCompletedWorkout.routine_name
+                const exercises = lastCompletedWorkout.exercises
+                
+                // Clean the finished session from history to prevent duplicate entries
+                const cleanHistory = useWorkoutStore.getState().workoutHistory.filter(w => w.id !== lastCompletedWorkout.id)
+                useWorkoutStore.setState({ workoutHistory: cleanHistory })
+                const { syncStateToCloud } = require('@/lib/supabase/user-sync')
+                syncStateToCloud({ workout_history: cleanHistory }, true)
+                
+                dismissSummary()
+                startWorkout(rId, rName)
+                
+                // Add the exercises back immediately
+                exercises.forEach((ex) => {
+                  addExerciseToWorkout(ex.exercise_id, ex.exercise_name, ex.muscle_group)
+                })
+              }}
+              className="flex-1 py-4 bg-slate-900 border border-slate-700 hover:border-amber-400 text-amber-400 font-display font-black text-xs uppercase tracking-widest rounded-2xl flex items-center justify-center gap-2 transition-all"
+            >
+              <RefreshCw className="w-4 h-4 animate-spin-hover" />
+              TẬP LẠI (RESTART)
+            </button>
+            <button
+              onClick={dismissSummary}
+              className="flex-1 py-4 btn-aura-gold text-black font-display font-black text-xs uppercase tracking-widest rounded-2xl flex items-center justify-center gap-2 shadow-2xl"
+            >
+              VỀ TRANG CHỦ
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </motion.div>
       </div>
     )
@@ -225,6 +253,12 @@ export default function WorkoutPage() {
               const durationMinutes = Math.max(1, Math.round(elapsedSeconds / 60))
 
               finishWorkout()
+              
+              useToastStore.getState().addToast({
+                variant: 'success',
+                title: 'Hoàn thành buổi tập!',
+                message: `Chúc mừng bạn đã hoàn thành xuất sắc buổi tập '${routineName}' ngày hôm nay!`
+              })
 
               sendTelegramWebhook({
                 event_type: 'workout_completed',

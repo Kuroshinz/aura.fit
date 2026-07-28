@@ -6,11 +6,12 @@ import { parseExcelRoutine, ParsedRoutine } from '@/lib/utils/excel-parser'
 import { getTodayWorkoutMapping } from '@/lib/utils/date-schedule'
 import { exportRoutineToExcel } from '@/lib/utils/export-data'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { FileSpreadsheet, Upload, Play, Calendar, Eye, Download, PlusCircle, Trash2, X, Plus, Send, CheckCircle, Loader2, Edit3, Save } from 'lucide-react'
+import { FileSpreadsheet, Upload, Play, Calendar, Eye, Download, PlusCircle, Trash2, X, Plus, Send, CheckCircle, Loader2, Edit3, Save, CheckCircle2, History, Clock, Flame, ChevronRight, ChevronDown, ChevronUp } from 'lucide-react'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { useProfileStore } from '@/store/use-profile-store'
 import { WORKOUT_SPLITS } from '@/data/workout-splits'
 import { getActiveRoutine, saveRoutine, updateRoutine, deleteRoutine, UserRoutine } from '@/lib/supabase/routine-service'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function RoutinesPage() {
   const { profile } = useProfileStore()
@@ -25,8 +26,25 @@ export default function RoutinesPage() {
   const [isEditing, setIsEditing] = useState(false)
   const [editableRoutine, setEditableRoutine] = useState<UserRoutine | null>(null)
 
-  const { startWorkout, addExerciseToWorkout } = useWorkoutStore()
+  // Workout History Expansion State
+  const [expandedHistoryIds, setExpandedHistoryIds] = useState<string[]>([])
+
+  const { startWorkout, addExerciseToWorkout, workoutHistory } = useWorkoutStore()
   const router = useRouter()
+
+  const isDayCompletedToday = (dayName: string) => {
+    const today = new Date().toDateString()
+    return workoutHistory.some((w) => {
+      const wDate = new Date(w.start_time).toDateString()
+      return wDate === today && w.routine_name.toUpperCase().includes(dayName.toUpperCase())
+    })
+  }
+
+  const toggleHistoryExpand = (id: string) => {
+    setExpandedHistoryIds((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+    )
+  }
 
   const loadActiveRoutine = async () => {
     setIsLoading(true)
@@ -153,7 +171,7 @@ export default function RoutinesPage() {
   ) || importedRoutine?.schedule_data.days[0]
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-12">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-4">
         <div>
@@ -265,13 +283,23 @@ export default function RoutinesPage() {
                   {sendingTeleRoutine ? 'ĐANG GỬI...' : 'GỬI LỊCH SANG TELEGRAM'}
                 </button>
 
-                <button
-                  onClick={() => handleStartDaySession(todayMatchedDay.dayName, todayMatchedDay.exercises)}
-                  className="px-8 py-4 btn-aura-gold text-black font-black rounded-2xl text-base flex items-center justify-center gap-3 shadow-2xl"
-                >
-                  <Play className="w-6 h-6 fill-current" />
-                  TẬP NGAY BÀI HÔM NAY ({todaySchedule.suggestedDayKey})
-                </button>
+                {isDayCompletedToday(todayMatchedDay.dayName) ? (
+                  <button
+                    disabled
+                    className="px-8 py-4 bg-slate-800 text-slate-500 font-black rounded-2xl text-base flex items-center justify-center gap-3 border border-slate-700 cursor-not-allowed"
+                  >
+                    <CheckCircle2 className="w-6 h-6 text-emerald-500" />
+                    ĐÃ HOÀN THÀNH HÔM NAY
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => handleStartDaySession(todayMatchedDay.dayName, todayMatchedDay.exercises)}
+                    className="px-8 py-4 btn-aura-gold text-black font-black rounded-2xl text-base flex items-center justify-center gap-3 shadow-2xl"
+                  >
+                    <Play className="w-6 h-6 fill-current" />
+                    TẬP NGAY BÀI HÔM NAY ({todaySchedule.suggestedDayKey})
+                  </button>
+                )}
               </div>
             )}
           </div>
@@ -392,13 +420,21 @@ export default function RoutinesPage() {
                   )}
                   
                   {!isEditing && (
-                    <button
-                      onClick={() => handleStartDaySession(day.dayName, day.exercises)}
-                      className="px-6 py-3.5 btn-aura-gold text-black font-extrabold rounded-2xl text-sm flex items-center justify-center gap-2"
-                    >
-                      <Play className="w-5 h-5 fill-current" />
-                      BẮT ĐẦU
-                    </button>
+                    <div className="flex items-center gap-3">
+                      {isDayCompletedToday(day.dayName) ? (
+                        <span className="px-5 py-3 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-extrabold rounded-2xl text-xs flex items-center gap-1.5">
+                          <CheckCircle2 className="w-4 h-4" /> ĐÃ TẬP XONG
+                        </span>
+                      ) : (
+                        <button
+                          onClick={() => handleStartDaySession(day.dayName, day.exercises)}
+                          className="px-6 py-3.5 btn-aura-gold text-black font-extrabold rounded-2xl text-sm flex items-center justify-center gap-2"
+                        >
+                          <Play className="w-5 h-5 fill-current" />
+                          BẮT ĐẦU
+                        </button>
+                      )}
+                    </div>
                   )}
                 </div>
 
@@ -488,6 +524,89 @@ export default function RoutinesPage() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      )}
+
+      {/* COMPLETED WORKOUT HISTORY SECTION */}
+      {workoutHistory.length > 0 && (
+        <div className="space-y-6 mt-10">
+          <div className="glow-divider" />
+          <div className="flex items-center gap-3.5 mb-6">
+            <div className="p-3 bg-amber-500/20 border border-amber-400/50 rounded-2xl text-amber-400">
+              <History className="w-6 h-6" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-extrabold text-white">LỊCH SỬ BUỔI TẬP HOÀN THÀNH</h2>
+              <p className="text-xs font-mono text-slate-400 mt-1">Danh sách chi tiết các buổi tập bạn đã hoàn thành</p>
+            </div>
+          </div>
+          
+          <div className="grid grid-cols-1 gap-4">
+            {workoutHistory.map((w) => {
+              const dateObj = new Date(w.start_time)
+              const dateStr = `${dateObj.toLocaleDateString('vi-VN', { weekday: 'long' })}, ${dateObj.toLocaleDateString('vi-VN')} lúc ${dateObj.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' })}`
+              const isExpanded = expandedHistoryIds.includes(w.id)
+
+              return (
+                <div key={w.id} className="aura-glass rounded-3xl p-5 border border-slate-700/60 transition-all space-y-4">
+                  <div 
+                    onClick={() => toggleHistoryExpand(w.id)}
+                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 cursor-pointer hover:opacity-90"
+                  >
+                    <div>
+                      <span className="text-xs font-mono font-bold text-amber-400 uppercase">{dateStr}</span>
+                      <h3 className="text-lg font-bold text-white flex items-center gap-2 mt-0.5">
+                        {w.routine_name}
+                      </h3>
+                    </div>
+                    
+                    <div className="flex flex-wrap items-center gap-3 text-xs font-mono">
+                      <span className="px-2.5 py-1.5 bg-slate-900 text-slate-200 border border-slate-800 rounded-xl font-bold flex items-center gap-1">
+                        <Clock className="w-3.5 h-3.5" /> {w.duration_minutes} phút
+                      </span>
+                      <span className="px-2.5 py-1.5 bg-amber-500/10 text-amber-300 border border-amber-400/20 rounded-xl font-bold flex items-center gap-1">
+                        <Flame className="w-3.5 h-3.5" /> {w.total_volume.toLocaleString()} kg
+                      </span>
+                      <span className="px-2.5 py-1.5 bg-cyan-500/10 text-cyan-300 border border-cyan-400/20 rounded-xl font-bold">
+                        {w.exercises.length} Bài tập
+                      </span>
+                      {isExpanded ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
+                    </div>
+                  </div>
+
+                  <AnimatePresence>
+                    {isExpanded && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="overflow-hidden border-t border-slate-800/80 pt-4"
+                      >
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                          {w.exercises.map((ex, eIdx) => (
+                            <div key={eIdx} className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800/80">
+                              <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 border border-slate-800 rounded-full uppercase text-amber-400">
+                                {ex.muscle_group}
+                              </span>
+                              <h4 className="font-bold text-white text-base mt-2 mb-1">{ex.exercise_name}</h4>
+                              <div className="space-y-1">
+                                {ex.sets.map((set, sIdx) => (
+                                  <div key={set.id} className="flex justify-between text-xs text-slate-400 font-mono">
+                                    <span>Set {sIdx + 1}: {set.weight_kg}kg x {set.reps} reps</span>
+                                    {set.is_completed && <span className="text-emerald-400 font-bold">✓ Hoàn thành</span>}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              )
+            })}
           </div>
         </div>
       )}

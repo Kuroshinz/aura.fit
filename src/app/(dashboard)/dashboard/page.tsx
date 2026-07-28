@@ -6,12 +6,14 @@ import { VolumeChart } from '@/components/dashboard/volume-chart'
 const HumanBodyHeatmap = dynamic(() => import('@/components/dashboard/human-body-heatmap').then(m => m.HumanBodyHeatmap), { ssr: false, loading: () => <div className="h-[400px] w-full animate-pulse bg-slate-900/50 rounded-3xl"></div> })
 const ExerciseProgressChart = dynamic(() => import('@/components/dashboard/exercise-progress-chart').then(m => m.ExerciseProgressChart), { ssr: false, loading: () => <div className="h-[300px] w-full animate-pulse bg-slate-900/50 rounded-3xl"></div> })
 import { BodyMetricsTracker } from '@/components/dashboard/body-metrics-tracker'
+
 import { SpatialCard } from '@/components/effects/spatial-card'
 import { exportWorkoutDataCSV } from '@/lib/utils/export-data'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { useProfileStore, goalLabels } from '@/store/use-profile-store'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { Dumbbell, Flame, Trophy, Calendar, Sparkles, TrendingUp, Star, Clock, StickyNote, Download, Send, CheckCircle, AlertCircle } from 'lucide-react'
+import { Dumbbell, Flame, Trophy, Calendar, Sparkles, TrendingUp, Star, Clock, StickyNote, Download, Send, CheckCircle, AlertCircle, ChevronDown, ChevronUp } from 'lucide-react'
+import { AnimatePresence } from 'framer-motion'
 import { motion } from 'framer-motion'
 
 const containerVariants = {
@@ -34,6 +36,13 @@ export default function DashboardPage() {
   const { profile } = useProfileStore()
   const [sendingTelegramId, setSendingTelegramId] = useState<string | null>(null)
   const [telegramToast, setTelegramToast] = useState<{ type: 'success' | 'error'; msg: string } | null>(null)
+  const [expandedHistoryIds, setExpandedHistoryIds] = useState<string[]>([]);
+
+  const toggleHistoryExpand = (id: string) => {
+    setExpandedHistoryIds((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+    )
+  }
 
   // Computed stats from real history
   const thisWeekWorkouts = workoutHistory.filter((w) => {
@@ -201,7 +210,8 @@ export default function DashboardPage() {
 
       {/* Total Volume Weekly Chart */}
       <motion.div variants={itemVariants}>
-        <VolumeChart />
+        
+              <VolumeChart />
       </motion.div>
 
       {/* Real Workout History Log List */}
@@ -298,21 +308,45 @@ export default function DashboardPage() {
                   </div>
 
                   {/* Workout Exercises Detail */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-                    {w.exercises.map((ex, eIdx) => {
-                      const completedSets = ex.sets.filter((s) => s.is_completed)
-                      const maxWeight = Math.max(...completedSets.map((s) => s.weight_kg), 0)
-                      return (
-                        <div key={eIdx} className="p-4 rounded-2xl bg-[#070714] border border-slate-700">
-                          <p className="font-bold text-base text-white mb-2">{ex.exercise_name}</p>
-                          <div className="flex items-center justify-between text-sm font-mono text-slate-300">
-                            <span>{completedSets.length} Sets</span>
-                            <span className="font-extrabold text-cyan-300">{maxWeight} kg</span>
-                          </div>
-                        </div>
-                      )
-                    })}
+                  <div className="flex justify-center mt-2">
+                    <button onClick={() => toggleHistoryExpand(w.id)} className="px-6 py-2 bg-slate-900 hover:bg-slate-800 border border-slate-700 rounded-full text-xs font-mono font-bold text-amber-400 flex items-center gap-2 transition-all">
+                      {expandedHistoryIds.includes(w.id) ? (
+                        <><ChevronUp className="w-4 h-4" /> ẨN CHI TIẾT BÀI TẬP</>
+                      ) : (
+                        <><ChevronDown className="w-4 h-4" /> XEM CHI TIẾT BÀI TẬP</>
+                      )}
+                    </button>
                   </div>
+                  
+                  <AnimatePresence>
+                    {expandedHistoryIds.includes(w.id) && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="overflow-hidden border-t border-slate-800 pt-6 mt-4"
+                      >
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                          {w.exercises.map((ex, eIdx) => (
+                            <div key={eIdx} className="p-4 rounded-2xl bg-slate-950/80 border border-slate-800/80">
+                              <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-slate-900 border border-slate-800 rounded-full uppercase text-amber-400">
+                                {ex.muscle_group}
+                              </span>
+                              <h4 className="font-bold text-white text-base mt-2 mb-1">{ex.exercise_name}</h4>
+                              <div className="space-y-1">
+                                {ex.sets.map((set, sIdx) => (
+                                  <div key={set.id} className="flex justify-between text-xs text-slate-400 font-mono">
+                                    <span>Set {sIdx + 1}: {set.weight_kg}kg x {set.reps} reps</span>
+                                    {set.is_completed && <span className="text-emerald-400 font-bold">✓ Hoàn thành</span>}
+                                  </div>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </motion.div>
               )
             })}

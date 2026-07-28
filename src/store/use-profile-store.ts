@@ -1,6 +1,12 @@
-﻿import { create } from 'zustand'
+import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { syncStateToCloud } from '@/lib/supabase/user-sync'
+
+export interface MetricLog {
+  date: string
+  weight: number
+  bodyFat: number
+}
 
 export interface UserProfile {
   name: string
@@ -14,6 +20,7 @@ export interface UserProfile {
   sessions_per_week: number
   role?: 'admin' | 'user'
   telegram_chat_id?: string
+  metrics_history?: MetricLog[]
 }
 
 interface ProfileState {
@@ -33,7 +40,17 @@ export const useProfileStore = create<ProfileState>()(
 
       setProfile: (profile) => {
         set({ profile, isOnboardingComplete: true })
-        syncStateToCloud({ age: profile.age, gender: profile.gender, height_cm: profile.height_cm, weight_kg: profile.weight_kg, body_fat: profile.body_fat, experience: profile.experience, goal: profile.goal, sessions_per_week: profile.sessions_per_week })
+        syncStateToCloud({
+          age: profile.age,
+          gender: profile.gender,
+          height_cm: profile.height_cm,
+          weight_kg: profile.weight_kg,
+          body_fat: profile.body_fat,
+          experience: profile.experience,
+          goal: profile.goal,
+          sessions_per_week: profile.sessions_per_week,
+          metrics_history: profile.metrics_history
+        })
       },
 
       updateProfile: (partial) => {
@@ -41,38 +58,24 @@ export const useProfileStore = create<ProfileState>()(
         if (!profile) return
         const updated = { ...profile, ...partial }
         set({ profile: updated })
-        
-        // Sync to account DB via shared utility
-        if (typeof window !== 'undefined') {
-          const currentEmail = getCurrentSessionEmail()
-          if (currentEmail) {
-            saveAccountData(currentEmail, { profile: updated })
-          }
-        }
+        syncStateToCloud({
+          age: updated.age,
+          gender: updated.gender,
+          height_cm: updated.height_cm,
+          weight_kg: updated.weight_kg,
+          body_fat: updated.body_fat,
+          experience: updated.experience,
+          goal: updated.goal,
+          sessions_per_week: updated.sessions_per_week,
+          metrics_history: updated.metrics_history
+        })
       },
 
       resetProfile: () => {
         set({ profile: null, isOnboardingComplete: false })
-
-        // Clear from account DB
-        if (typeof window !== 'undefined') {
-          const currentEmail = getCurrentSessionEmail()
-          if (currentEmail) {
-            saveAccountData(currentEmail, { profile: null })
-          }
-        }
       },
 
       logout: () => {
-        // Save final state to account DB before clearing
-        const { profile } = get()
-        if (typeof window !== 'undefined') {
-          const currentEmail = getCurrentSessionEmail()
-          if (currentEmail && profile) {
-            saveAccountData(currentEmail, { profile })
-          }
-        }
-
         set({ profile: null, isOnboardingComplete: false })
 
         if (typeof window !== 'undefined') {

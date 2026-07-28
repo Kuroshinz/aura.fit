@@ -26,6 +26,7 @@ export interface ActiveWorkout {
 
 export interface CompletedWorkout {
   id: string
+  routine_id?: string
   routine_name: string
   start_time: string
   end_time: string
@@ -58,6 +59,7 @@ interface WorkoutState {
   startRestTimer: () => void
   pauseRestTimer: () => void
   resetRestTimer: () => void
+  closeRestTimer: () => void
   tickRestTimer: () => void
 }
 
@@ -79,7 +81,8 @@ export const useWorkoutStore = create<WorkoutState>()(
           [exerciseName]: { weight, reps, oneRM, date: new Date().toISOString() }
         }
         set({ personalRecords: newPRs })
-        syncStateToCloud({ personal_records: newPRs })
+        // Sync PR immediately to ensure robust tracking
+        syncStateToCloud({ personal_records: newPRs }, true)
       },
 
       startWorkout: (routineId, routineName) => {
@@ -96,8 +99,8 @@ export const useWorkoutStore = create<WorkoutState>()(
           lastCompletedWorkout: null,
         })
 
-        // Sync to account DB
-        syncStateToCloud({ active_workout: newWorkout })
+        // Sync immediately to show active session on other devices
+        syncStateToCloud({ active_workout: newWorkout }, true)
       },
 
       finishWorkout: () => {
@@ -114,6 +117,7 @@ export const useWorkoutStore = create<WorkoutState>()(
 
         const completedWorkout: CompletedWorkout = {
           id: crypto.randomUUID(),
+          routine_id: activeWorkout.routine_id,
           routine_name: activeWorkout.routine_name || 'Buổi tập tự do',
           start_time: activeWorkout.start_time,
           end_time: endTime,
@@ -135,8 +139,11 @@ export const useWorkoutStore = create<WorkoutState>()(
           lastCompletedWorkout: completedWorkout,
         })
 
-        // Đồng bộ lưu lịch sử buổi tập vào Database của email đang active
-        syncStateToCloud({ workout_history: newHistory, active_workout: null })
+        // Sync immediately to push final logs and clear active state
+        syncStateToCloud({
+          workout_history: newHistory,
+          active_workout: null
+        }, true)
       },
 
       dismissSummary: () => {
@@ -171,8 +178,6 @@ export const useWorkoutStore = create<WorkoutState>()(
         }
 
         set({ activeWorkout: updated })
-
-        // Sync to account DB
         syncStateToCloud({ active_workout: updated })
       },
 
@@ -203,8 +208,6 @@ export const useWorkoutStore = create<WorkoutState>()(
 
         const updated = { ...activeWorkout, exercises: updatedExercises }
         set({ activeWorkout: updated })
-
-        // Sync to account DB
         syncStateToCloud({ active_workout: updated })
       },
 
@@ -224,8 +227,6 @@ export const useWorkoutStore = create<WorkoutState>()(
 
         const updated = { ...activeWorkout, exercises: updatedExercises }
         set({ activeWorkout: updated })
-
-        // Debounced sync to account DB
         syncStateToCloud({ active_workout: updated })
       },
 
@@ -253,12 +254,12 @@ export const useWorkoutStore = create<WorkoutState>()(
 
         const updated = { ...activeWorkout, exercises: updatedExercises }
         set({ activeWorkout: updated })
-
-        // Sync to account DB
         syncStateToCloud({ active_workout: updated })
 
         if (wasCompleted) {
-          set({ isRestTimerRunning: true })
+          const { restTimerSeconds } = get()
+          const newTime = restTimerSeconds <= 0 ? 60 : restTimerSeconds;
+          set({ restTimerSeconds: newTime, isRestTimerRunning: true })
         }
       },
 
@@ -277,6 +278,10 @@ export const useWorkoutStore = create<WorkoutState>()(
 
       resetRestTimer: () => {
         set({ restTimerSeconds: 60, isRestTimerRunning: false })
+      },
+
+      closeRestTimer: () => {
+        set({ restTimerSeconds: 0, isRestTimerRunning: false })
       },
 
       tickRestTimer: () => {

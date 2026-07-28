@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { ResponsiveNav } from '@/components/layout/responsive-nav'
 import { CommandPalette } from '@/components/layout/command-palette'
+import { GlobalAICoach } from '@/components/layout/global-ai-coach'
 import { RestTimer } from '@/components/workout/rest-timer'
 import { SnowEffect } from '@/components/effects/snow-effect'
 import { PageTransition } from '@/components/effects/page-transition'
@@ -36,7 +37,8 @@ export default function DashboardLayout({
       } else {
         setIsAuthenticated(true)
         // Hydrate profile if not already loaded
-        if (!profile) {
+        // Always sync fresh data from cloud on load
+        if (true) {
           const { data: profileData } = await supabase.from('profiles').select('*').eq('id', session.user.id).single()
           if (profileData) {
             setProfile({
@@ -49,7 +51,8 @@ export default function DashboardLayout({
               experience: profileData.experience || 'beginner',
               goal: profileData.goal || 'recomposition',
               sessions_per_week: profileData.sessions_per_week || 3,
-              role: 'user'
+              metrics_history: profileData.metrics_history || [],
+              role: profileData.role || 'user'
             })
 
             // Hydrate all state
@@ -114,6 +117,7 @@ export default function DashboardLayout({
       <RestTimer />
 
       <CommandPalette />
+      <GlobalAICoach />
 
       {/* Back to Top Button */}
       <AnimatePresence>

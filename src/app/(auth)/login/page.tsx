@@ -61,7 +61,8 @@ export default function LoginPage() {
           experience: profileData.experience || 'beginner',
           goal: profileData.goal || 'recomposition',
           sessions_per_week: profileData.sessions_per_week || 3,
-          role: 'user'
+          metrics_history: profileData.metrics_history || [],
+          role: profileData.role || 'user'
         })
         if (profileData.exercise_state) {
           useExerciseStore.setState({

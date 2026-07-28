@@ -9,7 +9,7 @@ const PRESETS = [45, 60, 90, 120, 180]
 const CIRCUMFERENCE = 2 * Math.PI * 36 // r=36
 
 export function RestTimer() {
-  const { restTimerSeconds, isRestTimerRunning, setRestTimer, startRestTimer, pauseRestTimer, resetRestTimer, tickRestTimer } =
+  const { restTimerSeconds, isRestTimerRunning, setRestTimer, startRestTimer, pauseRestTimer, resetRestTimer, closeRestTimer, tickRestTimer } =
     useWorkoutStore()
 
   const [soundEnabled, setSoundEnabled] = useState(true)
