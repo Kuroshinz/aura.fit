@@ -1,4 +1,8 @@
 # Render.com Blueprint for AURA.FIT Telegram Bot Backend
+#
+# Note: To prevent the free web service from sleeping after 15 mins of inactivity,
+# sign up for UptimeRobot (free) and create a monitor that pings
+# https://aura-fit-bot.onrender.com every 5 minutes.
 
 services:
   # Main Python Web Service (Telegram Bot + Webhook API)
@@ -19,12 +23,3 @@ services:
         sync: false
       - key: DEFAULT_TELEGRAM_CHAT_ID
         sync: false
-
-  # Cron Job to ping the bot every 5 min (prevents free tier sleep)
-  - type: cron
-    name: aura-fit-bot-keepalive
-    env: docker
-    plan: free
-    schedule: "*/5 * * * *"
-    dockerfilePath: ./python_backend/Dockerfile
-    dockerCommand: "python -c \"import urllib.request; urllib.request.urlopen('https://aura-fit-bot.onrender.com')\""
