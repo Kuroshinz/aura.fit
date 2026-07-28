@@ -11,6 +11,9 @@ export interface TelegramWebhookPayload {
 export async function sendTelegramWebhook(payload: TelegramWebhookPayload): Promise<{ success: boolean; error?: string }> {
   try {
     const webhookUrl = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'http://localhost:8000/api/webhook'
+    const controller = new AbortController()
+    const timeout = setTimeout(() => controller.abort(), 25000) // 25s timeout for Render cold start
+
     const res = await fetch(webhookUrl, {
       method: 'POST',
       headers: {
@@ -18,7 +21,9 @@ export async function sendTelegramWebhook(payload: TelegramWebhookPayload): Prom
         'X-Webhook-Secret': 'aura_fit_super_secret_webhook_key_2026',
       },
       body: JSON.stringify(payload),
-    });
+      signal: controller.signal,
+    })
+    clearTimeout(timeout)
 
     if (!res.ok) {
       const errText = await res.text();
@@ -32,6 +37,10 @@ export async function sendTelegramWebhook(payload: TelegramWebhookPayload): Prom
     
     return { success: true };
   } catch (err: any) {
-    return { success: false, error: err.message || 'Lỗi kết nối tới Python Backend' };
+    const url = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'http://localhost:8000/api/webhook'
+    if (err.name === 'AbortError') {
+      return { success: false, error: `⏱️ Quá thời gian chờ (25s) khi kết nối đến ${url}. Render free tier có thể đang ngủ, thử lại sau 30s.` }
+    }
+    return { success: false, error: `❌ Không thể kết nối đến ${url} — ${err.message || 'Lỗi mạng'}` }
   }
 }
