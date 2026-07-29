@@ -6,6 +6,15 @@ import { Check, Plus, Dumbbell, Trophy, Calculator, X, Zap, Save, ChevronDown, C
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
 
+const SET_TYPE_COLORS: Record<string, string> = {
+  'Normal': 'text-slate-400 bg-transparent border-transparent',
+  'Warmup': 'text-blue-400 bg-blue-500/10 border-blue-500/30',
+  'Drop Set': 'text-orange-400 bg-orange-500/10 border-orange-500/30 shadow-[0_0_10px_rgba(249,115,22,0.2)]',
+  'Failure': 'text-red-400 bg-red-500/10 border-red-500/30 shadow-[0_0_10px_rgba(239,68,68,0.2)]',
+  'Backoff': 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30',
+  'AMRAP': 'text-purple-400 bg-purple-500/10 border-purple-500/30',
+}
+
 interface ExerciseLogCardProps {
   exerciseId: string
   exerciseName: string
@@ -13,7 +22,7 @@ interface ExerciseLogCardProps {
 }
 
 export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: ExerciseLogCardProps) {
-  const { activeWorkout, updateSet, toggleCompleteSet, addSet, savePersonalRecord, personalRecords, removeSet, removeExercise } = useWorkoutStore()
+  const { activeWorkout, updateSet, updateSetType, toggleCompleteSet, addSet, savePersonalRecord, personalRecords, removeSet, removeExercise } = useWorkoutStore()
   const [showPRBadge, setShowPRBadge] = useState(false)
   
   // 1RM Inline Calculator State
@@ -250,10 +259,10 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
                 set.is_completed
                   ? 'bg-gradient-to-r from-amber-500/20 via-emerald-950/40 to-slate-900/60 border-amber-400 shadow-[0_0_15px_rgba(251,191,36,0.15)]'
                   : 'bg-[#070714] border-slate-700 hover:border-slate-500'
-              }`}
+              } ${set.set_type === 'Drop Set' ? 'border-orange-500/30' : ''} ${set.set_type === 'Failure' ? 'border-red-500/30' : ''}`}
             >
-              {/* Set Index */}
-              <div className="col-span-2 flex justify-center">
+              {/* Set Index & Type */}
+              <div className="col-span-2 flex flex-col items-center justify-center gap-1">
                 <span className={`w-8 h-8 sm:w-10 sm:h-10 rounded-xl font-mono font-black text-sm sm:text-base flex items-center justify-center border ${
                   set.is_completed
                     ? 'bg-amber-400/30 text-amber-300 border-amber-400 shadow-[0_0_10px_rgba(251,191,36,0.4)]'
@@ -261,6 +270,16 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
                 }`}>
                   {idx + 1}
                 </span>
+                
+                <select
+                  value={set.set_type || 'Normal'}
+                  onChange={(e) => updateSetType(exerciseId, set.id, e.target.value as any)}
+                  className={`w-14 sm:w-16 bg-transparent text-[9px] sm:text-[10px] font-bold font-mono outline-none cursor-pointer appearance-none text-center rounded border px-0.5 py-0.5 ${SET_TYPE_COLORS[set.set_type || 'Normal'] || SET_TYPE_COLORS['Normal']}`}
+                >
+                  {Object.keys(SET_TYPE_COLORS).map(type => (
+                    <option key={type} value={type} className="bg-slate-900 text-white">{type}</option>
+                  ))}
+                </select>
               </div>
 
               {/* Weight Input */}
