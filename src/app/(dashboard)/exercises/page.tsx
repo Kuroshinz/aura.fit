@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import { Search, Plus, Dumbbell, Sparkles, X, Check, AlertCircle } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { SpatialCard } from '@/components/effects/spatial-card'
@@ -86,11 +86,13 @@ export default function ExercisesPage() {
     setVisibleCount(24)
   }, [search, filterMuscle])
 
-  const filtered = exercisesList.filter((ex) => {
-    const matchSearch = ex.name.toLowerCase().includes(search.toLowerCase())
-    const matchMuscle = filterMuscle === 'All' || ex.muscle === filterMuscle
-    return matchSearch && matchMuscle
-  })
+  const filtered = useMemo(() => {
+    return exercisesList.filter((ex) => {
+      const matchSearch = ex.name.toLowerCase().includes(search.toLowerCase().trim())
+      const matchMuscle = filterMuscle === 'All' || ex.muscle === filterMuscle
+      return matchSearch && matchMuscle
+    })
+  }, [exercisesList, search, filterMuscle])
 
   const handleCreateCustomExercise = (e: React.FormEvent) => {
     e.preventDefault()
