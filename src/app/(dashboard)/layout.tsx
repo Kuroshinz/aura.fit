@@ -15,6 +15,7 @@ import { createClient } from '@/lib/supabase/client'
 import { useProfileStore } from '@/store/use-profile-store'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { useExerciseStore } from '@/store/useExerciseStore'
+import { QuickAddFAB } from '@/components/layout/quick-add-fab'
 
 export default function DashboardLayout({
   children,
@@ -58,29 +59,29 @@ export default function DashboardLayout({
 
             // Hydrate all state
             if (profileData.exercise_state) {
-              useExerciseStore.setState({
-                favoriteExerciseIds: profileData.exercise_state.favoriteExerciseIds || [],
-                recentlyViewedIds: profileData.exercise_state.recentlyViewedIds || [],
-                customExercises: profileData.exercise_state.customExercises || []
-              })
+              useExerciseStore.getState().hydrateFromCloud(profileData.exercise_state)
             }
-            // Hydrate workout history
-            useWorkoutStore.setState({
-              workoutHistory: profileData.workout_history || [],
-              personalRecords: profileData.personal_records || {},
-              activeWorkout: profileData.active_workout || null,
-            })
+            if (profileData.workout_history) {
+              useWorkoutStore.setState({ workoutHistory: profileData.workout_history })
+            }
+            if (profileData.personal_records) {
+              useWorkoutStore.setState({ personalRecords: profileData.personal_records })
+            }
+            if (profileData.active_workout) {
+              useWorkoutStore.setState({ activeWorkout: profileData.active_workout })
+            }
           }
         }
       }
     }
     checkSession()
     return () => { mounted = false }
-  }, [supabase, router, setProfile]) // removed pathname — only re-fetch on mount/session change
+  }, [router])
 
+  // Scroll to top listener
   useEffect(() => {
     const handleScroll = () => {
-      setShowBackToTop(window.scrollY > 400)
+      setShowBackToTop(window.scrollY > 300)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -120,6 +121,7 @@ export default function DashboardLayout({
 
       <CommandPalette />
       <GlobalAICoach />
+      <QuickAddFAB />
 
       {/* Back to Top Button */}
       <AnimatePresence>
