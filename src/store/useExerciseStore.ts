@@ -1,8 +1,9 @@
-﻿import { create } from 'zustand';
+import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import type { Exercise } from '@/data/exercises-database';
 import { EXERCISES_DATABASE } from '@/data/exercises-database';
 import { syncStateToCloud } from '@/lib/supabase/user-sync';
+import { IMPORTED_EXERCISES } from '@/data/exercises-dataset-imported';
 
 interface ExerciseFilters {
   muscleGroup: string | null;
@@ -115,7 +116,9 @@ export const useExerciseStore = create<ExerciseStore>()(
       // Getters
       getAllExercises: () => {
         const { customExercises } = get();
-        return [...EXERCISES_DATABASE, ...customExercises];
+        const existingIds = new Set(EXERCISES_DATABASE.map(ex => ex.id));
+        const newImports = IMPORTED_EXERCISES.filter(ex => !existingIds.has(ex.id));
+        return [...EXERCISES_DATABASE, ...newImports, ...customExercises];
       },
 
       getFilteredExercises: () => {
