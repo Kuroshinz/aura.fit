@@ -1,0 +1,3 @@
+# Exclude large media assets from Vercel deployment
+# They are served directly via GitHub raw URLs
+public/exercises
