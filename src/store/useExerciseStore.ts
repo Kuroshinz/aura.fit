@@ -118,6 +118,12 @@ export const useExerciseStore = create<ExerciseStore>()(
         const { customExercises } = get();
         const existingIds = new Set(EXERCISES_DATABASE.map(ex => ex.id));
         const newImports = IMPORTED_EXERCISES.filter(ex => !existingIds.has(ex.id));
+        console.log("DEBUG getAllExercises:", {
+          db: EXERCISES_DATABASE.length,
+          imports: IMPORTED_EXERCISES.length,
+          newImports: newImports.length,
+          custom: customExercises.length
+        });
         return [...EXERCISES_DATABASE, ...newImports, ...customExercises];
       },
 
