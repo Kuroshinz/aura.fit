@@ -48,17 +48,20 @@ export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerP
               </div>
 
               <div className="space-y-3">
-                {menuItems.map(item => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    onClick={onClose}
-                    className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors"
-                  >
-                    <item.icon className="w-5 h-5 text-amber-400" />
-                    {item.label}
-                  </Link>
-                ))}
+                {menuItems.map(item => {
+                  const Icon = item.icon;
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      onClick={onClose}
+                      className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors"
+                    >
+                      <Icon className="w-5 h-5 text-amber-400" />
+                      {item.label}
+                    </Link>
+                  )
+                })}
                 <button
                   onClick={() => { onClose(); onLogout(); }}
                   className="w-full flex items-center gap-4 p-4 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-400 font-bold hover:bg-red-500/20 transition-colors mt-4"

@@ -24,23 +24,26 @@ export function QuickAddFAB() {
             exit={{ opacity: 0, y: 10, scale: 0.9 }}
             className="flex flex-col gap-3"
           >
-            {actions.map((action, i) => (
-              <motion.button
-                key={action.id}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0, transition: { delay: i * 0.05 } }}
-                className="flex items-center gap-3 bg-[#070714] border border-slate-700 text-white px-4 py-2 rounded-xl shadow-xl hover:bg-slate-800 transition-colors"
-                onClick={() => {
-                  console.log(`Triggered ${action.id}`);
-                  setIsOpen(false);
-                }}
-              >
-                <span className="text-xs font-mono font-bold uppercase tracking-wider">{action.label}</span>
-                <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center border border-slate-700">
-                  <action.icon className="w-4 h-4 text-amber-400" />
-                </div>
-              </motion.button>
-            ))}
+            {actions.map((action, i) => {
+              const Icon = action.icon;
+              return (
+                <motion.button
+                  key={action.id}
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0, transition: { delay: i * 0.05 } }}
+                  className="flex items-center gap-3 bg-[#070714] border border-slate-700 text-white px-4 py-2 rounded-xl shadow-xl hover:bg-slate-800 transition-colors"
+                  onClick={() => {
+                    console.log(`Triggered ${action.id}`);
+                    setIsOpen(false);
+                  }}
+                >
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider">{action.label}</span>
+                  <div className="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center border border-slate-700">
+                    <Icon className="w-4 h-4 text-amber-400" />
+                  </div>
+                </motion.button>
+              )
+            })}
           </motion.div>
         )}
       </AnimatePresence>
