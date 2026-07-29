@@ -94,7 +94,8 @@ export function ResponsiveNav() {
 
   // Close mobile nav on route change
   useEffect(() => {
-    setMobileNavOpen(false)
+    setMobileMenuOpen(false)
+    setDrawerOpen(false)
   }, [pathname])
 
   const handleLogout = () => {
