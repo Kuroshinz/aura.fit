@@ -7,10 +7,11 @@ import { useProfileStore } from '@/store/use-profile-store'
 import {
   LayoutDashboard, Calendar, Dumbbell, Play, Calculator,
   User, ShieldAlert, LogOut, Menu, X, ChevronLeft, ChevronRight,
-  Sparkles, Bell, Trophy,
+  Sparkles, Bell, Trophy, Menu as MenuIcon
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { NotificationBell } from '@/components/effects/notification-bell'
+import { MobileMenuDrawer } from './mobile-menu-drawer'
 
 // ─── Navigation Items ──────────────────────────────────────────────
 const navItems = [
@@ -80,7 +81,8 @@ export function ResponsiveNav() {
   const router = useRouter()
   const { profile, logout } = useProfileStore()
   const [collapsed, setCollapsed] = useState(false)
-  const [mobileNavOpen, setMobileNavOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [drawerOpen, setDrawerOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
@@ -226,7 +228,7 @@ export function ResponsiveNav() {
 
       {/* Tab Bar */}
       <div className="aura-glass border-t border-slate-700/80 px-2 py-2 flex justify-around items-center pt-8">
-        {visibleItems.slice(0, 5).map((item) => { // max 5 tabs on mobile
+        {navItems.filter(item => ['/dashboard', '/routines', '/exercises', '/records'].includes(item.href)).map((item) => {
           const Icon = item.icon
           const isActive = pathname === item.href
 
@@ -251,7 +253,7 @@ export function ResponsiveNav() {
 
               <Icon className={`w-5 h-5 ${isActive ? 'drop-shadow-[0_0_6px_rgba(251,191,36,0.5)]' : ''}`} />
 
-              <span className="text-[9px] font-mono font-bold leading-tight max-w-[56px] truncate">
+              <span className="text-[9px] font-mono font-bold leading-tight max-w-[56px] truncate text-center">
                 {item.label}
               </span>
 
@@ -262,6 +264,15 @@ export function ResponsiveNav() {
             </Link>
           )
         })}
+
+        {/* Menu Drawer Toggle */}
+        <button
+          onClick={() => setDrawerOpen(true)}
+          className="relative flex flex-col items-center gap-0.5 py-1.5 px-2 rounded-xl text-slate-400 hover:text-amber-400 min-w-[56px] min-h-[44px] flex items-center justify-center transition-all duration-200"
+        >
+          <MenuIcon className="w-5 h-5" />
+          <span className="text-[9px] font-mono font-bold leading-tight mt-0.5">MENU</span>
+        </button>
       </div>
     </div>
   )
@@ -270,6 +281,13 @@ export function ResponsiveNav() {
     <>
       {sidebar}
       {mobileBottomNav}
+
+      <MobileMenuDrawer 
+        isOpen={drawerOpen} 
+        onClose={() => setDrawerOpen(false)} 
+        onLogout={handleLogout} 
+        isAdmin={profile?.role === 'admin'} 
+      />
 
       {/* Spacer for mobile bottom nav */}
       <div className="lg:hidden h-20" />
