@@ -59,7 +59,11 @@ export default function DashboardLayout({
 
             // Hydrate all state
             if (profileData.exercise_state) {
-              useExerciseStore.getState().hydrateFromCloud(profileData.exercise_state)
+              useExerciseStore.setState({
+                favoriteExerciseIds: profileData.exercise_state.favoriteExerciseIds || [],
+                recentlyViewedIds: profileData.exercise_state.recentlyViewedIds || [],
+                customExercises: profileData.exercise_state.customExercises || []
+              })
             }
             if (profileData.workout_history) {
               useWorkoutStore.setState({ workoutHistory: profileData.workout_history })
