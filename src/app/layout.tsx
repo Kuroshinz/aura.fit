@@ -29,6 +29,8 @@ export const viewport = {
   themeColor: '#020206',
 }
 
+import Script from 'next/script'
+
 export default function RootLayout({
   children,
 }: {
@@ -48,6 +50,18 @@ export default function RootLayout({
       </head>
       <body className="bg-[#020206] text-white font-sans selection:bg-amber-400 selection:text-black antialiased overflow-x-hidden">
         {children}
+        <Script id="sw-register" strategy="afterInteractive">
+          {`
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').then(
+                  function(registration) { console.log('SW registered: ', registration.scope); },
+                  function(err) { console.log('SW registration failed: ', err); }
+                );
+              });
+            }
+          `}
+        </Script>
       </body>
     </html>
   )
