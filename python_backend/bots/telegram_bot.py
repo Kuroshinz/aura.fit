@@ -143,9 +143,11 @@ def build_telegram_app() -> Application:
 
     # Schedule daily routine notification at 7:00 AM for DEFAULT chat
     if config.DEFAULT_TELEGRAM_CHAT_ID:
-        t = datetime.time(hour=7, minute=0, second=0)
+        import datetime
+        tz_vn = datetime.timezone(datetime.timedelta(hours=7)) # UTC+7 for Vietnam
+        t = datetime.time(hour=7, minute=0, second=0, tzinfo=tz_vn)
         app.job_queue.run_daily(send_daily_routine_notification, time=t)
-        # Also schedule per-user notifications every 5 minutes between 7-8 AM
+        # Also schedule per-user notifications every 5 minutes
         app.job_queue.run_repeating(check_and_send_user_notifications, interval=300, first=10)
         logger.info("✅ Scheduled daily routine notification jobs")
 
@@ -222,7 +224,7 @@ async def check_and_send_user_notifications(context: ContextTypes.DEFAULT_TYPE):
     # Query profiles that have auto_send_routine enabled and a telegram_chat_id
     try:
         res = supabase_service.client.table("profiles") \
-            .select("id,email,full_name,telegram_chat_id") \
+            .select("id,full_name,telegram_chat_id") \
             .eq("auto_send_routine", True) \
             .not_.is_("telegram_chat_id", "null") \
             .execute()
@@ -255,6 +257,6 @@ async def check_and_send_user_notifications(context: ContextTypes.DEFAULT_TYPE):
         try:
             await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2")
             context.bot_data[sent_key] = True
-            logger.info(f"✅ Sent daily routine to {profile.get('email', chat_id)} (chat: {chat_id})")
+            logger.info(f"✅ Sent daily routine to {profile.get('full_name', chat_id)} (chat: {chat_id})")
         except Exception as e:
             logger.error(f"Failed to send to {chat_id}: {e}")
