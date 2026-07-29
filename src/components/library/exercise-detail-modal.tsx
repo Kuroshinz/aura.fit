@@ -44,6 +44,27 @@ export function ExerciseDetailModal({ exercise, onClose }: ExerciseDetailModalPr
             </button>
           </div>
 
+          {/* Media Header (Optional) */}
+          {(exercise.metadata?.videoUrl || exercise.metadata?.thumbnailUrl) && (
+            <div className="w-full bg-slate-900 border-b border-slate-800 flex justify-center py-4 px-6 overflow-hidden">
+              {exercise.metadata?.videoUrl ? (
+                <img 
+                  src={exercise.metadata.videoUrl} 
+                  alt={exercise.name} 
+                  className="max-h-[30vh] w-auto object-contain rounded-xl shadow-lg border border-slate-700/50"
+                  loading="lazy"
+                />
+              ) : (
+                <img 
+                  src={exercise.metadata?.thumbnailUrl} 
+                  alt={exercise.name} 
+                  className="max-h-[30vh] w-auto object-contain rounded-xl shadow-lg border border-slate-700/50"
+                  loading="lazy"
+                />
+              )}
+            </div>
+          )}
+
           {/* Content */}
           <div className="p-6 overflow-y-auto custom-scrollbar flex flex-col gap-6">
             
