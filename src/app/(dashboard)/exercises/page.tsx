@@ -5,6 +5,8 @@ import { Search, Plus, Dumbbell, Sparkles, X, Check, AlertCircle } from 'lucide-
 import { motion, AnimatePresence } from 'framer-motion'
 import { SpatialCard } from '@/components/effects/spatial-card'
 import { createClient } from '@/lib/supabase/client'
+import { useExerciseStore } from '@/store/useExerciseStore'
+import { ExerciseDetailModal } from '@/components/library/exercise-detail-modal'
 
 export interface ExerciseItem {
   id: string
@@ -15,72 +17,26 @@ export interface ExerciseItem {
 }
 
 export default function ExercisesPage() {
-  const [exercisesList, setExercisesList] = useState<ExerciseItem[]>([])
+  const { getAllExercises } = useExerciseStore()
+  const [exercisesList, setExercisesList] = useState<any[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [errorMsg, setErrorMsg] = useState('')
   const [search, setSearch] = useState('')
   const [filterMuscle, setFilterMuscle] = useState<string>('All')
   const [showCreateModal, setShowCreateModal] = useState(false)
   const [visibleCount, setVisibleCount] = useState(24)
+  const [selectedExercise, setSelectedExercise] = useState<any | null>(null)
 
   // New Exercise Form State
   const [newName, setNewName] = useState('')
-  const [newMuscle, setNewMuscle] = useState<ExerciseItem['muscle']>('Chest')
-  const [newEquipment, setNewEquipment] = useState<ExerciseItem['equipment']>('Barbell')
+  const [newMuscle, setNewMuscle] = useState('Chest')
+  const [newEquipment, setNewEquipment] = useState('Barbell')
 
   useEffect(() => {
-    const fetchExercises = async () => {
-      try {
-        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
-        const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-
-        if (!supabaseUrl || !supabaseKey) {
-          setErrorMsg('Thiếu cấu hình Supabase (NEXT_PUBLIC_SUPABASE_URL/ANON_KEY) trong file .env.local')
-          setIsLoading(false)
-          return
-        }
-
-        const supabase = createClient()
-        const { data, error } = await supabase.from('exercises_catalog').select('*').limit(1000)
-        
-        if (error) throw error
-
-        if (data) {
-          const formatted = data.map((ex: any) => {
-            let mappedMuscle = 'Core'
-            const bp = (ex.body_part || '').toLowerCase()
-            if (bp.includes('chest')) mappedMuscle = 'Chest'
-            else if (bp.includes('back')) mappedMuscle = 'Back'
-            else if (bp.includes('leg') || bp.includes('thigh') || bp.includes('calf')) mappedMuscle = 'Legs'
-            else if (bp.includes('shoulder')) mappedMuscle = 'Shoulders'
-            else if (bp.includes('arm') || bp.includes('bicep') || bp.includes('tricep') || bp.includes('lower arms') || bp.includes('upper arms')) mappedMuscle = 'Arms'
-            
-            let eq = 'Bodyweight'
-            const exEq = (ex.equipment || '').toLowerCase()
-            if (exEq.includes('barbell')) eq = 'Barbell'
-            else if (exEq.includes('dumbbell')) eq = 'Dumbbell'
-            else if (exEq.includes('cable')) eq = 'Cable'
-            else if (exEq.includes('machine') || exEq.includes('leverage')) eq = 'Machine'
-            
-            return {
-              id: ex.id,
-              name: ex.name.toUpperCase(),
-              muscle: mappedMuscle,
-              equipment: eq,
-              isCustom: false
-            }
-          })
-          setExercisesList(formatted)
-        }
-      } catch (err: any) {
-        console.error('Fetch error:', err)
-        setErrorMsg('Lỗi khi tải dữ liệu từ Supabase: ' + err.message)
-      } finally {
-        setIsLoading(false)
-      }
-    }
-    fetchExercises()
-  }, [])
+    // Instant offline load
+    setExercisesList(getAllExercises())
+    setIsLoading(false)
+  }, [getAllExercises])
 
   useEffect(() => {
     setVisibleCount(24)
@@ -89,19 +45,22 @@ export default function ExercisesPage() {
   const filtered = useMemo(() => {
     return exercisesList.filter((ex) => {
       const matchSearch = ex.name.toLowerCase().includes(search.toLowerCase().trim())
-      const matchMuscle = filterMuscle === 'All' || ex.muscle === filterMuscle
+      const matchMuscle = filterMuscle === 'All' || ex.muscleGroup === filterMuscle
       return matchSearch && matchMuscle
     })
   }, [exercisesList, search, filterMuscle])
 
   const handleCreateCustomExercise = (e: React.FormEvent) => {
     e.preventDefault()
-    const newEx: ExerciseItem = {
+    // Normally would dispatch to useExerciseStore.addCustomExercise
+    const newEx = {
       id: `custom_${Date.now()}`,
       name: newName.trim().toUpperCase(),
-      muscle: newMuscle,
+      muscleGroup: newMuscle,
       equipment: newEquipment,
       isCustom: true,
+      difficulty: 'Beginner',
+      metadata: {}
     }
 
     setExercisesList([newEx, ...exercisesList])
@@ -195,7 +154,8 @@ export default function ExercisesPage() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3 }}
                 key={ex.id}
-                className="group h-full"
+                className="group h-full cursor-pointer"
+                onClick={() => setSelectedExercise(ex)}
               >
                 <SpatialCard intensity={8} className="h-full rounded-3xl p-6 flex flex-col justify-between border-slate-700/50 shadow-xl group-hover:border-amber-400/50 group-hover:shadow-[0_0_30px_rgba(251,191,36,0.15)] transition-all duration-300 bg-slate-900/40">
                 <div className="flex items-center gap-3.5 mb-4">
@@ -216,7 +176,7 @@ export default function ExercisesPage() {
 
                 <div className="flex items-center gap-2.5 mt-2">
                   <span className="text-xs font-mono font-bold px-3 py-1 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full uppercase">
-                    {ex.muscle}
+                    {ex.muscleGroup}
                   </span>
                   <span className="text-xs font-mono font-bold px-3 py-1 bg-slate-900 text-slate-300 border border-slate-700 rounded-full uppercase">
                     {ex.equipment}
@@ -320,6 +280,12 @@ export default function ExercisesPage() {
           </motion.div>
         </div>
       )}
+      {/* Detail Modal */}
+      <ExerciseDetailModal 
+        exercise={selectedExercise} 
+        onClose={() => setSelectedExercise(null)} 
+      />
+
     </div>
   )
 }
