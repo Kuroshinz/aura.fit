@@ -12,7 +12,7 @@ import { exportWorkoutDataCSV } from '@/lib/utils/export-data'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { useProfileStore, goalLabels } from '@/store/use-profile-store'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { Dumbbell, Flame, Trophy, Calendar, Sparkles, TrendingUp, Star, Clock, StickyNote, Download, Send, CheckCircle, AlertCircle, ChevronDown, ChevronUp } from 'lucide-react'
+import { Dumbbell, Flame, Trophy, Calendar, Sparkles, TrendingUp, Star, Clock, Download, Send, CheckCircle, AlertCircle, ChevronDown, ChevronUp, Trash2 } from 'lucide-react'
 import { AnimatePresence } from 'framer-motion'
 import { motion } from 'framer-motion'
 
@@ -32,11 +32,11 @@ const itemVariants = {
 }
 
 export default function DashboardPage() {
-  const { workoutHistory } = useWorkoutStore()
+  const { workoutHistory, deleteWorkout } = useWorkoutStore()
   const { profile } = useProfileStore()
   const [sendingTelegramId, setSendingTelegramId] = useState<string | null>(null)
   const [telegramToast, setTelegramToast] = useState<{ type: 'success' | 'error'; msg: string } | null>(null)
-  const [expandedHistoryIds, setExpandedHistoryIds] = useState<string[]>([]);
+  const [expandedHistoryIds, setExpandedHistoryIds] = useState<string[]>([])
 
   const toggleHistoryExpand = (id: string) => {
     setExpandedHistoryIds((prev) =>
@@ -55,7 +55,20 @@ export default function DashboardPage() {
   const weeklyVolume = thisWeekWorkouts.reduce((sum, w) => sum + w.total_volume, 0)
   const weeklyCount = thisWeekWorkouts.length
 
-  // Best 1RM from all history (Bench Press as example)
+  // Prior week comparison for trend badges
+  const prevWeekWorkouts = workoutHistory.filter((w) => {
+    const wDate = new Date(w.start_time)
+    const now = new Date()
+    const twoWeeksAgo = new Date(now.getTime() - 14 * 24 * 60 * 60 * 1000)
+    const oneWeekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000)
+    return wDate >= twoWeeksAgo && wDate < oneWeekAgo
+  })
+  const prevWeekVolume = prevWeekWorkouts.reduce((sum, w) => sum + w.total_volume, 0)
+  const prevWeekCount = prevWeekWorkouts.length
+  const volumeChangePercent = prevWeekVolume === 0 ? null : Math.round(((weeklyVolume - prevWeekVolume) / prevWeekVolume) * 100)
+  const countChange = weeklyCount - prevWeekCount
+
+  // Best 1RM from all history
   const best1RM = workoutHistory.reduce((best, w) => {
     w.exercises.forEach((ex) => {
       ex.sets.filter((s) => s.is_completed).forEach((s) => {
@@ -79,7 +92,7 @@ export default function DashboardPage() {
         return wDate.toDateString() === checkDate.toDateString()
       })
       if (hasWorkout) count++
-      else if (i > 0) break // allow today to be missing
+      else if (i > 0) break
     }
     return count
   })()
@@ -91,7 +104,7 @@ export default function DashboardPage() {
       animate="show"
       className="space-y-10"
     >
-      {/* CLEAN DASHBOARD HEADER BLOCK */}
+      {/* Dashboard Header */}
       <motion.div variants={itemVariants} className="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-2">
         <div>
           {profile ? (
@@ -117,7 +130,7 @@ export default function DashboardPage() {
           )}
         </div>
         <button
-          onClick={exportWorkoutDataCSV}
+          onClick={() => exportWorkoutDataCSV(workoutHistory)}
           className="aura-glass px-5 py-3 rounded-2xl flex items-center gap-2 font-mono text-xs font-bold text-amber-300 border-amber-400/50 hover:bg-amber-400/10 transition-all shadow-xl self-start md:self-auto"
         >
           <Download className="w-4 h-4 text-amber-400" />
@@ -128,7 +141,7 @@ export default function DashboardPage() {
       {/* Glow Divider */}
       <div className="glow-divider" />
 
-      {/* Spatial Luxury Stats Cards */}
+      {/* Stats Cards */}
       <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         <motion.div whileHover={{ y: -5 }} className="h-full">
           <SpatialCard className="p-4 sm:p-6 rounded-3xl relative overflow-hidden group h-full">
@@ -143,6 +156,11 @@ export default function DashboardPage() {
               <TrendingUp className="w-3.5 h-3.5" />
               <span>{workoutHistory.length} buổi tổng cộng</span>
             </div>
+            {countChange !== 0 && (
+              <span className={`mt-1 text-[10px] font-mono font-black px-2 py-0.5 rounded inline-flex items-center gap-1 ${countChange > 0 ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'}`}>
+                {countChange > 0 ? '▲' : '▼'} {Math.abs(countChange)} buổi so tuần trước
+              </span>
+            )}
           </SpatialCard>
         </motion.div>
 
@@ -159,6 +177,11 @@ export default function DashboardPage() {
               <Sparkles className="w-3.5 h-3.5" />
               <span>{weeklyVolume > 0 ? 'Active Mode' : 'Chưa có dữ liệu'}</span>
             </div>
+            {volumeChangePercent !== null && (
+              <span className={`mt-1 text-[10px] font-mono font-black px-2 py-0.5 rounded inline-flex items-center gap-1 ${volumeChangePercent >= 0 ? 'bg-emerald-500/20 text-emerald-400' : 'bg-red-500/20 text-red-400'}`}>
+                {volumeChangePercent >= 0 ? '▲' : '▼'} {Math.abs(volumeChangePercent)}% so tuần trước
+              </span>
+            )}
           </SpatialCard>
         </motion.div>
 
@@ -210,11 +233,10 @@ export default function DashboardPage() {
 
       {/* Total Volume Weekly Chart */}
       <motion.div variants={itemVariants}>
-        
-              <VolumeChart />
+        <VolumeChart />
       </motion.div>
 
-      {/* Real Workout History Log List */}
+      {/* Workout History */}
       <motion.div variants={itemVariants} className="space-y-6">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-extrabold text-white tracking-tight flex items-center gap-3">
@@ -303,6 +325,15 @@ export default function DashboardPage() {
                       >
                         <Send className="w-3.5 h-3.5" />
                         {sendingTelegramId === w.id ? 'ĐANG GỬI...' : 'GỬI TELEGRAM'}
+                      </button>
+                      <button
+                        onClick={() => {
+                          if (confirm(`Xóa buổi tập "${w.routine_name}" vĩnh viễn?`)) deleteWorkout(w.id)
+                        }}
+                        className="px-3 py-1.5 bg-red-500/15 hover:bg-red-500/25 text-red-400 border border-red-500/30 rounded-xl font-bold font-mono text-xs flex items-center gap-1.5 transition-all"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                        XÓA
                       </button>
                     </div>
                   </div>

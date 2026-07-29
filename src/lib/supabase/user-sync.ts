@@ -1,26 +1,27 @@
 import { createClient } from './client'
-import { ActiveWorkout, CompletedWorkout } from '@/store/use-workout-store'
 
 let syncTimeout: any = null
 
+export interface SyncUpdates {
+  active_workout?: any | null,
+  workout_history?: any[],
+  personal_records?: Record<string, any>,
+  exercise_state?: any,
+  age?: number,
+  gender?: string,
+  height_cm?: number,
+  weight_kg?: number,
+  body_fat?: number | null,
+  experience?: string,
+  goal?: string,
+  sessions_per_week?: number,
+  telegram_chat_id?: string,
+  auto_send_routine?: boolean,
+  metrics_history?: any[]
+}
+
 export function syncStateToCloud(
-  updates: {
-    active_workout?: ActiveWorkout | null,
-    workout_history?: CompletedWorkout[],
-    personal_records?: Record<string, any>,
-    exercise_state?: any,
-    age?: number,
-    gender?: string,
-    height_cm?: number,
-    weight_kg?: number,
-    body_fat?: number | null,
-    experience?: string,
-    goal?: string,
-    sessions_per_week?: number,
-    telegram_chat_id?: string,
-    auto_send_routine?: boolean,
-    metrics_history?: any[]
-  },
+  updates: SyncUpdates,
   immediate = false
 ) {
   if (syncTimeout) {

@@ -61,6 +61,10 @@ interface WorkoutState {
   resetRestTimer: () => void
   closeRestTimer: () => void
   tickRestTimer: () => void
+
+  removeSet: (exerciseId: string, setId: string) => void
+  removeExercise: (exerciseId: string) => void
+  deleteWorkout: (workoutId: string) => void
 }
 
 export const useWorkoutStore = create<WorkoutState>()(
@@ -291,6 +295,34 @@ export const useWorkoutStore = create<WorkoutState>()(
         } else {
           set({ isRestTimerRunning: false })
         }
+      },
+
+      removeSet: (exerciseId, setId) => {
+        set(state => {
+          if (!state.activeWorkout) return state
+          const exercises = state.activeWorkout.exercises.map(ex =>
+            ex.exercise_id !== exerciseId ? ex : { ...ex, sets: ex.sets.filter(s => s.id !== setId) }
+          )
+          return { activeWorkout: { ...state.activeWorkout, exercises } }
+        })
+      },
+
+      removeExercise: (exerciseId) => {
+        set(state => {
+          if (!state.activeWorkout) return state
+          return {
+            activeWorkout: {
+              ...state.activeWorkout,
+              exercises: state.activeWorkout.exercises.filter(ex => ex.exercise_id !== exerciseId)
+            }
+          }
+        })
+      },
+
+      deleteWorkout: (workoutId) => {
+        set(state => ({
+          workoutHistory: state.workoutHistory.filter(w => w.id !== workoutId)
+        }))
       },
     }),
     {

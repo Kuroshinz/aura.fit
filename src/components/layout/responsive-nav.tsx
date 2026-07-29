@@ -7,9 +7,10 @@ import { useProfileStore } from '@/store/use-profile-store'
 import {
   LayoutDashboard, Calendar, Dumbbell, Play, Calculator,
   User, ShieldAlert, LogOut, Menu, X, ChevronLeft, ChevronRight,
-  Sparkles,
+  Sparkles, Bell, Trophy,
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { NotificationBell } from '@/components/effects/notification-bell'
 
 // ─── Navigation Items ──────────────────────────────────────────────
 const navItems = [
@@ -17,6 +18,7 @@ const navItems = [
   { label: 'LỊCH TẬP', href: '/routines', icon: Calendar, shortcut: 'G R' },
   { label: 'THƯ VIỆN', href: '/exercises', icon: Dumbbell, shortcut: 'G E' },
   { label: 'MÁY TÍNH 1RM', href: '/calculator', icon: Calculator, shortcut: 'G C' },
+  { label: 'KỶ LỤC', href: '/records', icon: Trophy, shortcut: 'G K' },
   { label: 'HỒ SƠ', href: '/profile', icon: User, shortcut: 'G P' },
   { label: 'ADMIN PANEL', href: '/admin', icon: ShieldAlert, shortcut: 'G A', adminOnly: true },
 ]
@@ -185,6 +187,11 @@ export function ResponsiveNav() {
             <Play className="w-4 h-4 fill-current shrink-0" />
             {!collapsed && <span>BUỔI TẬP HIỆN TẠI</span>}
           </Link>
+
+          {/* Notification Bell */}
+          <div className="flex items-center justify-center mb-2">
+            <NotificationBell />
+          </div>
 
           {/* Logout */}
           <button

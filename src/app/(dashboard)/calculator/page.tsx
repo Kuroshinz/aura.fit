@@ -17,6 +17,33 @@ export default function CalculatorPage() {
   const nextTargetLight = (weight + 2.5).toFixed(1)
   const nextTargetHeavy = (weight * 1.05).toFixed(1)
 
+  // Plate Calculator (assumes 20kg bar, standard plates)
+  const barWeight = 20
+  const perSide = Math.max(0, (weight - barWeight) / 2)
+
+  function calculatePlates(loadPerSide: number): Record<number, number> {
+    const plates = [25, 20, 15, 10, 5, 2.5]
+    const result: Record<number, number> = {}
+    let remaining = loadPerSide
+    for (const p of plates) {
+      const count = Math.floor(remaining / p)
+      if (count > 0) {
+        result[p] = count
+        remaining = Math.round((remaining - count * p) * 100) / 100
+      }
+    }
+    return result
+  }
+
+  const plateMap = calculatePlates(perSide)
+
+  // Rep Range % Table based on average 1RM
+  const repRangeTable = [1, 2, 3, 4, 5, 6, 8, 10, 12, 15].map(r => ({
+    reps: r,
+    pct: Math.round(100 / (1 + r / 30)),
+    kg: Math.round(average1RM * (100 / (1 + r / 30)) / 100),
+  }))
+
   return (
     <div className="space-y-8">
       {/* Top Banner */}
@@ -127,6 +154,55 @@ export default function CalculatorPage() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Plate Calculator */}
+      <div className="aura-glass rounded-3xl p-6 md:p-8 space-y-4">
+        <h3 className="text-xl font-bold text-white flex items-center gap-2">
+          🏋️ Cách xếp tạ <span className="text-base font-normal text-white">(bar 20kg)</span>
+          <span className="text-xs font-mono text-slate-400 font-normal ml-1">— mỗi bên</span>
+        </h3>
+        {Object.keys(plateMap).length === 0 ? (
+          <p className="text-slate-500 font-mono text-sm">Không có tạ nào ngoài đòn (hoặc nhẹ hơn 20kg)</p>
+        ) : (
+          <div className="flex flex-wrap gap-2">
+            {Object.entries(plateMap).sort((a, b) => Number(b[0]) - Number(a[0])).map(([plate, count]) => (
+              <span key={plate} className="px-4 py-2 rounded-xl bg-amber-500/20 border border-amber-400/40 text-amber-300 font-mono font-bold text-sm">
+                {count}× {plate}kg
+              </span>
+            ))}
+          </div>
+        )}
+        <p className="text-[11px] text-slate-500 font-mono">Tổng tải mỗi bên: <span className="text-slate-400 font-bold">{perSide.toFixed(1)} kg</span></p>
+      </div>
+
+      {/* Rep Range Table */}
+      <div className="aura-glass rounded-3xl p-6 md:p-8 space-y-4">
+        <h3 className="text-xl font-bold text-white">📊 Bảng % theo số Reps</h3>
+        <p className="text-xs text-slate-400 font-mono">Dựa trên 1RM trung bình của bạn: <strong className="text-amber-400">{average1RM} kg</strong></p>
+        <div className="overflow-x-auto">
+          <table className="w-full text-xs font-mono">
+            <thead>
+              <tr className="border-b border-slate-700 text-slate-400 uppercase">
+                <th className="text-left py-2 pr-4">Reps</th>
+                <th className="text-left py-2 pr-4">% 1RM</th>
+                <th className="text-left py-2">Mục tiêu (kg)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {repRangeTable.map(row => (
+                <tr
+                  key={row.reps}
+                  className={`border-b border-slate-800/50 transition-colors ${row.reps === reps ? 'bg-amber-500/10 text-amber-300' : 'text-slate-300 hover:bg-slate-800/30'}`}
+                >
+                  <td className="py-2 pr-4 font-bold">{row.reps} reps</td>
+                  <td className="py-2 pr-4">{row.pct}%</td>
+                  <td className="py-2 font-bold">{row.kg} kg</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </div>

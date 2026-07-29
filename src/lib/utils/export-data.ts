@@ -1,17 +1,41 @@
-import * as XLSX from 'xlsx'
+import { CompletedWorkout } from '@/store/use-workout-store'
 
-export function exportWorkoutDataCSV() {
-  const dummyLogs = [
-    { Date: '2026-07-24', Routine: 'Push Day', Exercise: 'Bench Press', Sets: 4, Reps: 8, WeightKg: 70, Volume: 2240 },
-    { Date: '2026-07-24', Routine: 'Push Day', Exercise: 'Incline DB Press', Sets: 3, Reps: 10, WeightKg: 24, Volume: 720 },
-    { Date: '2026-07-23', Routine: 'Pull Day', Exercise: 'Lat Pulldown', Sets: 4, Reps: 10, WeightKg: 55, Volume: 2200 },
-    { Date: '2026-07-23', Routine: 'Pull Day', Exercise: 'Barbell Row', Sets: 3, Reps: 8, WeightKg: 60, Volume: 1440 },
-  ]
+// Export Workout History to CSV based on real user data
+export function exportWorkoutDataCSV(workoutHistory: CompletedWorkout[] = []) {
+  if (workoutHistory.length === 0) {
+    alert('Không có dữ liệu buổi tập nào để xuất. Hãy tập luyện trước!')
+    return
+  }
+
+  const rows: { Date: string; Routine: string; Exercise: string; Sets: number; Reps: number; WeightKg: number; Volume: number }[] = []
+
+  workoutHistory.forEach((workout) => {
+    workout.exercises.forEach((exercise) => {
+      const totalSets = exercise.sets.length
+      const totalReps = exercise.sets.reduce((sum, s) => sum + s.reps, 0)
+      const avgWeight = exercise.sets.length > 0
+        ? Math.round((exercise.sets.reduce((sum, s) => sum + s.weight_kg, 0) / exercise.sets.length) * 10) / 10
+        : 0
+      const volume = exercise.sets.filter(s => s.is_completed).reduce((sum, s) => sum + s.weight_kg * s.reps, 0)
+
+      rows.push({
+        Date: new Date(workout.start_time).toLocaleDateString('vi-VN'),
+        Routine: workout.routine_name || 'Buổi tập tự do',
+        Exercise: exercise.exercise_name,
+        Sets: totalSets,
+        Reps: totalReps,
+        WeightKg: avgWeight,
+        Volume,
+      })
+    })
+  })
 
   const headers = ['Date', 'Routine', 'Exercise', 'Sets', 'Reps', 'WeightKg', 'Volume']
   const csvRows = [
     headers.join(','),
-    ...dummyLogs.map((row) => `${row.Date},"${row.Routine}","${row.Exercise}",${row.Sets},${row.Reps},${row.WeightKg},${row.Volume}`),
+    ...rows.map((row) =>
+      `"${row.Date}","${row.Routine}","${row.Exercise}",${row.Sets},${row.Reps},${row.WeightKg},${row.Volume}`
+    ),
   ]
 
   const csvContent = 'data:text/csv;charset=utf-8,' + csvRows.join('\n')
@@ -24,30 +48,30 @@ export function exportWorkoutDataCSV() {
   document.body.removeChild(link)
 }
 
-// Export Routine Schedule to Excel .XLSX
-export function exportRoutineToExcel(routineName: string, days: any[]) {
-  const wb = XLSX.utils.book_new()
+// Export routine as Excel-compatible CSV (used by routines page)
+export function exportRoutineToExcel(routineName: string, exercises: { name: string; sets: { weight: number; reps: number }[] }[]) {
+  if (!exercises || exercises.length === 0) {
+    alert('Không có bài tập nào để xuất.')
+    return
+  }
 
-  // Sheet 1: Routine Tracker Rows
-  const routineRows: any[] = []
+  const rows: string[][] = []
+  rows.push(['Bài tập', 'Set', 'Weight (kg)', 'Reps'])
 
-  days.forEach((day) => {
-    day.exercises.forEach((ex: any) => {
-      routineRows.push({
-        'Day': day.dayName,
-        'Exercise': ex.exerciseName,
-        'Muscle': ex.muscleGroup,
-        'Sets': ex.sets,
-        'Reps': ex.reps,
-        'Current kg': ex.weightKg,
-        'Notes': ex.notes || '',
-      })
+  exercises.forEach((ex, idx) => {
+    ex.sets.forEach((set, sIdx) => {
+      rows.push([idx === 0 ? ex.name : '', `Set ${sIdx + 1}`, String(set.weight), String(set.reps)])
     })
   })
 
-  const ws = XLSX.utils.json_to_sheet(routineRows)
-  XLSX.utils.book_append_sheet(wb, ws, 'Routine + Tracker')
-
-  // Generate and Download .XLSX File
-  XLSX.writeFile(wb, `${routineName.replace(/[^a-zA-Z0-9]/g, '_')}_GymOS.xlsx`)
+  const csv = rows.map(r => r.join(',')).join('\n')
+  const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' })
+  const url = URL.createObjectURL(blob)
+  const link = document.createElement('a')
+  link.href = url
+  link.download = `AURA_Routine_${routineName.replace(/\s+/g, '_')}.csv`
+  document.body.appendChild(link)
+  link.click()
+  document.body.removeChild(link)
+  URL.revokeObjectURL(url)
 }

@@ -1,19 +1,27 @@
 'use client'
 
+import { useState } from 'react'
 import { ResponsiveContainer, AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts'
 import { Activity } from 'lucide-react'
 import { useWorkoutStore } from '@/store/use-workout-store'
 
 export function VolumeChart() {
   const { workoutHistory } = useWorkoutStore()
+  const [range, setRange] = useState<'7d' | '30d' | 'all'>('30d')
+
+  const cutoff = range === '7d'
+    ? new Date(Date.now() - 7 * 864e5)
+    : range === '30d'
+    ? new Date(Date.now() - 30 * 864e5)
+    : new Date(0)
 
   // Chuyển đổi dữ liệu Volume thực tế từ các buổi tập
   const realVolumeData = workoutHistory
-    .slice(0, 10)
-    .reverse()
+    .filter(w => new Date(w.start_time) >= cutoff)
+    .sort((a, b) => new Date(a.start_time).getTime() - new Date(b.start_time).getTime())
     .map((w) => {
       const dateObj = new Date(w.start_time)
-      const dayLabel = dateObj.toLocaleDateString('vi-VN', { weekday: 'short', day: '2-digit', month: '2-digit' })
+      const dayLabel = dateObj.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit' })
       return {
         date: dayLabel,
         volume: w.total_volume,
@@ -22,13 +30,28 @@ export function VolumeChart() {
 
   return (
     <div className="aura-glass rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-hidden">
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex items-center justify-between mb-8 flex-wrap gap-3">
         <div>
           <h3 className="text-2xl font-display font-black text-white tracking-tight flex items-center gap-3">
             <Activity className="w-6 h-6 text-amber-400" />
-            TỔNG VOLUME TẬP LUYỆN THỰC TẾ
+            TỔNG VOLUME TẬP LUYỆN THỰC TẺI
           </h3>
-          <p className="text-xs font-mono text-slate-400 mt-1">THEO DÕI KHỐI LƯỢNG TẠ (KG) QUA CÁC BUỔI TẬP THỰC TẾ</p>
+          <p className="text-xs font-mono text-slate-400 mt-1">THEO DÕI KHỐI LƯỢNG TẠ (KG) QUA CÁC BUỔI TẬP THỰC TẺI</p>
+        </div>
+        <div className="flex gap-1">
+          {(['7d', '30d', 'all'] as const).map(r => (
+            <button
+              key={r}
+              onClick={() => setRange(r)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-mono font-bold transition-all ${
+                range === r
+                  ? 'bg-amber-400 text-black'
+                  : 'bg-slate-800 text-slate-400 hover:text-white border border-slate-700'
+              }`}
+            >
+              {r === '7d' ? '7 ngày' : r === '30d' ? '30 ngày' : 'Tất cả'}
+            </button>
+          ))}
         </div>
       </div>
 

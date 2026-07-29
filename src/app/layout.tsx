@@ -10,6 +10,15 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'AURA.FIT',
   },
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'AURA.FIT',
+  },
+  other: {
+    'mobile-web-app-capable': 'yes',
+  }
 }
 
 export const viewport = {
@@ -33,6 +42,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="application-name" content="AURA.FIT" />
       </head>
       <body className="bg-[#020206] text-white font-sans selection:bg-amber-400 selection:text-black antialiased overflow-x-hidden">
         {children}

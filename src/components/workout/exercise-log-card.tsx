@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useWorkoutStore } from '@/store/use-workout-store'
-import { Check, Plus, Dumbbell, Trophy, Calculator, X, Zap, Save, ChevronDown, ChevronUp } from 'lucide-react'
+import { Check, Plus, Dumbbell, Trophy, Calculator, X, Zap, Save, ChevronDown, ChevronUp, Trash2 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
 
@@ -13,7 +13,7 @@ interface ExerciseLogCardProps {
 }
 
 export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: ExerciseLogCardProps) {
-  const { activeWorkout, updateSet, toggleCompleteSet, addSet, savePersonalRecord, personalRecords } = useWorkoutStore()
+  const { activeWorkout, updateSet, toggleCompleteSet, addSet, savePersonalRecord, personalRecords, removeSet, removeExercise } = useWorkoutStore()
   const [showPRBadge, setShowPRBadge] = useState(false)
   
   // 1RM Inline Calculator State
@@ -120,6 +120,15 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
           <Calculator className="w-4 h-4" />
           <span>{show1RMCalculator ? 'ĐÓNG MÁY TÍNH' : 'MÁY TÍNH 1RM'}</span>
           {show1RMCalculator ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+        </button>
+        <button
+          onClick={() => {
+            if (confirm(`Xóa bài "${exerciseName}" khỏi buổi tập?`)) removeExercise(exerciseId)
+          }}
+          className="p-3 rounded-xl text-slate-600 hover:text-red-400 hover:bg-red-500/10 border border-transparent hover:border-red-500/30 transition-all"
+          title="Xóa bài tập"
+        >
+          <Trash2 className="w-4 h-4" />
         </button>
       </div>
 
@@ -282,7 +291,7 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
               </div>
 
               {/* Check Box */}
-              <div className="col-span-2 flex justify-center">
+              <div className="col-span-2 flex justify-center items-center gap-1">
                 <motion.button
                   whileTap={{ scale: 0.85 }}
                   onClick={() => handleSetToggle(set.id, set.is_completed, set.weight_kg, set.reps)}
@@ -294,6 +303,13 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
                 >
                   <Check className={`w-6 h-6 sm:w-7 sm:h-7 ${set.is_completed ? 'stroke-[3]' : 'stroke-[2]'}`} />
                 </motion.button>
+                <button
+                  onClick={() => removeSet(exerciseId, set.id)}
+                  className="p-1.5 rounded-lg text-slate-700 hover:text-red-400 hover:bg-red-500/10 transition-all"
+                  title="Xóa set"
+                >
+                  <Trash2 className="w-3.5 h-3.5" />
+                </button>
               </div>
             </motion.div>
           )

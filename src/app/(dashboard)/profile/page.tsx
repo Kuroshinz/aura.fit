@@ -7,11 +7,14 @@ import { SpatialCard } from '@/components/effects/spatial-card'
 import { User, Scale, Ruler, Activity, Flame, Edit3, Save, RotateCcw, ShieldCheck, Zap, LogOut, Send, Bell, CheckCircle, AlertCircle } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
+import { useWorkoutStore } from '@/store/use-workout-store'
+import { exportWorkoutDataCSV } from '@/lib/utils/export-data'
 
 export default function ProfilePage() {
   const router = useRouter()
   const { profile, setProfile, resetProfile, logout } = useProfileStore()
   const [isEditing, setIsEditing] = useState(false)
+  const [isEditingName, setIsEditingName] = useState(false)
 
   // Edit form states
   const [name, setName] = useState(profile?.name || 'Vận động viên')
@@ -135,6 +138,16 @@ export default function ProfilePage() {
     }
   }
 
+  // ─── Get initials from name ────────────────────────────────────────
+  function getInitials(name: string): string {
+    return name
+      .split(' ')
+      .map((n) => n[0])
+      .join('')
+      .toUpperCase()
+      .slice(0, 2)
+  }
+
   return (
     <div className="space-y-8">
       {/* Header */}
@@ -186,15 +199,49 @@ export default function ProfilePage() {
         className="section-container section-glow-amber rounded-3xl p-6 md:p-10 bg-slate-900/20 border border-amber-400/30 relative overflow-hidden"
       >
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-          {/* Avatar Icon Box */}
-          <div className="p-6 bg-gradient-to-tr from-amber-400 via-indigo-500 to-emerald-400 rounded-3xl shadow-2xl shadow-amber-500/20 text-black shrink-0">
-            <User className="w-16 h-16" />
+          {/* Avatar Initials Circle */}
+          <div className="w-28 h-28 rounded-3xl bg-gradient-to-br from-amber-400 via-indigo-500 to-emerald-400 shadow-2xl shadow-amber-500/20 shrink-0 flex items-center justify-center">
+            <span className="text-4xl font-black text-black font-display tracking-tight">
+              {getInitials(currentProfile.name)}
+            </span>
           </div>
 
           {/* User Meta Summary */}
           <div className="space-y-3 text-center md:text-left flex-1">
             <div className="flex flex-col md:flex-row md:items-center gap-3">
-              <h2 className="text-3xl font-display font-black text-white">{currentProfile.name}</h2>
+              {isEditingName ? (
+                <form
+                  onSubmit={(e) => {
+                    e.preventDefault()
+                    setProfile({ ...currentProfile, name: name.trim() || 'Vận động viên' })
+                    setIsEditingName(false)
+                  }}
+                  className="flex items-center gap-2"
+                >
+                  <input
+                    type="text"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    autoFocus
+                    onBlur={() => setIsEditingName(false)}
+                    className="text-3xl font-display font-black text-white bg-[#070714] border-b-2 border-amber-400 outline-none px-2 py-1 rounded-lg max-w-[260px]"
+                  />
+                  <button type="submit" className="text-amber-400 hover:text-amber-300">
+                    <CheckCircle className="w-6 h-6" />
+                  </button>
+                </form>
+              ) : (
+                <h2
+                  className="text-3xl font-display font-black text-white cursor-pointer hover:text-amber-300 transition-colors group flex items-center gap-2"
+                  onClick={() => {
+                    setName(currentProfile.name)
+                    setIsEditingName(true)
+                  }}
+                >
+                  {currentProfile.name}
+                  <Edit3 className="w-4 h-4 text-slate-600 group-hover:text-amber-400 transition-colors" />
+                </h2>
+              )}
               {currentProfile.role === 'admin' && (
                 <span className="px-3.5 py-1 bg-amber-400 text-black font-mono text-xs font-black rounded-full inline-flex items-center gap-1 uppercase shadow-[0_0_15px_rgba(251,191,36,0.6)]">
                   👑 SUPER ADMIN SYSTEM
@@ -518,6 +565,25 @@ export default function ProfilePage() {
             <span>{telegramTestStatus.message}</span>
           </div>
         )}
+      </div>{/* END TELEGRAM SETTINGS CARD */}
+
+      {/* Export Data Card */}
+      <div className="aura-glass rounded-3xl p-6 md:p-8 space-y-4 border-emerald-500/30">
+        <h3 className="text-lg font-extrabold text-white flex items-center gap-2">
+          📤 XUẤT DỮ LIỆU TẬP LUYỆN
+        </h3>
+        <p className="text-xs text-slate-400 font-mono">Xuất toàn bộ lịch sử buổi tập ra file CSV để theo dõi trên Excel hoặc Google Sheets.</p>
+        <button
+          onClick={() => exportWorkoutDataCSV(useWorkoutStore.getState().workoutHistory)}
+          className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-400 hover:to-emerald-500 text-black font-extrabold font-mono text-xs rounded-xl transition-all shadow-lg flex items-center gap-2"
+        >
+          ⬇ XUẤT CSV
+        </button>
+      </div>
+
+      {/* Tele Bot Version */}
+      <div className="text-center pt-4 pb-8">
+        <p className="text-[10px] font-mono text-slate-600">AURA.FIT v1.0 • Gym Workout Tracker • Made with ❤️</p>
       </div>
     </div>
   )

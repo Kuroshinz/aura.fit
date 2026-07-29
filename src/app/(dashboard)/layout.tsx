@@ -28,19 +28,20 @@ export default function DashboardLayout({
   const supabase = createClient()
   const { profile, setProfile } = useProfileStore()
 
-  // Protect Routes & Hydrate Profile
+  // Protect Routes & Hydrate Profile (only on mount, not on every nav)
   useEffect(() => {
+    let mounted = true
     const checkSession = async () => {
       const { data: { session } } = await supabase.auth.getSession()
       if (!session) {
         router.replace('/login')
       } else {
+        if (!mounted) return
         setIsAuthenticated(true)
-        // Hydrate profile if not already loaded
-        // Always sync fresh data from cloud on load
-        if (true) {
+        // Only hydrate profile from cloud if store is empty (first load)
+        if (!profile) {
           const { data: profileData } = await supabase.from('profiles').select('*').eq('id', session.user.id).single()
-          if (profileData) {
+          if (profileData && mounted) {
             setProfile({
               name: profileData.full_name || session.user.email,
               age: profileData.age || 20,
@@ -74,7 +75,8 @@ export default function DashboardLayout({
       }
     }
     checkSession()
-  }, [pathname, router, profile, setProfile, supabase])
+    return () => { mounted = false }
+  }, [supabase, router, setProfile]) // removed pathname — only re-fetch on mount/session change
 
   useEffect(() => {
     const handleScroll = () => {
@@ -137,4 +139,3 @@ export default function DashboardLayout({
     </div>
   )
 }
-

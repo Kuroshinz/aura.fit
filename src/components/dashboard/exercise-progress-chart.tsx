@@ -8,9 +8,17 @@ import { useWorkoutStore } from '@/store/use-workout-store'
 export function ExerciseProgressChart() {
   const { workoutHistory } = useWorkoutStore()
   const [selectedExercise, setSelectedExercise] = useState('Bench Press')
+  const [range, setRange] = useState<'7d' | '30d' | 'all'>('30d')
+
+  const cutoff = range === '7d'
+    ? new Date(Date.now() - 7 * 864e5)
+    : range === '30d'
+    ? new Date(Date.now() - 30 * 864e5)
+    : new Date(0)
 
   // Gom nhóm dữ liệu sức mạnh thực từ các buổi tập đã hoàn thành trong lịch sử
   const exerciseChartData = workoutHistory
+    .filter(w => new Date(w.start_time) >= cutoff)
     .slice()
     .reverse()
     .reduce((acc: any[], w) => {
@@ -51,20 +59,39 @@ export function ExerciseProgressChart() {
           <p className="text-xs font-mono text-slate-300 mt-1">Theo dõi mức tạ nặng nhất &amp; chỉ số 1RM ước tính thực tế</p>
         </div>
 
-        {/* Exercise Selector Dropdown */}
-        {availableExercises.length > 0 && (
-          <select
-            value={activeSelected}
-            onChange={(e) => setSelectedExercise(e.target.value)}
-            className="bg-[#070714] border border-slate-700 text-white font-bold text-sm px-4 py-2.5 rounded-2xl focus:outline-none focus:border-amber-400"
-          >
-            {availableExercises.map((exName) => (
-              <option key={exName} value={exName}>
-                {exName}
-              </option>
+        <div className="flex items-center gap-2 flex-wrap">
+          {/* Range Filter Buttons */}
+          <div className="flex gap-1">
+            {(['7d', '30d', 'all'] as const).map(r => (
+              <button
+                key={r}
+                onClick={() => setRange(r)}
+                className={`px-2.5 py-1.5 rounded-xl text-[10px] font-mono font-bold transition-all ${
+                  range === r
+                    ? 'bg-amber-400 text-black'
+                    : 'bg-slate-800 text-slate-400 hover:text-white border border-slate-700'
+                }`}
+              >
+                {r === '7d' ? '7 ngày' : r === '30d' ? '30 ngày' : 'Tất cả'}
+              </button>
             ))}
-          </select>
-        )}
+          </div>
+
+          {/* Exercise Selector Dropdown */}
+          {availableExercises.length > 0 && (
+            <select
+              value={activeSelected}
+              onChange={(e) => setSelectedExercise(e.target.value)}
+              className="bg-[#070714] border border-slate-700 text-white font-bold text-sm px-4 py-2.5 rounded-2xl focus:outline-none focus:border-amber-400"
+            >
+              {availableExercises.map((exName) => (
+                <option key={exName} value={exName}>
+                  {exName}
+                </option>
+              ))}
+            </select>
+          )}
+        </div>
       </div>
 
       {filteredData.length === 0 ? (

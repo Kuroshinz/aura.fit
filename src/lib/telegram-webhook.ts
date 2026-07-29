@@ -18,7 +18,7 @@ export async function sendTelegramWebhook(payload: TelegramWebhookPayload): Prom
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-Webhook-Secret': 'aura_fit_super_secret_webhook_key_2026',
+        'X-Webhook-Secret': process.env.NEXT_PUBLIC_WEBHOOK_SECRET || '',
       },
       body: JSON.stringify(payload),
       signal: controller.signal,
