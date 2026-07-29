@@ -2,12 +2,14 @@
 
 import { useState, useEffect } from 'react'
 import { useProfileStore } from '@/store/use-profile-store'
-import { getAllAccounts, saveAccountData, deleteAccountFromDB, UserAccountData, MASTER_ADMIN_EMAIL } from '@/lib/utils/account-db'
 import { ShieldCheck, Users, Dumbbell, Activity, Sparkles, ToggleLeft, ToggleRight, Crown, Key, Cpu, RefreshCw, Trash2, UserCheck } from 'lucide-react'
+import { createClient } from '@/lib/supabase/client'
+
+const MASTER_ADMIN_EMAIL = 'admin@aura.fit'
 
 export default function AdminPage() {
   const { profile } = useProfileStore()
-  const [accounts, setAccounts] = useState<UserAccountData[]>([])
+  const [accounts, setAccounts] = useState<any[]>([])
   const [featureFlags, setFeatureFlags] = useState({
     aiCoach: true,
     confettiEffects: true,
@@ -16,11 +18,16 @@ export default function AdminPage() {
     experimental3D: true,
   })
 
-  // Load real registered accounts from database
-  const refreshAccounts = () => {
+  // Load real registered accounts from Supabase database
+  const refreshAccounts = async () => {
     if (typeof window !== 'undefined') {
-      const allDB = getAllAccounts()
-      setAccounts(Object.values(allDB))
+      const supabase = createClient()
+      const { data, error } = await supabase.from('profiles').select('*').order('created_at', { ascending: true })
+      if (data) {
+        setAccounts(data)
+      } else {
+        console.error("Failed to fetch profiles:", error)
+      }
     }
   }
 
@@ -28,16 +35,18 @@ export default function AdminPage() {
     refreshAccounts()
   }, [])
 
-  const toggleRole = (email: string, currentRole: 'admin' | 'user') => {
+  const toggleRole = async (id: string, currentRole: string) => {
     const newRole = currentRole === 'admin' ? 'user' : 'admin'
-    saveAccountData(email, { role: newRole })
+    const supabase = createClient()
+    await supabase.from('profiles').update({ role: newRole }).eq('id', id)
     refreshAccounts()
   }
 
-  const handleDelete = (email: string) => {
+  const handleDelete = async (id: string, email: string) => {
     if (email === MASTER_ADMIN_EMAIL) return
-    if (confirm(`Are you sure you want to delete account ${email}?`)) {
-      deleteAccountFromDB(email)
+    if (confirm(`Are you sure you want to delete profile for ${email}?`)) {
+      const supabase = createClient()
+      await supabase.from('profiles').delete().eq('id', id)
       refreshAccounts()
     }
   }
@@ -49,7 +58,7 @@ export default function AdminPage() {
   // Calculate real metrics from system data
   const totalUsers = accounts.length
   const totalVolumeAcrossNetwork = accounts.reduce((total, acc) => {
-    const userVolume = (acc.workoutHistory || []).reduce((sum: number, w: any) => sum + (w.total_volume || 0), 0)
+    const userVolume = (acc.workout_history || []).reduce((sum: number, w: any) => sum + (w.total_volume || 0), 0)
     return total + userVolume
   }, 0)
 
@@ -142,16 +151,16 @@ export default function AdminPage() {
             </thead>
             <tbody className="divide-y divide-slate-800 text-sm">
               {accounts.map((user) => (
-                <tr key={user.email} className="hover:bg-slate-900/60 transition-colors">
+                <tr key={user.id} className="hover:bg-slate-900/60 transition-colors">
                   <td className="py-4 px-3 font-bold text-white flex items-center gap-2">
-                    {user.profile?.name || user.fullName || user.email.split('@')[0]}
+                    {user.full_name || user.email?.split('@')[0] || 'Unknown'}
                     {user.role === 'admin' && (
                       <span className="px-2 py-0.5 bg-amber-400 text-black text-[9px] font-mono font-black rounded-md flex items-center gap-1">
                         <Crown className="w-3 h-3 fill-current" /> ADMIN
                       </span>
                     )}
                   </td>
-                  <td className="py-4 px-3 font-mono text-slate-300 text-xs">{user.email}</td>
+                  <td className="py-4 px-3 font-mono text-slate-300 text-xs">{user.email || '—'}</td>
                   <td className="py-4 px-3 text-center font-mono">
                     <span
                       className={`px-3 py-1 rounded-full text-xs font-bold ${
@@ -160,22 +169,22 @@ export default function AdminPage() {
                           : 'bg-slate-900 text-slate-400 border border-slate-700'
                       }`}
                     >
-                      {user.role.toUpperCase()}
+                      {(user.role || 'user').toUpperCase()}
                     </span>
                   </td>
                   <td className="py-4 px-3 text-center font-mono text-xs text-slate-300">
-                    {(user.workoutHistory || []).length} sessions
+                    {(user.workout_history || []).length} sessions
                   </td>
                   <td className="py-4 px-3 text-center flex items-center justify-center gap-2">
                     <button
-                      onClick={() => toggleRole(user.email, user.role)}
+                      onClick={() => toggleRole(user.id, user.role)}
                       className="px-3 py-1.5 bg-slate-900 hover:bg-amber-500/20 text-amber-300 border border-slate-700 hover:border-amber-400 rounded-xl text-xs font-mono font-bold transition-all cursor-pointer"
                     >
                       TOGGLE ROLE
                     </button>
                     {user.email !== MASTER_ADMIN_EMAIL && (
                       <button
-                        onClick={() => handleDelete(user.email)}
+                        onClick={() => handleDelete(user.id, user.email)}
                         className="p-1.5 bg-red-500/10 hover:bg-red-500/30 text-red-400 border border-red-500/30 hover:border-red-400 rounded-xl transition-all cursor-pointer"
                         title="Delete User"
                       >
