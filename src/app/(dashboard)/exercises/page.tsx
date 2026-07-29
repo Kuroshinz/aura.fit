@@ -165,31 +165,45 @@ export default function ExercisesPage() {
                 className="group h-full cursor-pointer"
                 onClick={() => setSelectedExercise(ex)}
               >
-                <SpatialCard intensity={8} className="h-full rounded-3xl p-6 flex flex-col justify-between border-slate-700/50 shadow-xl group-hover:border-amber-400/50 group-hover:shadow-[0_0_30px_rgba(251,191,36,0.15)] transition-all duration-300 bg-slate-900/40">
-                <div className="flex items-center gap-3.5 mb-4">
-                  <div className="p-3 bg-amber-500/20 border border-amber-400 rounded-2xl text-amber-400">
-                    <Dumbbell className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-extrabold text-xl text-white group-hover:text-amber-300 transition-colors">
-                      {ex.name}
-                    </h3>
-                    {ex.isCustom && (
-                      <span className="text-[10px] font-mono font-bold px-2 py-0.5 bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 rounded-md uppercase">
-                        Custom Exercise
-                      </span>
+                <SpatialCard intensity={8} className="h-full rounded-3xl overflow-hidden flex flex-col border-slate-700/50 shadow-xl group-hover:border-amber-400/50 group-hover:shadow-[0_0_30px_rgba(251,191,36,0.15)] transition-all duration-300 bg-slate-900/40">
+                  {/* Image Header */}
+                  <div className="w-full bg-white relative aspect-square flex items-center justify-center p-4">
+                    {ex.metadata?.thumbnailUrl ? (
+                      <img 
+                        src={ex.metadata.thumbnailUrl} 
+                        alt={ex.name} 
+                        className="w-full h-full object-contain mix-blend-multiply"
+                        loading="lazy"
+                      />
+                    ) : (
+                      <div className="p-6 bg-slate-100 rounded-full text-slate-300">
+                        <Dumbbell className="w-12 h-12" />
+                      </div>
                     )}
                   </div>
-                </div>
 
-                <div className="flex items-center gap-2.5 mt-2">
-                  <span className="text-xs font-mono font-bold px-3 py-1 bg-amber-400/20 text-amber-300 border border-amber-400/40 rounded-full uppercase">
-                    {ex.muscleGroup}
-                  </span>
-                  <span className="text-xs font-mono font-bold px-3 py-1 bg-slate-900 text-slate-300 border border-slate-700 rounded-full uppercase">
-                    {ex.equipment}
-                  </span>
-                </div>
+                  {/* Card Content */}
+                  <div className="p-5 flex flex-col justify-between flex-1">
+                    <div>
+                      <h3 className="font-extrabold text-lg text-white group-hover:text-amber-300 transition-colors line-clamp-2">
+                        {ex.name}
+                      </h3>
+                      {ex.isCustom && (
+                        <span className="inline-block mt-2 text-[10px] font-mono font-bold px-2 py-0.5 bg-indigo-500/20 text-indigo-300 border border-indigo-400/40 rounded-md uppercase">
+                          Custom Exercise
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-2 mt-4">
+                      <span className="text-[10px] font-mono font-bold px-2.5 py-1 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded-md uppercase">
+                        {ex.muscleGroup || ex.muscle}
+                      </span>
+                      <span className="text-[10px] font-mono font-bold px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-md uppercase">
+                        {ex.equipment}
+                      </span>
+                    </div>
+                  </div>
                 </SpatialCard>
               </motion.div>
             ))}
