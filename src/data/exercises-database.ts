@@ -32,6 +32,11 @@ export const EXERCISES_DATABASE: Exercise[] = [
         'Maintain slight arch in lower back',
         'Touch chest lightly, don\'t bounce',
       ],
+      commonMistakes: [
+        'Lifting hips off the bench (Nâng mông khỏi ghế)',
+        'Flaring elbows out to 90 degrees (Khuỷu tay loe ra quá nhiều)',
+        'Bouncing the bar off the chest (Đập thanh đòn vào ngực)'
+      ],
       musclesWorked: {
         primary: ['Pectoralis Major', 'Anterior Deltoid', 'Triceps'],
         secondary: ['Serratus Anterior', 'Core'],

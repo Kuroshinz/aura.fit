@@ -41,6 +41,6 @@ export interface ExerciseMetadata {
   commonMistakes?: string[];
   musclesWorked?: {
     primary: string[];
-    secondary: string[];
+    secondary?: string[];
   };
 }
