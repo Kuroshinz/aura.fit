@@ -45,7 +45,15 @@ export default function ExercisesPage() {
   const filtered = useMemo(() => {
     return exercisesList.filter((ex) => {
       const matchSearch = ex.name.toLowerCase().includes(search.toLowerCase().trim())
-      const matchMuscle = filterMuscle === 'All' || ex.muscleGroup === filterMuscle
+      const matchMuscle = filterMuscle === 'All' || (() => {
+        const exMuscle = (ex.muscleGroup || '').toLowerCase()
+        const filterStr = filterMuscle.toLowerCase()
+        if (exMuscle === filterStr) return true
+        if (filterStr === 'legs' && (exMuscle.includes('leg') || exMuscle.includes('thigh') || exMuscle.includes('calf'))) return true
+        if (filterStr === 'arms' && (exMuscle.includes('arm') || exMuscle.includes('bicep') || exMuscle.includes('tricep'))) return true
+        if (filterStr === 'core' && (exMuscle.includes('waist') || exMuscle.includes('core') || exMuscle.includes('abs'))) return true
+        return false
+      })()
       return matchSearch && matchMuscle
     })
   }, [exercisesList, search, filterMuscle])
