@@ -2,12 +2,15 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { syncStateToCloud } from '@/lib/supabase/user-sync'
 
+export type SetType = 'Normal' | 'Warmup' | 'Drop Set' | 'Failure' | 'Backoff' | 'AMRAP';
+
 export interface SetItem {
   id: string
   set_number: number
   weight_kg: number
   reps: number
   is_completed: boolean
+  set_type?: SetType
 }
 
 export interface ExerciseSession {
@@ -53,6 +56,7 @@ interface WorkoutState {
   addExerciseToWorkout: (exerciseId: string, exerciseName: string, muscleGroup: string) => void
   addSet: (exerciseId: string) => void
   updateSet: (exerciseId: string, setId: string, field: 'weight_kg' | 'reps', value: number) => void
+  updateSetType: (exerciseId: string, setId: string, setType: SetType) => void
   toggleCompleteSet: (exerciseId: string, setId: string) => void
 
   setRestTimer: (seconds: number) => void
@@ -232,6 +236,25 @@ export const useWorkoutStore = create<WorkoutState>()(
         const updated = { ...activeWorkout, exercises: updatedExercises }
         set({ activeWorkout: updated })
         syncStateToCloud({ active_workout: updated })
+      },
+
+      updateSetType: (exerciseId, setId, setType) => {
+        const { activeWorkout } = get()
+        if (!activeWorkout) return
+
+        const updatedExercises = activeWorkout.exercises.map((ex) => {
+          if (ex.id === exerciseId) {
+            return {
+              ...ex,
+              sets: ex.sets.map((s) => (s.id === setId ? { ...s, set_type: setType } : s)),
+            }
+          }
+          return ex
+        })
+
+        const updatedWorkout = { ...activeWorkout, exercises: updatedExercises }
+        set({ activeWorkout: updatedWorkout })
+        syncStateToCloud({ active_workout: updatedWorkout })
       },
 
       toggleCompleteSet: (exerciseId, setId) => {
