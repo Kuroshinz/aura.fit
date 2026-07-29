@@ -16,8 +16,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0001-2gPfomN.jpg",
-      "videoUrl": "/exercises/videos/0001-2gPfomN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0001-2gPfomN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0001-2gPfomN.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -40,8 +40,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0002-Hy9D21L.jpg",
-      "videoUrl": "/exercises/videos/0002-Hy9D21L.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0002-Hy9D21L.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0002-Hy9D21L.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -64,8 +64,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat the movement on the opposite side, bringing your left elbow towards your right knee while straightening your left leg.",
         "Continue alternating sides in a pedaling motion for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0003-1ZFqTDN.jpg",
-      "videoUrl": "/exercises/videos/0003-1ZFqTDN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0003-1ZFqTDN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0003-1ZFqTDN.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -88,8 +88,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for 20-30 seconds.",
         "Switch legs and repeat the stretch on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1512-qBcKorM.jpg",
-      "videoUrl": "/exercises/videos/1512-qBcKorM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1512-qBcKorM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1512-qBcKorM.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -112,8 +112,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat on the left side, reaching your left hand towards your left heel.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0006-qaZVsGk.jpg",
-      "videoUrl": "/exercises/videos/0006-qaZVsGk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0006-qaZVsGk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0006-qaZVsGk.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -136,8 +136,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0007-4IKbhHV.jpg",
-      "videoUrl": "/exercises/videos/0007-4IKbhHV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0007-4IKbhHV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0007-4IKbhHV.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -159,8 +159,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Perform the desired number of circles in one direction, then switch to the other direction.",
         "Repeat with the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1368-uL9CsKm.jpg",
-      "videoUrl": "/exercises/videos/1368-uL9CsKm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1368-uL9CsKm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1368-uL9CsKm.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -184,8 +184,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower yourself back down with control, straightening the bent arm and repeating the movement on the other side.",
         "Alternate sides with each repetition."
       ],
-      "thumbnailUrl": "/exercises/images/3293-72BC5Za.jpg",
-      "videoUrl": "/exercises/videos/3293-72BC5Za.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3293-72BC5Za.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3293-72BC5Za.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -209,8 +209,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side, extending the opposite arm out to the side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3294-A9qxk2F.jpg",
-      "videoUrl": "/exercises/videos/3294-A9qxk2F.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3294-A9qxk2F.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3294-A9qxk2F.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -232,8 +232,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2355-uWpxD4v.jpg",
-      "videoUrl": "/exercises/videos/2355-uWpxD4v.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2355-uWpxD4v.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2355-uWpxD4v.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -255,8 +255,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2333-PXTIwgu.jpg",
-      "videoUrl": "/exercises/videos/2333-PXTIwgu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2333-PXTIwgu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2333-PXTIwgu.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -279,8 +279,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat the movement with your left hand reaching towards your toes and your right leg lifting up behind you.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3214-RtyAsy1.jpg",
-      "videoUrl": "/exercises/videos/3214-RtyAsy1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3214-RtyAsy1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3214-RtyAsy1.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -303,8 +303,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3204-NAkmgdx.jpg",
-      "videoUrl": "/exercises/videos/3204-NAkmgdx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3204-NAkmgdx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3204-NAkmgdx.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -327,8 +327,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0009-PAgTVaK.jpg",
-      "videoUrl": "/exercises/videos/0009-PAgTVaK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0009-PAgTVaK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0009-PAgTVaK.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -351,8 +351,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0011-03lzqwk.jpg",
-      "videoUrl": "/exercises/videos/0011-03lzqwk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0011-03lzqwk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0011-03lzqwk.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -374,8 +374,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Once your knees are at chest level, explosively throw your legs down towards the ground, extending them fully.",
         "Allow your legs to swing back up and repeat the movement for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0010-8K0w2yA.jpg",
-      "videoUrl": "/exercises/videos/0010-8K0w2yA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0010-8K0w2yA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0010-8K0w2yA.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -398,8 +398,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Release the stretch and repeat on the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1708-GxDwDX0.jpg",
-      "videoUrl": "/exercises/videos/1708-GxDwDX0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1708-GxDwDX0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1708-GxDwDX0.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -422,8 +422,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Release and repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1709-yn0LjwL.jpg",
-      "videoUrl": "/exercises/videos/1709-yn0LjwL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1709-yn0LjwL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1709-yn0LjwL.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -446,8 +446,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Release the stretch and repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1710-RQNVT10.jpg",
-      "videoUrl": "/exercises/videos/1710-RQNVT10.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1710-RQNVT10.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1710-RQNVT10.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -472,8 +472,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0012-UGhRD1A.jpg",
-      "videoUrl": "/exercises/videos/0012-UGhRD1A.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0012-UGhRD1A.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0012-UGhRD1A.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -499,8 +499,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Raise your legs back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0013-VX5YKR5.jpg",
-      "videoUrl": "/exercises/videos/0013-VX5YKR5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0013-VX5YKR5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0013-VX5YKR5.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -524,8 +524,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then twist your torso to the left, bringing the medicine ball towards the left side of your body.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0014-r7cT9YD.jpg",
-      "videoUrl": "/exercises/videos/0014-r7cT9YD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0014-r7cT9YD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0014-r7cT9YD.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -550,8 +550,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0015-vrhHa6D.jpg",
-      "videoUrl": "/exercises/videos/0015-vrhHa6D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0015-vrhHa6D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0015-vrhHa6D.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -574,8 +574,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0016-VedGSby.jpg",
-      "videoUrl": "/exercises/videos/0016-VedGSby.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0016-VedGSby.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0016-VedGSby.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -598,8 +598,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds, then release.",
         "Repeat with your right leg."
       ],
-      "thumbnailUrl": "/exercises/images/1713-YUYAMEj.jpg",
-      "videoUrl": "/exercises/videos/1713-YUYAMEj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1713-YUYAMEj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1713-YUYAMEj.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -622,8 +622,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Release and repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1714-2Ryn564.jpg",
-      "videoUrl": "/exercises/videos/1714-2Ryn564.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1714-2Ryn564.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1714-2Ryn564.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -648,8 +648,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0017-kiJ4Z2K.jpg",
-      "videoUrl": "/exercises/videos/0017-kiJ4Z2K.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0017-kiJ4Z2K.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0017-kiJ4Z2K.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -672,8 +672,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for a few seconds, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1716-RoV1Rfa.jpg",
-      "videoUrl": "/exercises/videos/1716-RoV1Rfa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1716-RoV1Rfa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1716-RoV1Rfa.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -697,8 +697,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Return to the starting position and repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1712-hC6oYY5.jpg",
-      "videoUrl": "/exercises/videos/1712-hC6oYY5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1712-hC6oYY5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1712-hC6oYY5.gif",
       "musclesWorked": {
         "primary": [
           "adductors"
@@ -722,8 +722,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1758-aumB2IV.jpg",
-      "videoUrl": "/exercises/videos/1758-aumB2IV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1758-aumB2IV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1758-aumB2IV.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -748,8 +748,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1431-7OeHptV.jpg",
-      "videoUrl": "/exercises/videos/1431-7OeHptV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1431-7OeHptV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1431-7OeHptV.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -774,8 +774,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1432-f4xtKBj.jpg",
-      "videoUrl": "/exercises/videos/1432-f4xtKBj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1432-f4xtKBj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1432-f4xtKBj.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -798,8 +798,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the towel back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0018-7HcfMBP.jpg",
-      "videoUrl": "/exercises/videos/0018-7HcfMBP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0018-7HcfMBP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0018-7HcfMBP.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -822,8 +822,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0019-J60bN17.jpg",
-      "videoUrl": "/exercises/videos/0019-J60bN17.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0019-J60bN17.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0019-J60bN17.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -846,8 +846,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2364-PnZJIrk.jpg",
-      "videoUrl": "/exercises/videos/2364-PnZJIrk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2364-PnZJIrk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2364-PnZJIrk.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -871,8 +871,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly with your feet shoulder-width apart, bending your knees to absorb the impact.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3220-f9lVSSI.jpg",
-      "videoUrl": "/exercises/videos/3220-f9lVSSI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3220-f9lVSSI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3220-f9lVSSI.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -896,8 +896,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue stepping back and forth, maintaining a steady pace.",
         "Repeat for the desired duration or number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3672-fNGumX0.jpg",
-      "videoUrl": "/exercises/videos/3672-fNGumX0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3672-fNGumX0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3672-fNGumX0.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -920,8 +920,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1314-qLpO4vV.jpg",
-      "videoUrl": "/exercises/videos/1314-qLpO4vV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1314-qLpO4vV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1314-qLpO4vV.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -945,8 +945,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few seconds, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3297-GaSzzuh.jpg",
-      "videoUrl": "/exercises/videos/3297-GaSzzuh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3297-GaSzzuh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3297-GaSzzuh.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -971,8 +971,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 15-30 seconds, then release.",
         "Repeat on the opposite side."
       ],
-      "thumbnailUrl": "/exercises/images/1405-chfnQnM.jpg",
-      "videoUrl": "/exercises/videos/1405-chfnQnM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1405-chfnQnM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1405-chfnQnM.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -994,8 +994,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet, bending your knees to absorb the impact.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1473-SaDOwk7.jpg",
-      "videoUrl": "/exercises/videos/1473-SaDOwk7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1473-SaDOwk7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1473-SaDOwk7.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -1018,8 +1018,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain your balance and stability as you hold the position for a desired amount of time.",
         "Repeat the exercise with the other foot."
       ],
-      "thumbnailUrl": "/exercises/images/0020-xAySMB0.jpg",
-      "videoUrl": "/exercises/videos/0020-xAySMB0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0020-xAySMB0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0020-xAySMB0.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -1041,8 +1041,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the arm back down to the starting position and repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0968-3omWx6P.jpg",
-      "videoUrl": "/exercises/videos/0968-3omWx6P.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0968-3omWx6P.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0968-3omWx6P.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -1065,8 +1065,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, alternating the position of your legs with each repetition.",
         "Continue for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0969-ztAa1RK.jpg",
-      "videoUrl": "/exercises/videos/0969-ztAa1RK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0969-ztAa1RK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0969-ztAa1RK.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1090,8 +1090,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0970-r1XNRYB.jpg",
-      "videoUrl": "/exercises/videos/0970-r1XNRYB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0970-r1XNRYB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0970-r1XNRYB.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -1114,8 +1114,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the furthest point, then slowly roll the wheel back towards your knees to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0971-zhF9lW4.jpg",
-      "videoUrl": "/exercises/videos/0971-zhF9lW4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0971-zhF9lW4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0971-zhF9lW4.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1138,8 +1138,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the bands back down to your chest, keeping your elbows at a 90-degree angle.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1254-khlHMqs.jpg",
-      "videoUrl": "/exercises/videos/1254-khlHMqs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1254-khlHMqs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1254-khlHMqs.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -1164,8 +1164,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your right leg back down and repeat with the left leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0980-wSScovH.jpg",
-      "videoUrl": "/exercises/videos/0980-wSScovH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0980-wSScovH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0980-wSScovH.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -1188,8 +1188,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating the twisting motion, as if you are pedaling a bicycle, while keeping your core engaged throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0972-tZkGYZ9.jpg",
-      "videoUrl": "/exercises/videos/0972-tZkGYZ9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0972-tZkGYZ9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0972-tZkGYZ9.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1213,8 +1213,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the band back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0974-DptumMx.jpg",
-      "videoUrl": "/exercises/videos/0974-DptumMx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0974-DptumMx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0974-DptumMx.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -1237,8 +1237,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0975-ufaxB52.jpg",
-      "videoUrl": "/exercises/videos/0975-ufaxB52.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0975-ufaxB52.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0975-ufaxB52.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -1262,8 +1262,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hand back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0976-kmVVAfu.jpg",
-      "videoUrl": "/exercises/videos/0976-kmVVAfu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0976-kmVVAfu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0976-kmVVAfu.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -1289,8 +1289,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the band back to the starting position, maintaining control throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3117-4LoWllp.jpg",
-      "videoUrl": "/exercises/videos/3117-4LoWllp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3117-4LoWllp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3117-4LoWllp.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -1317,8 +1317,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the tension in the band and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3116-ZH68exZ.jpg",
-      "videoUrl": "/exercises/videos/3116-ZH68exZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3116-ZH68exZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3116-ZH68exZ.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -1340,8 +1340,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the band back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0977-sTg7iys.jpg",
-      "videoUrl": "/exercises/videos/0977-sTg7iys.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0977-sTg7iys.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0977-sTg7iys.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -1363,8 +1363,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0978-TFA88iB.jpg",
-      "videoUrl": "/exercises/videos/0978-TFA88iB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0978-TFA88iB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0978-TFA88iB.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -1388,8 +1388,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1408-E4R8Hz1.jpg",
-      "videoUrl": "/exercises/videos/1408-E4R8Hz1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1408-E4R8Hz1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1408-E4R8Hz1.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -1416,8 +1416,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly bring your hands back to your chest, resisting the pull of the band.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0979-9pa4H5m.jpg",
-      "videoUrl": "/exercises/videos/0979-9pa4H5m.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0979-9pa4H5m.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0979-9pa4H5m.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1439,8 +1439,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs and upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0981-KCBKjma.jpg",
-      "videoUrl": "/exercises/videos/0981-KCBKjma.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0981-KCBKjma.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0981-KCBKjma.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1464,8 +1464,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0983-pmnrOp0.jpg",
-      "videoUrl": "/exercises/videos/0983-pmnrOp0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0983-pmnrOp0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0983-pmnrOp0.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -1489,8 +1489,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0985-225x2Vd.jpg",
-      "videoUrl": "/exercises/videos/0985-225x2Vd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0985-225x2Vd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0985-225x2Vd.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1513,8 +1513,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the rotation, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0984-vIICElP.jpg",
-      "videoUrl": "/exercises/videos/0984-vIICElP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0984-vIICElP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0984-vIICElP.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -1537,8 +1537,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1002-bbLR7fB.jpg",
-      "videoUrl": "/exercises/videos/1002-bbLR7fB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1002-bbLR7fB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1002-bbLR7fB.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1561,8 +1561,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your forearm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0986-UNAB8ak.jpg",
-      "videoUrl": "/exercises/videos/0986-UNAB8ak.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0986-UNAB8ak.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0986-UNAB8ak.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -1586,8 +1586,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0987-arsYEd3.jpg",
-      "videoUrl": "/exercises/videos/0987-arsYEd3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0987-arsYEd3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0987-arsYEd3.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -1612,8 +1612,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release the band back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0988-km0sQC0.jpg",
-      "videoUrl": "/exercises/videos/0988-km0sQC0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0988-km0sQC0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0988-km0sQC0.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -1639,8 +1639,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position and repeat for the desired number of repetitions.",
         "Switch sides and repeat the exercise with the other hand."
       ],
-      "thumbnailUrl": "/exercises/images/0989-c16nYGA.jpg",
-      "videoUrl": "/exercises/videos/0989-c16nYGA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0989-c16nYGA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0989-c16nYGA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -1664,8 +1664,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly release the tension in the band and return to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0990-DKBwJrL.jpg",
-      "videoUrl": "/exercises/videos/0990-DKBwJrL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0990-DKBwJrL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0990-DKBwJrL.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -1690,8 +1690,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive your hips forward and squeeze your glutes to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0991-VtTbiP3.jpg",
-      "videoUrl": "/exercises/videos/0991-VtTbiP3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0991-VtTbiP3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0991-VtTbiP3.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -1715,8 +1715,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0992-zFzbBfL.jpg",
-      "videoUrl": "/exercises/videos/0992-zFzbBfL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0992-zFzbBfL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0992-zFzbBfL.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1740,8 +1740,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0993-sTfvVsG.jpg",
-      "videoUrl": "/exercises/videos/0993-sTfvVsG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0993-sTfvVsG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0993-sTfvVsG.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -1765,8 +1765,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your wrists back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0994-Ezpnw9d.jpg",
-      "videoUrl": "/exercises/videos/0994-Ezpnw9d.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0994-Ezpnw9d.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0994-Ezpnw9d.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -1790,8 +1790,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0996-9gbyYKk.jpg",
-      "videoUrl": "/exercises/videos/0996-9gbyYKk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0996-9gbyYKk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0996-9gbyYKk.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -1815,8 +1815,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the twist to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1011-S1JXDAG.jpg",
-      "videoUrl": "/exercises/videos/1011-S1JXDAG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1011-S1JXDAG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1011-S1JXDAG.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -1839,8 +1839,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the band back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0997-peAeMR3.jpg",
-      "videoUrl": "/exercises/videos/0997-peAeMR3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0997-peAeMR3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0997-peAeMR3.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -1863,8 +1863,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1018-trmte8s.jpg",
-      "videoUrl": "/exercises/videos/1018-trmte8s.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1018-trmte8s.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1018-trmte8s.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -1887,8 +1887,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly extend your arms back out to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0998-obe5LMq.jpg",
-      "videoUrl": "/exercises/videos/0998-obe5LMq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0998-obe5LMq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0998-obe5LMq.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -1911,8 +1911,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your left heel back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the right leg."
       ],
-      "thumbnailUrl": "/exercises/images/0999-9JprnPh.jpg",
-      "videoUrl": "/exercises/videos/0999-9JprnPh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0999-9JprnPh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0999-9JprnPh.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -1935,8 +1935,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1000-QsSQWbf.jpg",
-      "videoUrl": "/exercises/videos/1000-QsSQWbf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1000-QsSQWbf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1000-QsSQWbf.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -1959,8 +1959,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your right heel to return to the starting position.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1001-y8bYM8w.jpg",
-      "videoUrl": "/exercises/videos/1001-y8bYM8w.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1001-y8bYM8w.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1001-y8bYM8w.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -1983,8 +1983,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1004-TUZLh71.jpg",
-      "videoUrl": "/exercises/videos/1004-TUZLh71.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1004-TUZLh71.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1004-TUZLh71.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2009,8 +2009,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1003-w1NOByi.jpg",
-      "videoUrl": "/exercises/videos/1003-w1NOByi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1003-w1NOByi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1003-w1NOByi.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2034,8 +2034,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the crunch, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1005-Kzg30R7.jpg",
-      "videoUrl": "/exercises/videos/1005-Kzg30R7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1005-Kzg30R7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1005-Kzg30R7.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -2059,8 +2059,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1022-tc5dYrf.jpg",
-      "videoUrl": "/exercises/videos/1022-tc5dYrf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1022-tc5dYrf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1022-tc5dYrf.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -2084,8 +2084,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1007-euq4pwp.jpg",
-      "videoUrl": "/exercises/videos/1007-euq4pwp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1007-euq4pwp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1007-euq4pwp.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -2110,8 +2110,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with your left foot stepping up onto the platform.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1008-d5bTEPV.jpg",
-      "videoUrl": "/exercises/videos/1008-d5bTEPV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1008-d5bTEPV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1008-d5bTEPV.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2136,8 +2136,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your upper body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1009-kuMiR2T.jpg",
-      "videoUrl": "/exercises/videos/1009-kuMiR2T.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1009-kuMiR2T.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1009-kuMiR2T.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2161,8 +2161,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your glutes and hamstrings to lift your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1023-lHeUULr.jpg",
-      "videoUrl": "/exercises/videos/1023-lHeUULr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1023-lHeUULr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1023-lHeUULr.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2187,8 +2187,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then squeeze your glutes and hamstrings to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1010-KUaoUV8.jpg",
-      "videoUrl": "/exercises/videos/1010-KUaoUV8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1010-KUaoUV8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1010-KUaoUV8.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -2213,8 +2213,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the press and twist on the opposite side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1012-u4bAmKp.jpg",
-      "videoUrl": "/exercises/videos/1012-u4bAmKp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1012-u4bAmKp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1012-u4bAmKp.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -2237,8 +2237,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1369-jl6uxZV.jpg",
-      "videoUrl": "/exercises/videos/1369-jl6uxZV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1369-jl6uxZV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1369-jl6uxZV.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -2263,8 +2263,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1013-k6tUeqS.jpg",
-      "videoUrl": "/exercises/videos/1013-k6tUeqS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1013-k6tUeqS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1013-k6tUeqS.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -2286,8 +2286,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs and upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1014-H6ETwO9.jpg",
-      "videoUrl": "/exercises/videos/1014-H6ETwO9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1014-H6ETwO9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1014-H6ETwO9.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -2312,8 +2312,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the position for a few seconds, then slowly bring the band back towards your chest.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1015-G7PXMlT.jpg",
-      "videoUrl": "/exercises/videos/1015-G7PXMlT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1015-G7PXMlT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1015-G7PXMlT.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -2336,8 +2336,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your wrists back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1016-vUTfFHw.jpg",
-      "videoUrl": "/exercises/videos/1016-vUTfFHw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1016-vUTfFHw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1016-vUTfFHw.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -2360,8 +2360,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1017-aHDy5O5.jpg",
-      "videoUrl": "/exercises/videos/1017-aHDy5O5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1017-aHDy5O5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1017-aHDy5O5.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -2385,8 +2385,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale as you slowly begin to lower the barbells back to the starting position.",
         "Repeat for the desired number of repetitions, alternating arms."
       ],
-      "thumbnailUrl": "/exercises/images/0023-Yza7XrQ.jpg",
-      "videoUrl": "/exercises/videos/0023-Yza7XrQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0023-Yza7XrQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0023-Yza7XrQ.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -2409,8 +2409,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the squat, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0024-Y7YcmIJ.jpg",
-      "videoUrl": "/exercises/videos/0024-Y7YcmIJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0024-Y7YcmIJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0024-Y7YcmIJ.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -2435,8 +2435,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0025-EIeI8Vf.jpg",
-      "videoUrl": "/exercises/videos/0025-EIeI8Vf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0025-EIeI8Vf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0025-EIeI8Vf.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -2462,8 +2462,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0026-W9pFVv1.jpg",
-      "videoUrl": "/exercises/videos/0026-W9pFVv1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0026-W9pFVv1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0026-W9pFVv1.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -2486,8 +2486,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1316-cA9FuWG.jpg",
-      "videoUrl": "/exercises/videos/1316-cA9FuWG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1316-cA9FuWG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1316-cA9FuWG.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -2511,8 +2511,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0027-eZyBC3j.jpg",
-      "videoUrl": "/exercises/videos/0027-eZyBC3j.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0027-eZyBC3j.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0027-eZyBC3j.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -2537,8 +2537,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2407-aee2Fcj.jpg",
-      "videoUrl": "/exercises/videos/2407-aee2Fcj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2407-aee2Fcj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2407-aee2Fcj.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -2563,8 +2563,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "From the catch position, press the barbell overhead by extending your arms and pushing the barbell straight up.",
         "Lower the barbell back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0028-SGY8Zui.jpg",
-      "videoUrl": "/exercises/videos/0028-SGY8Zui.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0028-SGY8Zui.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0028-SGY8Zui.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -2588,8 +2588,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to stand back up, extending your hips and knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0029-qi996YS.jpg",
-      "videoUrl": "/exercises/videos/0029-qi996YS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0029-qi996YS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0029-qi996YS.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2613,8 +2613,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0030-J6Dx1Mu.jpg",
-      "videoUrl": "/exercises/videos/0030-J6Dx1Mu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0030-J6Dx1Mu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0030-J6Dx1Mu.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -2638,8 +2638,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale as you slowly begin to lower the bar back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0031-25GPyDY.jpg",
-      "videoUrl": "/exercises/videos/0031-25GPyDY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0031-25GPyDY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0031-25GPyDY.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -2663,8 +2663,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the ground by bending at the hips and knees, keeping your back straight.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0032-ila4NZS.jpg",
-      "videoUrl": "/exercises/videos/0032-ila4NZS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0032-ila4NZS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0032-ila4NZS.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2687,8 +2687,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0033-GrO65fd.jpg",
-      "videoUrl": "/exercises/videos/0033-GrO65fd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0033-GrO65fd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0033-GrO65fd.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -2711,8 +2711,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the barbell back to the starting position by contracting your lats.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0034-hMEptv0.jpg",
-      "videoUrl": "/exercises/videos/0034-hMEptv0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0034-hMEptv0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0034-hMEptv0.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -2734,8 +2734,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms to press the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0035-LMGXZn8.jpg",
-      "videoUrl": "/exercises/videos/0035-LMGXZn8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0035-LMGXZn8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0035-LMGXZn8.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -2759,8 +2759,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then return the barbell to the starting position by reversing the motion.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1255-9sgNE2O.jpg",
-      "videoUrl": "/exercises/videos/1255-9sgNE2O.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1255-9sgNE2O.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1255-9sgNE2O.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -2783,8 +2783,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0036-hl8DUh8.jpg",
-      "videoUrl": "/exercises/videos/0036-hl8DUh8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0036-hl8DUh8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0036-hl8DUh8.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -2807,8 +2807,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0037-Hj4FOCd.jpg",
-      "videoUrl": "/exercises/videos/0037-Hj4FOCd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0037-Hj4FOCd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0037-Hj4FOCd.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -2831,8 +2831,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0038-IENzBdA.jpg",
-      "videoUrl": "/exercises/videos/0038-IENzBdA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0038-IENzBdA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0038-IENzBdA.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -2856,8 +2856,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1370-2IHEa2T.jpg",
-      "videoUrl": "/exercises/videos/1370-2IHEa2T.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1370-2IHEa2T.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1370-2IHEa2T.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -2881,8 +2881,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0039-IeTIEqg.jpg",
-      "videoUrl": "/exercises/videos/0039-IeTIEqg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0039-IeTIEqg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0039-IeTIEqg.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2904,8 +2904,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0041-b2Uoz54.jpg",
-      "videoUrl": "/exercises/videos/0041-b2Uoz54.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0041-b2Uoz54.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0041-b2Uoz54.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -2929,8 +2929,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then raise the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0040-33AzZeV.jpg",
-      "videoUrl": "/exercises/videos/0040-33AzZeV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0040-33AzZeV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0040-33AzZeV.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -2954,8 +2954,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0042-zG0zs85.jpg",
-      "videoUrl": "/exercises/videos/0042-zG0zs85.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0042-zG0zs85.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0042-zG0zs85.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -2981,8 +2981,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, extending your hips and knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0043-qXTaZnJ.jpg",
-      "videoUrl": "/exercises/videos/0043-qXTaZnJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0043-qXTaZnJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0043-qXTaZnJ.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3008,8 +3008,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, extending your hips and knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1461-DhMl549.jpg",
-      "videoUrl": "/exercises/videos/1461-DhMl549.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1461-DhMl549.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1461-DhMl549.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3035,8 +3035,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, extending your hips and knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1462-iYzB0Cz.jpg",
-      "videoUrl": "/exercises/videos/1462-iYzB0Cz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1462-iYzB0Cz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1462-iYzB0Cz.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3061,8 +3061,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, squeezing your glutes at the top of the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1545-vR1vold.jpg",
-      "videoUrl": "/exercises/videos/1545-vR1vold.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1545-vR1vold.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1545-vR1vold.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3086,8 +3086,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1409-qKBpF7I.jpg",
-      "videoUrl": "/exercises/videos/1409-qKBpF7I.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1409-qKBpF7I.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1409-qKBpF7I.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3111,8 +3111,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3562-qg2PGl6.jpg",
-      "videoUrl": "/exercises/videos/3562-qg2PGl6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3562-qg2PGl6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3562-qg2PGl6.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3135,8 +3135,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then return to the starting position by squeezing your glutes and pushing your hips forward.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0044-XlZ4lAC.jpg",
-      "videoUrl": "/exercises/videos/0044-XlZ4lAC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0044-XlZ4lAC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0044-XlZ4lAC.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -3160,8 +3160,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0045-GXoaSgn.jpg",
-      "videoUrl": "/exercises/videos/0045-GXoaSgn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0045-GXoaSgn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0045-GXoaSgn.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -3185,8 +3185,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0046-5VCj6iH.jpg",
-      "videoUrl": "/exercises/videos/0046-5VCj6iH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0046-5VCj6iH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0046-5VCj6iH.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3210,8 +3210,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, extending your hips and knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1436-Gnfo4FM.jpg",
-      "videoUrl": "/exercises/videos/1436-Gnfo4FM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1436-Gnfo4FM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1436-Gnfo4FM.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3235,8 +3235,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0047-3TZduzM.jpg",
-      "videoUrl": "/exercises/videos/0047-3TZduzM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0047-3TZduzM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0047-3TZduzM.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -3261,8 +3261,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1719-gx7s7uF.jpg",
-      "videoUrl": "/exercises/videos/1719-gx7s7uF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1719-gx7s7uF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1719-gx7s7uF.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3285,8 +3285,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0048-641mIfk.jpg",
-      "videoUrl": "/exercises/videos/0048-641mIfk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0048-641mIfk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0048-641mIfk.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3311,8 +3311,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0049-dmgMp3n.jpg",
-      "videoUrl": "/exercises/videos/0049-dmgMp3n.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0049-dmgMp3n.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0049-dmgMp3n.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -3337,8 +3337,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0050-xi0yckC.jpg",
-      "videoUrl": "/exercises/videos/0050-xi0yckC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0050-xi0yckC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0050-xi0yckC.gif",
       "musclesWorked": {
         "primary": [
           "serratus anterior"
@@ -3362,8 +3362,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your heels to stand back up to the starting position.",
         "Repeat the movement, alternating your forward and back foot with each repetition."
       ],
-      "thumbnailUrl": "/exercises/images/0051-pkSoCW9.jpg",
-      "videoUrl": "/exercises/videos/0051-pkSoCW9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0051-pkSoCW9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0051-pkSoCW9.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3386,8 +3386,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0052-ZsiqXYa.jpg",
-      "videoUrl": "/exercises/videos/0052-ZsiqXYa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0052-ZsiqXYa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0052-ZsiqXYa.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3410,8 +3410,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you jump, extend your hips, knees, and ankles, pushing through your toes.",
         "Land softly back into the squat position and immediately repeat the movement for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0053-1gFNTZV.jpg",
-      "videoUrl": "/exercises/videos/0053-1gFNTZV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0053-1gFNTZV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0053-1gFNTZV.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3434,8 +3434,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push off with your right foot and return to the starting position.",
         "Repeat on the other side, stepping with your left foot."
       ],
-      "thumbnailUrl": "/exercises/images/1410-py1HSzx.jpg",
-      "videoUrl": "/exercises/videos/1410-py1HSzx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1410-py1HSzx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1410-py1HSzx.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3458,8 +3458,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1435-bTpEUcm.jpg",
-      "videoUrl": "/exercises/videos/1435-bTpEUcm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1435-bTpEUcm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1435-bTpEUcm.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3482,8 +3482,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your right heel to return to the starting position.",
         "Repeat with your left leg, alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0054-t8iSghb.jpg",
-      "videoUrl": "/exercises/videos/0054-t8iSghb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0054-t8iSghb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0054-t8iSghb.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3506,8 +3506,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1720-yg8Totb.jpg",
-      "videoUrl": "/exercises/videos/1720-yg8Totb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1720-yg8Totb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1720-yg8Totb.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3531,8 +3531,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment when the barbell touches your chest, then push it back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0055-EcaV7aL.jpg",
-      "videoUrl": "/exercises/videos/0055-EcaV7aL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0055-EcaV7aL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0055-EcaV7aL.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3556,8 +3556,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0056-HJ63mSO.jpg",
-      "videoUrl": "/exercises/videos/0056-HJ63mSO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0056-HJ63mSO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0056-HJ63mSO.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3580,8 +3580,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0057-EMpUwRI.jpg",
-      "videoUrl": "/exercises/videos/0057-EMpUwRI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0057-EMpUwRI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0057-EMpUwRI.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3604,8 +3604,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0058-SNFfUff.jpg",
-      "videoUrl": "/exercises/videos/0058-SNFfUff.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0058-SNFfUff.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0058-SNFfUff.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3629,8 +3629,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0059-SYJ4Bkt.jpg",
-      "videoUrl": "/exercises/videos/0059-SYJ4Bkt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0059-SYJ4Bkt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0059-SYJ4Bkt.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -3653,8 +3653,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0061-iZop9xO.jpg",
-      "videoUrl": "/exercises/videos/0061-iZop9xO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0061-iZop9xO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0061-iZop9xO.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3677,8 +3677,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment when the barbell is just above your forehead, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0060-h8LFzo9.jpg",
-      "videoUrl": "/exercises/videos/0060-h8LFzo9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0060-h8LFzo9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0060-h8LFzo9.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3702,8 +3702,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0063-elhhVgj.jpg",
-      "videoUrl": "/exercises/videos/0063-elhhVgj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0063-elhhVgj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0063-elhhVgj.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3726,8 +3726,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position in a controlled manner.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0064-Jsgsc27.jpg",
-      "videoUrl": "/exercises/videos/0064-Jsgsc27.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0064-Jsgsc27.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0064-Jsgsc27.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -3750,8 +3750,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0065-vtusOWT.jpg",
-      "videoUrl": "/exercises/videos/0065-vtusOWT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0065-vtusOWT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0065-vtusOWT.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3775,8 +3775,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0066-2DxtqHL.jpg",
-      "videoUrl": "/exercises/videos/0066-2DxtqHL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0066-2DxtqHL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0066-2DxtqHL.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -3802,8 +3802,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position in a controlled manner.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0067-xHKN2s8.jpg",
-      "videoUrl": "/exercises/videos/0067-xHKN2s8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0067-xHKN2s8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0067-xHKN2s8.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -3826,8 +3826,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower yourself until your thigh is parallel to the ground, then push through your heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/0068-uKyN64F.jpg",
-      "videoUrl": "/exercises/videos/0068-uKyN64F.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0068-uKyN64F.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0068-uKyN64F.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -3850,8 +3850,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0069-gfk9kD4.jpg",
-      "videoUrl": "/exercises/videos/0069-gfk9kD4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0069-gfk9kD4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0069-gfk9kD4.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -3874,8 +3874,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly raise the barbell back up by extending your wrists.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1411-yzYH9pI.jpg",
-      "videoUrl": "/exercises/videos/1411-yzYH9pI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1411-yzYH9pI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1411-yzYH9pI.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -3898,8 +3898,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contracted position for a brief pause, then inhale and slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1412-SJAA2IQ.jpg",
-      "videoUrl": "/exercises/videos/1412-SJAA2IQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1412-SJAA2IQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1412-SJAA2IQ.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -3923,8 +3923,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3017-r0z6xzQ.jpg",
-      "videoUrl": "/exercises/videos/3017-r0z6xzQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3017-r0z6xzQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3017-r0z6xzQ.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -3950,8 +3950,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1751-bndCa3Q.jpg",
-      "videoUrl": "/exercises/videos/1751-bndCa3Q.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1751-bndCa3Q.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1751-bndCa3Q.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -3975,8 +3975,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0070-qOgPVf6.jpg",
-      "videoUrl": "/exercises/videos/0070-qOgPVf6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0070-qOgPVf6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0070-qOgPVf6.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -3999,8 +3999,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0071-wnEscH8.jpg",
-      "videoUrl": "/exercises/videos/0071-wnEscH8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0071-wnEscH8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0071-wnEscH8.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -4027,8 +4027,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0072-WLvTAv5.jpg",
-      "videoUrl": "/exercises/videos/0072-WLvTAv5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0072-WLvTAv5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0072-WLvTAv5.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -4051,8 +4051,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0073-i6LWjok.jpg",
-      "videoUrl": "/exercises/videos/0073-i6LWjok.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0073-i6LWjok.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0073-i6LWjok.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -4075,8 +4075,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then reverse the motion and press the barbell back to the starting position above your chest.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0022-znLogoF.jpg",
-      "videoUrl": "/exercises/videos/0022-znLogoF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0022-znLogoF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0022-znLogoF.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -4100,8 +4100,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position by bending at the hips and knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0074-za9Ni4z.jpg",
-      "videoUrl": "/exercises/videos/0074-za9Ni4z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0074-za9Ni4z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0074-za9Ni4z.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -4124,8 +4124,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0075-Ln9iTbU.jpg",
-      "videoUrl": "/exercises/videos/0075-Ln9iTbU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0075-Ln9iTbU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0075-Ln9iTbU.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -4149,8 +4149,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0076-S9zHIvU.jpg",
-      "videoUrl": "/exercises/videos/0076-S9zHIvU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0076-S9zHIvU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0076-S9zHIvU.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -4173,8 +4173,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your left heel to return to the starting position.",
         "Repeat with the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/0078-VaP75jl.jpg",
-      "videoUrl": "/exercises/videos/0078-VaP75jl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0078-VaP75jl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0078-VaP75jl.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -4197,8 +4197,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your left heel to return to the starting position.",
         "Repeat with the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/0077-62Nw60O.jpg",
-      "videoUrl": "/exercises/videos/0077-62Nw60O.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0077-62Nw60O.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0077-62Nw60O.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -4222,8 +4222,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contracted position for a brief pause, then inhale and slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0079-qDnGfDb.jpg",
-      "videoUrl": "/exercises/videos/0079-qDnGfDb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0079-qDnGfDb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0079-qDnGfDb.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -4248,8 +4248,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2187-YqJw82s.jpg",
-      "videoUrl": "/exercises/videos/2187-YqJw82s.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2187-YqJw82s.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2187-YqJw82s.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -4273,8 +4273,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale as you slowly lower the barbell back to the starting position, keeping your upper arms stationary.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0080-xNrS20v.jpg",
-      "videoUrl": "/exercises/videos/0080-xNrS20v.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0080-xNrS20v.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0080-xNrS20v.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -4298,8 +4298,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0118-SzX3uzM.jpg",
-      "videoUrl": "/exercises/videos/0118-SzX3uzM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0118-SzX3uzM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0118-SzX3uzM.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -4322,8 +4322,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1256-DotAgEF.jpg",
-      "videoUrl": "/exercises/videos/1256-DotAgEF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1256-DotAgEF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1256-DotAgEF.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -4348,8 +4348,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1257-DU7I633.jpg",
-      "videoUrl": "/exercises/videos/1257-DU7I633.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1257-DU7I633.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1257-DU7I633.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -4375,8 +4375,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1317-8d8qJQI.jpg",
-      "videoUrl": "/exercises/videos/1317-8d8qJQI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1317-8d8qJQI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1317-8d8qJQI.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -4400,8 +4400,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1721-yRLPCLu.jpg",
-      "videoUrl": "/exercises/videos/1721-yRLPCLu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1721-yRLPCLu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1721-yRLPCLu.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -4425,8 +4425,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0081-4LIG9xr.jpg",
-      "videoUrl": "/exercises/videos/0081-4LIG9xr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0081-4LIG9xr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0081-4LIG9xr.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -4449,8 +4449,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0082-LsZkfU6.jpg",
-      "videoUrl": "/exercises/videos/0082-LsZkfU6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0082-LsZkfU6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0082-LsZkfU6.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -4473,8 +4473,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly roll the barbell back towards your knees, maintaining control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0084-7M66AVi.jpg",
-      "videoUrl": "/exercises/videos/0084-7M66AVi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0084-7M66AVi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0084-7M66AVi.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -4498,8 +4498,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the fully extended position, then slowly roll the barbell back towards your body, returning to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0083-Gxg9lDc.jpg",
-      "videoUrl": "/exercises/videos/0083-Gxg9lDc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0083-Gxg9lDc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0083-Gxg9lDc.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -4525,8 +4525,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your glutes at the top of the movement.",
         "Lower the barbell back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0085-wQ2c4XD.jpg",
-      "videoUrl": "/exercises/videos/0085-wQ2c4XD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0085-wQ2c4XD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0085-wQ2c4XD.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -4550,8 +4550,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0086-ngPpyRS.jpg",
-      "videoUrl": "/exercises/videos/0086-ngPpyRS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0086-ngPpyRS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0086-ngPpyRS.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -4574,8 +4574,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the barbell overhead, fully extending your arms.",
         "Lower the barbell back to shoulder height and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0087-0dCyly0.jpg",
-      "videoUrl": "/exercises/videos/0087-0dCyly0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0087-0dCyly0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0087-0dCyly0.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -4599,8 +4599,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0088-ktsFQAZ.jpg",
-      "videoUrl": "/exercises/videos/0088-ktsFQAZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0088-ktsFQAZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0088-ktsFQAZ.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -4623,8 +4623,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Raise your heels as high as possible, contracting your calves.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1371-ipvgBnC.jpg",
-      "videoUrl": "/exercises/videos/1371-ipvgBnC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1371-ipvgBnC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1371-ipvgBnC.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -4647,8 +4647,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1718-4CBIBOM.jpg",
-      "videoUrl": "/exercises/videos/1718-4CBIBOM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1718-4CBIBOM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1718-4CBIBOM.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -4671,8 +4671,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contracted position for a brief pause, then inhale and slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0089-1V1gj1u.jpg",
-      "videoUrl": "/exercises/videos/0089-1V1gj1u.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0089-1V1gj1u.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0089-1V1gj1u.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -4695,8 +4695,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0090-d960PgE.jpg",
-      "videoUrl": "/exercises/videos/0090-d960PgE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0090-d960PgE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0090-d960PgE.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -4720,8 +4720,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0091-kTbSH9h.jpg",
-      "videoUrl": "/exercises/videos/0091-kTbSH9h.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0091-kTbSH9h.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0091-kTbSH9h.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -4744,8 +4744,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms to raise the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0092-5uFK1xr.jpg",
-      "videoUrl": "/exercises/videos/0092-5uFK1xr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0092-5uFK1xr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0092-5uFK1xr.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -4769,8 +4769,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the twist to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0094-dFSNDOA.jpg",
-      "videoUrl": "/exercises/videos/0094-dFSNDOA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0094-dFSNDOA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0094-dFSNDOA.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -4793,8 +4793,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold for a moment, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0095-dG7tG5y.jpg",
-      "videoUrl": "/exercises/videos/0095-dG7tG5y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0095-dG7tG5y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0095-dG7tG5y.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -4818,8 +4818,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement on the left side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0096-i4JkUaL.jpg",
-      "videoUrl": "/exercises/videos/0096-i4JkUaL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0096-i4JkUaL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0096-i4JkUaL.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -4843,8 +4843,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower until your thighs are parallel to the ground, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0098-W31mMjd.jpg",
-      "videoUrl": "/exercises/videos/0098-W31mMjd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0098-W31mMjd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0098-W31mMjd.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -4869,8 +4869,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side, stepping out with your left foot.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0097-HUEqZ1y.jpg",
-      "videoUrl": "/exercises/videos/0097-HUEqZ1y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0097-HUEqZ1y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0097-HUEqZ1y.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -4894,8 +4894,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your torso back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1756-gEyURal.jpg",
-      "videoUrl": "/exercises/videos/1756-gEyURal.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1756-gEyURal.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1756-gEyURal.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -4919,8 +4919,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your front heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0099-gGNQmVt.jpg",
-      "videoUrl": "/exercises/videos/0099-gGNQmVt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0099-gGNQmVt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0099-gGNQmVt.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -4942,8 +4942,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the raised leg back down and repeat with the other leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2799-G7xoEzr.jpg",
-      "videoUrl": "/exercises/videos/2799-G7xoEzr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2799-G7xoEzr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2799-G7xoEzr.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -4966,8 +4966,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the leg back down and repeat with the other leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2800-BCs0G2F.jpg",
-      "videoUrl": "/exercises/videos/2800-BCs0G2F.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2800-BCs0G2F.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2800-BCs0G2F.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -4990,8 +4990,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you reach the top of the movement, quickly reverse the motion and lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0100-4Leypho.jpg",
-      "videoUrl": "/exercises/videos/0100-4Leypho.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0100-4Leypho.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0100-4Leypho.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5015,8 +5015,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, squeezing your glutes at the top.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0101-euI1BwR.jpg",
-      "videoUrl": "/exercises/videos/0101-euI1BwR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0101-euI1BwR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0101-euI1BwR.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -5039,8 +5039,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your right heel to return to the starting position.",
         "Repeat with your left leg forward for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2810-HBYyX94.jpg",
-      "videoUrl": "/exercises/videos/2810-HBYyX94.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2810-HBYyX94.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2810-HBYyX94.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -5064,8 +5064,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0102-oR7O9LW.jpg",
-      "videoUrl": "/exercises/videos/0102-oR7O9LW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0102-oR7O9LW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0102-oR7O9LW.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -5091,8 +5091,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the jump and lunge sequence on the other leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2798-RYcV1kH.jpg",
-      "videoUrl": "/exercises/videos/2798-RYcV1kH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2798-RYcV1kH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2798-RYcV1kH.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -5115,8 +5115,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly roll the barbell back towards your thighs, maintaining control and keeping your core engaged.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0103-xnInPfE.jpg",
-      "videoUrl": "/exercises/videos/0103-xnInPfE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0103-xnInPfE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0103-xnInPfE.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -5139,8 +5139,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contracted position for a brief pause, then inhale and slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0104-2qTvJAZ.jpg",
-      "videoUrl": "/exercises/videos/0104-2qTvJAZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0104-2qTvJAZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0104-2qTvJAZ.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -5162,8 +5162,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0105-dCPESfR.jpg",
-      "videoUrl": "/exercises/videos/0105-dCPESfR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0105-dCPESfR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0105-dCPESfR.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5185,8 +5185,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1372-8ozhUIZ.jpg",
-      "videoUrl": "/exercises/videos/1372-8ozhUIZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1372-8ozhUIZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1372-8ozhUIZ.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -5210,8 +5210,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale as you slowly begin to bring the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0106-4dUn2iv.jpg",
-      "videoUrl": "/exercises/videos/0106-4dUn2iv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0106-4dUn2iv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0106-4dUn2iv.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -5234,8 +5234,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1456-wdRZISl.jpg",
-      "videoUrl": "/exercises/videos/1456-wdRZISl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1456-wdRZISl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1456-wdRZISl.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5259,8 +5259,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the weight back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/2414-vsMcDi9.jpg",
-      "videoUrl": "/exercises/videos/2414-vsMcDi9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2414-vsMcDi9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2414-vsMcDi9.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -5284,8 +5284,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0107-S8mo30S.jpg",
-      "videoUrl": "/exercises/videos/0107-S8mo30S.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0107-S8mo30S.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0107-S8mo30S.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5307,8 +5307,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0108-rGwhJ5o.jpg",
-      "videoUrl": "/exercises/videos/0108-rGwhJ5o.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0108-rGwhJ5o.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0108-rGwhJ5o.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -5331,8 +5331,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the barbell back to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0109-dZl9Q27.jpg",
-      "videoUrl": "/exercises/videos/0109-dZl9Q27.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0109-dZl9Q27.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0109-dZl9Q27.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -5356,8 +5356,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0110-LWuA3aZ.jpg",
-      "videoUrl": "/exercises/videos/0110-LWuA3aZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0110-LWuA3aZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0110-LWuA3aZ.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -5379,8 +5379,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0111-6HiHHe0.jpg",
-      "videoUrl": "/exercises/videos/0111-6HiHHe0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0111-6HiHHe0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0111-6HiHHe0.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -5404,8 +5404,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the twist to the left side.",
         "Continue alternating twists for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0112-yQe5HpE.jpg",
-      "videoUrl": "/exercises/videos/0112-yQe5HpE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0112-yQe5HpE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0112-yQe5HpE.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -5429,8 +5429,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the barbell back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1629-faHKVkK.jpg",
-      "videoUrl": "/exercises/videos/1629-faHKVkK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1629-faHKVkK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1629-faHKVkK.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -5452,8 +5452,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the barbell overhead, extending your arms fully.",
         "Lower the barbell back to shoulder height and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1457-Kyd9Rz5.jpg",
-      "videoUrl": "/exercises/videos/1457-Kyd9Rz5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1457-Kyd9Rz5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1457-Kyd9Rz5.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5478,8 +5478,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0113-NdIb5Z1.jpg",
-      "videoUrl": "/exercises/videos/0113-NdIb5Z1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0113-NdIb5Z1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0113-NdIb5Z1.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -5503,8 +5503,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the opposite leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0114-Kxquu2E.jpg",
-      "videoUrl": "/exercises/videos/0114-Kxquu2E.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0114-Kxquu2E.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0114-Kxquu2E.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -5528,8 +5528,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your glutes and hamstrings to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0115-JrOHAZc.jpg",
-      "videoUrl": "/exercises/videos/0115-JrOHAZc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0115-JrOHAZc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0115-JrOHAZc.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -5553,8 +5553,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your hamstrings and glutes to lift the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0116-hrVQWvE.jpg",
-      "videoUrl": "/exercises/videos/0116-hrVQWvE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0116-hrVQWvE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0116-hrVQWvE.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -5579,8 +5579,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position, maintaining control throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0117-KgI0tqW.jpg",
-      "videoUrl": "/exercises/videos/0117-KgI0tqW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0117-KgI0tqW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0117-KgI0tqW.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -5603,8 +5603,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back to shoulder height as you lower back into the squat position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3305-f7Y9eDZ.jpg",
-      "videoUrl": "/exercises/videos/3305-f7Y9eDZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3305-f7Y9eDZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3305-f7Y9eDZ.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5627,8 +5627,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0120-UDlhcO8.jpg",
-      "videoUrl": "/exercises/videos/0120-UDlhcO8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0120-UDlhcO8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0120-UDlhcO8.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5651,8 +5651,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0119-83HoW9X.jpg",
-      "videoUrl": "/exercises/videos/0119-83HoW9X.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0119-83HoW9X.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0119-83HoW9X.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5675,8 +5675,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale as you slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0121-fI18Rbc.jpg",
-      "videoUrl": "/exercises/videos/0121-fI18Rbc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0121-fI18Rbc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0121-fI18Rbc.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5700,8 +5700,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment when the barbell touches your chest, then push it back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0122-JsKq9so.jpg",
-      "videoUrl": "/exercises/videos/0122-JsKq9so.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0122-JsKq9so.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0122-JsKq9so.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -5725,8 +5725,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment when the barbell touches your chest, then push it back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1258-945zpRg.jpg",
-      "videoUrl": "/exercises/videos/1258-945zpRg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1258-945zpRg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1258-945zpRg.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -5750,8 +5750,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0124-s7HX1BY.jpg",
-      "videoUrl": "/exercises/videos/0124-s7HX1BY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0124-s7HX1BY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0124-s7HX1BY.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -5774,8 +5774,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0123-RgJDRR1.jpg",
-      "videoUrl": "/exercises/videos/0123-RgJDRR1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0123-RgJDRR1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0123-RgJDRR1.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5798,8 +5798,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0126-82LxxkW.jpg",
-      "videoUrl": "/exercises/videos/0126-82LxxkW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0126-82LxxkW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0126-82LxxkW.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -5823,8 +5823,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0125-6kSxYnw.jpg",
-      "videoUrl": "/exercises/videos/0125-6kSxYnw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0125-6kSxYnw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0125-6kSxYnw.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -5848,8 +5848,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the squat, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0127-LSTChY9.jpg",
-      "videoUrl": "/exercises/videos/0127-LSTChY9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0127-LSTChY9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0127-LSTChY9.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -5872,8 +5872,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3212-BbfB8Gb.jpg",
-      "videoUrl": "/exercises/videos/3212-BbfB8Gb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3212-BbfB8Gb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3212-BbfB8Gb.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -5896,8 +5896,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Begin making alternating waves with the ropes by rapidly raising and lowering each arm.",
         "Continue for the desired duration or number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0128-RJa4tCo.jpg",
-      "videoUrl": "/exercises/videos/0128-RJa4tCo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0128-RJa4tCo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0128-RJa4tCo.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -5921,8 +5921,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a steady pace and keep your core tight throughout the exercise.",
         "Continue for the desired distance or time."
       ],
-      "thumbnailUrl": "/exercises/images/3360-0Yz8WdV.jpg",
-      "videoUrl": "/exercises/videos/3360-0Yz8WdV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3360-0Yz8WdV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3360-0Yz8WdV.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -5945,8 +5945,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 15-30 seconds.",
         "Release the stretch and repeat as desired."
       ],
-      "thumbnailUrl": "/exercises/images/1259-QoHIhPl.jpg",
-      "videoUrl": "/exercises/videos/1259-QoHIhPl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1259-QoHIhPl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1259-QoHIhPl.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -5969,8 +5969,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0129-RrLske5.jpg",
-      "videoUrl": "/exercises/videos/0129-RrLske5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0129-RrLske5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0129-RrLske5.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -5993,8 +5993,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1399-9RT8oQW.jpg",
-      "videoUrl": "/exercises/videos/1399-9RT8oQW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1399-9RT8oQW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1399-9RT8oQW.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -6017,8 +6017,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0130-u27Kcdz.jpg",
-      "videoUrl": "/exercises/videos/0130-u27Kcdz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0130-u27Kcdz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0130-u27Kcdz.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -6043,8 +6043,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower yourself back down to the starting position with control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3019-mExgrF9.jpg",
-      "videoUrl": "/exercises/videos/3019-mExgrF9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3019-mExgrF9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3019-mExgrF9.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -6068,8 +6068,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3639-6sYyrRX.jpg",
-      "videoUrl": "/exercises/videos/3639-6sYyrRX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3639-6sYyrRX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3639-6sYyrRX.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -6092,8 +6092,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your biceps at the top of the movement, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1770-sJFIDIp.jpg",
-      "videoUrl": "/exercises/videos/1770-sJFIDIp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1770-sJFIDIp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1770-sJFIDIp.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -6115,8 +6115,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0139-50BETrz.jpg",
-      "videoUrl": "/exercises/videos/0139-50BETrz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0139-50BETrz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0139-50BETrz.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -6138,8 +6138,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause at the top of the movement, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0140-guT8YnS.jpg",
-      "videoUrl": "/exercises/videos/0140-guT8YnS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0140-guT8YnS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0140-guT8YnS.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -6162,8 +6162,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your palms to straighten your arms and lift your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0137-U6G2gk9.jpg",
-      "videoUrl": "/exercises/videos/0137-U6G2gk9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0137-U6G2gk9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0137-U6G2gk9.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -6187,8 +6187,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet and immediately drop back into a squat position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3543-wfotm7S.jpg",
-      "videoUrl": "/exercises/videos/3543-wfotm7S.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3543-wfotm7S.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3543-wfotm7S.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -6211,8 +6211,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for the desired amount of time.",
         "Lower your hips back down to the ground and repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/3544-5VXmnV5.jpg",
-      "videoUrl": "/exercises/videos/3544-5VXmnV5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3544-5VXmnV5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3544-5VXmnV5.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -6236,8 +6236,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your hands to straighten your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1771-s0HKO2I.jpg",
-      "videoUrl": "/exercises/videos/1771-s0HKO2I.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1771-s0HKO2I.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1771-s0HKO2I.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -6259,8 +6259,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your forearm back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1769-gscGLOU.jpg",
-      "videoUrl": "/exercises/videos/1769-gscGLOU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1769-gscGLOU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1769-gscGLOU.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -6283,8 +6283,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3168-3xK09Sk.jpg",
-      "videoUrl": "/exercises/videos/3168-3xK09Sk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3168-3xK09Sk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3168-3xK09Sk.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6307,8 +6307,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the squat, then slowly return to the starting position while extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3167-BReCuOn.jpg",
-      "videoUrl": "/exercises/videos/3167-BReCuOn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3167-BReCuOn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3167-BReCuOn.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6331,8 +6331,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1373-bJYHBIN.jpg",
-      "videoUrl": "/exercises/videos/1373-bJYHBIN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1373-bJYHBIN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1373-bJYHBIN.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -6355,8 +6355,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/3156-v2DfH14.jpg",
-      "videoUrl": "/exercises/videos/3156-v2DfH14.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3156-v2DfH14.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3156-v2DfH14.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6380,8 +6380,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3158-tig3PXb.jpg",
-      "videoUrl": "/exercises/videos/3158-tig3PXb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3158-tig3PXb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3158-tig3PXb.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6406,8 +6406,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/3162-xbkPfaw.jpg",
-      "videoUrl": "/exercises/videos/3162-xbkPfaw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3162-xbkPfaw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3162-xbkPfaw.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6430,8 +6430,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the towel back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/3161-O4oIqQD.jpg",
-      "videoUrl": "/exercises/videos/3161-O4oIqQD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3161-O4oIqQD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3161-O4oIqQD.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6456,8 +6456,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release and extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3166-wd4ds3s.jpg",
-      "videoUrl": "/exercises/videos/3166-wd4ds3s.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3166-wd4ds3s.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3166-wd4ds3s.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6480,8 +6480,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3165-uTv34oq.jpg",
-      "videoUrl": "/exercises/videos/3165-uTv34oq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3165-uTv34oq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3165-uTv34oq.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -6504,8 +6504,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0138-CI6baTY.jpg",
-      "videoUrl": "/exercises/videos/0138-CI6baTY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0138-CI6baTY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0138-CI6baTY.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -6529,8 +6529,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly step down with the foot that is on the box, returning to the starting position.",
         "Repeat the exercise with the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1374-iPm26QU.jpg",
-      "videoUrl": "/exercises/videos/1374-iPm26QU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1374-iPm26QU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1374-iPm26QU.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -6555,8 +6555,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a steady breathing pattern throughout the exercise.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2466-9c6T1YX.jpg",
-      "videoUrl": "/exercises/videos/2466-9c6T1YX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2466-9c6T1YX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2466-9c6T1YX.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -6581,8 +6581,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Jump up explosively, reaching your arms overhead.",
         "Land softly and immediately lower back into a squat position to begin the next repetition."
       ],
-      "thumbnailUrl": "/exercises/images/1160-dK9394r.jpg",
-      "videoUrl": "/exercises/videos/1160-dK9394r.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1160-dK9394r.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1160-dK9394r.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -6606,8 +6606,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0870-qcNN2FN.jpg",
-      "videoUrl": "/exercises/videos/0870-qcNN2FN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0870-qcNN2FN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0870-qcNN2FN.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -6632,8 +6632,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few breaths.",
         "To release, slowly bring your knees back up and extend your legs."
       ],
-      "thumbnailUrl": "/exercises/images/1494-bWlZvXh.jpg",
-      "videoUrl": "/exercises/videos/1494-bWlZvXh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1494-bWlZvXh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1494-bWlZvXh.gif",
       "musclesWorked": {
         "primary": [
           "adductors"
@@ -6658,8 +6658,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Alternate between arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0148-KHPZL0b.jpg",
-      "videoUrl": "/exercises/videos/0148-KHPZL0b.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0148-KHPZL0b.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0148-KHPZL0b.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -6683,8 +6683,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with your left arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0149-Gchi5Tr.jpg",
-      "videoUrl": "/exercises/videos/0149-Gchi5Tr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0149-Gchi5Tr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0149-Gchi5Tr.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -6709,8 +6709,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3235-zHEpuuc.jpg",
-      "videoUrl": "/exercises/videos/3235-zHEpuuc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3235-zHEpuuc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3235-zHEpuuc.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -6735,8 +6735,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly return the bar to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0150-eYnzaCm.jpg",
-      "videoUrl": "/exercises/videos/0150-eYnzaCm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0150-eYnzaCm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0150-eYnzaCm.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -6762,8 +6762,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly reverse the movement, bringing your hands back to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0151-7xI5MXA.jpg",
-      "videoUrl": "/exercises/videos/0151-7xI5MXA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0151-7xI5MXA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0151-7xI5MXA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -6789,8 +6789,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the bar back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1630-BCGQ6J5.jpg",
-      "videoUrl": "/exercises/videos/1630-BCGQ6J5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1630-BCGQ6J5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1630-BCGQ6J5.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -6813,8 +6813,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then inhale and slowly lower the cable handle back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1631-NvfE43H.jpg",
-      "videoUrl": "/exercises/videos/1631-NvfE43H.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1631-NvfE43H.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1631-NvfE43H.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -6837,8 +6837,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0152-Db7eEgw.jpg",
-      "videoUrl": "/exercises/videos/0152-Db7eEgw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0152-Db7eEgw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0152-Db7eEgw.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -6863,8 +6863,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0153-OQ1otBN.jpg",
-      "videoUrl": "/exercises/videos/0153-OQ1otBN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0153-OQ1otBN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0153-OQ1otBN.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -6888,8 +6888,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak contraction, then inhale and slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0154-aqvSOQE.jpg",
-      "videoUrl": "/exercises/videos/0154-aqvSOQE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0154-aqvSOQE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0154-aqvSOQE.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -6914,8 +6914,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0155-0CXGHya.jpg",
-      "videoUrl": "/exercises/videos/0155-0CXGHya.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0155-0CXGHya.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0155-0CXGHya.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -6940,8 +6940,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the cable attachment back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0868-G08RZcQ.jpg",
-      "videoUrl": "/exercises/videos/0868-G08RZcQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0868-G08RZcQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0868-G08RZcQ.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -6965,8 +6965,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the cable handles back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0157-eGDudUV.jpg",
-      "videoUrl": "/exercises/videos/0157-eGDudUV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0157-eGDudUV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0157-eGDudUV.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -6990,8 +6990,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the fully extended position, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0158-7saC5zz.jpg",
-      "videoUrl": "/exercises/videos/0158-7saC5zz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0158-7saC5zz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0158-7saC5zz.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7015,8 +7015,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the handle back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1260-KHGNa16.jpg",
-      "videoUrl": "/exercises/videos/1260-KHGNa16.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1260-KHGNa16.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1260-KHGNa16.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7042,8 +7042,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly return the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1261-2Pya1cP.jpg",
-      "videoUrl": "/exercises/videos/1261-2Pya1cP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1261-2Pya1cP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1261-2Pya1cP.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7067,8 +7067,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the contraction, then slowly release the cable back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0159-kesXOpB.jpg",
-      "videoUrl": "/exercises/videos/0159-kesXOpB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0159-kesXOpB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0159-kesXOpB.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -7092,8 +7092,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the cable attachment back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1632-dXz8zjF.jpg",
-      "videoUrl": "/exercises/videos/1632-dXz8zjF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1632-dXz8zjF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1632-dXz8zjF.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -7118,8 +7118,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release the handle back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0160-veXwo0D.jpg",
-      "videoUrl": "/exercises/videos/0160-veXwo0D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0160-veXwo0D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0160-veXwo0D.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -7142,8 +7142,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the cable handle back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0161-hvHhCv8.jpg",
-      "videoUrl": "/exercises/videos/0161-hvHhCv8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0161-hvHhCv8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0161-hvHhCv8.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -7167,8 +7167,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the cable handle back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0162-u2X71Np.jpg",
-      "videoUrl": "/exercises/videos/0162-u2X71Np.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0162-u2X71Np.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0162-u2X71Np.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -7192,8 +7192,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the cable handle back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0164-mTT3KLn.jpg",
-      "videoUrl": "/exercises/videos/0164-mTT3KLn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0164-mTT3KLn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0164-mTT3KLn.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -7218,8 +7218,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the cable rope attachment back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0165-HPlPoQA.jpg",
-      "videoUrl": "/exercises/videos/0165-HPlPoQA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0165-HPlPoQA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0165-HPlPoQA.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -7243,8 +7243,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1722-1xHyxys.jpg",
-      "videoUrl": "/exercises/videos/1722-1xHyxys.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1722-1xHyxys.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1722-1xHyxys.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -7268,8 +7268,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release the bar back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0167-ZSJNetl.jpg",
-      "videoUrl": "/exercises/videos/0167-ZSJNetl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0167-ZSJNetl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0167-ZSJNetl.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -7293,8 +7293,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0168-hBGWILP.jpg",
-      "videoUrl": "/exercises/videos/0168-hBGWILP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0168-hBGWILP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0168-hBGWILP.gif",
       "musclesWorked": {
         "primary": [
           "adductors"
@@ -7319,8 +7319,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0169-Vh0GsK4.jpg",
-      "videoUrl": "/exercises/videos/0169-Vh0GsK4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0169-Vh0GsK4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0169-Vh0GsK4.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7345,8 +7345,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your back muscles at the top of the movement, then slowly extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1318-yaMIo4D.jpg",
-      "videoUrl": "/exercises/videos/1318-yaMIo4D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1318-yaMIo4D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1318-yaMIo4D.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -7370,8 +7370,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the fully extended position, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0171-tBWXbIT.jpg",
-      "videoUrl": "/exercises/videos/0171-tBWXbIT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0171-tBWXbIT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0171-tBWXbIT.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7398,8 +7398,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0170-27NNGFr.jpg",
-      "videoUrl": "/exercises/videos/0170-27NNGFr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0170-27NNGFr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0170-27NNGFr.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7424,8 +7424,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return the bar to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0172-1PK5Uo3.jpg",
-      "videoUrl": "/exercises/videos/0172-1PK5Uo3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0172-1PK5Uo3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0172-1PK5Uo3.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -7451,8 +7451,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0173-Hx1WC8I.jpg",
-      "videoUrl": "/exercises/videos/0173-Hx1WC8I.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0173-Hx1WC8I.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0173-Hx1WC8I.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -7478,8 +7478,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement on the opposite side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0174-MvQPqVW.jpg",
-      "videoUrl": "/exercises/videos/0174-MvQPqVW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0174-MvQPqVW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0174-MvQPqVW.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -7504,8 +7504,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0860-HEJ6DIX.jpg",
-      "videoUrl": "/exercises/videos/0860-HEJ6DIX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0860-HEJ6DIX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0860-HEJ6DIX.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -7528,8 +7528,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0175-WW95auq.jpg",
-      "videoUrl": "/exercises/videos/0175-WW95auq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0175-WW95auq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0175-WW95auq.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -7553,8 +7553,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3697-G61cXLk.jpg",
-      "videoUrl": "/exercises/videos/3697-G61cXLk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3697-G61cXLk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3697-G61cXLk.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -7578,8 +7578,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position by bending your elbows.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0176-KWdF2JI.jpg",
-      "videoUrl": "/exercises/videos/0176-KWdF2JI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0176-KWdF2JI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0176-KWdF2JI.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -7603,8 +7603,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the bar back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2330-LEprlgG.jpg",
-      "videoUrl": "/exercises/videos/2330-LEprlgG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2330-LEprlgG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2330-LEprlgG.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -7630,8 +7630,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the tension and allow the rope to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0177-CuaWCmC.jpg",
-      "videoUrl": "/exercises/videos/0177-CuaWCmC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0177-CuaWCmC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0177-CuaWCmC.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -7655,8 +7655,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your back muscles at the bottom of the movement.",
         "Slowly return the v-bar to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2616-4c9BhzB.jpg",
-      "videoUrl": "/exercises/videos/2616-4c9BhzB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2616-4c9BhzB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2616-4c9BhzB.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -7679,8 +7679,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0178-goJ6ezq.jpg",
-      "videoUrl": "/exercises/videos/0178-goJ6ezq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0178-goJ6ezq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0178-goJ6ezq.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -7705,8 +7705,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Reverse the motion and slowly return your arms to the starting position, keeping tension on your chest muscles throughout.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0179-FVmZVhk.jpg",
-      "videoUrl": "/exercises/videos/0179-FVmZVhk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0179-FVmZVhk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0179-FVmZVhk.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7730,8 +7730,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0180-hvV79Si.jpg",
-      "videoUrl": "/exercises/videos/0180-hvV79Si.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0180-hvV79Si.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0180-hvV79Si.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -7757,8 +7757,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the bar back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1634-otqIxU4.jpg",
-      "videoUrl": "/exercises/videos/1634-otqIxU4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1634-otqIxU4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1634-otqIxU4.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -7784,8 +7784,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the bar back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0182-61GrD55.jpg",
-      "videoUrl": "/exercises/videos/0182-61GrD55.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0182-61GrD55.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0182-61GrD55.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -7809,8 +7809,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly raise the rope back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0184-Q2Eu1Ax.jpg",
-      "videoUrl": "/exercises/videos/0184-Q2Eu1Ax.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0184-Q2Eu1Ax.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0184-Q2Eu1Ax.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -7833,8 +7833,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then squeeze your chest muscles to bring your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0185-lJJ7Yq8.jpg",
-      "videoUrl": "/exercises/videos/0185-lJJ7Yq8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0185-lJJ7Yq8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0185-lJJ7Yq8.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7858,8 +7858,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0186-uxJcFUU.jpg",
-      "videoUrl": "/exercises/videos/0186-uxJcFUU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0186-uxJcFUU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0186-uxJcFUU.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -7884,8 +7884,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the center, then slowly return your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0188-xLYSdtg.jpg",
-      "videoUrl": "/exercises/videos/0188-xLYSdtg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0188-xLYSdtg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0188-xLYSdtg.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7909,8 +7909,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly extend your arm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0189-EIsE3u8.jpg",
-      "videoUrl": "/exercises/videos/0189-EIsE3u8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0189-EIsE3u8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0189-EIsE3u8.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -7933,8 +7933,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your forearm back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0190-YTur5nR.jpg",
-      "videoUrl": "/exercises/videos/0190-YTur5nR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0190-YTur5nR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0190-YTur5nR.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -7958,8 +7958,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then reverse the motion and bring your arm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to your left arm and repeat the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/1262-w4dLzSx.jpg",
-      "videoUrl": "/exercises/videos/1262-w4dLzSx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1262-w4dLzSx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1262-w4dLzSx.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -7983,8 +7983,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1263-hHy8tQG.jpg",
-      "videoUrl": "/exercises/videos/1263-hHy8tQG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1263-hHy8tQG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1263-hHy8tQG.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -8007,8 +8007,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then squeeze your chest muscles to bring your arm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1264-P14Dz9D.jpg",
-      "videoUrl": "/exercises/videos/1264-P14Dz9D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1264-P14Dz9D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1264-P14Dz9D.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -8033,8 +8033,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the handle back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1265-GKEH6jj.jpg",
-      "videoUrl": "/exercises/videos/1265-GKEH6jj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1265-GKEH6jj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1265-GKEH6jj.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -8057,8 +8057,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the cable handle back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1266-6t00BsF.jpg",
-      "videoUrl": "/exercises/videos/1266-6t00BsF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1266-6t00BsF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1266-6t00BsF.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -8082,8 +8082,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly bring your arm back to the starting position, maintaining control throughout the movement.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0191-dB07vDu.jpg",
-      "videoUrl": "/exercises/videos/0191-dB07vDu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0191-dB07vDu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0191-dB07vDu.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -8106,8 +8106,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arm back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0192-wEulIzp.jpg",
-      "videoUrl": "/exercises/videos/0192-wEulIzp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0192-wEulIzp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0192-wEulIzp.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -8134,8 +8134,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch arms and repeat the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/1633-eHBlPsa.jpg",
-      "videoUrl": "/exercises/videos/1633-eHBlPsa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1633-eHBlPsa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1633-eHBlPsa.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8159,8 +8159,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1267-MKIelrR.jpg",
-      "videoUrl": "/exercises/videos/1267-MKIelrR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1267-MKIelrR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1267-MKIelrR.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -8187,8 +8187,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch sides and repeat the exercise with the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/3563-U5INZY6.jpg",
-      "videoUrl": "/exercises/videos/3563-U5INZY6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3563-U5INZY6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3563-U5INZY6.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -8215,8 +8215,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch arms and repeat the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/1635-ZXnjcOQ.jpg",
-      "videoUrl": "/exercises/videos/1635-ZXnjcOQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1635-ZXnjcOQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1635-ZXnjcOQ.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8242,8 +8242,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch sides and repeat the exercise with the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0193-WrYPP2g.jpg",
-      "videoUrl": "/exercises/videos/0193-WrYPP2g.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0193-WrYPP2g.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0193-WrYPP2g.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -8269,8 +8269,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then inhale and slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1723-qRZ5S1N.jpg",
-      "videoUrl": "/exercises/videos/1723-qRZ5S1N.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1723-qRZ5S1N.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1723-qRZ5S1N.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -8296,8 +8296,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly return the bar to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1636-wDUqY2u.jpg",
-      "videoUrl": "/exercises/videos/1636-wDUqY2u.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1636-wDUqY2u.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1636-wDUqY2u.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8320,8 +8320,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1637-ioTf098.jpg",
-      "videoUrl": "/exercises/videos/1637-ioTf098.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1637-ioTf098.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1637-ioTf098.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8346,8 +8346,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0194-2IxROQ1.jpg",
-      "videoUrl": "/exercises/videos/0194-2IxROQ1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0194-2IxROQ1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0194-2IxROQ1.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -8373,8 +8373,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the handle back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1319-OmQ8w0p.jpg",
-      "videoUrl": "/exercises/videos/1319-OmQ8w0p.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1319-OmQ8w0p.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1319-OmQ8w0p.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -8398,8 +8398,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the cable attachment back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0195-P2lNrGL.jpg",
-      "videoUrl": "/exercises/videos/0195-P2lNrGL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0195-P2lNrGL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0195-P2lNrGL.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8422,8 +8422,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly release the tension and bring the cable handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1268-vAwm6rK.jpg",
-      "videoUrl": "/exercises/videos/1268-vAwm6rK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1268-vAwm6rK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1268-vAwm6rK.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -8446,8 +8446,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your glutes and hamstrings to pull your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0196-OM46QHm.jpg",
-      "videoUrl": "/exercises/videos/0196-OM46QHm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0196-OM46QHm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0196-OM46QHm.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -8472,8 +8472,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the bar back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0198-RVwzP10.jpg",
-      "videoUrl": "/exercises/videos/0198-RVwzP10.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0198-RVwzP10.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0198-RVwzP10.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -8497,8 +8497,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0197-qdRxqCj.jpg",
-      "videoUrl": "/exercises/videos/0197-qdRxqCj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0197-qdRxqCj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0197-qdRxqCj.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -8524,8 +8524,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly return the bar to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1638-QTXKWPh.jpg",
-      "videoUrl": "/exercises/videos/1638-QTXKWPh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1638-QTXKWPh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1638-QTXKWPh.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8550,8 +8550,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then inhale and slowly return the bar to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0201-3ZflifB.jpg",
-      "videoUrl": "/exercises/videos/0201-3ZflifB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0201-3ZflifB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0201-3ZflifB.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -8575,8 +8575,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return the bar to the starting position while inhaling.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0199-PskORrA.jpg",
-      "videoUrl": "/exercises/videos/0199-PskORrA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0199-PskORrA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0199-PskORrA.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -8601,8 +8601,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then inhale and slowly return to the starting position by allowing your elbows to flex.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0200-dU605di.jpg",
-      "videoUrl": "/exercises/videos/0200-dU605di.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0200-dU605di.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0200-dU605di.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -8627,8 +8627,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the handle back to the starting position and repeat for the desired number of repetitions.",
         "Switch sides and repeat the exercise with your right arm."
       ],
-      "thumbnailUrl": "/exercises/images/0202-yUdIGNs.jpg",
-      "videoUrl": "/exercises/videos/0202-yUdIGNs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0202-yUdIGNs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0202-yUdIGNs.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -8653,8 +8653,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0203-wqNPGCg.jpg",
-      "videoUrl": "/exercises/videos/0203-wqNPGCg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0203-wqNPGCg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0203-wqNPGCg.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -8676,8 +8676,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Keeping your elbows stationary, pull the handle back towards your body, squeezing your triceps at the end of the movement.",
         "Slowly return the handle to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0204-c3QQLPi.jpg",
-      "videoUrl": "/exercises/videos/0204-c3QQLPi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0204-c3QQLPi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0204-c3QQLPi.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -8702,8 +8702,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the cable back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0205-SpsOSXk.jpg",
-      "videoUrl": "/exercises/videos/0205-SpsOSXk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0205-SpsOSXk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0205-SpsOSXk.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -8727,8 +8727,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0873-RqOtqD7.jpg",
-      "videoUrl": "/exercises/videos/0873-RqOtqD7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0873-RqOtqD7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0873-RqOtqD7.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -8754,8 +8754,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the bar back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0206-eOG0r6v.jpg",
-      "videoUrl": "/exercises/videos/0206-eOG0r6v.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0206-eOG0r6v.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0206-eOG0r6v.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8780,8 +8780,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return the bar to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2406-ThKP69G.jpg",
-      "videoUrl": "/exercises/videos/2406-ThKP69G.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2406-ThKP69G.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2406-ThKP69G.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -8804,8 +8804,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your forearm back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1413-gVlnLIJ.jpg",
-      "videoUrl": "/exercises/videos/1413-gVlnLIJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1413-gVlnLIJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1413-gVlnLIJ.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8830,8 +8830,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the handles back to the starting position, fully extending your elbows.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0209-IwX5NqK.jpg",
-      "videoUrl": "/exercises/videos/0209-IwX5NqK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0209-IwX5NqK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0209-IwX5NqK.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -8855,8 +8855,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower your wrists back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0210-eYmsEPR.jpg",
-      "videoUrl": "/exercises/videos/0210-eYmsEPR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0210-eYmsEPR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0210-eYmsEPR.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -8881,8 +8881,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return the bar to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0207-VjYliFZ.jpg",
-      "videoUrl": "/exercises/videos/0207-VjYliFZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0207-VjYliFZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0207-VjYliFZ.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -8906,8 +8906,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the contraction, then slowly release the cable back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0208-PNtsX17.jpg",
-      "videoUrl": "/exercises/videos/0208-PNtsX17.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0208-PNtsX17.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0208-PNtsX17.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -8931,8 +8931,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1320-UFGF6gk.jpg",
-      "videoUrl": "/exercises/videos/1320-UFGF6gk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1320-UFGF6gk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1320-UFGF6gk.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -8957,8 +8957,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the tension and extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1321-c8oybX6.jpg",
-      "videoUrl": "/exercises/videos/1321-c8oybX6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1321-c8oybX6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1321-c8oybX6.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -8983,8 +8983,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1322-MgKwAAo.jpg",
-      "videoUrl": "/exercises/videos/1322-MgKwAAo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1322-MgKwAAo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1322-MgKwAAo.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -9010,8 +9010,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the rope back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1639-PcPe0P5.jpg",
-      "videoUrl": "/exercises/videos/1639-PcPe0P5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1639-PcPe0P5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1639-PcPe0P5.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9036,8 +9036,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1724-NN8nSNT.jpg",
-      "videoUrl": "/exercises/videos/1724-NN8nSNT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1724-NN8nSNT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1724-NN8nSNT.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -9062,8 +9062,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1725-ZujAdR9.jpg",
-      "videoUrl": "/exercises/videos/1725-ZujAdR9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1725-ZujAdR9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1725-ZujAdR9.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -9087,8 +9087,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1726-U3ffHlY.jpg",
-      "videoUrl": "/exercises/videos/1726-U3ffHlY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1726-U3ffHlY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1726-U3ffHlY.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -9114,8 +9114,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your biceps at the top of the movement, then slowly lower the rope handle back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1640-4hATdoB.jpg",
-      "videoUrl": "/exercises/videos/1640-4hATdoB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1640-4hATdoB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1640-4hATdoB.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9139,8 +9139,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1323-SJqRxOt.jpg",
-      "videoUrl": "/exercises/videos/1323-SJqRxOt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1323-SJqRxOt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1323-SJqRxOt.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -9164,8 +9164,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then twist your torso to the left, bringing the cable handle towards your left hip.",
         "Continue alternating twists for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0211-d9Xaxq6.jpg",
-      "videoUrl": "/exercises/videos/0211-d9Xaxq6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0211-d9Xaxq6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0211-d9Xaxq6.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9189,8 +9189,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly bring the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2144-nIR4Rwl.jpg",
-      "videoUrl": "/exercises/videos/2144-nIR4Rwl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2144-nIR4Rwl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2144-nIR4Rwl.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -9213,8 +9213,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0212-8xUv4J7.jpg",
-      "videoUrl": "/exercises/videos/0212-8xUv4J7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0212-8xUv4J7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0212-8xUv4J7.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9238,8 +9238,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the cable attachment back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1641-8oYqOt9.jpg",
-      "videoUrl": "/exercises/videos/1641-8oYqOt9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1641-8oYqOt9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1641-8oYqOt9.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9263,8 +9263,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the contraction, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0213-pwt0pnM.jpg",
-      "videoUrl": "/exercises/videos/0213-pwt0pnM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0213-pwt0pnM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0213-pwt0pnM.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -9289,8 +9289,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Alternate between arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0214-vpp9Ku2.jpg",
-      "videoUrl": "/exercises/videos/0214-vpp9Ku2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0214-vpp9Ku2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0214-vpp9Ku2.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -9314,8 +9314,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the cable handle back to the starting position while inhaling.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1642-rZ80Gbp.jpg",
-      "videoUrl": "/exercises/videos/1642-rZ80Gbp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1642-rZ80Gbp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1642-rZ80Gbp.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9340,8 +9340,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the cable attachment back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1643-DpWMFP5.jpg",
-      "videoUrl": "/exercises/videos/1643-DpWMFP5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1643-DpWMFP5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1643-DpWMFP5.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9364,8 +9364,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0215-x825CZm.jpg",
-      "videoUrl": "/exercises/videos/0215-x825CZm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0215-x825CZm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0215-x825CZm.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -9388,8 +9388,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0861-fUBheHs.jpg",
-      "videoUrl": "/exercises/videos/0861-fUBheHs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0861-fUBheHs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0861-fUBheHs.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -9413,8 +9413,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0216-YPoVrBi.jpg",
-      "videoUrl": "/exercises/videos/0216-YPoVrBi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0216-YPoVrBi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0216-YPoVrBi.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -9438,8 +9438,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2399-UEjSrKI.jpg",
-      "videoUrl": "/exercises/videos/2399-UEjSrKI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2399-UEjSrKI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2399-UEjSrKI.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9464,8 +9464,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the handle back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0218-qcY50ZD.jpg",
-      "videoUrl": "/exercises/videos/0218-qcY50ZD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0218-qcY50ZD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0218-qcY50ZD.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -9489,8 +9489,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the handles back down to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0219-PzQanLE.jpg",
-      "videoUrl": "/exercises/videos/0219-PzQanLE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0219-PzQanLE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0219-PzQanLE.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -9513,8 +9513,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0220-Eg98Ft9.jpg",
-      "videoUrl": "/exercises/videos/0220-Eg98Ft9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0220-Eg98Ft9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0220-Eg98Ft9.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -9538,8 +9538,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Alternate sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0222-wPypxFY.jpg",
-      "videoUrl": "/exercises/videos/0222-wPypxFY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0222-wPypxFY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0222-wPypxFY.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9562,8 +9562,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0221-qatbkEd.jpg",
-      "videoUrl": "/exercises/videos/0221-qatbkEd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0221-qatbkEd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0221-qatbkEd.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9587,8 +9587,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0223-q2ADGqV.jpg",
-      "videoUrl": "/exercises/videos/0223-q2ADGqV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0223-q2ADGqV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0223-q2ADGqV.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9614,8 +9614,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release the rope and extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1717-f7fnAIB.jpg",
-      "videoUrl": "/exercises/videos/1717-f7fnAIB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1717-f7fnAIB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1717-f7fnAIB.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -9641,8 +9641,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the cable handle back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1644-3XFdb1Z.jpg",
-      "videoUrl": "/exercises/videos/1644-3XFdb1Z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1644-3XFdb1Z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1644-3XFdb1Z.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9666,8 +9666,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the cable handle back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0224-VhX2JdE.jpg",
-      "videoUrl": "/exercises/videos/0224-VhX2JdE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0224-VhX2JdE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0224-VhX2JdE.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -9690,8 +9690,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1375-yl2IYyy.jpg",
-      "videoUrl": "/exercises/videos/1375-yl2IYyy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1375-yl2IYyy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1375-yl2IYyy.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -9716,8 +9716,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0225-P5p0j8B.jpg",
-      "videoUrl": "/exercises/videos/0225-P5p0j8B.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0225-P5p0j8B.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0225-P5p0j8B.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -9741,8 +9741,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0226-jpgqxiS.jpg",
-      "videoUrl": "/exercises/videos/0226-jpgqxiS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0226-jpgqxiS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0226-jpgqxiS.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9766,8 +9766,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the crunch, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0874-XU3ePuv.jpg",
-      "videoUrl": "/exercises/videos/0874-XU3ePuv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0874-XU3ePuv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0874-XU3ePuv.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9794,8 +9794,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly reverse the movement, returning your arms to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0227-Pr9Rhf4.jpg",
-      "videoUrl": "/exercises/videos/0227-Pr9Rhf4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0227-Pr9Rhf4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0227-Pr9Rhf4.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -9820,8 +9820,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch sides and repeat with the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/0228-Kpajagk.jpg",
-      "videoUrl": "/exercises/videos/0228-Kpajagk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0228-Kpajagk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0228-Kpajagk.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -9846,8 +9846,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the cable handle back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0229-YwnI4ja.jpg",
-      "videoUrl": "/exercises/videos/0229-YwnI4ja.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0229-YwnI4ja.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0229-YwnI4ja.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9871,8 +9871,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the cable handle back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0230-qFpAkpP.jpg",
-      "videoUrl": "/exercises/videos/0230-qFpAkpP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0230-qFpAkpP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0230-qFpAkpP.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -9896,8 +9896,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then extend your arm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides and perform the exercise with your left arm."
       ],
-      "thumbnailUrl": "/exercises/images/0231-sYCcnon.jpg",
-      "videoUrl": "/exercises/videos/0231-sYCcnon.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0231-sYCcnon.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0231-sYCcnon.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -9921,8 +9921,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/1376-fgc9Xdl.jpg",
-      "videoUrl": "/exercises/videos/1376-fgc9Xdl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1376-fgc9Xdl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1376-fgc9Xdl.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -9947,8 +9947,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly release the rope back up.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0232-CvPn9WV.jpg",
-      "videoUrl": "/exercises/videos/0232-CvPn9WV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0232-CvPn9WV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0232-CvPn9WV.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -9972,8 +9972,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the cable back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0233-ZfyAGhK.jpg",
-      "videoUrl": "/exercises/videos/0233-ZfyAGhK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0233-ZfyAGhK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0233-ZfyAGhK.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -9996,8 +9996,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then extend your arm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1727-i11JWU7.jpg",
-      "videoUrl": "/exercises/videos/1727-i11JWU7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1727-i11JWU7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1727-i11JWU7.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -10021,8 +10021,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0234-4f8RXP8.jpg",
-      "videoUrl": "/exercises/videos/0234-4f8RXP8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0234-4f8RXP8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0234-4f8RXP8.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -10046,8 +10046,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0235-FWdVhcW.jpg",
-      "videoUrl": "/exercises/videos/0235-FWdVhcW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0235-FWdVhcW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0235-FWdVhcW.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -10075,8 +10075,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the tension and return to the starting position, untwisting your torso.",
         "Repeat the movement for the desired number of repetitions, alternating the twisting direction with each rep."
       ],
-      "thumbnailUrl": "/exercises/images/0236-JOZhu2h.jpg",
-      "videoUrl": "/exercises/videos/0236-JOZhu2h.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0236-JOZhu2h.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0236-JOZhu2h.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -10099,8 +10099,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position, keeping your arms extended.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1269-UKWTJWR.jpg",
-      "videoUrl": "/exercises/videos/1269-UKWTJWR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1269-UKWTJWR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1269-UKWTJWR.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10124,8 +10124,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return the bar to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0238-x69MAlq.jpg",
-      "videoUrl": "/exercises/videos/0238-x69MAlq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0238-x69MAlq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0238-x69MAlq.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -10150,8 +10150,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0237-DT14T9T.jpg",
-      "videoUrl": "/exercises/videos/0237-DT14T9T.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0237-DT14T9T.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0237-DT14T9T.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -10175,8 +10175,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0239-Tq6gbK6.jpg",
-      "videoUrl": "/exercises/videos/0239-Tq6gbK6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0239-Tq6gbK6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0239-Tq6gbK6.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -10199,8 +10199,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0240-PQcUlDi.jpg",
-      "videoUrl": "/exercises/videos/0240-PQcUlDi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0240-PQcUlDi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0240-PQcUlDi.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -10224,8 +10224,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your back muscles at the top of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides and perform with your left arm."
       ],
-      "thumbnailUrl": "/exercises/images/2464-ZgwWBoC.jpg",
-      "videoUrl": "/exercises/videos/2464-ZgwWBoC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2464-ZgwWBoC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2464-ZgwWBoC.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -10251,8 +10251,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale as you slowly return the v-bar to the starting position, maintaining control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0241-gAwDzB3.jpg",
-      "videoUrl": "/exercises/videos/0241-gAwDzB3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0241-gAwDzB3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0241-gAwDzB3.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -10278,8 +10278,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale as you slowly return the v-bar to the starting position, maintaining control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2405-OxJk1fg.jpg",
-      "videoUrl": "/exercises/videos/2405-OxJk1fg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2405-OxJk1fg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2405-OxJk1fg.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -10303,8 +10303,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs and hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0242-TXtXc84.jpg",
-      "videoUrl": "/exercises/videos/0242-TXtXc84.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0242-TXtXc84.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0242-TXtXc84.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -10329,8 +10329,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement to the left side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0243-aVs3BR3.jpg",
-      "videoUrl": "/exercises/videos/0243-aVs3BR3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0243-aVs3BR3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0243-aVs3BR3.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -10354,8 +10354,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the rotation to the opposite side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0862-fhZQPlV.jpg",
-      "videoUrl": "/exercises/videos/0862-fhZQPlV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0862-fhZQPlV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0862-fhZQPlV.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -10381,8 +10381,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position, keeping tension on the cable.",
         "Repeat for the desired number of repetitions, then switch sides and perform with your right hand."
       ],
-      "thumbnailUrl": "/exercises/images/0244-zCgxPbV.jpg",
-      "videoUrl": "/exercises/videos/0244-zCgxPbV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0244-zCgxPbV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0244-zCgxPbV.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -10406,8 +10406,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the handles back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1645-H9y3Dkr.jpg",
-      "videoUrl": "/exercises/videos/1645-H9y3Dkr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1645-H9y3Dkr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1645-H9y3Dkr.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -10430,8 +10430,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1728-vvNjDJS.jpg",
-      "videoUrl": "/exercises/videos/1728-vvNjDJS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1728-vvNjDJS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1728-vvNjDJS.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -10455,8 +10455,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0245-xBYcQHj.jpg",
-      "videoUrl": "/exercises/videos/0245-xBYcQHj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0245-xBYcQHj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0245-xBYcQHj.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -10482,8 +10482,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the cables back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1270-j7XMAyn.jpg",
-      "videoUrl": "/exercises/videos/1270-j7XMAyn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1270-j7XMAyn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1270-j7XMAyn.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10509,8 +10509,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the bar back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1324-PQStVXH.jpg",
-      "videoUrl": "/exercises/videos/1324-PQStVXH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1324-PQStVXH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1324-PQStVXH.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -10534,8 +10534,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the cable attachment back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0246-cALKspW.jpg",
-      "videoUrl": "/exercises/videos/0246-cALKspW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0246-cALKspW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0246-cALKspW.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -10559,8 +10559,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the bar back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1325-CmEr4pM.jpg",
-      "videoUrl": "/exercises/videos/1325-CmEr4pM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1325-CmEr4pM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1325-CmEr4pM.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -10585,8 +10585,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the bar back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0247-LrV4s90.jpg",
-      "videoUrl": "/exercises/videos/0247-LrV4s90.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0247-LrV4s90.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0247-LrV4s90.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -10610,8 +10610,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Switch legs and repeat the stretch."
       ],
-      "thumbnailUrl": "/exercises/images/1407-PzNxakt.jpg",
-      "videoUrl": "/exercises/videos/1407-PzNxakt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1407-PzNxakt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1407-PzNxakt.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -10635,8 +10635,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Switch legs and repeat the stretch."
       ],
-      "thumbnailUrl": "/exercises/images/1377-m0tCHqc.jpg",
-      "videoUrl": "/exercises/videos/1377-m0tCHqc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1377-m0tCHqc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1377-m0tCHqc.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -10660,8 +10660,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds, then release.",
         "Repeat on the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1378-1LVFcEn.jpg",
-      "videoUrl": "/exercises/videos/1378-1LVFcEn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1378-1LVFcEn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1378-1LVFcEn.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -10684,8 +10684,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pull the barbell towards your chest, squeezing your shoulder blades together.",
         "Lower the barbell back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0248-R5swFnc.jpg",
-      "videoUrl": "/exercises/videos/0248-R5swFnc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0248-R5swFnc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0248-R5swFnc.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -10709,8 +10709,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2963-weoDEpH.jpg",
-      "videoUrl": "/exercises/videos/2963-weoDEpH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2963-weoDEpH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2963-weoDEpH.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -10733,8 +10733,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for 20-30 seconds.",
         "Switch legs and repeat the stretch."
       ],
-      "thumbnailUrl": "/exercises/images/1548-xGgAGPm.jpg",
-      "videoUrl": "/exercises/videos/1548-xGgAGPm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1548-xGgAGPm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1548-xGgAGPm.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -10759,8 +10759,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds, then release.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1271-Uto7l43.jpg",
-      "videoUrl": "/exercises/videos/1271-Uto7l43.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1271-Uto7l43.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1271-Uto7l43.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10782,8 +10782,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0251-9WTm7dq.jpg",
-      "videoUrl": "/exercises/videos/0251-9WTm7dq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0251-9WTm7dq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0251-9WTm7dq.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10809,8 +10809,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms and extend your elbows to raise your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1430-XgWyAiA.jpg",
-      "videoUrl": "/exercises/videos/1430-XgWyAiA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1430-XgWyAiA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1430-XgWyAiA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10833,8 +10833,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2462-LQFOrMn.jpg",
-      "videoUrl": "/exercises/videos/2462-LQFOrMn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2462-LQFOrMn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2462-LQFOrMn.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10857,8 +10857,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for a few seconds, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1272-ykA5tU7.jpg",
-      "videoUrl": "/exercises/videos/1272-ykA5tU7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1272-ykA5tU7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1272-ykA5tU7.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10882,8 +10882,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time tapping your chest with your left hand.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3216-7E06s6d.jpg",
-      "videoUrl": "/exercises/videos/3216-7E06s6d.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3216-7E06s6d.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3216-7E06s6d.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -10906,8 +10906,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1326-T2mxWqc.jpg",
-      "videoUrl": "/exercises/videos/1326-T2mxWqc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1326-T2mxWqc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1326-T2mxWqc.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -10930,8 +10930,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0253-G70mEAJ.jpg",
-      "videoUrl": "/exercises/videos/0253-G70mEAJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0253-G70mEAJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0253-G70mEAJ.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -10953,8 +10953,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Keeping your knees bent, rotate your knees in a circular motion, first clockwise and then counterclockwise.",
         "Perform the movement for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0257-X7jbxra.jpg",
-      "videoUrl": "/exercises/videos/0257-X7jbxra.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0257-X7jbxra.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0257-X7jbxra.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -10977,8 +10977,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "While in mid-air, clap your hands together before landing back in the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1273-wigSg76.jpg",
-      "videoUrl": "/exercises/videos/1273-wigSg76.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1273-wigSg76.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1273-wigSg76.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -11002,8 +11002,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the push-up, this time rotating your body to the right and extending your right arm out to the side.",
         "Continue alternating sides with each repetition."
       ],
-      "thumbnailUrl": "/exercises/images/0258-CMAxnsG.jpg",
-      "videoUrl": "/exercises/videos/0258-CMAxnsG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0258-CMAxnsG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0258-CMAxnsG.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -11027,8 +11027,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1327-VnfUNW7.jpg",
-      "videoUrl": "/exercises/videos/1327-VnfUNW7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1327-VnfUNW7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1327-VnfUNW7.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -11050,8 +11050,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0259-x6KpKpq.jpg",
-      "videoUrl": "/exercises/videos/0259-x6KpKpq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0259-x6KpKpq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0259-x6KpKpq.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -11074,8 +11074,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to straighten your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2398-v3vLFW0.jpg",
-      "videoUrl": "/exercises/videos/2398-v3vLFW0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2398-v3vLFW0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2398-v3vLFW0.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -11098,8 +11098,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0260-SLKj2pX.jpg",
-      "videoUrl": "/exercises/videos/0260-SLKj2pX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0260-SLKj2pX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0260-SLKj2pX.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11122,8 +11122,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1468-xgsGFVM.jpg",
-      "videoUrl": "/exercises/videos/1468-xgsGFVM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1468-xgsGFVM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1468-xgsGFVM.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11147,8 +11147,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side, bringing your left elbow towards your right knee.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0262-rbu5UUb.jpg",
-      "videoUrl": "/exercises/videos/0262-rbu5UUb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0262-rbu5UUb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0262-rbu5UUb.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11171,8 +11171,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0267-kjJ3VoQ.jpg",
-      "videoUrl": "/exercises/videos/0267-kjJ3VoQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0267-kjJ3VoQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0267-kjJ3VoQ.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11196,8 +11196,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0271-MCUhf1F.jpg",
-      "videoUrl": "/exercises/videos/0271-MCUhf1F.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0271-MCUhf1F.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0271-MCUhf1F.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11221,8 +11221,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0272-Sn8wxAI.jpg",
-      "videoUrl": "/exercises/videos/0272-Sn8wxAI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0272-Sn8wxAI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0272-Sn8wxAI.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11245,8 +11245,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0274-TFqbd8t.jpg",
-      "videoUrl": "/exercises/videos/0274-TFqbd8t.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0274-TFqbd8t.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0274-TFqbd8t.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11269,8 +11269,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3016-g2oKspu.jpg",
-      "videoUrl": "/exercises/videos/3016-g2oKspu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3016-g2oKspu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3016-g2oKspu.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11294,8 +11294,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your front foot to return to the starting position.",
         "Repeat on the other side, stepping diagonally behind and across your body with your left foot."
       ],
-      "thumbnailUrl": "/exercises/images/3769-gUjqdei.jpg",
-      "videoUrl": "/exercises/videos/3769-gUjqdei.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3769-gUjqdei.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3769-gUjqdei.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -11318,8 +11318,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a steady pace and increase the resistance if desired.",
         "Continue pedaling for the desired duration of your cardio workout."
       ],
-      "thumbnailUrl": "/exercises/images/2331-XSCHmiI.jpg",
-      "videoUrl": "/exercises/videos/2331-XSCHmiI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2331-XSCHmiI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2331-XSCHmiI.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -11344,8 +11344,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement with your left arm and right leg.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0276-iny3m5y.jpg",
-      "videoUrl": "/exercises/videos/0276-iny3m5y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0276-iny3m5y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0276-iny3m5y.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11368,8 +11368,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0277-9Ap7miY.jpg",
-      "videoUrl": "/exercises/videos/0277-9Ap7miY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0277-9Ap7miY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0277-9Ap7miY.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11392,8 +11392,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0279-i5cEhka.jpg",
-      "videoUrl": "/exercises/videos/0279-i5cEhka.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0279-i5cEhka.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0279-i5cEhka.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -11416,8 +11416,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0282-QLL2gdc.jpg",
-      "videoUrl": "/exercises/videos/0282-QLL2gdc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0282-QLL2gdc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0282-QLL2gdc.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -11439,8 +11439,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1274-vptOQ4N.jpg",
-      "videoUrl": "/exercises/videos/1274-vptOQ4N.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1274-vptOQ4N.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1274-vptOQ4N.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -11463,8 +11463,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0283-soIB2rj.jpg",
-      "videoUrl": "/exercises/videos/0283-soIB2rj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0283-soIB2rj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0283-soIB2rj.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -11487,8 +11487,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0284-u5ESqzH.jpg",
-      "videoUrl": "/exercises/videos/0284-u5ESqzH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0284-u5ESqzH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0284-u5ESqzH.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -11511,8 +11511,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1275-Q497lAE.jpg",
-      "videoUrl": "/exercises/videos/1275-Q497lAE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1275-Q497lAE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1275-Q497lAE.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -11536,8 +11536,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions, alternating arms."
       ],
-      "thumbnailUrl": "/exercises/images/0285-BU15nH4.jpg",
-      "videoUrl": "/exercises/videos/0285-BU15nH4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0285-BU15nH4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0285-BU15nH4.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11563,8 +11563,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement with the opposite arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2403-CfKsRbG.jpg",
-      "videoUrl": "/exercises/videos/2403-CfKsRbG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2403-CfKsRbG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2403-CfKsRbG.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11588,8 +11588,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the recommended amount of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1646-fy7Tgy4.jpg",
-      "videoUrl": "/exercises/videos/1646-fy7Tgy4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1646-fy7Tgy4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1646-fy7Tgy4.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11614,8 +11614,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement with your left arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1647-NlfIbzq.jpg",
-      "videoUrl": "/exercises/videos/1647-NlfIbzq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1647-NlfIbzq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1647-NlfIbzq.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11640,8 +11640,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement with your left arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1648-6em2Dxj.jpg",
-      "videoUrl": "/exercises/videos/1648-6em2Dxj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1648-6em2Dxj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1648-6em2Dxj.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11663,8 +11663,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the pressed dumbbell back to shoulder height while pressing the other dumbbell overhead.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0286-izMnLqz.jpg",
-      "videoUrl": "/exercises/videos/0286-izMnLqz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0286-izMnLqz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0286-izMnLqz.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -11687,8 +11687,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbell back down to the starting position and repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1649-Zwiw7XR.jpg",
-      "videoUrl": "/exercises/videos/1649-Zwiw7XR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1649-Zwiw7XR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1649-Zwiw7XR.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11712,8 +11712,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the curl with the other arm.",
         "Continue alternating curls for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1650-J74XlNf.jpg",
-      "videoUrl": "/exercises/videos/1650-J74XlNf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1650-J74XlNf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1650-J74XlNf.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11736,8 +11736,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2137-Xy4jlWA.jpg",
-      "videoUrl": "/exercises/videos/2137-Xy4jlWA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2137-Xy4jlWA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2137-Xy4jlWA.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -11760,8 +11760,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0287-eOrFCnx.jpg",
-      "videoUrl": "/exercises/videos/0287-eOrFCnx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0287-eOrFCnx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0287-eOrFCnx.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -11784,8 +11784,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0288-vi8EhoE.jpg",
-      "videoUrl": "/exercises/videos/0288-vi8EhoE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0288-vi8EhoE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0288-vi8EhoE.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -11808,8 +11808,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push the dumbbells back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0289-SpYC0Kp.jpg",
-      "videoUrl": "/exercises/videos/0289-SpYC0Kp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0289-SpYC0Kp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0289-SpYC0Kp.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -11832,8 +11832,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0290-3d7wHyd.jpg",
-      "videoUrl": "/exercises/videos/0290-3d7wHyd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0290-3d7wHyd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0290-3d7wHyd.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -11856,8 +11856,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Once your glutes touch the bench, push through your heels to stand back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0291-mnzcrIB.jpg",
-      "videoUrl": "/exercises/videos/0291-mnzcrIB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0291-mnzcrIB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0291-mnzcrIB.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -11881,8 +11881,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0293-BJ0Hz5L.jpg",
-      "videoUrl": "/exercises/videos/0293-BJ0Hz5L.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0293-BJ0Hz5L.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0293-BJ0Hz5L.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -11907,8 +11907,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the lunge and curl motion, this time rotating your torso to the left.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1651-1VpF8db.jpg",
-      "videoUrl": "/exercises/videos/1651-1VpF8db.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1651-1VpF8db.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1651-1VpF8db.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11932,8 +11932,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "While performing the bicep curl, raise one leg off the ground and hold it in the air for the duration of the exercise.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1652-2NImIAG.jpg",
-      "videoUrl": "/exercises/videos/1652-2NImIAG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1652-2NImIAG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1652-2NImIAG.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11958,8 +11958,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1653-uSkDMYl.jpg",
-      "videoUrl": "/exercises/videos/1653-uSkDMYl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1653-uSkDMYl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1653-uSkDMYl.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -11983,8 +11983,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0294-NbVPDMW.jpg",
-      "videoUrl": "/exercises/videos/0294-NbVPDMW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0294-NbVPDMW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0294-NbVPDMW.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12009,8 +12009,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2401-nlJsbkW.jpg",
-      "videoUrl": "/exercises/videos/2401-nlJsbkW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2401-nlJsbkW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2401-nlJsbkW.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12034,8 +12034,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1654-nFc4FyV.jpg",
-      "videoUrl": "/exercises/videos/1654-nFc4FyV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1654-nFc4FyV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1654-nFc4FyV.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12058,8 +12058,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1655-niXESDw.jpg",
-      "videoUrl": "/exercises/videos/1655-niXESDw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1655-niXESDw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1655-niXESDw.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12084,8 +12084,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1656-H1XAdpk.jpg",
-      "videoUrl": "/exercises/videos/1656-H1XAdpk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1656-H1XAdpk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1656-H1XAdpk.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12111,8 +12111,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the dumbbells overhead, fully extending your arms.",
         "Lower the dumbbells back to your shoulders and repeat the entire sequence for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1201-0JtKWum.jpg",
-      "videoUrl": "/exercises/videos/1201-0JtKWum.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1201-0JtKWum.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1201-0JtKWum.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -12137,8 +12137,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbells back down to the starting position by reversing the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0295-7Hg55JG.jpg",
-      "videoUrl": "/exercises/videos/0295-7Hg55JG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0295-7Hg55JG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0295-7Hg55JG.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -12162,8 +12162,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you exhale, use your triceps to lift the dumbbells back to the starting position. Make sure to use only your triceps and do not use your forearms or biceps to help lift the dumbbells.",
         "After a second pause at the contracted position, repeat the movement for the prescribed amount of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1731-7jGOBF3.jpg",
-      "videoUrl": "/exercises/videos/1731-7jGOBF3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1731-7jGOBF3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1731-7jGOBF3.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -12187,8 +12187,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you exhale, use your triceps to lift the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0296-RxayqAZ.jpg",
-      "videoUrl": "/exercises/videos/0296-RxayqAZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0296-RxayqAZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0296-RxayqAZ.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -12213,8 +12213,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0297-gvsWLQw.jpg",
-      "videoUrl": "/exercises/videos/0297-gvsWLQw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0297-gvsWLQw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0297-gvsWLQw.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12238,8 +12238,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with your left leg.",
         "Alternate legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3635-ecl28tP.jpg",
-      "videoUrl": "/exercises/videos/3635-ecl28tP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3635-ecl28tP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3635-ecl28tP.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -12264,8 +12264,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0298-Qyk5J3p.jpg",
-      "videoUrl": "/exercises/videos/0298-Qyk5J3p.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0298-Qyk5J3p.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0298-Qyk5J3p.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12289,8 +12289,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1657-HDYiZcY.jpg",
-      "videoUrl": "/exercises/videos/1657-HDYiZcY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1657-HDYiZcY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1657-HDYiZcY.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12313,8 +12313,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbells back to the starting position, rotating your wrists back to the starting position as you do so.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0299-QfAKy1G.jpg",
-      "videoUrl": "/exercises/videos/0299-QfAKy1G.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0299-QfAKy1G.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0299-QfAKy1G.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -12337,8 +12337,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbells back down to shoulder height, rotating your wrists back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2136-BqgCRif.jpg",
-      "videoUrl": "/exercises/videos/2136-BqgCRif.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2136-BqgCRif.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2136-BqgCRif.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -12361,8 +12361,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your heels and extend your hips and knees, lifting the dumbbells back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0300-nUwVh7b.jpg",
-      "videoUrl": "/exercises/videos/0300-nUwVh7b.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0300-nUwVh7b.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0300-nUwVh7b.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -12385,8 +12385,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the dumbbells back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0301-DwhEmmE.jpg",
-      "videoUrl": "/exercises/videos/0301-DwhEmmE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0301-DwhEmmE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0301-DwhEmmE.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12409,8 +12409,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then squeeze your chest muscles to bring the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0302-xXm4nYq.jpg",
-      "videoUrl": "/exercises/videos/0302-xXm4nYq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0302-xXm4nYq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0302-xXm4nYq.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12433,8 +12433,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the dumbbells back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0303-1qrWgZ2.jpg",
-      "videoUrl": "/exercises/videos/0303-1qrWgZ2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0303-1qrWgZ2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0303-1qrWgZ2.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12458,8 +12458,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Exhale and use your chest muscles to bring the dumbbell back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1276-NL6YBwN.jpg",
-      "videoUrl": "/exercises/videos/1276-NL6YBwN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1276-NL6YBwN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1276-NL6YBwN.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12482,8 +12482,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the dumbbell back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1617-SHUMp5H.jpg",
-      "videoUrl": "/exercises/videos/1617-SHUMp5H.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1617-SHUMp5H.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1617-SHUMp5H.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -12507,8 +12507,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0305-cwsAI4G.jpg",
-      "videoUrl": "/exercises/videos/0305-cwsAI4G.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0305-cwsAI4G.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0305-cwsAI4G.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -12532,8 +12532,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a brief pause, then lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0304-bRlbdjK.jpg",
-      "videoUrl": "/exercises/videos/0304-bRlbdjK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0304-bRlbdjK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0304-bRlbdjK.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -12556,8 +12556,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0306-OTgkHwR.jpg",
-      "videoUrl": "/exercises/videos/0306-OTgkHwR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0306-OTgkHwR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0306-OTgkHwR.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -12581,8 +12581,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Reverse the motion and bring the dumbbells back up to the starting position, squeezing your chest muscles at the top.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0307-reFHapa.jpg",
-      "videoUrl": "/exercises/videos/0307-reFHapa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0307-reFHapa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0307-reFHapa.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12604,8 +12604,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Allow the dumbbell to roll down to your fingertips, then curl it back up by flexing your fingers.",
         "Repeat for the desired number of repetitions, then switch to the other hand."
       ],
-      "thumbnailUrl": "/exercises/images/1437-mtXengz.jpg",
-      "videoUrl": "/exercises/videos/1437-mtXengz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1437-mtXengz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1437-mtXengz.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -12628,8 +12628,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then reverse the movement and bring the dumbbells back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0308-yz9nUhF.jpg",
-      "videoUrl": "/exercises/videos/0308-yz9nUhF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0308-yz9nUhF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0308-yz9nUhF.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12653,8 +12653,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then reverse the movement and squeeze your chest muscles as you bring the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1277-Lt3iWnf.jpg",
-      "videoUrl": "/exercises/videos/1277-Lt3iWnf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1277-Lt3iWnf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1277-Lt3iWnf.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12679,8 +12679,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then straighten your arms to return to the starting position.",
         "Repeat the movement for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1732-XalXcvM.jpg",
-      "videoUrl": "/exercises/videos/1732-XalXcvM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1732-XalXcvM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1732-XalXcvM.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -12702,8 +12702,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0310-3eGE2JC.jpg",
-      "videoUrl": "/exercises/videos/0310-3eGE2JC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0310-3eGE2JC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0310-3eGE2JC.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -12726,8 +12726,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0309-Rr7S3yg.jpg",
-      "videoUrl": "/exercises/videos/0309-Rr7S3yg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0309-Rr7S3yg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0309-Rr7S3yg.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -12750,8 +12750,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0311-AQ0mC4Y.jpg",
-      "videoUrl": "/exercises/videos/0311-AQ0mC4Y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0311-AQ0mC4Y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0311-AQ0mC4Y.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -12774,8 +12774,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1760-yn8yg1r.jpg",
-      "videoUrl": "/exercises/videos/1760-yn8yg1r.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1760-yn8yg1r.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1760-yn8yg1r.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -12801,8 +12801,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Then, inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the recommended amount of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0313-slDvUAU.jpg",
-      "videoUrl": "/exercises/videos/0313-slDvUAU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0313-slDvUAU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0313-slDvUAU.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12827,8 +12827,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1659-fY68AyX.jpg",
-      "videoUrl": "/exercises/videos/1659-fY68AyX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1659-fY68AyX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1659-fY68AyX.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12854,8 +12854,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Then, inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the recommended amount of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0312-2NpxjC1.jpg",
-      "videoUrl": "/exercises/videos/0312-2NpxjC1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0312-2NpxjC1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0312-2NpxjC1.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12881,8 +12881,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Then, inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the recommended amount of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2402-GNhAeJ0.jpg",
-      "videoUrl": "/exercises/videos/2402-GNhAeJ0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2402-GNhAeJ0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2402-GNhAeJ0.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12904,8 +12904,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1664-qAmNMJY.jpg",
-      "videoUrl": "/exercises/videos/1664-qAmNMJY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1664-qAmNMJY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1664-qAmNMJY.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -12929,8 +12929,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbells back down to the starting position, keeping your elbows slightly bent.",
         "Repeat for the desired number of repetitions, alternating arms."
       ],
-      "thumbnailUrl": "/exercises/images/3545-TVdivgY.jpg",
-      "videoUrl": "/exercises/videos/3545-TVdivgY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3545-TVdivgY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3545-TVdivgY.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12954,8 +12954,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the dumbbells back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0314-ns0SIbU.jpg",
-      "videoUrl": "/exercises/videos/0314-ns0SIbU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0314-ns0SIbU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0314-ns0SIbU.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -12979,8 +12979,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0315-F3xgbjF.jpg",
-      "videoUrl": "/exercises/videos/0315-F3xgbjF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0315-F3xgbjF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0315-F3xgbjF.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -13005,8 +13005,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the dumbbells back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0316-B3Rxp6L.jpg",
-      "videoUrl": "/exercises/videos/0316-B3Rxp6L.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0316-B3Rxp6L.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0316-B3Rxp6L.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13031,8 +13031,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0318-ae9UoXQ.jpg",
-      "videoUrl": "/exercises/videos/0318-ae9UoXQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0318-ae9UoXQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0318-ae9UoXQ.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -13056,8 +13056,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0317-RaflbWD.jpg",
-      "videoUrl": "/exercises/videos/0317-RaflbWD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0317-RaflbWD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0317-RaflbWD.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -13081,8 +13081,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then squeeze your chest muscles to bring the dumbbells back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0319-ESOd5Pl.jpg",
-      "videoUrl": "/exercises/videos/0319-ESOd5Pl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0319-ESOd5Pl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0319-ESOd5Pl.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13106,8 +13106,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then squeeze your chest muscles to bring the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1278-HYe1ZqR.jpg",
-      "videoUrl": "/exercises/videos/1278-HYe1ZqR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1278-HYe1ZqR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1278-HYe1ZqR.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13132,8 +13132,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0320-ByX0WxV.jpg",
-      "videoUrl": "/exercises/videos/0320-ByX0WxV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0320-ByX0WxV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0320-ByX0WxV.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -13156,8 +13156,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0321-PG1kcIb.jpg",
-      "videoUrl": "/exercises/videos/0321-PG1kcIb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0321-PG1kcIb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0321-PG1kcIb.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13182,8 +13182,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1618-wkgnGfb.jpg",
-      "videoUrl": "/exercises/videos/1618-wkgnGfb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1618-wkgnGfb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1618-wkgnGfb.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13208,8 +13208,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0322-LCtQPn8.jpg",
-      "videoUrl": "/exercises/videos/0322-LCtQPn8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0322-LCtQPn8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0322-LCtQPn8.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -13234,8 +13234,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause when your arm is parallel to the ground, then reverse the motion to bring the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1279-Gw2HFvW.jpg",
-      "videoUrl": "/exercises/videos/1279-Gw2HFvW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1279-Gw2HFvW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1279-Gw2HFvW.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13260,8 +13260,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your chest muscles to bring the dumbbell back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1280-LLNh6q5.jpg",
-      "videoUrl": "/exercises/videos/1280-LLNh6q5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1280-LLNh6q5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1280-LLNh6q5.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13285,8 +13285,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1619-LL1UiTX.jpg",
-      "videoUrl": "/exercises/videos/1619-LL1UiTX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1619-LL1UiTX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1619-LL1UiTX.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13310,8 +13310,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1620-jDnrkar.jpg",
-      "videoUrl": "/exercises/videos/1620-jDnrkar.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1620-jDnrkar.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1620-jDnrkar.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13335,8 +13335,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0323-aTNKZiC.jpg",
-      "videoUrl": "/exercises/videos/0323-aTNKZiC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0323-aTNKZiC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0323-aTNKZiC.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13359,8 +13359,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1281-rDAiRf9.jpg",
-      "videoUrl": "/exercises/videos/1281-rDAiRf9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1281-rDAiRf9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1281-rDAiRf9.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13384,8 +13384,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1282-Bg5JKSH.jpg",
-      "videoUrl": "/exercises/videos/1282-Bg5JKSH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1282-Bg5JKSH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1282-Bg5JKSH.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13410,8 +13410,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0324-OVLmUuL.jpg",
-      "videoUrl": "/exercises/videos/0324-OVLmUuL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0324-OVLmUuL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0324-OVLmUuL.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13435,8 +13435,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1283-bfiHMpI.jpg",
-      "videoUrl": "/exercises/videos/1283-bfiHMpI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1283-bfiHMpI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1283-bfiHMpI.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13459,8 +13459,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0325-nxW6BkN.jpg",
-      "videoUrl": "/exercises/videos/0325-nxW6BkN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0325-nxW6BkN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0325-nxW6BkN.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13484,8 +13484,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0326-vYk8lqw.jpg",
-      "videoUrl": "/exercises/videos/0326-vYk8lqw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0326-vYk8lqw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0326-vYk8lqw.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13509,8 +13509,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0327-7vG5o25.jpg",
-      "videoUrl": "/exercises/videos/0327-7vG5o25.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0327-7vG5o25.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0327-7vG5o25.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -13534,8 +13534,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0328-6e2DcYX.jpg",
-      "videoUrl": "/exercises/videos/0328-6e2DcYX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0328-6e2DcYX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0328-6e2DcYX.gif",
       "musclesWorked": {
         "primary": [
           "serratus anterior"
@@ -13558,8 +13558,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0329-JymLInS.jpg",
-      "videoUrl": "/exercises/videos/0329-JymLInS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0329-JymLInS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0329-JymLInS.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -13582,8 +13582,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3542-jgbvVJ0.jpg",
-      "videoUrl": "/exercises/videos/3542-jgbvVJ0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3542-jgbvVJ0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3542-jgbvVJ0.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13606,8 +13606,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbells back to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0330-OVIKwsd.jpg",
-      "videoUrl": "/exercises/videos/0330-OVIKwsd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0330-OVIKwsd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0330-OVIKwsd.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13631,8 +13631,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Reverse the motion and bring the dumbbells back up to the starting position, squeezing your chest muscles together at the top.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0331-1PLE8e9.jpg",
-      "videoUrl": "/exercises/videos/0331-1PLE8e9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0331-1PLE8e9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0331-1PLE8e9.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -13655,8 +13655,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1733-U7D9Fx3.jpg",
-      "videoUrl": "/exercises/videos/1733-U7D9Fx3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1733-U7D9Fx3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1733-U7D9Fx3.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13679,8 +13679,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3541-PbzNu7c.jpg",
-      "videoUrl": "/exercises/videos/3541-PbzNu7c.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3541-PbzNu7c.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3541-PbzNu7c.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -13702,8 +13702,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0332-cALkHHX.jpg",
-      "videoUrl": "/exercises/videos/0332-cALkHHX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0332-cALkHHX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0332-cALkHHX.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13727,8 +13727,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0333-W6PxUkg.jpg",
-      "videoUrl": "/exercises/videos/0333-W6PxUkg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0333-W6PxUkg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0333-W6PxUkg.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13751,8 +13751,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1734-cAvTaSg.jpg",
-      "videoUrl": "/exercises/videos/1734-cAvTaSg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1734-cAvTaSg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1734-cAvTaSg.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13777,8 +13777,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1660-2JCuFTU.jpg",
-      "videoUrl": "/exercises/videos/1660-2JCuFTU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1660-2JCuFTU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1660-2JCuFTU.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -13801,8 +13801,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0334-DsgkuIt.jpg",
-      "videoUrl": "/exercises/videos/0334-DsgkuIt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0334-DsgkuIt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0334-DsgkuIt.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13827,8 +13827,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0335-xMjBKwn.jpg",
-      "videoUrl": "/exercises/videos/0335-xMjBKwn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0335-xMjBKwn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0335-xMjBKwn.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13852,8 +13852,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with your left leg.",
         "Alternate legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0336-RRWFUcw.jpg",
-      "videoUrl": "/exercises/videos/0336-RRWFUcw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0336-RRWFUcw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0336-RRWFUcw.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -13877,8 +13877,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the lunge and bicep curl on the opposite side, stepping forward with your left foot.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1658-Mz6lLcW.jpg",
-      "videoUrl": "/exercises/videos/1658-Mz6lLcW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1658-Mz6lLcW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1658-Mz6lLcW.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -13901,8 +13901,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then contract your triceps to bring the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0337-L2V5Nan.jpg",
-      "videoUrl": "/exercises/videos/0337-L2V5Nan.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0337-L2V5Nan.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0337-L2V5Nan.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13925,8 +13925,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then raise the dumbbell back up to the starting position.",
         "Repeat with the other arm, alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1729-NfP83rA.jpg",
-      "videoUrl": "/exercises/videos/1729-NfP83rA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1729-NfP83rA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1729-NfP83rA.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13948,8 +13948,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then press the dumbbells back up to the starting position by extending your elbows.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0338-eOCOwIR.jpg",
-      "videoUrl": "/exercises/videos/0338-eOCOwIR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0338-eOCOwIR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0338-eOCOwIR.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -13972,8 +13972,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your forearm back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0863-bmBf7LN.jpg",
-      "videoUrl": "/exercises/videos/0863-bmBf7LN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0863-bmBf7LN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0863-bmBf7LN.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -13995,8 +13995,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0339-FkBIE6a.jpg",
-      "videoUrl": "/exercises/videos/0339-FkBIE6a.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0339-FkBIE6a.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0339-FkBIE6a.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -14018,8 +14018,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the dumbbells back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0340-7gdLIXa.jpg",
-      "videoUrl": "/exercises/videos/0340-7gdLIXa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0340-7gdLIXa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0340-7gdLIXa.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14042,8 +14042,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2470-Ion0XWz.jpg",
-      "videoUrl": "/exercises/videos/2470-Ion0XWz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2470-Ion0XWz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2470-Ion0XWz.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -14066,8 +14066,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arm back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0341-gSw59a4.jpg",
-      "videoUrl": "/exercises/videos/0341-gSw59a4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0341-gSw59a4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0341-gSw59a4.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -14090,8 +14090,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0343-zGSIWQi.jpg",
-      "videoUrl": "/exercises/videos/0343-zGSIWQi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0343-zGSIWQi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0343-zGSIWQi.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14115,8 +14115,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the dumbbell back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0342-K3dIO25.jpg",
-      "videoUrl": "/exercises/videos/0342-K3dIO25.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0342-K3dIO25.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0342-K3dIO25.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14139,8 +14139,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then extend your arm back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0344-wyaqzOS.jpg",
-      "videoUrl": "/exercises/videos/0344-wyaqzOS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0344-wyaqzOS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0344-wyaqzOS.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14162,8 +14162,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0345-KwFGiEP.jpg",
-      "videoUrl": "/exercises/videos/0345-KwFGiEP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0345-KwFGiEP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0345-KwFGiEP.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -14186,8 +14186,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then extend your arm back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0346-zZlORz6.jpg",
-      "videoUrl": "/exercises/videos/0346-zZlORz6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0346-zZlORz6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0346-zZlORz6.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14210,8 +14210,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0347-mym4hJo.jpg",
-      "videoUrl": "/exercises/videos/0347-mym4hJo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0347-mym4hJo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0347-mym4hJo.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -14235,8 +14235,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold for a moment, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2705-7RWNjiB.jpg",
-      "videoUrl": "/exercises/videos/2705-7RWNjiB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2705-7RWNjiB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2705-7RWNjiB.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -14259,8 +14259,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1284-iK59oEA.jpg",
-      "videoUrl": "/exercises/videos/1284-iK59oEA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1284-iK59oEA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1284-iK59oEA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14283,8 +14283,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1328-XUUD0Fs.jpg",
-      "videoUrl": "/exercises/videos/1328-XUUD0Fs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1328-XUUD0Fs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1328-XUUD0Fs.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -14307,8 +14307,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0348-53Ttlck.jpg",
-      "videoUrl": "/exercises/videos/0348-53Ttlck.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0348-53Ttlck.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0348-53Ttlck.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -14330,8 +14330,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause briefly at the bottom of the movement, then extend your arm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1735-6MfS53i.jpg",
-      "videoUrl": "/exercises/videos/1735-6MfS53i.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1735-6MfS53i.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1735-6MfS53i.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14354,8 +14354,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0349-M2Pm3zj.jpg",
-      "videoUrl": "/exercises/videos/0349-M2Pm3zj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0349-M2Pm3zj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0349-M2Pm3zj.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -14378,8 +14378,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2706-rEhi2o5.jpg",
-      "videoUrl": "/exercises/videos/2706-rEhi2o5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2706-rEhi2o5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2706-rEhi2o5.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -14404,8 +14404,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1661-XVzF3iZ.jpg",
-      "videoUrl": "/exercises/videos/1661-XVzF3iZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1661-XVzF3iZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1661-XVzF3iZ.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -14429,8 +14429,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0350-KUaZst7.jpg",
-      "videoUrl": "/exercises/videos/0350-KUaZst7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0350-KUaZst7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0350-KUaZst7.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -14453,8 +14453,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0351-mpKZGWz.jpg",
-      "videoUrl": "/exercises/videos/0351-mpKZGWz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0351-mpKZGWz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0351-mpKZGWz.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14478,8 +14478,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1662-qm9veZw.jpg",
-      "videoUrl": "/exercises/videos/1662-qm9veZw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1662-qm9veZw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1662-qm9veZw.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -14502,8 +14502,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the dumbbells back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0352-pP8wP2P.jpg",
-      "videoUrl": "/exercises/videos/0352-pP8wP2P.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0352-pP8wP2P.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0352-pP8wP2P.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14528,8 +14528,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause when your arm is parallel to the ground, then reverse the movement and bring the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1285-o5Jsk92.jpg",
-      "videoUrl": "/exercises/videos/1285-o5Jsk92.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1285-o5Jsk92.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1285-o5Jsk92.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14553,8 +14553,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0292-C0MA9bC.jpg",
-      "videoUrl": "/exercises/videos/0292-C0MA9bC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0292-C0MA9bC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0292-C0MA9bC.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -14579,8 +14579,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your chest muscles to bring the dumbbell back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1286-Bpkf41o.jpg",
-      "videoUrl": "/exercises/videos/1286-Bpkf41o.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1286-Bpkf41o.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1286-Bpkf41o.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14604,8 +14604,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then inhale and slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/0353-k5IpyHg.jpg",
-      "videoUrl": "/exercises/videos/0353-k5IpyHg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0353-k5IpyHg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0353-k5IpyHg.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -14628,8 +14628,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1287-REGM1dE.jpg",
-      "videoUrl": "/exercises/videos/1287-REGM1dE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1287-REGM1dE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1287-REGM1dE.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14653,8 +14653,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then squeeze your chest muscles to bring the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1288-Am02iPd.jpg",
-      "videoUrl": "/exercises/videos/1288-Am02iPd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1288-Am02iPd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1288-Am02iPd.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14677,8 +14677,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1736-ziFKQXP.jpg",
-      "videoUrl": "/exercises/videos/1736-ziFKQXP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1736-ziFKQXP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1736-ziFKQXP.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14702,8 +14702,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1663-4dF3maG.jpg",
-      "videoUrl": "/exercises/videos/1663-4dF3maG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1663-4dF3maG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1663-4dF3maG.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -14727,8 +14727,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1621-VYmYxK5.jpg",
-      "videoUrl": "/exercises/videos/1621-VYmYxK5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1621-VYmYxK5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1621-VYmYxK5.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14752,8 +14752,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1289-PDaMuyV.jpg",
-      "videoUrl": "/exercises/videos/1289-PDaMuyV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1289-PDaMuyV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1289-PDaMuyV.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14777,8 +14777,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0354-bQy2Eni.jpg",
-      "videoUrl": "/exercises/videos/0354-bQy2Eni.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0354-bQy2Eni.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0354-bQy2Eni.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -14802,8 +14802,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0355-n5cWCsI.jpg",
-      "videoUrl": "/exercises/videos/0355-n5cWCsI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0355-n5cWCsI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0355-n5cWCsI.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -14828,8 +14828,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0356-Yg7MJAT.jpg",
-      "videoUrl": "/exercises/videos/0356-Yg7MJAT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0356-Yg7MJAT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0356-Yg7MJAT.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -14852,8 +14852,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1290-QZFv5ui.jpg",
-      "videoUrl": "/exercises/videos/1290-QZFv5ui.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1290-QZFv5ui.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1290-QZFv5ui.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14876,8 +14876,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1665-JWjujiY.jpg",
-      "videoUrl": "/exercises/videos/1665-JWjujiY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1665-JWjujiY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1665-JWjujiY.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -14899,8 +14899,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1666-LIGZSTA.jpg",
-      "videoUrl": "/exercises/videos/1666-LIGZSTA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1666-LIGZSTA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1666-LIGZSTA.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -14923,8 +14923,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1291-bQHPBU3.jpg",
-      "videoUrl": "/exercises/videos/1291-bQHPBU3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1291-bQHPBU3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1291-bQHPBU3.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -14948,8 +14948,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly curl your wrist back up towards your body.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0358-BwSNDGt.jpg",
-      "videoUrl": "/exercises/videos/0358-BwSNDGt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0358-BwSNDGt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0358-BwSNDGt.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -14973,8 +14973,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arm back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0359-e25F58f.jpg",
-      "videoUrl": "/exercises/videos/0359-e25F58f.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0359-e25F58f.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0359-e25F58f.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -14998,8 +14998,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1622-Ze7MoIb.jpg",
-      "videoUrl": "/exercises/videos/1622-Ze7MoIb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1622-Ze7MoIb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1622-Ze7MoIb.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -15022,8 +15022,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your biceps at the top of the movement, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1414-bWxq4op.jpg",
-      "videoUrl": "/exercises/videos/1414-bWxq4op.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1414-bWxq4op.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1414-bWxq4op.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15045,8 +15045,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1667-VdLZ3nB.jpg",
-      "videoUrl": "/exercises/videos/1667-VdLZ3nB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1667-VdLZ3nB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1667-VdLZ3nB.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15069,8 +15069,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1668-s999Hdo.jpg",
-      "videoUrl": "/exercises/videos/1668-s999Hdo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1668-s999Hdo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1668-s999Hdo.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15095,8 +15095,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1669-jK2hZ6n.jpg",
-      "videoUrl": "/exercises/videos/1669-jK2hZ6n.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1669-jK2hZ6n.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1669-jK2hZ6n.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15119,8 +15119,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your wrist back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other hand."
       ],
-      "thumbnailUrl": "/exercises/images/1415-YtaCTYl.jpg",
-      "videoUrl": "/exercises/videos/1415-YtaCTYl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1415-YtaCTYl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1415-YtaCTYl.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -15142,8 +15142,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0361-84RyJf8.jpg",
-      "videoUrl": "/exercises/videos/0361-84RyJf8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0361-84RyJf8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0361-84RyJf8.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15165,8 +15165,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to shoulder level.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0360-1TkiAFK.jpg",
-      "videoUrl": "/exercises/videos/0360-1TkiAFK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0360-1TkiAFK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0360-1TkiAFK.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15192,8 +15192,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbell back down to the starting position in a controlled manner.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/3888-6pTkI99.jpg",
-      "videoUrl": "/exercises/videos/3888-6pTkI99.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3888-6pTkI99.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3888-6pTkI99.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -15217,8 +15217,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1670-ffQsyBj.jpg",
-      "videoUrl": "/exercises/videos/1670-ffQsyBj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1670-ffQsyBj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1670-ffQsyBj.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15243,8 +15243,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1671-2sQGZ5b.jpg",
-      "videoUrl": "/exercises/videos/1671-2sQGZ5b.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1671-2sQGZ5b.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1671-2sQGZ5b.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15268,8 +15268,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Extend your arm back up to the starting position, fully straightening your elbow.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0362-nAuHPcD.jpg",
-      "videoUrl": "/exercises/videos/0362-nAuHPcD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0362-nAuHPcD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0362-nAuHPcD.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -15292,8 +15292,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0363-6cKQC5E.jpg",
-      "videoUrl": "/exercises/videos/0363-6cKQC5E.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0363-6cKQC5E.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0363-6cKQC5E.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15316,8 +15316,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly curl your wrist back up, bringing the dumbbell towards your forearm.",
         "Repeat for the desired number of repetitions, then switch to the other hand."
       ],
-      "thumbnailUrl": "/exercises/images/0364-q8aHNoF.jpg",
-      "videoUrl": "/exercises/videos/0364-q8aHNoF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0364-q8aHNoF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0364-q8aHNoF.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -15341,8 +15341,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbell back down to the starting position, rotating your wrist back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1672-sxY5Biu.jpg",
-      "videoUrl": "/exercises/videos/1672-sxY5Biu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1672-sxY5Biu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1672-sxY5Biu.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15366,8 +15366,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then squeeze your chest muscles to bring the dumbbells back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1292-pH2x2jj.jpg",
-      "videoUrl": "/exercises/videos/1292-pH2x2jj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1292-pH2x2jj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1292-pH2x2jj.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -15390,8 +15390,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0365-BKa8dmT.jpg",
-      "videoUrl": "/exercises/videos/0365-BKa8dmT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0365-BKa8dmT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0365-BKa8dmT.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15413,8 +15413,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0366-IvV6C9M.jpg",
-      "videoUrl": "/exercises/videos/0366-IvV6C9M.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0366-IvV6C9M.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0366-IvV6C9M.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15437,8 +15437,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1441-4Jc36XM.jpg",
-      "videoUrl": "/exercises/videos/1441-4Jc36XM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1441-4Jc36XM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1441-4Jc36XM.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -15461,8 +15461,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0367-KI1DjNN.jpg",
-      "videoUrl": "/exercises/videos/0367-KI1DjNN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0367-KI1DjNN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0367-KI1DjNN.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -15485,8 +15485,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0368-3tAXPQ6.jpg",
-      "videoUrl": "/exercises/videos/0368-3tAXPQ6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0368-3tAXPQ6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0368-3tAXPQ6.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -15509,8 +15509,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower your wrists back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0369-D1xYJAU.jpg",
-      "videoUrl": "/exercises/videos/0369-D1xYJAU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0369-D1xYJAU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0369-D1xYJAU.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -15536,8 +15536,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbells back down to the starting position, rotating your palms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1329-wt6rwjk.jpg",
-      "videoUrl": "/exercises/videos/1329-wt6rwjk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1329-wt6rwjk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1329-wt6rwjk.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -15562,8 +15562,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then press the dumbbells back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1623-8eqjhOl.jpg",
-      "videoUrl": "/exercises/videos/1623-8eqjhOl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1623-8eqjhOl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1623-8eqjhOl.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -15589,8 +15589,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Then, inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the recommended amount of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0370-F1KxjBa.jpg",
-      "videoUrl": "/exercises/videos/0370-F1KxjBa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0370-F1KxjBa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0370-F1KxjBa.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15614,8 +15614,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Immediately lower your body back into a squat position and repeat the jump, switching your feet again.",
         "Continue alternating the position of your feet with each jump for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0371-S4pwGlc.jpg",
-      "videoUrl": "/exercises/videos/0371-S4pwGlc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0371-S4pwGlc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0371-S4pwGlc.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -15640,8 +15640,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0372-jivWf8n.jpg",
-      "videoUrl": "/exercises/videos/0372-jivWf8n.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0372-jivWf8n.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0372-jivWf8n.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15664,8 +15664,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1673-hwygydB.jpg",
-      "videoUrl": "/exercises/videos/1673-hwygydB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1673-hwygydB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1673-hwygydB.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15689,8 +15689,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1293-O8o7q4d.jpg",
-      "videoUrl": "/exercises/videos/1293-O8o7q4d.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1293-O8o7q4d.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1293-O8o7q4d.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -15713,8 +15713,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0373-bpJL2Qs.jpg",
-      "videoUrl": "/exercises/videos/0373-bpJL2Qs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0373-bpJL2Qs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0373-bpJL2Qs.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -15740,8 +15740,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0374-mwpPcr1.jpg",
-      "videoUrl": "/exercises/videos/0374-mwpPcr1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0374-mwpPcr1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0374-mwpPcr1.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15767,8 +15767,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1674-cWemPG8.jpg",
-      "videoUrl": "/exercises/videos/1674-cWemPG8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1674-cWemPG8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1674-cWemPG8.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -15791,8 +15791,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0375-9XjtHvS.jpg",
-      "videoUrl": "/exercises/videos/0375-9XjtHvS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0375-9XjtHvS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0375-9XjtHvS.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -15818,8 +15818,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1294-lI7easp.jpg",
-      "videoUrl": "/exercises/videos/1294-lI7easp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1294-lI7easp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1294-lI7easp.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -15841,8 +15841,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1295-FSD6PGL.jpg",
-      "videoUrl": "/exercises/videos/1295-FSD6PGL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1295-FSD6PGL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1295-FSD6PGL.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -15864,8 +15864,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lock out your arms at the top of the movement, then lower the dumbbells back to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1700-FS63wTN.jpg",
-      "videoUrl": "/exercises/videos/1700-FS63wTN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1700-FS63wTN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1700-FS63wTN.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15888,8 +15888,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0376-c9MnDRp.jpg",
-      "videoUrl": "/exercises/videos/0376-c9MnDRp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0376-c9MnDRp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0376-c9MnDRp.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15912,8 +15912,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2292-mu5Guxt.jpg",
-      "videoUrl": "/exercises/videos/2292-mu5Guxt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2292-mu5Guxt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2292-mu5Guxt.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15938,8 +15938,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0377-EKXOMEh.jpg",
-      "videoUrl": "/exercises/videos/0377-EKXOMEh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0377-EKXOMEh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0377-EKXOMEh.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15963,8 +15963,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0378-8DiFDVA.jpg",
-      "videoUrl": "/exercises/videos/0378-8DiFDVA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0378-8DiFDVA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0378-8DiFDVA.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -15987,8 +15987,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0380-v1qBec9.jpg",
-      "videoUrl": "/exercises/videos/0380-v1qBec9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0380-v1qBec9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0380-v1qBec9.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16011,8 +16011,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0379-UzkLrem.jpg",
-      "videoUrl": "/exercises/videos/0379-UzkLrem.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0379-UzkLrem.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0379-UzkLrem.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16035,8 +16035,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your left heel to return to the starting position.",
         "Repeat on the other side, stepping back with your left foot."
       ],
-      "thumbnailUrl": "/exercises/images/0381-SSsBDwB.jpg",
-      "videoUrl": "/exercises/videos/0381-SSsBDwB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0381-SSsBDwB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0381-SSsBDwB.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -16060,8 +16060,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0382-e4ojVhP.jpg",
-      "videoUrl": "/exercises/videos/0382-e4ojVhP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0382-e4ojVhP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0382-e4ojVhP.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16085,8 +16085,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the dumbbells back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1624-UIbGx6H.jpg",
-      "videoUrl": "/exercises/videos/1624-UIbGx6H.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1624-UIbGx6H.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1624-UIbGx6H.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -16110,8 +16110,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0383-EAs3xL9.jpg",
-      "videoUrl": "/exercises/videos/0383-EAs3xL9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0383-EAs3xL9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0383-EAs3xL9.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16140,8 +16140,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch sides and repeat the exercise with your left arm."
       ],
-      "thumbnailUrl": "/exercises/images/1330-ZIViNh1.jpg",
-      "videoUrl": "/exercises/videos/1330-ZIViNh1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1330-ZIViNh1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1330-ZIViNh1.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -16166,8 +16166,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1331-9pQSkH8.jpg",
-      "videoUrl": "/exercises/videos/1331-9pQSkH8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1331-9pQSkH8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1331-9pQSkH8.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -16192,8 +16192,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2327-Nh3mvOO.jpg",
-      "videoUrl": "/exercises/videos/2327-Nh3mvOO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2327-Nh3mvOO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2327-Nh3mvOO.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -16218,8 +16218,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0384-O8Aq69u.jpg",
-      "videoUrl": "/exercises/videos/0384-O8Aq69u.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0384-O8Aq69u.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0384-O8Aq69u.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16243,8 +16243,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1675-6sMAmNv.jpg",
-      "videoUrl": "/exercises/videos/1675-6sMAmNv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1675-6sMAmNv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1675-6sMAmNv.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16268,8 +16268,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0385-BLCvwr2.jpg",
-      "videoUrl": "/exercises/videos/0385-BLCvwr2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0385-BLCvwr2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0385-BLCvwr2.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -16291,8 +16291,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbells until you feel a stretch in your hamstrings, then push through your heels and engage your glutes to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1459-rR0LJzx.jpg",
-      "videoUrl": "/exercises/videos/1459-rR0LJzx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1459-rR0LJzx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1459-rR0LJzx.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -16316,8 +16316,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0386-prbWx1D.jpg",
-      "videoUrl": "/exercises/videos/0386-prbWx1D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0386-prbWx1D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0386-prbWx1D.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16340,8 +16340,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2397-5vfAI0I.jpg",
-      "videoUrl": "/exercises/videos/2397-5vfAI0I.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2397-5vfAI0I.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2397-5vfAI0I.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16365,8 +16365,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Alternate between arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0387-gH5fRsC.jpg",
-      "videoUrl": "/exercises/videos/0387-gH5fRsC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0387-gH5fRsC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0387-gH5fRsC.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16392,8 +16392,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement with the opposite arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1676-QLRmNeT.jpg",
-      "videoUrl": "/exercises/videos/1676-QLRmNeT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1676-QLRmNeT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1676-QLRmNeT.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16417,8 +16417,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0388-QT5Q0nK.jpg",
-      "videoUrl": "/exercises/videos/0388-QT5Q0nK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0388-QT5Q0nK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0388-QT5Q0nK.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16441,8 +16441,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the raised dumbbell back to shoulder height while simultaneously pressing the other dumbbell up overhead.",
         "Continue alternating between arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3546-q7qkONO.jpg",
-      "videoUrl": "/exercises/videos/3546-q7qkONO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3546-q7qkONO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3546-q7qkONO.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16465,8 +16465,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0389-JhYSVwT.jpg",
-      "videoUrl": "/exercises/videos/0389-JhYSVwT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0389-JhYSVwT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0389-JhYSVwT.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -16489,8 +16489,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2317-JzQbv7J.jpg",
-      "videoUrl": "/exercises/videos/2317-JzQbv7J.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2317-JzQbv7J.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2317-JzQbv7J.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16514,8 +16514,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1730-x0lwvfq.jpg",
-      "videoUrl": "/exercises/videos/1730-x0lwvfq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1730-x0lwvfq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1730-x0lwvfq.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -16538,8 +16538,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1737-4ievMJ9.jpg",
-      "videoUrl": "/exercises/videos/1737-4ievMJ9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1737-4ievMJ9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1737-4ievMJ9.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -16562,8 +16562,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1677-xiA6lRr.jpg",
-      "videoUrl": "/exercises/videos/1677-xiA6lRr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1677-xiA6lRr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1677-xiA6lRr.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16588,8 +16588,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0390-WgJnBH5.jpg",
-      "videoUrl": "/exercises/videos/0390-WgJnBH5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0390-WgJnBH5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0390-WgJnBH5.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16614,8 +16614,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbells back down to the starting position by reversing the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3547-OeL23VY.jpg",
-      "videoUrl": "/exercises/videos/3547-OeL23VY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3547-OeL23VY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3547-OeL23VY.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16639,8 +16639,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1379-r29jP7S.jpg",
-      "videoUrl": "/exercises/videos/1379-r29jP7S.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1379-r29jP7S.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1379-r29jP7S.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -16663,8 +16663,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0391-TiaZTxx.jpg",
-      "videoUrl": "/exercises/videos/0391-TiaZTxx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0391-TiaZTxx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0391-TiaZTxx.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16687,8 +16687,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0392-Ys97II0.jpg",
-      "videoUrl": "/exercises/videos/0392-Ys97II0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0392-Ys97II0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0392-Ys97II0.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16712,8 +16712,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1678-IGtBdNT.jpg",
-      "videoUrl": "/exercises/videos/1678-IGtBdNT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1678-IGtBdNT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1678-IGtBdNT.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16736,8 +16736,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0393-KXyoEtA.jpg",
-      "videoUrl": "/exercises/videos/0393-KXyoEtA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0393-KXyoEtA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0393-KXyoEtA.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16761,8 +16761,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0394-en550rk.jpg",
-      "videoUrl": "/exercises/videos/0394-en550rk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0394-en550rk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0394-en550rk.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -16785,8 +16785,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0396-hxyTtWj.jpg",
-      "videoUrl": "/exercises/videos/0396-hxyTtWj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0396-hxyTtWj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0396-hxyTtWj.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16809,8 +16809,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0395-hrrS0Ed.jpg",
-      "videoUrl": "/exercises/videos/0395-hrrS0Ed.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0395-hrrS0Ed.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0395-hrrS0Ed.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -16833,8 +16833,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0397-uJmK7Z1.jpg",
-      "videoUrl": "/exercises/videos/0397-uJmK7Z1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0397-uJmK7Z1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0397-uJmK7Z1.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16860,8 +16860,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch arms and repeat the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/1679-84sESNy.jpg",
-      "videoUrl": "/exercises/videos/1679-84sESNy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1679-84sESNy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1679-84sESNy.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -16884,8 +16884,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0398-VQ3sNCn.jpg",
-      "videoUrl": "/exercises/videos/0398-VQ3sNCn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0398-VQ3sNCn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0398-VQ3sNCn.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -16908,8 +16908,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly rotate your forearm back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0399-7f2jsqP.jpg",
-      "videoUrl": "/exercises/videos/0399-7f2jsqP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0399-7f2jsqP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0399-7f2jsqP.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -16933,8 +16933,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0400-Ia7tumC.jpg",
-      "videoUrl": "/exercises/videos/0400-Ia7tumC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0400-Ia7tumC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0400-Ia7tumC.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -16958,8 +16958,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1380-FxhcxUW.jpg",
-      "videoUrl": "/exercises/videos/1380-FxhcxUW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1380-FxhcxUW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1380-FxhcxUW.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -16983,8 +16983,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1381-VW88JNd.jpg",
-      "videoUrl": "/exercises/videos/1381-VW88JNd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1381-VW88JNd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1381-VW88JNd.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -17007,8 +17007,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then lower your wrists back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0401-2dImyQ8.jpg",
-      "videoUrl": "/exercises/videos/0401-2dImyQ8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0401-2dImyQ8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0401-2dImyQ8.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -17031,8 +17031,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0402-7D5bgLT.jpg",
-      "videoUrl": "/exercises/videos/0402-7D5bgLT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0402-7D5bgLT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0402-7D5bgLT.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17056,8 +17056,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0403-lyKCLmK.jpg",
-      "videoUrl": "/exercises/videos/0403-lyKCLmK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0403-lyKCLmK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0403-lyKCLmK.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17080,8 +17080,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arm back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1738-5fKX7wi.jpg",
-      "videoUrl": "/exercises/videos/1738-5fKX7wi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1738-5fKX7wi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1738-5fKX7wi.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -17104,8 +17104,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0405-znQUdHY.jpg",
-      "videoUrl": "/exercises/videos/0405-znQUdHY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0405-znQUdHY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0405-znQUdHY.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17128,8 +17128,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0404-f1jf47L.jpg",
-      "videoUrl": "/exercises/videos/0404-f1jf47L.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0404-f1jf47L.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0404-f1jf47L.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17152,8 +17152,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then straighten your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2188-kont8Ut.jpg",
-      "videoUrl": "/exercises/videos/2188-kont8Ut.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2188-kont8Ut.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2188-kont8Ut.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -17176,8 +17176,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a second, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0406-NJzBsGJ.jpg",
-      "videoUrl": "/exercises/videos/0406-NJzBsGJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0406-NJzBsGJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0406-NJzBsGJ.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -17199,8 +17199,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/0407-IpONWYv.jpg",
-      "videoUrl": "/exercises/videos/0407-IpONWYv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0407-IpONWYv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0407-IpONWYv.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -17223,8 +17223,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0408-fTlkJop.jpg",
-      "videoUrl": "/exercises/videos/0408-fTlkJop.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0408-fTlkJop.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0408-fTlkJop.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17249,8 +17249,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/3664-X6ytgYZ.jpg",
-      "videoUrl": "/exercises/videos/3664-X6ytgYZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3664-X6ytgYZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3664-X6ytgYZ.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -17273,8 +17273,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue walking for the desired distance or time.",
         "Switch hands and repeat the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/3548-mWBtgmb.jpg",
-      "videoUrl": "/exercises/videos/3548-mWBtgmb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3548-mWBtgmb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3548-mWBtgmb.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17297,8 +17297,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down below the step.",
         "Repeat for the desired number of repetitions, then switch to the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/0409-1kB3Wmk.jpg",
-      "videoUrl": "/exercises/videos/0409-1kB3Wmk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0409-1kB3Wmk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0409-1kB3Wmk.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -17323,8 +17323,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then engage your glutes and hamstrings to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1757-gKozT8X.jpg",
-      "videoUrl": "/exercises/videos/1757-gKozT8X.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1757-gKozT8X.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1757-gKozT8X.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -17348,8 +17348,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbell until you feel a stretch in your right hamstring, then return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/2805-daBmy1Y.jpg",
-      "videoUrl": "/exercises/videos/2805-daBmy1Y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2805-daBmy1Y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2805-daBmy1Y.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -17372,8 +17372,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue lowering until your front thigh is parallel to the ground, then push through your front heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/0410-qx4fgX7.jpg",
-      "videoUrl": "/exercises/videos/0410-qx4fgX7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0410-qx4fgX7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0410-qx4fgX7.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -17397,8 +17397,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0411-H6ybluc.jpg",
-      "videoUrl": "/exercises/videos/0411-H6ybluc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0411-H6ybluc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0411-H6ybluc.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -17421,8 +17421,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0413-HsvHqgf.jpg",
-      "videoUrl": "/exercises/videos/0413-HsvHqgf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0413-HsvHqgf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0413-HsvHqgf.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -17451,8 +17451,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the press with your left hand.",
         "Continue alternating between curls and presses for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3560-LeaZOIz.jpg",
-      "videoUrl": "/exercises/videos/3560-LeaZOIz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3560-LeaZOIz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3560-LeaZOIz.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17475,8 +17475,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0414-bBi35y3.jpg",
-      "videoUrl": "/exercises/videos/0414-bBi35y3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0414-bBi35y3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0414-bBi35y3.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17501,8 +17501,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Alternate between arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0415-SxHteRW.jpg",
-      "videoUrl": "/exercises/videos/0415-SxHteRW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0415-SxHteRW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0415-SxHteRW.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17525,8 +17525,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat with the other arm, alternating sides with each repetition."
       ],
-      "thumbnailUrl": "/exercises/images/1739-Gi2BXfK.jpg",
-      "videoUrl": "/exercises/videos/1739-Gi2BXfK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1739-Gi2BXfK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1739-Gi2BXfK.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -17549,8 +17549,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue the circular motion, bringing the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2143-RSOsp5d.jpg",
-      "videoUrl": "/exercises/videos/2143-RSOsp5d.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2143-RSOsp5d.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2143-RSOsp5d.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17573,8 +17573,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1740-CJwa0vD.jpg",
-      "videoUrl": "/exercises/videos/1740-CJwa0vD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1740-CJwa0vD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1740-CJwa0vD.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -17597,8 +17597,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1741-3T12T87.jpg",
-      "videoUrl": "/exercises/videos/1741-3T12T87.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1741-3T12T87.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1741-3T12T87.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -17622,8 +17622,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0416-3s4NnTh.jpg",
-      "videoUrl": "/exercises/videos/0416-3s4NnTh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0416-3s4NnTh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0416-3s4NnTh.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17645,8 +17645,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0417-dPmaUaU.jpg",
-      "videoUrl": "/exercises/videos/0417-dPmaUaU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0417-dPmaUaU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0417-dPmaUaU.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -17671,8 +17671,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0418-7inpWch.jpg",
-      "videoUrl": "/exercises/videos/0418-7inpWch.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0418-7inpWch.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0418-7inpWch.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17694,8 +17694,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0419-laVRfDf.jpg",
-      "videoUrl": "/exercises/videos/0419-laVRfDf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0419-laVRfDf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0419-laVRfDf.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17720,8 +17720,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly begin to bring the dumbbells back to the starting position as your breathe in.",
         "Repeat for the recommended amount of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2321-vKilzz3.jpg",
-      "videoUrl": "/exercises/videos/2321-vKilzz3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2321-vKilzz3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2321-vKilzz3.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17744,8 +17744,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0420-UmpPAAe.jpg",
-      "videoUrl": "/exercises/videos/0420-UmpPAAe.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0420-UmpPAAe.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0420-UmpPAAe.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -17770,8 +17770,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0421-8fgqP5a.jpg",
-      "videoUrl": "/exercises/videos/0421-8fgqP5a.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0421-8fgqP5a.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0421-8fgqP5a.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17794,8 +17794,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/0422-BIb1tGo.jpg",
-      "videoUrl": "/exercises/videos/0422-BIb1tGo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0422-BIb1tGo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0422-BIb1tGo.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17818,8 +17818,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1680-EmlJR2y.jpg",
-      "videoUrl": "/exercises/videos/1680-EmlJR2y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1680-EmlJR2y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1680-EmlJR2y.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17843,8 +17843,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0423-BCUR88E.jpg",
-      "videoUrl": "/exercises/videos/0423-BCUR88E.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0423-BCUR88E.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0423-BCUR88E.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -17867,8 +17867,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0424-ocYc6Db.jpg",
-      "videoUrl": "/exercises/videos/0424-ocYc6Db.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0424-ocYc6Db.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0424-ocYc6Db.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17891,8 +17891,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0425-DU5Kkj2.jpg",
-      "videoUrl": "/exercises/videos/0425-DU5Kkj2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0425-DU5Kkj2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0425-DU5Kkj2.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17914,8 +17914,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0426-A6wtbuL.jpg",
-      "videoUrl": "/exercises/videos/0426-A6wtbuL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0426-A6wtbuL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0426-A6wtbuL.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17937,8 +17937,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0427-UilDHSs.jpg",
-      "videoUrl": "/exercises/videos/0427-UilDHSs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0427-UilDHSs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0427-UilDHSs.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -17963,8 +17963,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0428-hq2hyDH.jpg",
-      "videoUrl": "/exercises/videos/0428-hq2hyDH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0428-hq2hyDH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0428-hq2hyDH.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -17987,8 +17987,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0429-0IgNjSM.jpg",
-      "videoUrl": "/exercises/videos/0429-0IgNjSM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0429-0IgNjSM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0429-0IgNjSM.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -18011,8 +18011,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Extend your arm back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0430-PdmaD0N.jpg",
-      "videoUrl": "/exercises/videos/0430-PdmaD0N.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0430-PdmaD0N.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0430-PdmaD0N.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -18036,8 +18036,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbells back to the starting position, rotating your wrists back to the starting position as well.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2293-P2nRiUa.jpg",
-      "videoUrl": "/exercises/videos/2293-P2nRiUa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2293-P2nRiUa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2293-P2nRiUa.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -18062,8 +18062,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement on the opposite side, stepping up with your left foot and curling the dumbbells.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1684-76vfTdU.jpg",
-      "videoUrl": "/exercises/videos/1684-76vfTdU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1684-76vfTdU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1684-76vfTdU.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -18087,8 +18087,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Step back down with your left foot, followed by your right foot, returning to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0431-aXtJhlg.jpg",
-      "videoUrl": "/exercises/videos/0431-aXtJhlg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0431-aXtJhlg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0431-aXtJhlg.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -18112,8 +18112,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, alternating which foot you step up with each time.",
         "Continue for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2796-gFyFj9z.jpg",
-      "videoUrl": "/exercises/videos/2796-gFyFj9z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2796-gFyFj9z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2796-gFyFj9z.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -18138,8 +18138,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement with your left foot on the bench or step.",
         "Continue alternating between your right and left foot for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2812-QjE2DcA.jpg",
-      "videoUrl": "/exercises/videos/2812-QjE2DcA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2812-QjE2DcA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2812-QjE2DcA.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -18161,8 +18161,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbells until you feel a stretch in your hamstrings, then squeeze your glutes and push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0432-5eLRITT.jpg",
-      "videoUrl": "/exercises/videos/0432-5eLRITT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0432-5eLRITT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0432-5eLRITT.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -18185,8 +18185,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0433-i8BdLTK.jpg",
-      "videoUrl": "/exercises/videos/0433-i8BdLTK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0433-i8BdLTK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0433-i8BdLTK.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -18209,8 +18209,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then engage your glutes and hamstrings to lift your torso back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0434-oom75KC.jpg",
-      "videoUrl": "/exercises/videos/0434-oom75KC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0434-oom75KC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0434-oom75KC.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -18235,8 +18235,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your glutes at the top of the movement, then lower the dumbbell back down between your legs.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2808-BmrwWzo.jpg",
-      "videoUrl": "/exercises/videos/2808-BmrwWzo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2808-BmrwWzo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2808-BmrwWzo.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -18259,8 +18259,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2803-r5DgrW9.jpg",
-      "videoUrl": "/exercises/videos/2803-r5DgrW9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2803-r5DgrW9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2803-r5DgrW9.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -18282,8 +18282,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the dumbbells up until your arms are fully extended, then lower them back down to shoulder height.",
         "Rotate your wrists back to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0436-s5PdDyY.jpg",
-      "videoUrl": "/exercises/videos/0436-s5PdDyY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0436-s5PdDyY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0436-s5PdDyY.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -18307,8 +18307,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly lower the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1742-wOLmCXc.jpg",
-      "videoUrl": "/exercises/videos/1742-wOLmCXc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1742-wOLmCXc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1742-wOLmCXc.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -18334,8 +18334,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you press the dumbbells up, twist your wrists back to the starting position with palms facing away from you.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1743-z6TAHoT.jpg",
-      "videoUrl": "/exercises/videos/1743-z6TAHoT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1743-z6TAHoT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1743-z6TAHoT.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -18358,8 +18358,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0437-ainizkb.jpg",
-      "videoUrl": "/exercises/videos/0437-ainizkb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0437-ainizkb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0437-ainizkb.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -18383,8 +18383,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1765-Iptlv6x.jpg",
-      "videoUrl": "/exercises/videos/1765-Iptlv6x.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1765-Iptlv6x.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1765-Iptlv6x.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -18407,8 +18407,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0864-x306lCW.jpg",
-      "videoUrl": "/exercises/videos/0864-x306lCW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0864-x306lCW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0864-x306lCW.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -18431,8 +18431,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/5201-KOpzGBL.jpg",
-      "videoUrl": "/exercises/videos/5201-KOpzGBL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/5201-KOpzGBL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/5201-KOpzGBL.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -18455,8 +18455,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the dumbbells back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0438-vmwLyCg.jpg",
-      "videoUrl": "/exercises/videos/0438-vmwLyCg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0438-vmwLyCg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0438-vmwLyCg.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -18480,8 +18480,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbells back to the starting position, rotating your palms back to facing your body.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0439-kXaIn5A.jpg",
-      "videoUrl": "/exercises/videos/0439-kXaIn5A.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0439-kXaIn5A.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0439-kXaIn5A.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -18504,8 +18504,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the dumbbells back down to the starting position, rotating your wrists back to the starting position as you do so.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2294-y5U5B9Y.jpg",
-      "videoUrl": "/exercises/videos/2294-y5U5B9Y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2294-y5U5B9Y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2294-y5U5B9Y.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -18528,8 +18528,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Extend your arms and raise the dumbbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2189-FQXdXzY.jpg",
-      "videoUrl": "/exercises/videos/2189-FQXdXzY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2189-FQXdXzY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2189-FQXdXzY.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -18553,8 +18553,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 10-30 seconds.",
         "Return to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1167-3uj0Ozg.jpg",
-      "videoUrl": "/exercises/videos/1167-3uj0Ozg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1167-3uj0Ozg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1167-3uj0Ozg.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -18577,8 +18577,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your hands to straighten your arms and lift your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3287-LkoAWAE.jpg",
-      "videoUrl": "/exercises/videos/3287-LkoAWAE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3287-LkoAWAE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3287-LkoAWAE.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -18601,8 +18601,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1772-wbUYILZ.jpg",
-      "videoUrl": "/exercises/videos/1772-wbUYILZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1772-wbUYILZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1772-wbUYILZ.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -18627,8 +18627,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time bringing your left elbow towards your right knee and your right knee towards your left elbow.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0443-jvp6DiD.jpg",
-      "videoUrl": "/exercises/videos/0443-jvp6DiD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0443-jvp6DiD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0443-jvp6DiD.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -18651,8 +18651,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly raise your upper body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3292-zYmNaoY.jpg",
-      "videoUrl": "/exercises/videos/3292-zYmNaoY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3292-zYmNaoY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3292-zYmNaoY.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -18676,8 +18676,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1332-EyLrNC2.jpg",
-      "videoUrl": "/exercises/videos/1332-EyLrNC2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1332-EyLrNC2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1332-EyLrNC2.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -18700,8 +18700,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1333-PERjVm8.jpg",
-      "videoUrl": "/exercises/videos/1333-PERjVm8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1333-PERjVm8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1333-PERjVm8.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -18725,8 +18725,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1334-o1HGDSq.jpg",
-      "videoUrl": "/exercises/videos/1334-o1HGDSq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1334-o1HGDSq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1334-o1HGDSq.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -18749,8 +18749,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1335-WME869U.jpg",
-      "videoUrl": "/exercises/videos/1335-WME869U.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1335-WME869U.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1335-WME869U.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -18774,8 +18774,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the center and repeat the rotation to the other side.",
         "Lower your upper body back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1336-WVD66ff.jpg",
-      "videoUrl": "/exercises/videos/1336-WVD66ff.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1336-WVD66ff.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1336-WVD66ff.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -18798,8 +18798,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your body back down by bending your elbows, keeping them close to your sides.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1744-kprile3.jpg",
-      "videoUrl": "/exercises/videos/1744-kprile3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1744-kprile3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1744-kprile3.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -18822,8 +18822,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lean forward, pushing your hips towards the stability ball, until you feel a stretch in your right hip flexor.",
         "Hold the stretch for 20-30 seconds, then switch sides and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1559-2LQkNPW.jpg",
-      "videoUrl": "/exercises/videos/1559-2LQkNPW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1559-2LQkNPW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1559-2LQkNPW.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -18847,8 +18847,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the position for a few seconds, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1338-d7z1Y7V.jpg",
-      "videoUrl": "/exercises/videos/1338-d7z1Y7V.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1338-d7z1Y7V.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1338-d7z1Y7V.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -18871,8 +18871,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds, then return to the starting position.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1339-sM84pE4.jpg",
-      "videoUrl": "/exercises/videos/1339-sM84pE4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1339-sM84pE4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1339-sM84pE4.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -18896,8 +18896,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for a few seconds, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1341-yU7w7CA.jpg",
-      "videoUrl": "/exercises/videos/1341-yU7w7CA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1341-yU7w7CA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1341-yU7w7CA.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -18920,8 +18920,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Feel the stretch in your lat muscles on the side of your body.",
         "Hold the stretch for 20-30 seconds, then switch sides and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1342-rTbyBYV.jpg",
-      "videoUrl": "/exercises/videos/1342-rTbyBYV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1342-rTbyBYV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1342-rTbyBYV.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -18945,8 +18945,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1382-xo6sENf.jpg",
-      "videoUrl": "/exercises/videos/1382-xo6sENf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1382-xo6sENf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1382-xo6sENf.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -18971,8 +18971,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3241-FY3UdNT.jpg",
-      "videoUrl": "/exercises/videos/3241-FY3UdNT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3241-FY3UdNT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3241-FY3UdNT.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -18997,8 +18997,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3240-j74M6Zn.jpg",
-      "videoUrl": "/exercises/videos/3240-j74M6Zn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3240-j74M6Zn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3240-j74M6Zn.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -19024,8 +19024,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the rotation with the other leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1416-M72BExt.jpg",
-      "videoUrl": "/exercises/videos/1416-M72BExt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1416-M72BExt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1416-M72BExt.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -19050,8 +19050,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return your right leg to the starting position, maintaining control and stability.",
         "Repeat the movement with your left leg, alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1417-GOJKFfO.jpg",
-      "videoUrl": "/exercises/videos/1417-GOJKFfO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1417-GOJKFfO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1417-GOJKFfO.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -19075,8 +19075,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your hands and extend your arms to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1296-sVvXT5J.jpg",
-      "videoUrl": "/exercises/videos/1296-sVvXT5J.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1296-sVvXT5J.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1296-sVvXT5J.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -19099,8 +19099,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1343-lCKm4Rs.jpg",
-      "videoUrl": "/exercises/videos/1343-lCKm4Rs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1343-lCKm4Rs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1343-lCKm4Rs.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -19125,8 +19125,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position by pushing through your heels and using your hamstrings to pull yourself back up.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1560-yRYyfdA.jpg",
-      "videoUrl": "/exercises/videos/1560-yRYyfdA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1560-yRYyfdA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1560-yRYyfdA.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -19149,8 +19149,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for a few seconds, then return to the starting position.",
         "Repeat with the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1745-7ePTw4B.jpg",
-      "videoUrl": "/exercises/videos/1745-7ePTw4B.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1745-7ePTw4B.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1745-7ePTw4B.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19173,8 +19173,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the dumbbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1746-Gm2Uv1z.jpg",
-      "videoUrl": "/exercises/videos/1746-Gm2Uv1z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1746-Gm2Uv1z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1746-Gm2Uv1z.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19197,8 +19197,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1747-CFN9P8G.jpg",
-      "videoUrl": "/exercises/videos/1747-CFN9P8G.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1747-CFN9P8G.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1747-CFN9P8G.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19222,8 +19222,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then return the barbell to the starting position by reversing the arc motion.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3010-nDK1HJ0.jpg",
-      "videoUrl": "/exercises/videos/3010-nDK1HJ0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3010-nDK1HJ0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3010-nDK1HJ0.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -19246,8 +19246,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1748-6CKUx7o.jpg",
-      "videoUrl": "/exercises/videos/1748-6CKUx7o.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1748-6CKUx7o.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1748-6CKUx7o.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19271,8 +19271,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the ez barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1344-G8dXpNG.jpg",
-      "videoUrl": "/exercises/videos/1344-G8dXpNG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1344-G8dXpNG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1344-G8dXpNG.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -19295,8 +19295,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Squeeze your biceps at the top of the movement, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1682-Dsfz0Id.jpg",
-      "videoUrl": "/exercises/videos/1682-Dsfz0Id.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1682-Dsfz0Id.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1682-Dsfz0Id.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19319,8 +19319,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1749-1cTf2Ux.jpg",
-      "videoUrl": "/exercises/videos/1749-1cTf2Ux.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1749-1cTf2Ux.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1749-1cTf2Ux.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19342,8 +19342,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the barbell overhead, extending your arms fully.",
         "Lower the barbell back to shoulder height and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0445-fprd84i.jpg",
-      "videoUrl": "/exercises/videos/0445-fprd84i.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0445-fprd84i.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0445-fprd84i.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -19367,8 +19367,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1627-hacCyUv.jpg",
-      "videoUrl": "/exercises/videos/1627-hacCyUv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1627-hacCyUv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1627-hacCyUv.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19391,8 +19391,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0446-V4ryaZa.jpg",
-      "videoUrl": "/exercises/videos/0446-V4ryaZa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0446-V4ryaZa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0446-V4ryaZa.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19415,8 +19415,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale as you slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0447-6TG6x2w.jpg",
-      "videoUrl": "/exercises/videos/0447-6TG6x2w.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0447-6TG6x2w.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0447-6TG6x2w.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19440,8 +19440,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then press the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0448-DgZQ11d.jpg",
-      "videoUrl": "/exercises/videos/0448-DgZQ11d.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0448-DgZQ11d.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0448-DgZQ11d.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19465,8 +19465,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2186-CQHoDm0.jpg",
-      "videoUrl": "/exercises/videos/2186-CQHoDm0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2186-CQHoDm0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2186-CQHoDm0.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19490,8 +19490,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0449-KyLtiLT.jpg",
-      "videoUrl": "/exercises/videos/0449-KyLtiLT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0449-KyLtiLT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0449-KyLtiLT.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19514,8 +19514,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0450-hnOYgH3.jpg",
-      "videoUrl": "/exercises/videos/0450-hnOYgH3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0450-hnOYgH3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0450-hnOYgH3.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19540,8 +19540,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly begin to bring the barbell back to the starting position as you inhale.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0451-Y5X65IB.jpg",
-      "videoUrl": "/exercises/videos/0451-Y5X65IB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0451-Y5X65IB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0451-Y5X65IB.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19565,8 +19565,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0452-vBNyir7.jpg",
-      "videoUrl": "/exercises/videos/0452-vBNyir7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0452-vBNyir7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0452-vBNyir7.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19591,8 +19591,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the ez barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1458-jtFKbt5.jpg",
-      "videoUrl": "/exercises/videos/1458-jtFKbt5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1458-jtFKbt5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1458-jtFKbt5.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19616,8 +19616,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then raise the barbell back to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0453-iaapw0g.jpg",
-      "videoUrl": "/exercises/videos/0453-iaapw0g.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0453-iaapw0g.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0453-iaapw0g.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19641,8 +19641,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0454-Ye5Qxb0.jpg",
-      "videoUrl": "/exercises/videos/0454-Ye5Qxb0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0454-Ye5Qxb0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0454-Ye5Qxb0.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19666,8 +19666,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1628-2kattbR.jpg",
-      "videoUrl": "/exercises/videos/1628-2kattbR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1628-2kattbR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1628-2kattbR.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19691,8 +19691,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the barbell back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2404-tJ5nYqo.jpg",
-      "videoUrl": "/exercises/videos/2404-tJ5nYqo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2404-tJ5nYqo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2404-tJ5nYqo.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19717,8 +19717,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2432-da4cXST.jpg",
-      "videoUrl": "/exercises/videos/2432-da4cXST.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2432-da4cXST.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2432-da4cXST.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -19741,8 +19741,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2741-OVTZ65k.jpg",
-      "videoUrl": "/exercises/videos/2741-OVTZ65k.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2741-OVTZ65k.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2741-OVTZ65k.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -19765,8 +19765,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue walking for the desired distance or time.",
         "To finish, stop walking and carefully lower the dumbbells to your sides."
       ],
-      "thumbnailUrl": "/exercises/images/2133-qPEzJjA.jpg",
-      "videoUrl": "/exercises/videos/2133-qPEzJjA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2133-qPEzJjA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2133-qPEzJjA.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -19789,8 +19789,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly release your fingers back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0455-awG04cF.jpg",
-      "videoUrl": "/exercises/videos/0455-awG04cF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0455-awG04cF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0455-awG04cF.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -19814,8 +19814,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3303-pQ0Mx1Z.jpg",
-      "videoUrl": "/exercises/videos/3303-pQ0Mx1Z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3303-pQ0Mx1Z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3303-pQ0Mx1Z.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -19839,8 +19839,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body and legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0456-AR0ig3o.jpg",
-      "videoUrl": "/exercises/videos/0456-AR0ig3o.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0456-AR0ig3o.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0456-AR0ig3o.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -19863,8 +19863,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body and legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0457-KZn52RC.jpg",
-      "videoUrl": "/exercises/videos/0457-KZn52RC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0457-KZn52RC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0457-KZn52RC.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -19888,8 +19888,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then squeeze your chest muscles to bring the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0458-neonEDL.jpg",
-      "videoUrl": "/exercises/videos/0458-neonEDL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0458-neonEDL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0458-neonEDL.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -19911,8 +19911,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Keeping your legs straight, alternate lifting one leg slightly higher than the other.",
         "Continue this fluttering motion for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0459-UVo2Qs2.jpg",
-      "videoUrl": "/exercises/videos/0459-UVo2Qs2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0459-UVo2Qs2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0459-UVo2Qs2.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -19936,8 +19936,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet and immediately go into the next jump.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1472-uZKq7lo.jpg",
-      "videoUrl": "/exercises/videos/1472-uZKq7lo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1472-uZKq7lo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1472-uZKq7lo.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -19960,8 +19960,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push off with your right foot and return to the starting position.",
         "Repeat with your left leg, alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3470-kMzUs9Y.jpg",
-      "videoUrl": "/exercises/videos/3470-kMzUs9Y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3470-kMzUs9Y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3470-kMzUs9Y.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -19984,8 +19984,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3194-bdWcbaU.jpg",
-      "videoUrl": "/exercises/videos/3194-bdWcbaU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3194-bdWcbaU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3194-bdWcbaU.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -20008,8 +20008,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2429-FFRP97T.jpg",
-      "videoUrl": "/exercises/videos/2429-FFRP97T.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2429-FFRP97T.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2429-FFRP97T.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20032,8 +20032,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few seconds, then extend your legs back out and push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3301-rQhGcin.jpg",
-      "videoUrl": "/exercises/videos/3301-rQhGcin.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3301-rQhGcin.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3301-rQhGcin.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20058,8 +20058,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "To release, slowly lower your legs back down and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3296-PkCN2lv.jpg",
-      "videoUrl": "/exercises/videos/3296-PkCN2lv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3296-PkCN2lv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3296-PkCN2lv.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20083,8 +20083,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3295-hbY9wqG.jpg",
-      "videoUrl": "/exercises/videos/3295-hbY9wqG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3295-hbY9wqG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3295-hbY9wqG.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -20109,8 +20109,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the twist on the left side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0464-CosupLu.jpg",
-      "videoUrl": "/exercises/videos/0464-CosupLu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0464-CosupLu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0464-CosupLu.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20133,8 +20133,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position by pushing through your feet and standing back up.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3315-YRaCa5Y.jpg",
-      "videoUrl": "/exercises/videos/3315-YRaCa5Y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3315-YRaCa5Y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3315-YRaCa5Y.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20158,8 +20158,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your feet back to the ground and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3299-YZ4961r.jpg",
-      "videoUrl": "/exercises/videos/3299-YZ4961r.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3299-YZ4961r.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3299-YZ4961r.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20184,8 +20184,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a straight line from your head to your heels throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3327-gw9PqGk.jpg",
-      "videoUrl": "/exercises/videos/3327-gw9PqGk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3327-gw9PqGk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3327-gw9PqGk.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -20209,8 +20209,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0466-IL0JUxR.jpg",
-      "videoUrl": "/exercises/videos/0466-IL0JUxR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0466-IL0JUxR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0466-IL0JUxR.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -20234,8 +20234,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating legs in a marching motion while maintaining the bridge position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3561-GibBPPg.jpg",
-      "videoUrl": "/exercises/videos/3561-GibBPPg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3561-GibBPPg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3561-GibBPPg.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -20258,8 +20258,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3523-aWedzZX.jpg",
-      "videoUrl": "/exercises/videos/3523-aWedzZX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3523-aWedzZX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3523-aWedzZX.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -20284,8 +20284,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3193-Vvwjz6N.jpg",
-      "videoUrl": "/exercises/videos/3193-Vvwjz6N.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3193-Vvwjz6N.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3193-Vvwjz6N.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -20309,8 +20309,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0467-bmwlYvD.jpg",
-      "videoUrl": "/exercises/videos/0467-bmwlYvD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0467-bmwlYvD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0467-bmwlYvD.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20333,8 +20333,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0469-mWppALS.jpg",
-      "videoUrl": "/exercises/videos/0469-mWppALS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0469-mWppALS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0469-mWppALS.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20358,8 +20358,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1383-2ORFMoR.jpg",
-      "videoUrl": "/exercises/videos/1383-2ORFMoR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1383-2ORFMoR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1383-2ORFMoR.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -20384,8 +20384,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat for the desired number of repetitions.",
         "Switch legs and repeat the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/1384-AxFoqAD.jpg",
-      "videoUrl": "/exercises/videos/1384-AxFoqAD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1384-AxFoqAD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1384-AxFoqAD.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -20408,8 +20408,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3221-ia6kIIl.jpg",
-      "videoUrl": "/exercises/videos/3221-ia6kIIl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3221-ia6kIIl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3221-ia6kIIl.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -20432,8 +20432,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3202-iQ241UP.jpg",
-      "videoUrl": "/exercises/videos/3202-iQ241UP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3202-iQ241UP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3202-iQ241UP.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20456,8 +20456,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds, then return to the starting position.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1511-99rWm7w.jpg",
-      "videoUrl": "/exercises/videos/1511-99rWm7w.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1511-99rWm7w.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1511-99rWm7w.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -20480,8 +20480,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Start pedaling with your hands, pushing and pulling the handles in a controlled motion.",
         "Continue pedaling for the desired duration or number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2139-pAIWRGu.jpg",
-      "videoUrl": "/exercises/videos/2139-pAIWRGu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2139-pAIWRGu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2139-pAIWRGu.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -20504,8 +20504,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3218-B5xca8s.jpg",
-      "videoUrl": "/exercises/videos/3218-B5xca8s.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3218-B5xca8s.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3218-B5xca8s.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -20530,8 +20530,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Reverse the motion and bring your hands back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3215-yq3GAJX.jpg",
-      "videoUrl": "/exercises/videos/3215-yq3GAJX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3215-yq3GAJX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3215-yq3GAJX.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -20556,8 +20556,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "To come down, slowly lower your legs back to the ground.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3302-XooAdhl.jpg",
-      "videoUrl": "/exercises/videos/3302-XooAdhl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3302-XooAdhl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3302-XooAdhl.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -20580,8 +20580,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your hands and extend your arms to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0471-rQxwMxO.jpg",
-      "videoUrl": "/exercises/videos/0471-rQxwMxO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0471-rQxwMxO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0471-rQxwMxO.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -20603,8 +20603,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1764-VEcJRo2.jpg",
-      "videoUrl": "/exercises/videos/1764-VEcJRo2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1764-VEcJRo2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1764-VEcJRo2.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20627,8 +20627,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0472-I3tsCnC.jpg",
-      "videoUrl": "/exercises/videos/0472-I3tsCnC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0472-I3tsCnC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0472-I3tsCnC.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20651,8 +20651,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side, twisting your torso in the opposite direction.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1761-BaE7O6U.jpg",
-      "videoUrl": "/exercises/videos/1761-BaE7O6U.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1761-BaE7O6U.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1761-BaE7O6U.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20675,8 +20675,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the position for a moment, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0473-nuBF9MO.jpg",
-      "videoUrl": "/exercises/videos/0473-nuBF9MO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0473-nuBF9MO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0473-nuBF9MO.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20698,8 +20698,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0474-pj0X0tF.jpg",
-      "videoUrl": "/exercises/videos/0474-pj0X0tF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0474-pj0X0tF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0474-pj0X0tF.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20722,8 +20722,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0475-4Ml7QFO.jpg",
-      "videoUrl": "/exercises/videos/0475-4Ml7QFO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0475-4Ml7QFO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0475-4Ml7QFO.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20747,8 +20747,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, but this time twist your hips to the opposite side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0476-Q6bvyen.jpg",
-      "videoUrl": "/exercises/videos/0476-Q6bvyen.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0476-Q6bvyen.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0476-Q6bvyen.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20773,8 +20773,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a fast pace and keep your upper body stable throughout the exercise.",
         "Repeat for the desired duration or number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3636-ealLwvX.jpg",
-      "videoUrl": "/exercises/videos/3636-ealLwvX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3636-ealLwvX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3636-ealLwvX.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -20797,8 +20797,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0484-196HJGw.jpg",
-      "videoUrl": "/exercises/videos/0484-196HJGw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0484-196HJGw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0484-196HJGw.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20821,8 +20821,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a moment, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1418-znP9SIh.jpg",
-      "videoUrl": "/exercises/videos/1418-znP9SIh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1418-znP9SIh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1418-znP9SIh.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -20845,8 +20845,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then reverse the movement and bring the dumbbells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3234-P9ZRyLT.jpg",
-      "videoUrl": "/exercises/videos/3234-P9ZRyLT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3234-P9ZRyLT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3234-P9ZRyLT.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -20869,8 +20869,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then raise your upper body back up until it is in line with your legs.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0489-zhMwOwE.jpg",
-      "videoUrl": "/exercises/videos/0489-zhMwOwE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0489-zhMwOwE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0489-zhMwOwE.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -20893,8 +20893,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then raise your upper body back up until it is in line with your legs.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0488-zkgRrbK.jpg",
-      "videoUrl": "/exercises/videos/0488-zkgRrbK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0488-zkgRrbK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0488-zkgRrbK.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -20917,8 +20917,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3289-05Cf2v8.jpg",
-      "videoUrl": "/exercises/videos/3289-05Cf2v8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3289-05Cf2v8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3289-05Cf2v8.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -20942,8 +20942,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Once your hands reach your feet, stand back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1471-ZgsNQ6d.jpg",
-      "videoUrl": "/exercises/videos/1471-ZgsNQ6d.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1471-ZgsNQ6d.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1471-ZgsNQ6d.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20966,8 +20966,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Keeping your legs straight, walk your feet towards your hands, bringing your hips up towards the ceiling.",
         "Continue walking your hands forward, repeating the movement for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3698-TV87DNB.jpg",
-      "videoUrl": "/exercises/videos/3698-TV87DNB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3698-TV87DNB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3698-TV87DNB.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -20990,8 +20990,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0490-1YB40kg.jpg",
-      "videoUrl": "/exercises/videos/0490-1YB40kg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0490-1YB40kg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0490-1YB40kg.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -21014,8 +21014,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0491-eVxAzgz.jpg",
-      "videoUrl": "/exercises/videos/0491-eVxAzgz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0491-eVxAzgz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0491-eVxAzgz.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -21039,8 +21039,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Jump off the edge of the surface, landing softly with your knees slightly bent.",
         "Repeat the push-up and depth jump for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0492-CB8WET1.jpg",
-      "videoUrl": "/exercises/videos/0492-CB8WET1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0492-CB8WET1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0492-CB8WET1.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -21063,8 +21063,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0493-B1EVP9F.jpg",
-      "videoUrl": "/exercises/videos/0493-B1EVP9F.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0493-B1EVP9F.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0493-B1EVP9F.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -21087,8 +21087,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3785-F7vjXqT.jpg",
-      "videoUrl": "/exercises/videos/3785-F7vjXqT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3785-F7vjXqT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3785-F7vjXqT.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -21111,8 +21111,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0494-XaaRnRn.jpg",
-      "videoUrl": "/exercises/videos/0494-XaaRnRn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0494-XaaRnRn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0494-XaaRnRn.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -21137,8 +21137,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3011-GdMa1ET.jpg",
-      "videoUrl": "/exercises/videos/3011-GdMa1ET.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3011-GdMa1ET.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3011-GdMa1ET.gif",
       "musclesWorked": {
         "primary": [
           "serratus anterior"
@@ -21164,8 +21164,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time twisting your torso to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0495-9ZGZuOD.jpg",
-      "videoUrl": "/exercises/videos/0495-9ZGZuOD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0495-9ZGZuOD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0495-9ZGZuOD.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -21189,8 +21189,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Release the stretch and repeat on the left side."
       ],
-      "thumbnailUrl": "/exercises/images/1564-tFGKm99.jpg",
-      "videoUrl": "/exercises/videos/1564-tFGKm99.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1564-tFGKm99.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1564-tFGKm99.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -21213,8 +21213,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly extend your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0496-ms7tjSG.jpg",
-      "videoUrl": "/exercises/videos/0496-ms7tjSG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0496-ms7tjSG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0496-ms7tjSG.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -21238,8 +21238,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2400-0rHfvy9.jpg",
-      "videoUrl": "/exercises/videos/2400-0rHfvy9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2400-0rHfvy9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2400-0rHfvy9.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -21264,8 +21264,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower yourself back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0499-bZGHsAZ.jpg",
-      "videoUrl": "/exercises/videos/0499-bZGHsAZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0499-bZGHsAZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0499-bZGHsAZ.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -21289,8 +21289,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2300-VPPtusI.jpg",
-      "videoUrl": "/exercises/videos/2300-VPPtusI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2300-VPPtusI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2300-VPPtusI.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -21315,8 +21315,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2298-Mxa7Cr8.jpg",
-      "videoUrl": "/exercises/videos/2298-Mxa7Cr8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2298-Mxa7Cr8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2298-Mxa7Cr8.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -21340,8 +21340,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0497-uX3sUBz.jpg",
-      "videoUrl": "/exercises/videos/0497-uX3sUBz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0497-uX3sUBz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0497-uX3sUBz.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -21366,8 +21366,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower yourself back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0498-jdiExfW.jpg",
-      "videoUrl": "/exercises/videos/0498-jdiExfW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0498-jdiExfW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0498-jdiExfW.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -21391,8 +21391,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the stretch on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1419-pZwUsKB.jpg",
-      "videoUrl": "/exercises/videos/1419-pZwUsKB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1419-pZwUsKB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1419-pZwUsKB.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -21416,8 +21416,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Release the squeeze and relax your chest muscles.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1297-HbSG1Pw.jpg",
-      "videoUrl": "/exercises/videos/1297-HbSG1Pw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1297-HbSG1Pw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1297-HbSG1Pw.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -21442,8 +21442,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time lowering your legs to the opposite side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0500-11wrviz.jpg",
-      "videoUrl": "/exercises/videos/0500-11wrviz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0500-11wrviz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0500-11wrviz.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -21468,8 +21468,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Jump up explosively, reaching your arms overhead.",
         "Land softly and immediately lower back into the squat position to begin the next repetition."
       ],
-      "thumbnailUrl": "/exercises/images/0501-mr7pkqP.jpg",
-      "videoUrl": "/exercises/videos/0501-mr7pkqP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0501-mr7pkqP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0501-mr7pkqP.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -21491,8 +21491,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you land, quickly jump back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3224-1g5bPpA.jpg",
-      "videoUrl": "/exercises/videos/3224-1g5bPpA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3224-1g5bPpA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3224-1g5bPpA.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -21514,8 +21514,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs and upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0507-mbkgB44.jpg",
-      "videoUrl": "/exercises/videos/0507-mbkgB44.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0507-mbkgB44.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0507-mbkgB44.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -21538,8 +21538,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0508-1GPHRyK.jpg",
-      "videoUrl": "/exercises/videos/0508-1GPHRyK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0508-1GPHRyK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0508-1GPHRyK.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -21562,8 +21562,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet and repeat the jump as the rope comes around again.",
         "Continue jumping for the desired duration or number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2612-e1e76I2.jpg",
-      "videoUrl": "/exercises/videos/2612-e1e76I2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2612-e1e76I2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2612-e1e76I2.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -21587,8 +21587,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet and immediately go into the next repetition.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0514-LIlE5Tn.jpg",
-      "videoUrl": "/exercises/videos/0514-LIlE5Tn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0514-LIlE5Tn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0514-LIlE5Tn.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -21611,8 +21611,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet and immediately lower your body back into a squat position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0513-TDYiji6.jpg",
-      "videoUrl": "/exercises/videos/0513-TDYiji6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0513-TDYiji6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0513-TDYiji6.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -21639,8 +21639,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then engage your core and push through your left heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0517-Kal9cQQ.jpg",
-      "videoUrl": "/exercises/videos/0517-Kal9cQQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0517-Kal9cQQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0517-Kal9cQQ.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -21665,8 +21665,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebells back down to the starting position and repeat the movement with the opposite arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0518-I4tibZG.jpg",
-      "videoUrl": "/exercises/videos/0518-I4tibZG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0518-I4tibZG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0518-I4tibZG.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -21689,8 +21689,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0520-5KLbZWx.jpg",
-      "videoUrl": "/exercises/videos/0520-5KLbZWx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0520-5KLbZWx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0520-5KLbZWx.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -21713,8 +21713,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Press the lowered kettlebell back up to the starting position while simultaneously lowering the other kettlebell down towards your shoulder.",
         "Continue alternating the press motion with each kettlebell for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0519-7w6i0vE.jpg",
-      "videoUrl": "/exercises/videos/0519-7w6i0vE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0519-7w6i0vE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0519-7w6i0vE.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -21737,8 +21737,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebell back down to the starting position and repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0521-b9kqlBy.jpg",
-      "videoUrl": "/exercises/videos/0521-b9kqlBy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0521-b9kqlBy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0521-b9kqlBy.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -21761,8 +21761,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebell back down to the starting position and repeat with the other arm.",
         "Continue alternating arms for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0522-Ca76jUE.jpg",
-      "videoUrl": "/exercises/videos/0522-Ca76jUE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0522-Ca76jUE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0522-Ca76jUE.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -21784,8 +21784,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause at the top of the movement, then slowly lower the kettlebells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0523-UM8mgyG.jpg",
-      "videoUrl": "/exercises/videos/0523-UM8mgyG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0523-UM8mgyG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0523-UM8mgyG.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -21811,8 +21811,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you drive your hips forward, use your core and right arm to press the kettlebell back up to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0524-kjE55n5.jpg",
-      "videoUrl": "/exercises/videos/0524-kjE55n5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0524-kjE55n5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0524-kjE55n5.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -21838,8 +21838,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebell back down to the starting position by reversing the movement.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0525-4KJEpzb.jpg",
-      "videoUrl": "/exercises/videos/0525-4KJEpzb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0525-4KJEpzb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0525-4KJEpzb.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -21864,8 +21864,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Catch the kettlebells at shoulder height, with your palms facing inward and your elbows pointing forward.",
         "Lower the kettlebells back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0526-a4F9Oyc.jpg",
-      "videoUrl": "/exercises/videos/0526-a4F9Oyc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0526-a4F9Oyc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0526-a4F9Oyc.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -21891,8 +21891,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Stand up straight and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0527-tznL2Ad.jpg",
-      "videoUrl": "/exercises/videos/0527-tznL2Ad.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0527-tznL2Ad.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0527-tznL2Ad.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -21916,8 +21916,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebells back to the starting position by bending your elbows and bringing them back down to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0528-I4KkPdl.jpg",
-      "videoUrl": "/exercises/videos/0528-I4KkPdl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0528-I4KkPdl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0528-I4KkPdl.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -21940,8 +21940,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As the kettlebells reach shoulder level, rotate your wrists and punch the kettlebells overhead, fully extending your arms.",
         "Lower the kettlebells back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0529-M74kdvm.jpg",
-      "videoUrl": "/exercises/videos/0529-M74kdvm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0529-M74kdvm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0529-M74kdvm.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -21966,8 +21966,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then engage your core and push through your right foot to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0530-OaE7CpD.jpg",
-      "videoUrl": "/exercises/videos/0530-OaE7CpD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0530-OaE7CpD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0530-OaE7CpD.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -21990,8 +21990,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the kettlebell back down to the starting position, maintaining control throughout the movement.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0531-rseLfH3.jpg",
-      "videoUrl": "/exercises/videos/0531-rseLfH3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0531-rseLfH3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0531-rseLfH3.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -22016,8 +22016,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a steady pace and engage your core throughout the exercise.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0532-L4ay0PW.jpg",
-      "videoUrl": "/exercises/videos/0532-L4ay0PW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0532-L4ay0PW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0532-L4ay0PW.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -22041,8 +22041,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, squeezing your glutes at the top.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0533-DB0n8AG.jpg",
-      "videoUrl": "/exercises/videos/0533-DB0n8AG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0533-DB0n8AG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0533-DB0n8AG.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -22065,8 +22065,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0534-ZA8b5hc.jpg",
-      "videoUrl": "/exercises/videos/0534-ZA8b5hc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0534-ZA8b5hc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0534-ZA8b5hc.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -22090,8 +22090,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As the kettlebell reaches shoulder height, rotate your wrists and catch the kettlebell in the rack position, with your elbow tucked in and the kettlebell resting on your forearm.",
         "Lower the kettlebell back down to the starting position between your legs, and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0535-LHWF7us.jpg",
-      "videoUrl": "/exercises/videos/0535-LHWF7us.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0535-LHWF7us.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0535-LHWF7us.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -22115,8 +22115,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the lunge on the opposite side, passing the kettlebell under your left thigh.",
         "Continue alternating lunges and passing the kettlebell between hands for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0536-WKMQzCD.jpg",
-      "videoUrl": "/exercises/videos/0536-WKMQzCD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0536-WKMQzCD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0536-WKMQzCD.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -22139,8 +22139,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As the kettlebell reaches shoulder height, rotate your wrist and punch your hand straight up, locking out your arm overhead.",
         "Lower the kettlebell back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0537-vzAxBtt.jpg",
-      "videoUrl": "/exercises/videos/0537-vzAxBtt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0537-vzAxBtt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0537-vzAxBtt.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22163,8 +22163,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment when the kettlebell is just above your chest, then push it back up to the starting position by extending your elbow.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1298-rg59QCH.jpg",
-      "videoUrl": "/exercises/videos/1298-rg59QCH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1298-rg59QCH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1298-rg59QCH.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -22190,8 +22190,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Stand up straight, fully extending your knees and hips, and stabilize the kettlebell overhead.",
         "Lower the kettlebell back to the starting position by bending your knees and hips, and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0538-S37C94C.jpg",
-      "videoUrl": "/exercises/videos/0538-S37C94C.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0538-S37C94C.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0538-S37C94C.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22214,8 +22214,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the kettlebell back to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0539-yCvYdi7.jpg",
-      "videoUrl": "/exercises/videos/0539-yCvYdi7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0539-yCvYdi7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0539-yCvYdi7.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22238,8 +22238,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebell back to the starting position by bending your knees and bringing the kettlebell back to your shoulder.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0540-osdXT3K.jpg",
-      "videoUrl": "/exercises/videos/0540-osdXT3K.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0540-osdXT3K.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0540-osdXT3K.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22262,8 +22262,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the kettlebell back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides and repeat with the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0541-g9AsZ8P.jpg",
-      "videoUrl": "/exercises/videos/0541-g9AsZ8P.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0541-g9AsZ8P.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0541-g9AsZ8P.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -22286,8 +22286,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As the kettlebell reaches shoulder height, rotate your hand and punch it straight up overhead, fully extending your arm.",
         "Lower the kettlebell back down between your legs and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0542-aXcUyKb.jpg",
-      "videoUrl": "/exercises/videos/0542-aXcUyKb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0542-aXcUyKb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0542-aXcUyKb.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22311,8 +22311,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebell back down to shoulder height, then return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0543-kuXhl0o.jpg",
-      "videoUrl": "/exercises/videos/0543-kuXhl0o.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0543-kuXhl0o.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0543-kuXhl0o.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22335,8 +22335,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the squat, then push through your right heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0544-5bpPTHv.jpg",
-      "videoUrl": "/exercises/videos/0544-5bpPTHv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0544-5bpPTHv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0544-5bpPTHv.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -22359,8 +22359,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly back on the kettlebells and immediately lower your chest back down for the next repetition.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0545-ktf3nvW.jpg",
-      "videoUrl": "/exercises/videos/0545-ktf3nvW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0545-ktf3nvW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0545-ktf3nvW.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -22383,8 +22383,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebells back to shoulder height.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0546-BkxB8LW.jpg",
-      "videoUrl": "/exercises/videos/0546-BkxB8LW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0546-BkxB8LW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0546-BkxB8LW.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22407,8 +22407,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the kettlebells back to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1438-ZEkjZDi.jpg",
-      "videoUrl": "/exercises/videos/1438-ZEkjZDi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1438-ZEkjZDi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1438-ZEkjZDi.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22431,8 +22431,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating the pressing motion, creating a seesaw-like movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0547-UDm6cGl.jpg",
-      "videoUrl": "/exercises/videos/0547-UDm6cGl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0547-UDm6cGl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0547-UDm6cGl.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22456,8 +22456,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you pull the kettlebell up, keep your elbows high and wide, and squeeze your shoulder blades together.",
         "Lower the kettlebell back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0548-8ARQ9Hw.jpg",
-      "videoUrl": "/exercises/videos/0548-8ARQ9Hw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0548-8ARQ9Hw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0548-8ARQ9Hw.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -22481,8 +22481,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive your hips forward and swing the kettlebell up to shoulder height, using the momentum generated by your hips.",
         "Allow the kettlebell to swing back down between your legs and repeat the movement for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0549-UHJlbu3.jpg",
-      "videoUrl": "/exercises/videos/0549-UHJlbu3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0549-UHJlbu3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0549-UHJlbu3.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -22506,8 +22506,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the kettlebell back to the starting position by reversing the movement, bending your elbows and lowering the weight back to your chest.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0550-yWxMvB5.jpg",
-      "videoUrl": "/exercises/videos/0550-yWxMvB5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0550-yWxMvB5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0550-yWxMvB5.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22534,8 +22534,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Reverse the movement to return to the starting position.",
         "Repeat the exercise on the other side, starting with the kettlebell in your left hand."
       ],
-      "thumbnailUrl": "/exercises/images/0551-Ha7SZ3y.jpg",
-      "videoUrl": "/exercises/videos/0551-Ha7SZ3y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0551-Ha7SZ3y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0551-Ha7SZ3y.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -22558,8 +22558,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As the kettlebell reaches shoulder height, rotate your wrists and catch the kettlebell in the rack position, with your elbows tucked in and the kettlebell resting on the back of your forearm.",
         "Lower the kettlebell back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0552-7Ba7bQ2.jpg",
-      "videoUrl": "/exercises/videos/0552-7Ba7bQ2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0552-7Ba7bQ2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0552-7Ba7bQ2.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22581,8 +22581,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the kettlebells back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0553-blBXysN.jpg",
-      "videoUrl": "/exercises/videos/0553-blBXysN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0553-blBXysN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0553-blBXysN.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22605,8 +22605,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the kettlebells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1345-wf24o8S.jpg",
-      "videoUrl": "/exercises/videos/1345-wf24o8S.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1345-wf24o8S.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1345-wf24o8S.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -22630,8 +22630,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then return to the starting position by pushing through your right foot and engaging your obliques.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0554-9Tkqa9O.jpg",
-      "videoUrl": "/exercises/videos/0554-9Tkqa9O.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0554-9Tkqa9O.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0554-9Tkqa9O.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -22654,8 +22654,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly bend your knees and bring your feet back towards your body.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0555-v7p5bYl.jpg",
-      "videoUrl": "/exercises/videos/0555-v7p5bYl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0555-v7p5bYl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0555-v7p5bYl.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -22679,8 +22679,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower yourself back down to the starting position by bending your arms and controlling the descent.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0558-pM07UxU.jpg",
-      "videoUrl": "/exercises/videos/0558-pM07UxU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0558-pM07UxU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0558-pM07UxU.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -22703,8 +22703,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat, this time reaching your left hand towards your right knee.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3640-dTg95eZ.jpg",
-      "videoUrl": "/exercises/videos/3640-dTg95eZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3640-dTg95eZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3640-dTg95eZ.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -22728,8 +22728,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly back on the ground, bending your knees to absorb the impact.",
         "Immediately go into the next repetition, repeating the jump squat motion."
       ],
-      "thumbnailUrl": "/exercises/images/1420-UgDm3oy.jpg",
-      "videoUrl": "/exercises/videos/1420-UgDm3oy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1420-UgDm3oy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1420-UgDm3oy.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -22753,8 +22753,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the stretch on the left side, leaning to the left and feeling a stretch in your right lat muscle.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1346-f38OEuO.jpg",
-      "videoUrl": "/exercises/videos/1346-f38OEuO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1346-f38OEuO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1346-f38OEuO.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -22777,8 +22777,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return the hand to the ground and repeat with the other hand.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3239-h1ezqSu.jpg",
-      "videoUrl": "/exercises/videos/3239-h1ezqSu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3239-h1ezqSu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3239-h1ezqSu.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -22801,8 +22801,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue lowering until your chest is just above the ground, then push back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3211-ZOuKWir.jpg",
-      "videoUrl": "/exercises/videos/3211-ZOuKWir.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3211-ZOuKWir.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3211-ZOuKWir.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -22824,8 +22824,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3288-rWoBmi5.jpg",
-      "videoUrl": "/exercises/videos/3288-rWoBmi5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3288-rWoBmi5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3288-rWoBmi5.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -22849,8 +22849,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3418-d1GgzTU.jpg",
-      "videoUrl": "/exercises/videos/3418-d1GgzTU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3418-d1GgzTU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3418-d1GgzTU.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -22875,8 +22875,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3419-UpWmA5E.jpg",
-      "videoUrl": "/exercises/videos/3419-UpWmA5E.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3419-UpWmA5E.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3419-UpWmA5E.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -22898,8 +22898,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you reach the bottom of the movement, quickly reverse the motion and rotate your torso to the left, swinging the barbell up and across your body towards your left shoulder.",
         "Continue this twisting motion, alternating sides, for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0562-QYysSLV.jpg",
-      "videoUrl": "/exercises/videos/0562-QYysSLV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0562-QYysSLV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0562-QYysSLV.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -22922,8 +22922,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3237-eXMFHww.jpg",
-      "videoUrl": "/exercises/videos/3237-eXMFHww.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3237-eXMFHww.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3237-eXMFHww.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22946,8 +22946,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few seconds, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3300-LYJodFS.jpg",
-      "videoUrl": "/exercises/videos/3300-LYJodFS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3300-LYJodFS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3300-LYJodFS.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -22970,8 +22970,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Twist your torso and engage your core muscles to generate power in the punch.",
         "Snap your arm back to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2271-hoXt6wv.jpg",
-      "videoUrl": "/exercises/videos/2271-hoXt6wv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2271-hoXt6wv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2271-hoXt6wv.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -22994,8 +22994,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0570-OyoZ3Pu.jpg",
-      "videoUrl": "/exercises/videos/0570-OyoZ3Pu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0570-OyoZ3Pu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0570-OyoZ3Pu.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -23018,8 +23018,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Repeat with the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1576-sU5BrfP.jpg",
-      "videoUrl": "/exercises/videos/1576-sU5BrfP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1576-sU5BrfP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1576-sU5BrfP.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -23044,8 +23044,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2287-V07qpXy.jpg",
-      "videoUrl": "/exercises/videos/2287-V07qpXy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2287-V07qpXy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2287-V07qpXy.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -23071,8 +23071,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return the handle to the starting position and repeat with the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0571-w2oRpuH.jpg",
-      "videoUrl": "/exercises/videos/0571-w2oRpuH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0571-w2oRpuH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0571-w2oRpuH.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -23097,8 +23097,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0572-MaMuGH6.jpg",
-      "videoUrl": "/exercises/videos/0572-MaMuGH6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0572-MaMuGH6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0572-MaMuGH6.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -23123,8 +23123,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Using your back muscles, slowly raise your torso back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0573-rUXfn3R.jpg",
-      "videoUrl": "/exercises/videos/0573-rUXfn3R.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0573-rUXfn3R.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0573-rUXfn3R.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -23148,8 +23148,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0574-X3cqyXz.jpg",
-      "videoUrl": "/exercises/videos/0574-X3cqyXz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0574-X3cqyXz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0574-X3cqyXz.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -23172,8 +23172,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release the weight back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3200-LuBEORI.jpg",
-      "videoUrl": "/exercises/videos/3200-LuBEORI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3200-LuBEORI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3200-LuBEORI.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -23197,8 +23197,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the handles back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0575-q6y3OhV.jpg",
-      "videoUrl": "/exercises/videos/0575-q6y3OhV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0575-q6y3OhV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0575-q6y3OhV.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -23223,8 +23223,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position by allowing your heels to rise back up.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2289-7B4F5nZ.jpg",
-      "videoUrl": "/exercises/videos/2289-7B4F5nZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2289-7B4F5nZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2289-7B4F5nZ.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -23247,8 +23247,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause briefly at the end of the movement, then slowly return to the starting position, inhaling as you do so.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0577-T0yTjgW.jpg",
-      "videoUrl": "/exercises/videos/0577-T0yTjgW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0577-T0yTjgW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0577-T0yTjgW.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -23271,8 +23271,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause briefly at the end of the movement, then slowly return to the starting position, inhaling as you do so.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0576-DOoWcnA.jpg",
-      "videoUrl": "/exercises/videos/0576-DOoWcnA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0576-DOoWcnA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0576-DOoWcnA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -23298,8 +23298,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the weight back down in a controlled manner, keeping tension on your glutes and hamstrings.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0578-GUT8I22.jpg",
-      "videoUrl": "/exercises/videos/0578-GUT8I22.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0578-GUT8I22.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0578-GUT8I22.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -23324,8 +23324,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1300-vsVoPHt.jpg",
-      "videoUrl": "/exercises/videos/1300-vsVoPHt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1300-vsVoPHt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1300-vsVoPHt.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -23349,8 +23349,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1253-C9LuR4A.jpg",
-      "videoUrl": "/exercises/videos/1253-C9LuR4A.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1253-C9LuR4A.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1253-C9LuR4A.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -23374,8 +23374,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0579-7F1DVzn.jpg",
-      "videoUrl": "/exercises/videos/0579-7F1DVzn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0579-7F1DVzn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0579-7F1DVzn.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -23398,8 +23398,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a brief moment, then inhale and slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0580-f91FwXG.jpg",
-      "videoUrl": "/exercises/videos/0580-f91FwXG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0580-f91FwXG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0580-f91FwXG.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -23422,8 +23422,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1439-cbuFJrn.jpg",
-      "videoUrl": "/exercises/videos/1439-cbuFJrn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1439-cbuFJrn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1439-cbuFJrn.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -23446,8 +23446,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a second, then slowly release and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2288-mKwcrHn.jpg",
-      "videoUrl": "/exercises/videos/2288-mKwcrHn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2288-mKwcrHn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2288-mKwcrHn.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -23472,8 +23472,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1615-OAguZoG.jpg",
-      "videoUrl": "/exercises/videos/1615-OAguZoG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1615-OAguZoG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1615-OAguZoG.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -23498,8 +23498,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0581-nZZZy9m.jpg",
-      "videoUrl": "/exercises/videos/0581-nZZZy9m.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0581-nZZZy9m.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0581-nZZZy9m.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -23522,8 +23522,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2286-OPqShYN.jpg",
-      "videoUrl": "/exercises/videos/2286-OPqShYN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2286-OPqShYN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2286-OPqShYN.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -23547,8 +23547,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the fully extended position, then slowly bend your leg to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/2611-9KU9TYF.jpg",
-      "videoUrl": "/exercises/videos/2611-9KU9TYF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2611-9KU9TYF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2611-9KU9TYF.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -23572,8 +23572,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly bend your elbows and lower the handles back towards your chest.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1299-jHAnWmT.jpg",
-      "videoUrl": "/exercises/videos/1299-jHAnWmT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1299-jHAnWmT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1299-jHAnWmT.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -23597,8 +23597,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the fully extended position, then slowly bend your elbows and lower the handles back towards your chest.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1479-o17Jfkt.jpg",
-      "videoUrl": "/exercises/videos/1479-o17Jfkt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1479-o17Jfkt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1479-o17Jfkt.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -23623,8 +23623,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower your legs back to the starting position, fully extending your knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0582-nnmCTLN.jpg",
-      "videoUrl": "/exercises/videos/0582-nnmCTLN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0582-nnmCTLN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0582-nnmCTLN.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -23648,8 +23648,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the twist to the opposite side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0583-sZOR9EV.jpg",
-      "videoUrl": "/exercises/videos/0583-sZOR9EV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0583-sZOR9EV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0583-sZOR9EV.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -23672,8 +23672,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0584-dRTfGZT.jpg",
-      "videoUrl": "/exercises/videos/0584-dRTfGZT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0584-dRTfGZT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0584-dRTfGZT.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -23697,8 +23697,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the weight back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0585-my33uHU.jpg",
-      "videoUrl": "/exercises/videos/0585-my33uHU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0585-my33uHU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0585-my33uHU.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -23723,8 +23723,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the lever back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0586-17lJ1kr.jpg",
-      "videoUrl": "/exercises/videos/0586-17lJ1kr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0586-17lJ1kr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0586-17lJ1kr.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -23748,8 +23748,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3195-UXpKJoq.jpg",
-      "videoUrl": "/exercises/videos/3195-UXpKJoq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3195-UXpKJoq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3195-UXpKJoq.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -23772,8 +23772,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the handles back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0587-CggQhII.jpg",
-      "videoUrl": "/exercises/videos/0587-CggQhII.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0587-CggQhII.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0587-CggQhII.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -23799,8 +23799,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the handles and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0588-IGjKj1v.jpg",
-      "videoUrl": "/exercises/videos/0588-IGjKj1v.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0588-IGjKj1v.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0588-IGjKj1v.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -23825,8 +23825,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0589-Fhdtwf3.jpg",
-      "videoUrl": "/exercises/videos/0589-Fhdtwf3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0589-Fhdtwf3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0589-Fhdtwf3.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -23850,8 +23850,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the handle back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1356-OIFMAp1.jpg",
-      "videoUrl": "/exercises/videos/1356-OIFMAp1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1356-OIFMAp1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1356-OIFMAp1.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -23874,8 +23874,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return the handle to the starting position, fully extending your arm.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1347-tTuZSDT.jpg",
-      "videoUrl": "/exercises/videos/1347-tTuZSDT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1347-tTuZSDT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1347-tTuZSDT.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -23898,8 +23898,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the lever back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0590-2KGnL6M.jpg",
-      "videoUrl": "/exercises/videos/0590-2KGnL6M.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0590-2KGnL6M.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0590-2KGnL6M.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -23923,8 +23923,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position by extending your elbows.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0591-D5yqP2p.jpg",
-      "videoUrl": "/exercises/videos/0591-D5yqP2p.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0591-D5yqP2p.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0591-D5yqP2p.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -23949,8 +23949,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0592-b6hQYMb.jpg",
-      "videoUrl": "/exercises/videos/0592-b6hQYMb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0592-b6hQYMb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0592-b6hQYMb.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -23974,8 +23974,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale as you slowly lower the handles back to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1614-ye84CTU.jpg",
-      "videoUrl": "/exercises/videos/1614-ye84CTU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1614-ye84CTU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1614-ye84CTU.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -23999,8 +23999,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak contraction, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2285-4U7iLb5.jpg",
-      "videoUrl": "/exercises/videos/2285-4U7iLb5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2285-4U7iLb5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2285-4U7iLb5.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -24024,8 +24024,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2736-ky8FLU8.jpg",
-      "videoUrl": "/exercises/videos/2736-ky8FLU8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2736-ky8FLU8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2736-ky8FLU8.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -24050,8 +24050,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the handles back to the starting position, fully extending your elbows.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1616-kj3hy6W.jpg",
-      "videoUrl": "/exercises/videos/1616-kj3hy6W.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1616-kj3hy6W.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1616-kj3hy6W.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -24076,8 +24076,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release and extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1348-ZqNOWQ6.jpg",
-      "videoUrl": "/exercises/videos/1348-ZqNOWQ6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1348-ZqNOWQ6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1348-ZqNOWQ6.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -24101,8 +24101,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0593-Krmb3cB.jpg",
-      "videoUrl": "/exercises/videos/0593-Krmb3cB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0593-Krmb3cB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0593-Krmb3cB.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -24127,8 +24127,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release and extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1349-BgljGjd.jpg",
-      "videoUrl": "/exercises/videos/1349-BgljGjd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1349-BgljGjd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1349-BgljGjd.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -24152,8 +24152,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2315-MrgP9L6.jpg",
-      "videoUrl": "/exercises/videos/2315-MrgP9L6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2315-MrgP9L6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2315-MrgP9L6.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -24177,8 +24177,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2335-Ie9UGty.jpg",
-      "videoUrl": "/exercises/videos/2335-Ie9UGty.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2335-Ie9UGty.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2335-Ie9UGty.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -24202,8 +24202,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0594-bOOdeyc.jpg",
-      "videoUrl": "/exercises/videos/0594-bOOdeyc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0594-bOOdeyc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0594-bOOdeyc.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -24227,8 +24227,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly release and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1452-Wgaz7pm.jpg",
-      "videoUrl": "/exercises/videos/1452-Wgaz7pm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1452-Wgaz7pm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1452-Wgaz7pm.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -24253,8 +24253,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position by contracting your abs and pulling yourself back up.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0595-ZnJHhMk.jpg",
-      "videoUrl": "/exercises/videos/0595-ZnJHhMk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0595-ZnJHhMk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0595-ZnJHhMk.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -24278,8 +24278,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position, allowing your back to round slightly.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3760-eXFXCY0.jpg",
-      "videoUrl": "/exercises/videos/3760-eXFXCY0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3760-eXFXCY0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3760-eXFXCY0.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -24302,8 +24302,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1451-BRImeP8.jpg",
-      "videoUrl": "/exercises/videos/1451-BRImeP8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1451-BRImeP8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1451-BRImeP8.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -24327,8 +24327,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly return to the starting position, allowing your chest muscles to stretch.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0596-v3xmPAR.jpg",
-      "videoUrl": "/exercises/videos/0596-v3xmPAR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0596-v3xmPAR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0596-v3xmPAR.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -24352,8 +24352,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly return to the starting position by pushing through your glutes and hamstrings.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3759-XsCcxCC.jpg",
-      "videoUrl": "/exercises/videos/3759-XsCcxCC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3759-XsCcxCC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3759-XsCcxCC.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -24377,8 +24377,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly bring your legs back together to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0597-CHpahtl.jpg",
-      "videoUrl": "/exercises/videos/0597-CHpahtl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0597-CHpahtl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0597-CHpahtl.gif",
       "musclesWorked": {
         "primary": [
           "abductors"
@@ -24401,8 +24401,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak contraction, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0598-oHsrypV.jpg",
-      "videoUrl": "/exercises/videos/0598-oHsrypV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0598-oHsrypV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0598-oHsrypV.gif",
       "musclesWorked": {
         "primary": [
           "adductors"
@@ -24427,8 +24427,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the lever back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0599-Zg3XY7P.jpg",
-      "videoUrl": "/exercises/videos/0599-Zg3XY7P.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0599-Zg3XY7P.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0599-Zg3XY7P.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -24451,8 +24451,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs and torso back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0600-PQ2AtC3.jpg",
-      "videoUrl": "/exercises/videos/0600-PQ2AtC3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0600-PQ2AtC3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0600-PQ2AtC3.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -24475,8 +24475,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak contraction, then inhale and slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0602-myfUsKf.jpg",
-      "videoUrl": "/exercises/videos/0602-myfUsKf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0602-myfUsKf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0602-myfUsKf.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -24499,8 +24499,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak contraction, then inhale and slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0601-xiHiJcA.jpg",
-      "videoUrl": "/exercises/videos/0601-xiHiJcA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0601-xiHiJcA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0601-xiHiJcA.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -24526,8 +24526,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the handles and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1350-7I6LNUG.jpg",
-      "videoUrl": "/exercises/videos/1350-7I6LNUG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1350-7I6LNUG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1350-7I6LNUG.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -24552,8 +24552,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the footplate back up by extending your calves.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1385-IeDEXTe.jpg",
-      "videoUrl": "/exercises/videos/1385-IeDEXTe.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1385-IeDEXTe.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1385-IeDEXTe.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -24576,8 +24576,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the handles back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0603-67n3r98.jpg",
-      "videoUrl": "/exercises/videos/0603-67n3r98.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0603-67n3r98.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0603-67n3r98.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -24601,8 +24601,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the handles back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0869-vqsbmL0.jpg",
-      "videoUrl": "/exercises/videos/0869-vqsbmL0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0869-vqsbmL0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0869-vqsbmL0.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -24626,8 +24626,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the handles back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2318-dNFYIU1.jpg",
-      "videoUrl": "/exercises/videos/2318-dNFYIU1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2318-dNFYIU1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2318-dNFYIU1.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -24650,8 +24650,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0604-ZZKbeMw.jpg",
-      "videoUrl": "/exercises/videos/0604-ZZKbeMw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0604-ZZKbeMw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0604-ZZKbeMw.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -24674,8 +24674,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0605-ykUOVze.jpg",
-      "videoUrl": "/exercises/videos/0605-ykUOVze.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0605-ykUOVze.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0605-ykUOVze.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -24698,8 +24698,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly bring the handles back towards your chest, maintaining control throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3758-WbNq5Xu.jpg",
-      "videoUrl": "/exercises/videos/3758-WbNq5Xu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3758-WbNq5Xu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3758-WbNq5Xu.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -24724,8 +24724,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak contraction, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0606-aaXr7ld.jpg",
-      "videoUrl": "/exercises/videos/0606-aaXr7ld.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0606-aaXr7ld.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0606-aaXr7ld.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -24749,8 +24749,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release and extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1351-FVM1AUZ.jpg",
-      "videoUrl": "/exercises/videos/1351-FVM1AUZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1351-FVM1AUZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1351-FVM1AUZ.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -24773,8 +24773,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the handles back up to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0607-Ser9eQp.jpg",
-      "videoUrl": "/exercises/videos/0607-Ser9eQp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0607-Ser9eQp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0607-Ser9eQp.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -24797,8 +24797,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release and extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1313-oROuvrX.jpg",
-      "videoUrl": "/exercises/videos/1313-oROuvrX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1313-oROuvrX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1313-oROuvrX.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -24823,8 +24823,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0609-bLyQokI.jpg",
-      "videoUrl": "/exercises/videos/0609-bLyQokI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0609-bLyQokI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0609-bLyQokI.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -24848,8 +24848,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3013-u0cNiij.jpg",
-      "videoUrl": "/exercises/videos/3013-u0cNiij.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3013-u0cNiij.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3013-u0cNiij.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -24871,8 +24871,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1352-ANbbry2.jpg",
-      "videoUrl": "/exercises/videos/1352-ANbbry2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1352-ANbbry2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1352-ANbbry2.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -24895,8 +24895,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly with your left foot forward and immediately lower your body into a lunge position.",
         "Continue alternating between lunges and jumps for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3582-PM1PZjg.jpg",
-      "videoUrl": "/exercises/videos/3582-PM1PZjg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3582-PM1PZjg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3582-PM1PZjg.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -24920,8 +24920,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side, stepping forward with your left foot and twisting your torso to the left.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1688-K9VL0Jq.jpg",
-      "videoUrl": "/exercises/videos/1688-K9VL0Jq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1688-K9VL0Jq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1688-K9VL0Jq.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -24944,8 +24944,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Release the stretch and repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/0613-BWnJR72.jpg",
-      "videoUrl": "/exercises/videos/0613-BWnJR72.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0613-BWnJR72.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0613-BWnJR72.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -24970,8 +24970,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time bringing your left elbow towards your right knee and extending your left leg.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2312-AQIhRjM.jpg",
-      "videoUrl": "/exercises/videos/2312-AQIhRjM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2312-AQIhRjM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2312-AQIhRjM.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -24994,8 +24994,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0620-WhuFnR7.jpg",
-      "videoUrl": "/exercises/videos/0620-WhuFnR7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0620-WhuFnR7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0620-WhuFnR7.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25018,8 +25018,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0865-9IxJdtC.jpg",
-      "videoUrl": "/exercises/videos/0865-9IxJdtC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0865-9IxJdtC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0865-9IxJdtC.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25042,8 +25042,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly return to the starting position, inhaling as you do so.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1301-wDN97Ca.jpg",
-      "videoUrl": "/exercises/videos/1301-wDN97Ca.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1301-wDN97Ca.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1301-wDN97Ca.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -25066,8 +25066,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your right foot back down and lift your left foot off the ground, bringing your knee towards your chest.",
         "Continue alternating between lifting your right and left foot for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0624-sVQCCeG.jpg",
-      "videoUrl": "/exercises/videos/0624-sVQCCeG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0624-sVQCCeG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0624-sVQCCeG.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -25091,8 +25091,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Release the ball at the top of the movement and catch it on the way down.",
         "Lower your body back into the squat position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1353-PsVS1QP.jpg",
-      "videoUrl": "/exercises/videos/1353-PsVS1QP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1353-PsVS1QP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1353-PsVS1QP.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -25115,8 +25115,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Catch the ball as it rebounds off the wall or partner, and immediately repeat the movement.",
         "Continue for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1302-aDoFKrE.jpg",
-      "videoUrl": "/exercises/videos/1302-aDoFKrE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1302-aDoFKrE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1302-aDoFKrE.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -25139,8 +25139,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the medicine ball away from your body, extending your arm fully.",
         "Return to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1303-dCJnuVq.jpg",
-      "videoUrl": "/exercises/videos/1303-dCJnuVq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1303-dCJnuVq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1303-dCJnuVq.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -25162,8 +25162,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly bring the medicine ball back to your chest.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1304-7aolH9D.jpg",
-      "videoUrl": "/exercises/videos/1304-7aolH9D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1304-7aolH9D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1304-7aolH9D.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -25185,8 +25185,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly bring the medicine ball back to your chest.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1305-jeHtrlO.jpg",
-      "videoUrl": "/exercises/videos/1305-jeHtrlO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1305-jeHtrlO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1305-jeHtrlO.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -25210,8 +25210,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Once you catch the ball, bring it back to your chest and repeat the movement with your left foot forward.",
         "Continue alternating legs and repeating the exercise for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1312-pX9Elbe.jpg",
-      "videoUrl": "/exercises/videos/1312-pX9Elbe.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1312-pX9Elbe.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1312-pX9Elbe.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -25233,8 +25233,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1701-8K7m2SS.jpg",
-      "videoUrl": "/exercises/videos/1701-8K7m2SS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1701-8K7m2SS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1701-8K7m2SS.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -25257,8 +25257,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you slam the ball down, use your entire body to generate power, including your shoulders and core.",
         "Catch the ball on the bounce and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1354-oHg8eop.jpg",
-      "videoUrl": "/exercises/videos/1354-oHg8eop.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1354-oHg8eop.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1354-oHg8eop.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -25281,8 +25281,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Explosively push the medicine ball upwards, extending your arms fully and throwing the ball as high as possible.",
         "Catch the medicine ball and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1750-Al3tP0D.jpg",
-      "videoUrl": "/exercises/videos/1750-Al3tP0D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1750-Al3tP0D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1750-Al3tP0D.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -25306,8 +25306,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position with control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0627-T8UpLkb.jpg",
-      "videoUrl": "/exercises/videos/0627-T8UpLkb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0627-T8UpLkb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0627-T8UpLkb.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -25330,8 +25330,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue to lower your body until your chest is just above the ground, then reverse the movement, pushing your hips back down and extending your arms to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3217-epOSYUZ.jpg",
-      "videoUrl": "/exercises/videos/3217-epOSYUZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3217-epOSYUZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3217-epOSYUZ.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -25354,8 +25354,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your palms to lift your forearms back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1421-arvaszz.jpg",
-      "videoUrl": "/exercises/videos/1421-arvaszz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1421-arvaszz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1421-arvaszz.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -25378,8 +25378,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Follow with your left foot, stepping to the side to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0628-O95afRA.jpg",
-      "videoUrl": "/exercises/videos/0628-O95afRA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0628-O95afRA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0628-O95afRA.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -25402,8 +25402,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a steady pace and breathe evenly throughout the exercise.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0630-RJgzwny.jpg",
-      "videoUrl": "/exercises/videos/0630-RJgzwny.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0630-RJgzwny.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0630-RJgzwny.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -25427,8 +25427,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Reverse the movement by slowly lowering yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0631-yJUHKTn.jpg",
-      "videoUrl": "/exercises/videos/0631-yJUHKTn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0631-yJUHKTn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0631-yJUHKTn.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -25452,8 +25452,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1401-Af0EW2I.jpg",
-      "videoUrl": "/exercises/videos/1401-Af0EW2I.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1401-Af0EW2I.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1401-Af0EW2I.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -25476,8 +25476,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2328-4cWjYEN.jpg",
-      "videoUrl": "/exercises/videos/2328-4cWjYEN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2328-4cWjYEN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2328-4cWjYEN.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -25500,8 +25500,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Perform 2-4 sets on each side."
       ],
-      "thumbnailUrl": "/exercises/images/1403-x2chWLO.jpg",
-      "videoUrl": "/exercises/videos/1403-x2chWLO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1403-x2chWLO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1403-x2chWLO.gif",
       "musclesWorked": {
         "primary": [
           "levator scapulae"
@@ -25524,8 +25524,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0634-szIn2UK.jpg",
-      "videoUrl": "/exercises/videos/0634-szIn2UK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0634-szIn2UK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0634-szIn2UK.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25549,8 +25549,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1495-cJgSTmh.jpg",
-      "videoUrl": "/exercises/videos/1495-cJgSTmh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1495-cJgSTmh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1495-cJgSTmh.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25573,8 +25573,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then lower your shoulder blades back down to the floor.",
         "Repeat on the other side, alternating sides with each repetition."
       ],
-      "thumbnailUrl": "/exercises/images/0635-QUDd8WS.jpg",
-      "videoUrl": "/exercises/videos/0635-QUDd8WS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0635-QUDd8WS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0635-QUDd8WS.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25599,8 +25599,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly begin to lower the barbell back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0636-o1ntciW.jpg",
-      "videoUrl": "/exercises/videos/0636-o1ntciW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0636-o1ntciW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0636-o1ntciW.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -25623,8 +25623,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then extend your arms back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0637-wu5LXwz.jpg",
-      "videoUrl": "/exercises/videos/0637-wu5LXwz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0637-wu5LXwz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0637-wu5LXwz.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -25647,8 +25647,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly push against the wall with your palm, activating your lat muscles.",
         "Hold the position for a few seconds, then release and repeat with the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1355-ZZTGMKh.jpg",
-      "videoUrl": "/exercises/videos/1355-ZZTGMKh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1355-ZZTGMKh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1355-ZZTGMKh.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -25672,8 +25672,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue pulling until your chin is above the bar, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/0638-HjdqmZa.jpg",
-      "videoUrl": "/exercises/videos/0638-HjdqmZa.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0638-HjdqmZa.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0638-HjdqmZa.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -25697,8 +25697,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your palms to straighten your arms and return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides and repeat with the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0639-FAoIFMw.jpg",
-      "videoUrl": "/exercises/videos/0639-FAoIFMw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0639-FAoIFMw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0639-FAoIFMw.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -25721,8 +25721,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Forcefully slam the medicine ball down to the ground, using your core and shoulders to generate power.",
         "Catch the medicine ball on the bounce and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0640-jCrtE9b.jpg",
-      "videoUrl": "/exercises/videos/0640-jCrtE9b.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0640-jCrtE9b.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0640-jCrtE9b.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25746,8 +25746,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the towel back to the starting position.",
         "Repeat for the desired number of repetitions, then switch arms."
       ],
-      "thumbnailUrl": "/exercises/images/1773-bKWbrTA.jpg",
-      "videoUrl": "/exercises/videos/1773-bKWbrTA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1773-bKWbrTA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1773-bKWbrTA.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -25771,8 +25771,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/1386-A2upspL.jpg",
-      "videoUrl": "/exercises/videos/1386-A2upspL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1386-A2upspL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1386-A2upspL.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -25795,8 +25795,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1387-0jp9Rlz.jpg",
-      "videoUrl": "/exercises/videos/1387-0jp9Rlz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1387-0jp9Rlz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1387-0jp9Rlz.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -25820,8 +25820,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your heel to return to the starting position.",
         "Repeat with the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1476-C31LMnP.jpg",
-      "videoUrl": "/exercises/videos/1476-C31LMnP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1476-C31LMnP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1476-C31LMnP.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -25844,8 +25844,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0641-UVL20oz.jpg",
-      "videoUrl": "/exercises/videos/0641-UVL20oz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0641-UVL20oz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0641-UVL20oz.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25868,8 +25868,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return your leg to the starting position and repeat the push-up, alternating legs with each repetition.",
         "Continue alternating leg kicks and push-ups for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0642-jNU1gFQ.jpg",
-      "videoUrl": "/exercises/videos/0642-jNU1gFQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0642-jNU1gFQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0642-jNU1gFQ.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -25892,8 +25892,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 15-30 seconds, then release.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/0643-Z5YStHW.jpg",
-      "videoUrl": "/exercises/videos/0643-Z5YStHW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0643-Z5YStHW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0643-Z5YStHW.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -25917,8 +25917,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Release the tilt and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3147-NKJ8o6x.jpg",
-      "videoUrl": "/exercises/videos/3147-NKJ8o6x.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3147-NKJ8o6x.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3147-NKJ8o6x.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -25943,8 +25943,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1422-D9qe7CM.jpg",
-      "videoUrl": "/exercises/videos/1422-D9qe7CM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1422-D9qe7CM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1422-D9qe7CM.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -25968,8 +25968,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Release the tension on the rope and repeat the stretch on the other leg.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1388-XhfS1DZ.jpg",
-      "videoUrl": "/exercises/videos/1388-XhfS1DZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1388-XhfS1DZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1388-XhfS1DZ.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -25995,8 +25995,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue the movement by lowering your hips back down towards the ground, returning to the starting push-up position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3662-XPUDTt7.jpg",
-      "videoUrl": "/exercises/videos/3662-XPUDTt7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3662-XPUDTt7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3662-XPUDTt7.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -26019,8 +26019,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly with your hands back in the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1306-Snj1wSv.jpg",
-      "videoUrl": "/exercises/videos/1306-Snj1wSv.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1306-Snj1wSv.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1306-Snj1wSv.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26045,8 +26045,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement on the other side, stepping back with your left foot and bending your right knee.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1687-ErqK3UL.jpg",
-      "videoUrl": "/exercises/videos/1687-ErqK3UL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1687-ErqK3UL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1687-ErqK3UL.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26070,8 +26070,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Release the tension on the rope and relax your foot.",
         "Repeat the stretch on the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1389-DEEqoI2.jpg",
-      "videoUrl": "/exercises/videos/1389-DEEqoI2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1389-DEEqoI2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1389-DEEqoI2.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -26095,8 +26095,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3119-75Bgtjy.jpg",
-      "videoUrl": "/exercises/videos/3119-75Bgtjy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3119-75Bgtjy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3119-75Bgtjy.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26120,8 +26120,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3132-b63ZzGe.jpg",
-      "videoUrl": "/exercises/videos/3132-b63ZzGe.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3132-b63ZzGe.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3132-b63ZzGe.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -26147,8 +26147,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position, keeping control of the weight throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0648-SiWCcTN.jpg",
-      "videoUrl": "/exercises/videos/0648-SiWCcTN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0648-SiWCcTN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0648-SiWCcTN.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -26172,8 +26172,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "To return to the starting position, push through your forearms and lift your body back up into a high plank position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3665-hCjGsRQ.jpg",
-      "videoUrl": "/exercises/videos/3665-hCjGsRQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3665-hCjGsRQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3665-hCjGsRQ.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26196,8 +26196,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3203-mgejmGP.jpg",
-      "videoUrl": "/exercises/videos/3203-mgejmGP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3203-mgejmGP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3203-mgejmGP.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26222,8 +26222,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the rotation to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1707-1IG6gVF.jpg",
-      "videoUrl": "/exercises/videos/1707-1IG6gVF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1707-1IG6gVF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1707-1IG6gVF.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26247,8 +26247,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position with control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0651-0V2YQjW.jpg",
-      "videoUrl": "/exercises/videos/0651-0V2YQjW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0651-0V2YQjW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0651-0V2YQjW.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -26271,8 +26271,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly extend your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0650-UQr48Oi.jpg",
-      "videoUrl": "/exercises/videos/0650-UQr48Oi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0650-UQr48Oi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0650-UQr48Oi.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26295,8 +26295,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause at the top of the movement, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0652-lBDjFxJ.jpg",
-      "videoUrl": "/exercises/videos/0652-lBDjFxJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0652-lBDjFxJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0652-lBDjFxJ.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -26320,8 +26320,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1689-wXvUZC8.jpg",
-      "videoUrl": "/exercises/videos/1689-wXvUZC8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1689-wXvUZC8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1689-wXvUZC8.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26345,8 +26345,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating knees as fast as you can while maintaining good form.",
         "Continue for the desired duration or number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3638-PrQbjvB.jpg",
-      "videoUrl": "/exercises/videos/3638-PrQbjvB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3638-PrQbjvB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3638-PrQbjvB.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -26369,8 +26369,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1307-wVompEp.jpg",
-      "videoUrl": "/exercises/videos/1307-wVompEp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1307-wVompEp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1307-wVompEp.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26392,8 +26392,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment when your chest is just above the ground, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0662-I4hDWkc.jpg",
-      "videoUrl": "/exercises/videos/0662-I4hDWkc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0662-I4hDWkc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0662-I4hDWkc.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26416,8 +26416,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0653-2kr2lWy.jpg",
-      "videoUrl": "/exercises/videos/0653-2kr2lWy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0653-2kr2lWy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0653-2kr2lWy.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26440,8 +26440,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0655-Y4BRNQF.jpg",
-      "videoUrl": "/exercises/videos/0655-Y4BRNQF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0655-Y4BRNQF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0655-Y4BRNQF.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26464,8 +26464,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0656-tgryw5Y.jpg",
-      "videoUrl": "/exercises/videos/0656-tgryw5Y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0656-tgryw5Y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0656-tgryw5Y.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26489,8 +26489,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push back up to the starting position, straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0659-LEH9jxP.jpg",
-      "videoUrl": "/exercises/videos/0659-LEH9jxP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0659-LEH9jxP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0659-LEH9jxP.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26515,8 +26515,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0658-NCmbLCw.jpg",
-      "videoUrl": "/exercises/videos/0658-NCmbLCw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0658-NCmbLCw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0658-NCmbLCw.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26539,8 +26539,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0660-KZXAtKQ.jpg",
-      "videoUrl": "/exercises/videos/0660-KZXAtKQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0660-KZXAtKQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0660-KZXAtKQ.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -26563,8 +26563,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your leg back down and repeat the push-up, then switch to the other leg.",
         "Continue alternating leg kicks with each push-up repetition."
       ],
-      "thumbnailUrl": "/exercises/images/0661-0br45wL.jpg",
-      "videoUrl": "/exercises/videos/0661-0br45wL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0661-0br45wL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0661-0br45wL.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -26586,8 +26586,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0663-W8KAlkI.jpg",
-      "videoUrl": "/exercises/videos/0663-W8KAlkI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0663-W8KAlkI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0663-W8KAlkI.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26610,8 +26610,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1467-4Jt8QsQ.jpg",
-      "videoUrl": "/exercises/videos/1467-4Jt8QsQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1467-4Jt8QsQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1467-4Jt8QsQ.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -26635,8 +26635,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then reverse the movement by retracting your shoulder blades and lowering your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3145-pvBMLHA.jpg",
-      "videoUrl": "/exercises/videos/3145-pvBMLHA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3145-pvBMLHA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3145-pvBMLHA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26661,8 +26661,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the push-up and side plank on the opposite side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0664-KhHJ338.jpg",
-      "videoUrl": "/exercises/videos/0664-KhHJ338.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0664-KhHJ338.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0664-KhHJ338.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26686,8 +26686,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3533-6YUfHPL.jpg",
-      "videoUrl": "/exercises/videos/3533-6YUfHPL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3533-6YUfHPL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3533-6YUfHPL.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -26710,8 +26710,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3201-enxnJcM.jpg",
-      "videoUrl": "/exercises/videos/3201-enxnJcM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3201-enxnJcM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3201-enxnJcM.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -26733,8 +26733,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Keep your movements quick and light, focusing on staying on the balls of your feet.",
         "Continue for the desired duration or number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3552-mweqJin.jpg",
-      "videoUrl": "/exercises/videos/3552-mweqJin.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3552-mweqJin.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3552-mweqJin.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -26757,8 +26757,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push back up to the starting position, using your chest muscles to lift your body.",
         "Repeat with the other arm extended."
       ],
-      "thumbnailUrl": "/exercises/images/0666-13TpY4H.jpg",
-      "videoUrl": "/exercises/videos/0666-13TpY4H.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0666-13TpY4H.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0666-13TpY4H.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26781,8 +26781,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few seconds, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0668-UpAlold.jpg",
-      "videoUrl": "/exercises/videos/0668-UpAlold.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0668-UpAlold.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0668-UpAlold.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -26805,8 +26805,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 15-30 seconds, then release.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/0669-xifhB5W.jpg",
-      "videoUrl": "/exercises/videos/0669-xifhB5W.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0669-xifhB5W.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0669-xifhB5W.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -26830,8 +26830,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0670-CbFSYC1.jpg",
-      "videoUrl": "/exercises/videos/0670-CbFSYC1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0670-CbFSYC1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0670-CbFSYC1.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -26855,8 +26855,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with your left leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1582-K5xgdvI.jpg",
-      "videoUrl": "/exercises/videos/1582-K5xgdvI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1582-K5xgdvI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1582-K5xgdvI.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -26881,8 +26881,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the position for a moment, then slowly lower your knees back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3236-Pjbc0Kt.jpg",
-      "videoUrl": "/exercises/videos/3236-Pjbc0Kt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3236-Pjbc0Kt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3236-Pjbc0Kt.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -26905,8 +26905,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly return your leg to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/3007-Y1MsI1l.jpg",
-      "videoUrl": "/exercises/videos/3007-Y1MsI1l.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3007-Y1MsI1l.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3007-Y1MsI1l.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -26930,8 +26930,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the resistance band back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3123-XFc3vpY.jpg",
-      "videoUrl": "/exercises/videos/3123-XFc3vpY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3123-XFc3vpY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3123-XFc3vpY.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -26954,8 +26954,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3124-4x5Okof.jpg",
-      "videoUrl": "/exercises/videos/3124-4x5Okof.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3124-4x5Okof.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3124-4x5Okof.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -26979,8 +26979,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly bring your knees back together.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3006-0xDpB4L.jpg",
-      "videoUrl": "/exercises/videos/3006-0xDpB4L.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3006-0xDpB4L.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3006-0xDpB4L.gif",
       "musclesWorked": {
         "primary": [
           "abductors"
@@ -27003,8 +27003,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the band back down to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3122-S93zLTG.jpg",
-      "videoUrl": "/exercises/videos/3122-S93zLTG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3122-S93zLTG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3122-S93zLTG.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -27028,8 +27028,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly release the tension and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3144-Nu7jqFE.jpg",
-      "videoUrl": "/exercises/videos/3144-Nu7jqFE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3144-Nu7jqFE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3144-Nu7jqFE.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -27052,8 +27052,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0872-nCU1Ekp.jpg",
-      "videoUrl": "/exercises/videos/0872-nCU1Ekp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0872-nCU1Ekp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0872-nCU1Ekp.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -27075,8 +27075,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0672-NZ5Qqkz.jpg",
-      "videoUrl": "/exercises/videos/0672-NZ5Qqkz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0672-NZ5Qqkz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0672-NZ5Qqkz.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -27100,8 +27100,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0673-ecpY0rH.jpg",
-      "videoUrl": "/exercises/videos/0673-ecpY0rH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0673-ecpY0rH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0673-ecpY0rH.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -27125,8 +27125,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0674-YAk5dIw.jpg",
-      "videoUrl": "/exercises/videos/0674-YAk5dIw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0674-YAk5dIw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0674-YAk5dIw.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -27149,8 +27149,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0675-vM5YS2g.jpg",
-      "videoUrl": "/exercises/videos/0675-vM5YS2g.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0675-vM5YS2g.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0675-vM5YS2g.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -27174,8 +27174,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1423-OrETs32.jpg",
-      "videoUrl": "/exercises/videos/1423-OrETs32.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1423-OrETs32.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1423-OrETs32.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -27199,8 +27199,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3663-tFToB7l.jpg",
-      "videoUrl": "/exercises/videos/3663-tFToB7l.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3663-tFToB7l.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3663-tFToB7l.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -27222,8 +27222,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0677-ezTvXcr.jpg",
-      "videoUrl": "/exercises/videos/0677-ezTvXcr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0677-ezTvXcr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0677-ezTvXcr.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -27248,8 +27248,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position by bending your knees and lowering your hips back down.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2571-2Dk4xQV.jpg",
-      "videoUrl": "/exercises/videos/2571-2Dk4xQV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2571-2Dk4xQV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2571-2Dk4xQV.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -27273,8 +27273,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0678-cQ19bBP.jpg",
-      "videoUrl": "/exercises/videos/0678-cQ19bBP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0678-cQ19bBP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0678-cQ19bBP.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -27298,8 +27298,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly roll back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2208-isofgzg.jpg",
-      "videoUrl": "/exercises/videos/2208-isofgzg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2208-isofgzg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2208-isofgzg.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -27321,8 +27321,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the furthest point, then slowly roll the roller back towards your starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2204-XeMvLgE.jpg",
-      "videoUrl": "/exercises/videos/2204-XeMvLgE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2204-XeMvLgE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2204-XeMvLgE.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -27345,8 +27345,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for a few seconds, then roll back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2205-0L2KwtI.jpg",
-      "videoUrl": "/exercises/videos/2205-0L2KwtI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2205-0L2KwtI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2205-0L2KwtI.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -27371,8 +27371,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly roll the roller back to the starting position, extending your legs.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2202-oMypNrz.jpg",
-      "videoUrl": "/exercises/videos/2202-oMypNrz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2202-oMypNrz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2202-oMypNrz.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -27395,8 +27395,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position, rolling the roller away from your body.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2206-SKXQAx3.jpg",
-      "videoUrl": "/exercises/videos/2206-SKXQAx3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2206-SKXQAx3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2206-SKXQAx3.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -27419,8 +27419,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly roll the roller back towards your body, bending your arms and bringing the roller back to your thighs.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2203-8coXSYU.jpg",
-      "videoUrl": "/exercises/videos/2203-8coXSYU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2203-8coXSYU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2203-8coXSYU.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -27444,8 +27444,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower the roller back down to your thighs.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2209-CjETvlw.jpg",
-      "videoUrl": "/exercises/videos/2209-CjETvlw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2209-CjETvlw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2209-CjETvlw.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -27468,8 +27468,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for a few seconds, then slowly roll the roller back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2207-c3Pfhti.jpg",
-      "videoUrl": "/exercises/videos/2207-c3Pfhti.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2207-c3Pfhti.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2207-c3Pfhti.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -27495,8 +27495,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "To descend, reverse the hand-over-hand movement while controlling your descent.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0680-yaAxcQr.jpg",
-      "videoUrl": "/exercises/videos/0680-yaAxcQr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0680-yaAxcQr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0680-yaAxcQr.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -27519,8 +27519,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a steady pace and continue jogging for the desired duration or distance.",
         "Remember to breathe deeply and maintain good posture throughout the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/0685-oLrKqDH.jpg",
-      "videoUrl": "/exercises/videos/0685-oLrKqDH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0685-oLrKqDH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0685-oLrKqDH.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -27543,8 +27543,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a steady pace and continue jogging for the desired duration or distance.",
         "Remember to breathe deeply and maintain good posture throughout the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/0684-y5p0H8a.jpg",
-      "videoUrl": "/exercises/videos/0684-y5p0H8a.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0684-y5p0H8a.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0684-y5p0H8a.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -27567,8 +27567,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Place your hands on your right thigh for support.",
         "Hold the stretch for 20-30 seconds, then switch sides and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1585-0mB6wHO.jpg",
-      "videoUrl": "/exercises/videos/1585-0mB6wHO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1585-0mB6wHO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1585-0mB6wHO.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -27593,8 +27593,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then twist your torso to the left, bringing your hands or weight towards the left side of your body.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0687-XVDdcoj.jpg",
-      "videoUrl": "/exercises/videos/0687-XVDdcoj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0687-XVDdcoj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0687-XVDdcoj.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -27617,8 +27617,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your hands to extend your elbows and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3012-7xeukSt.jpg",
-      "videoUrl": "/exercises/videos/3012-7xeukSt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3012-7xeukSt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3012-7xeukSt.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -27641,8 +27641,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3021-jV65tKx.jpg",
-      "videoUrl": "/exercises/videos/3021-jV65tKx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3021-jV65tKx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3021-jV65tKx.gif",
       "musclesWorked": {
         "primary": [
           "serratus anterior"
@@ -27665,8 +27665,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0688-uTBt1HV.jpg",
-      "videoUrl": "/exercises/videos/0688-uTBt1HV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0688-uTBt1HV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0688-uTBt1HV.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -27689,8 +27689,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating legs and jumping as quickly as possible.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3219-Eh2v5Iu.jpg",
-      "videoUrl": "/exercises/videos/3219-Eh2v5Iu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3219-Eh2v5Iu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3219-Eh2v5Iu.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -27713,8 +27713,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Switch legs and repeat the stretch."
       ],
-      "thumbnailUrl": "/exercises/images/1390-17bqEXD.jpg",
-      "videoUrl": "/exercises/videos/1390-17bqEXD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1390-17bqEXD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1390-17bqEXD.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -27738,8 +27738,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 30 seconds to 1 minute.",
         "Switch sides and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1424-DeDThfG.jpg",
-      "videoUrl": "/exercises/videos/1424-DeDThfG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1424-DeDThfG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1424-DeDThfG.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -27762,8 +27762,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0689-Hgs6Nl1.jpg",
-      "videoUrl": "/exercises/videos/0689-Hgs6Nl1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0689-Hgs6Nl1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0689-Hgs6Nl1.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -27786,8 +27786,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Feel the stretch in your lower back and hold for 20-30 seconds.",
         "Slowly return to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0690-QFmz6ch.jpg",
-      "videoUrl": "/exercises/videos/0690-QFmz6ch.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0690-QFmz6ch.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0690-QFmz6ch.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -27809,8 +27809,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Place your left elbow on the outside of your right knee and gently twist your torso to the right.",
         "Hold the stretch for 20-30 seconds, then switch sides and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/2567-QY39eBr.jpg",
-      "videoUrl": "/exercises/videos/2567-QY39eBr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2567-QY39eBr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2567-QY39eBr.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -27835,8 +27835,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0691-Y9hNPcN.jpg",
-      "videoUrl": "/exercises/videos/0691-Y9hNPcN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0691-Y9hNPcN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0691-Y9hNPcN.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -27862,8 +27862,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the stretch and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1587-HIgYKAB.jpg",
-      "videoUrl": "/exercises/videos/1587-HIgYKAB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1587-HIgYKAB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1587-HIgYKAB.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -27886,8 +27886,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0697-GwYwElT.jpg",
-      "videoUrl": "/exercises/videos/0697-GwYwElT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0697-GwYwElT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0697-GwYwElT.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -27911,8 +27911,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your legs back to the starting position while inhaling.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1766-ZSY3MsL.jpg",
-      "videoUrl": "/exercises/videos/1766-ZSY3MsL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1766-ZSY3MsL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1766-ZSY3MsL.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -27937,8 +27937,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your hips back down to the ground.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0696-E4PwJqI.jpg",
-      "videoUrl": "/exercises/videos/0696-E4PwJqI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0696-E4PwJqI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0696-E4PwJqI.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -27961,8 +27961,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet and immediately go into the next repetition.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3222-6FMU51h.jpg",
-      "videoUrl": "/exercises/videos/3222-6FMU51h.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3222-6FMU51h.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3222-6FMU51h.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -27985,8 +27985,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "After a few seconds, start taking short strides forward, maintaining a quick pace.",
         "Continue running with short strides for the desired duration or distance."
       ],
-      "thumbnailUrl": "/exercises/images/3656-CcWEoWV.jpg",
-      "videoUrl": "/exercises/videos/3656-CcWEoWV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3656-CcWEoWV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3656-CcWEoWV.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -28009,8 +28009,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1763-YtgD7Xq.jpg",
-      "videoUrl": "/exercises/videos/1763-YtgD7Xq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1763-YtgD7Xq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1763-YtgD7Xq.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -28033,8 +28033,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating shoulder taps while keeping your hips and torso stable.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3699-yRpV5TC.jpg",
-      "videoUrl": "/exercises/videos/3699-yRpV5TC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3699-yRpV5TC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3699-yRpV5TC.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -28059,8 +28059,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Maintain a stable core and avoid excessive hip rotation throughout the exercise.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0699-qEse6fe.jpg",
-      "videoUrl": "/exercises/videos/0699-qEse6fe.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0699-qEse6fe.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0699-qEse6fe.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -28084,8 +28084,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then lower your leg back down.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1774-WL4EmxJ.jpg",
-      "videoUrl": "/exercises/videos/1774-WL4EmxJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1774-WL4EmxJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1774-WL4EmxJ.gif",
       "musclesWorked": {
         "primary": [
           "abductors"
@@ -28109,8 +28109,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your hips back down to the starting position.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/0705-RKjH6Lt.jpg",
-      "videoUrl": "/exercises/videos/0705-RKjH6Lt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0705-RKjH6Lt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0705-RKjH6Lt.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -28133,8 +28133,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0709-jTkSc6o.jpg",
-      "videoUrl": "/exercises/videos/0709-jTkSc6o.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0709-jTkSc6o.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0709-jTkSc6o.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -28157,8 +28157,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0710-7WaDzyL.jpg",
-      "videoUrl": "/exercises/videos/0710-7WaDzyL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0710-7WaDzyL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0710-7WaDzyL.gif",
       "musclesWorked": {
         "primary": [
           "abductors"
@@ -28182,8 +28182,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds, then slowly lower your leg back down.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/1358-jDOKRM5.jpg",
-      "videoUrl": "/exercises/videos/1358-jDOKRM5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1358-jDOKRM5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1358-jDOKRM5.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -28206,8 +28206,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your leg back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/3667-c8f5cSY.jpg",
-      "videoUrl": "/exercises/videos/3667-c8f5cSY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3667-c8f5cSY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3667-c8f5cSY.gif",
       "musclesWorked": {
         "primary": [
           "adductors"
@@ -28231,8 +28231,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your leg back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1775-VO2qeJg.jpg",
-      "videoUrl": "/exercises/videos/1775-VO2qeJg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1775-VO2qeJg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1775-VO2qeJg.gif",
       "musclesWorked": {
         "primary": [
           "adductors"
@@ -28256,8 +28256,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side, tilting your head to the left and applying pressure with your left hand.",
         "Repeat the stretch 2-3 times on each side."
       ],
-      "thumbnailUrl": "/exercises/images/0716-oQRJYkC.jpg",
-      "videoUrl": "/exercises/videos/0716-oQRJYkC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0716-oQRJYkC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0716-oQRJYkC.gif",
       "musclesWorked": {
         "primary": [
           "levator scapulae"
@@ -28281,8 +28281,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your body back down to the starting position with control.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0717-wpbD28t.jpg",
-      "videoUrl": "/exercises/videos/0717-wpbD28t.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0717-wpbD28t.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0717-wpbD28t.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -28305,8 +28305,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 15-30 seconds, then release.",
         "Repeat on the other side."
       ],
-      "thumbnailUrl": "/exercises/images/0721-UtmIqcI.jpg",
-      "videoUrl": "/exercises/videos/0721-UtmIqcI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0721-UtmIqcI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0721-UtmIqcI.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -28330,8 +28330,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Once your chin is above the bar, lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0720-isAAZWA.jpg",
-      "videoUrl": "/exercises/videos/0720-isAAZWA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0720-isAAZWA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0720-isAAZWA.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -28353,8 +28353,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and then bend at the waist to the left, reaching your left hand towards your left foot while keeping your right hand extended to the side.",
         "Repeat the side-to-side bending motion for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3213-WCAvOfC.jpg",
-      "videoUrl": "/exercises/videos/3213-WCAvOfC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3213-WCAvOfC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3213-WCAvOfC.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -28377,8 +28377,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your chest and triceps to raise your body back up to the starting position, while simultaneously lowering your extended arm back to the ground.",
         "Repeat the movement, alternating the arm you extend with each repetition."
       ],
-      "thumbnailUrl": "/exercises/images/0725-MUic5zN.jpg",
-      "videoUrl": "/exercises/videos/0725-MUic5zN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0725-MUic5zN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0725-MUic5zN.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -28401,8 +28401,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/3645-rmEukuS.jpg",
-      "videoUrl": "/exercises/videos/3645-rmEukuS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3645-rmEukuS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3645-rmEukuS.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28425,8 +28425,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down.",
         "Repeat for the desired number of repetitions, then switch to the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/0727-fKZgDEO.jpg",
-      "videoUrl": "/exercises/videos/0727-fKZgDEO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0727-fKZgDEO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0727-fKZgDEO.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -28449,8 +28449,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly return to the starting position by sliding your foot back to the initial position.",
         "Repeat the movement for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0730-LNE3wfo.jpg",
-      "videoUrl": "/exercises/videos/0730-LNE3wfo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0730-LNE3wfo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0730-LNE3wfo.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -28475,8 +28475,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your left heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/1759-nqs5HGV.jpg",
-      "videoUrl": "/exercises/videos/1759-nqs5HGV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1759-nqs5HGV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1759-nqs5HGV.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28500,8 +28500,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1489-xdYPUtE.jpg",
-      "videoUrl": "/exercises/videos/1489-xdYPUtE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1489-xdYPUtE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1489-xdYPUtE.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -28524,8 +28524,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0735-Bn6TXyO.jpg",
-      "videoUrl": "/exercises/videos/0735-Bn6TXyO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0735-Bn6TXyO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0735-Bn6TXyO.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -28548,8 +28548,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3679-6ZCiYWQ.jpg",
-      "videoUrl": "/exercises/videos/3679-6ZCiYWQ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3679-6ZCiYWQ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3679-6ZCiYWQ.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -28574,8 +28574,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating sides, jumping and tapping the ground with each leg.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3361-zfNHMN9.jpg",
-      "videoUrl": "/exercises/videos/3361-zfNHMN9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3361-zfNHMN9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3361-zfNHMN9.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -28600,8 +28600,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2142-vpQaQkH.jpg",
-      "videoUrl": "/exercises/videos/2142-vpQaQkH.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2142-vpQaQkH.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2142-vpQaQkH.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -28625,8 +28625,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating jumps from side to side, mimicking a skiing motion.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3671-5MRH8H2.jpg",
-      "videoUrl": "/exercises/videos/3671-5MRH8H2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3671-5MRH8H2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3671-5MRH8H2.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -28650,8 +28650,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you lower your legs, allow your body to pass back through the arms until you are hanging with your arms fully extended again.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3304-MSfvriJ.jpg",
-      "videoUrl": "/exercises/videos/3304-MSfvriJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3304-MSfvriJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3304-MSfvriJ.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -28675,8 +28675,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with the other leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1425-WWD6FzI.jpg",
-      "videoUrl": "/exercises/videos/1425-WWD6FzI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1425-WWD6FzI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1425-WWD6FzI.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28699,8 +28699,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the sled platform back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0738-qCNVnaU.jpg",
-      "videoUrl": "/exercises/videos/0738-qCNVnaU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0738-qCNVnaU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0738-qCNVnaU.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -28725,8 +28725,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower the footplate back towards your body by bending your knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0739-10Z2DXU.jpg",
-      "videoUrl": "/exercises/videos/0739-10Z2DXU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0739-10Z2DXU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0739-10Z2DXU.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28751,8 +28751,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly bend your knees and lower the footplate back towards your body, controlling the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1464-yn2lLSI.jpg",
-      "videoUrl": "/exercises/videos/1464-yn2lLSI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1464-yn2lLSI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1464-yn2lLSI.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28776,8 +28776,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly bend your knees to lower the footplate back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1463-2Qh2J1e.jpg",
-      "videoUrl": "/exercises/videos/1463-2Qh2J1e.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1463-2Qh2J1e.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1463-2Qh2J1e.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28801,8 +28801,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly bend your knees to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0740-tj41Nu6.jpg",
-      "videoUrl": "/exercises/videos/0740-tj41Nu6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0740-tj41Nu6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0740-tj41Nu6.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28825,8 +28825,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower the sled back down by bending your knees and ankles.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1391-ykHcWme.jpg",
-      "videoUrl": "/exercises/videos/1391-ykHcWme.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1391-ykHcWme.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1391-ykHcWme.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -28851,8 +28851,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to extend your legs and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0741-gf3ZjB9.jpg",
-      "videoUrl": "/exercises/videos/0741-gf3ZjB9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0741-gf3ZjB9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0741-gf3ZjB9.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28875,8 +28875,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0742-XDOiFns.jpg",
-      "videoUrl": "/exercises/videos/0742-XDOiFns.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0742-XDOiFns.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0742-XDOiFns.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -28901,8 +28901,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to raise your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0743-Qa55kX1.jpg",
-      "videoUrl": "/exercises/videos/0743-Qa55kX1.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0743-Qa55kX1.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0743-Qa55kX1.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28927,8 +28927,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the contraction for a moment, then slowly lower the platform back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2334-g376LuL.jpg",
-      "videoUrl": "/exercises/videos/2334-g376LuL.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2334-g376LuL.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2334-g376LuL.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -28954,8 +28954,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the sled back down by bending your knees and hips.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0744-9n2149Z.jpg",
-      "videoUrl": "/exercises/videos/0744-9n2149Z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0744-9n2149Z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0744-9n2149Z.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -28979,8 +28979,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the sled back down by flexing your ankles.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1392-u0pLNgz.jpg",
-      "videoUrl": "/exercises/videos/1392-u0pLNgz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1392-u0pLNgz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1392-u0pLNgz.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -29003,8 +29003,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you swing down, pivot your hips and transfer the force to the hammer.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1496-REXmfVC.jpg",
-      "videoUrl": "/exercises/videos/1496-REXmfVC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1496-REXmfVC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1496-REXmfVC.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -29028,8 +29028,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold for a moment, then lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0746-MzNnwx9.jpg",
-      "videoUrl": "/exercises/videos/0746-MzNnwx9.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0746-MzNnwx9.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0746-MzNnwx9.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -29055,8 +29055,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the bar back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0747-Gpn4ADc.jpg",
-      "videoUrl": "/exercises/videos/0747-Gpn4ADc.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0747-Gpn4ADc.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0747-Gpn4ADc.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -29081,8 +29081,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the bar back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0748-trqKQv2.jpg",
-      "videoUrl": "/exercises/videos/0748-trqKQv2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0748-trqKQv2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0748-trqKQv2.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -29106,8 +29106,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your glutes and hamstrings to raise your torso back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0749-1bQkKZK.jpg",
-      "videoUrl": "/exercises/videos/0749-1bQkKZK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0749-1bQkKZK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0749-1bQkKZK.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -29132,8 +29132,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the bar back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1359-ZX9UZmj.jpg",
-      "videoUrl": "/exercises/videos/1359-ZX9UZmj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1359-ZX9UZmj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1359-ZX9UZmj.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -29158,8 +29158,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0750-Gu2rNJd.jpg",
-      "videoUrl": "/exercises/videos/0750-Gu2rNJd.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0750-Gu2rNJd.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0750-Gu2rNJd.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -29182,8 +29182,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0751-WcHl7ru.jpg",
-      "videoUrl": "/exercises/videos/0751-WcHl7ru.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0751-WcHl7ru.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0751-WcHl7ru.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -29208,8 +29208,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the bar back down by bending at the hips and knees, maintaining control and keeping your back straight.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0752-UfePqpx.jpg",
-      "videoUrl": "/exercises/videos/0752-UfePqpx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0752-UfePqpx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0752-UfePqpx.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -29233,8 +29233,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0753-ETZfAbZ.jpg",
-      "videoUrl": "/exercises/videos/0753-ETZfAbZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0753-ETZfAbZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0753-ETZfAbZ.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -29258,8 +29258,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0754-MY9P1WA.jpg",
-      "videoUrl": "/exercises/videos/0754-MY9P1WA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0754-MY9P1WA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0754-MY9P1WA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -29286,8 +29286,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1433-lFhb2Rw.jpg",
-      "videoUrl": "/exercises/videos/1433-lFhb2Rw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1433-lFhb2Rw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1433-lFhb2Rw.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -29314,8 +29314,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then drive through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3281-NNoHCEA.jpg",
-      "videoUrl": "/exercises/videos/3281-NNoHCEA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3281-NNoHCEA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3281-NNoHCEA.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -29343,8 +29343,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0755-ZuPXtCK.jpg",
-      "videoUrl": "/exercises/videos/0755-ZuPXtCK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0755-ZuPXtCK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0755-ZuPXtCK.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -29368,8 +29368,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold for a moment at the top, then slowly lower your hips back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0756-CqhoytW.jpg",
-      "videoUrl": "/exercises/videos/0756-CqhoytW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0756-CqhoytW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0756-CqhoytW.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -29393,8 +29393,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0757-5v7KYld.jpg",
-      "videoUrl": "/exercises/videos/0757-5v7KYld.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0757-5v7KYld.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0757-5v7KYld.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -29419,8 +29419,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the bar back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0758-78VqWQK.jpg",
-      "videoUrl": "/exercises/videos/0758-78VqWQK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0758-78VqWQK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0758-78VqWQK.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -29445,8 +29445,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0759-ayAHcEm.jpg",
-      "videoUrl": "/exercises/videos/0759-ayAHcEm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0759-ayAHcEm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0759-ayAHcEm.gif",
       "musclesWorked": {
         "primary": [
           "serratus anterior"
@@ -29471,8 +29471,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly bend your knees and lower the footplate back towards you, returning to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0760-7zdxRTl.jpg",
-      "videoUrl": "/exercises/videos/0760-7zdxRTl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0760-7zdxRTl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0760-7zdxRTl.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -29501,8 +29501,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Drive through your heels to stand back up, extending your hips and knees.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1434-RGLscZM.jpg",
-      "videoUrl": "/exercises/videos/1434-RGLscZM.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1434-RGLscZM.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1434-RGLscZM.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -29528,8 +29528,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the bar back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1683-zILLZ98.jpg",
-      "videoUrl": "/exercises/videos/1683-zILLZ98.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1683-zILLZ98.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1683-zILLZ98.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -29554,8 +29554,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1625-yB9SvIF.jpg",
-      "videoUrl": "/exercises/videos/1625-yB9SvIF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1625-yB9SvIF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1625-yB9SvIF.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -29580,8 +29580,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the bar back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1752-o8aOcrz.jpg",
-      "videoUrl": "/exercises/videos/1752-o8aOcrz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1752-o8aOcrz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1752-o8aOcrz.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -29605,8 +29605,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the barbell back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1626-QyO6Uma.jpg",
-      "videoUrl": "/exercises/videos/1626-QyO6Uma.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1626-QyO6Uma.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1626-QyO6Uma.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -29629,8 +29629,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the peak of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0761-JGKowMS.jpg",
-      "videoUrl": "/exercises/videos/0761-JGKowMS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0761-JGKowMS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0761-JGKowMS.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -29655,8 +29655,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly lower the bar back to the starting position.",
         "Repeat for the desired number of repetitions, then switch to the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/1360-Q4DSJPC.jpg",
-      "videoUrl": "/exercises/videos/1360-Q4DSJPC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1360-Q4DSJPC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1360-Q4DSJPC.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -29681,8 +29681,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause at the top of the movement, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1393-9GXrTE6.jpg",
-      "videoUrl": "/exercises/videos/1393-9GXrTE6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1393-9GXrTE6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1393-9GXrTE6.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -29705,8 +29705,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top of the movement, then slowly release the handles back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0762-nFUwqG6.jpg",
-      "videoUrl": "/exercises/videos/0762-nFUwqG6.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0762-nFUwqG6.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0762-nFUwqG6.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -29731,8 +29731,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0763-ywaNfuh.jpg",
-      "videoUrl": "/exercises/videos/0763-ywaNfuh.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0763-ywaNfuh.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0763-ywaNfuh.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -29757,8 +29757,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1394-Lsqrgh4.jpg",
-      "videoUrl": "/exercises/videos/1394-Lsqrgh4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1394-Lsqrgh4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1394-Lsqrgh4.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -29783,8 +29783,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the bar back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1361-aaxA3cm.jpg",
-      "videoUrl": "/exercises/videos/1361-aaxA3cm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1361-aaxA3cm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1361-aaxA3cm.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -29810,8 +29810,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push the bar back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0764-zK8Fu1W.jpg",
-      "videoUrl": "/exercises/videos/0764-zK8Fu1W.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0764-zK8Fu1W.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0764-zK8Fu1W.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -29834,8 +29834,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heel back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1395-0S75mYG.jpg",
-      "videoUrl": "/exercises/videos/1395-0S75mYG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1395-0S75mYG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1395-0S75mYG.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -29860,8 +29860,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the handles back down to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0765-xUwnBMT.jpg",
-      "videoUrl": "/exercises/videos/0765-xUwnBMT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0765-xUwnBMT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0765-xUwnBMT.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -29885,8 +29885,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1426-B6dAO1t.jpg",
-      "videoUrl": "/exercises/videos/1426-B6dAO1t.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1426-B6dAO1t.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1426-B6dAO1t.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -29910,8 +29910,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the bar back down to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0766-903mzG8.jpg",
-      "videoUrl": "/exercises/videos/0766-903mzG8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0766-903mzG8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0766-903mzG8.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -29935,8 +29935,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold for a moment, then slowly lower your shoulders back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0767-OUQ0ZyW.jpg",
-      "videoUrl": "/exercises/videos/0767-OUQ0ZyW.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0767-OUQ0ZyW.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0767-OUQ0ZyW.gif",
       "musclesWorked": {
         "primary": [
           "traps"
@@ -29960,8 +29960,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your front heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0768-wWFspEi.jpg",
-      "videoUrl": "/exercises/videos/0768-wWFspEi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0768-wWFspEi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0768-wWFspEi.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -29986,8 +29986,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat on the other side, stepping back with your left foot.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0769-HsjbB1z.jpg",
-      "videoUrl": "/exercises/videos/0769-HsjbB1z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0769-HsjbB1z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0769-HsjbB1z.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -30014,8 +30014,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then drive through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0770-jFtipLl.jpg",
-      "videoUrl": "/exercises/videos/0770-jFtipLl.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0770-jFtipLl.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0770-jFtipLl.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -30039,8 +30039,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0771-hfmQ0Tz.jpg",
-      "videoUrl": "/exercises/videos/0771-hfmQ0Tz.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0771-hfmQ0Tz.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0771-hfmQ0Tz.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -30067,8 +30067,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause briefly at the top of the movement, then slowly lower the bar back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0772-ht8xDrP.jpg",
-      "videoUrl": "/exercises/videos/0772-ht8xDrP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0772-ht8xDrP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0772-ht8xDrP.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -30092,8 +30092,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0773-6MaEjVA.jpg",
-      "videoUrl": "/exercises/videos/0773-6MaEjVA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0773-6MaEjVA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0773-6MaEjVA.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -30117,8 +30117,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to shoulder level.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0774-jjUPrze.jpg",
-      "videoUrl": "/exercises/videos/0774-jjUPrze.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0774-jjUPrze.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0774-jjUPrze.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -30143,8 +30143,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3142-dzz6BiV.jpg",
-      "videoUrl": "/exercises/videos/3142-dzz6BiV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3142-dzz6BiV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3142-dzz6BiV.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -30170,8 +30170,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1396-Y4QlY8z.jpg",
-      "videoUrl": "/exercises/videos/1396-Y4QlY8z.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1396-Y4QlY8z.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1396-Y4QlY8z.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -30195,8 +30195,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0775-1DN3iz4.jpg",
-      "videoUrl": "/exercises/videos/0775-1DN3iz4.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0775-1DN3iz4.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0775-1DN3iz4.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -30221,8 +30221,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1308-zoOvPcx.jpg",
-      "videoUrl": "/exercises/videos/1308-zoOvPcx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1308-zoOvPcx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1308-zoOvPcx.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -30247,8 +30247,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push the barbell back up to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1309-wi2H9QX.jpg",
-      "videoUrl": "/exercises/videos/1309-wi2H9QX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1309-wi2H9QX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1309-wi2H9QX.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -30275,8 +30275,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the barbell back down to the starting position by reversing the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0776-dG5Smob.jpg",
-      "videoUrl": "/exercises/videos/0776-dG5Smob.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0776-dG5Smob.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0776-dG5Smob.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -30299,8 +30299,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat on the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0777-p9cCe2r.jpg",
-      "videoUrl": "/exercises/videos/0777-p9cCe2r.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0777-p9cCe2r.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0777-p9cCe2r.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -30323,8 +30323,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your chest back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1362-DIVyqrU.jpg",
-      "videoUrl": "/exercises/videos/1362-DIVyqrU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1362-DIVyqrU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1362-DIVyqrU.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -30347,8 +30347,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push back up to the starting position and repeat with your left knee towards your left elbow.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0778-P9GFBME.jpg",
-      "videoUrl": "/exercises/videos/0778-P9GFBME.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0778-P9GFBME.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0778-P9GFBME.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -30372,8 +30372,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for a few seconds, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1363-JbC2iaV.jpg",
-      "videoUrl": "/exercises/videos/1363-JbC2iaV.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1363-JbC2iaV.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1363-JbC2iaV.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -30398,8 +30398,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the twist to the left side, bringing your left elbow towards your right knee.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2329-2jl9K55.jpg",
-      "videoUrl": "/exercises/videos/2329-2jl9K55.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2329-2jl9K55.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2329-2jl9K55.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -30423,8 +30423,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your front heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/2368-9E25EOx.jpg",
-      "videoUrl": "/exercises/videos/2368-9E25EOx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2368-9E25EOx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2368-9E25EOx.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -30449,8 +30449,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Stand up from the split position, bringing your feet back together.",
         "Lower the barbell back to your shoulders and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0786-IMRsOCn.jpg",
-      "videoUrl": "/exercises/videos/0786-IMRsOCn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0786-IMRsOCn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0786-IMRsOCn.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -30475,8 +30475,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1705-T2fA5Ir.jpg",
-      "videoUrl": "/exercises/videos/1705-T2fA5Ir.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1705-T2fA5Ir.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1705-T2fA5Ir.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -30499,8 +30499,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position by lowering your arms and bending your knees to squat down again.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1685-QChZi3x.jpg",
-      "videoUrl": "/exercises/videos/1685-QChZi3x.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1685-QChZi3x.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1685-QChZi3x.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -30523,8 +30523,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat the squat, this time twisting your torso to the opposite side.",
         "Continue alternating sides with each squat repetition."
       ],
-      "thumbnailUrl": "/exercises/images/1686-5BZHW9s.jpg",
-      "videoUrl": "/exercises/videos/1686-5BZHW9s.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1686-5BZHW9s.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1686-5BZHW9s.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -30547,8 +30547,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2297-Gn5FwYT.jpg",
-      "videoUrl": "/exercises/videos/2297-Gn5FwYT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2297-Gn5FwYT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2297-Gn5FwYT.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -30572,8 +30572,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom of the squat, then push through your heels to stand back up while simultaneously raising your arms back overhead.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3291-zd4P4B2.jpg",
-      "videoUrl": "/exercises/videos/3291-zd4P4B2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3291-zd4P4B2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3291-zd4P4B2.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -30598,8 +30598,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the motion, this time rotating your torso to the left and extending your left arm forward and your right arm back.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3669-JF8AkMX.jpg",
-      "videoUrl": "/exercises/videos/3669-JF8AkMX.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3669-JF8AkMX.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3669-JF8AkMX.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -30622,8 +30622,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the barbell back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0788-xDh0lJr.jpg",
-      "videoUrl": "/exercises/videos/0788-xDh0lJr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0788-xDh0lJr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0788-xDh0lJr.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -30646,8 +30646,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1490-6HmFgmx.jpg",
-      "videoUrl": "/exercises/videos/1490-6HmFgmx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1490-6HmFgmx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1490-6HmFgmx.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -30669,8 +30669,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the position for a moment, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1397-XIHEoCG.jpg",
-      "videoUrl": "/exercises/videos/1397-XIHEoCG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1397-XIHEoCG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1397-XIHEoCG.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -30695,8 +30695,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 20-30 seconds.",
         "Repeat on the other leg."
       ],
-      "thumbnailUrl": "/exercises/images/1398-qOKcgVP.jpg",
-      "videoUrl": "/exercises/videos/1398-qOKcgVP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1398-qOKcgVP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1398-qOKcgVP.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -30721,8 +30721,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Release the stretch and repeat with the other leg.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1599-xTjr103.jpg",
-      "videoUrl": "/exercises/videos/1599-xTjr103.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1599-xTjr103.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1599-xTjr103.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -30746,8 +30746,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat on the other side.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0794-1jXLYEw.jpg",
-      "videoUrl": "/exercises/videos/0794-1jXLYEw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0794-1jXLYEw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0794-1jXLYEw.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -30770,8 +30770,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the position for a few seconds, then release and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1364-cuKYxhu.jpg",
-      "videoUrl": "/exercises/videos/1364-cuKYxhu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1364-cuKYxhu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1364-cuKYxhu.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -30794,8 +30794,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your right foot back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0795-C5jncD2.jpg",
-      "videoUrl": "/exercises/videos/0795-C5jncD2.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0795-C5jncD2.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0795-C5jncD2.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -30818,8 +30818,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly roll the wheel back towards your body, returning to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0796-KtRomty.jpg",
-      "videoUrl": "/exercises/videos/0796-KtRomty.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0796-KtRomty.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0796-KtRomty.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -30842,8 +30842,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Land softly on the balls of your feet with your knees slightly bent.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3223-HtfCpfi.jpg",
-      "videoUrl": "/exercises/videos/3223-HtfCpfi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3223-HtfCpfi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3223-HtfCpfi.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -30869,8 +30869,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Gradually decrease the resistance and slow down before coming to a complete stop.",
         "Stretch your legs and cool down after the workout."
       ],
-      "thumbnailUrl": "/exercises/images/2138-H1PESYI.jpg",
-      "videoUrl": "/exercises/videos/2138-H1PESYI.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2138-H1PESYI.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2138-H1PESYI.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -30895,8 +30895,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Cool down by gradually reducing your pace and resistance level.",
         "Stretch your leg muscles after the workout to prevent tightness and promote recovery."
       ],
-      "thumbnailUrl": "/exercises/images/0798-a8VDgLw.jpg",
-      "videoUrl": "/exercises/videos/0798-a8VDgLw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0798-a8VDgLw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0798-a8VDgLw.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -30919,8 +30919,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few seconds, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3314-HfqciZF.jpg",
-      "videoUrl": "/exercises/videos/3314-HfqciZF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3314-HfqciZF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3314-HfqciZF.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -30943,8 +30943,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your hands to straighten your arms and lift your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3298-BL3GHeY.jpg",
-      "videoUrl": "/exercises/videos/3298-BL3GHeY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3298-BL3GHeY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3298-BL3GHeY.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -30967,8 +30967,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your leg back down to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/1427-mQ1tBXn.jpg",
-      "videoUrl": "/exercises/videos/1427-mQ1tBXn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1427-mQ1tBXn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1427-mQ1tBXn.gif",
       "musclesWorked": {
         "primary": [
           "abductors"
@@ -30992,8 +30992,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time lifting your left arm and right leg.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0803-4GqRrAk.jpg",
-      "videoUrl": "/exercises/videos/0803-4GqRrAk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0803-4GqRrAk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0803-4GqRrAk.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -31017,8 +31017,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly raise your body back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0805-X3TCNEU.jpg",
-      "videoUrl": "/exercises/videos/0805-X3TCNEU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0805-X3TCNEU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0805-X3TCNEU.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31042,8 +31042,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your chest and arms to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0806-IaGQCrC.jpg",
-      "videoUrl": "/exercises/videos/0806-IaGQCrC.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0806-IaGQCrC.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0806-IaGQCrC.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -31065,8 +31065,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your knees back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0807-R1WYG5D.jpg",
-      "videoUrl": "/exercises/videos/0807-R1WYG5D.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0807-R1WYG5D.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0807-R1WYG5D.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31091,8 +31091,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower yourself back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0808-4OaumBr.jpg",
-      "videoUrl": "/exercises/videos/0808-4OaumBr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0808-4OaumBr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0808-4OaumBr.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -31115,8 +31115,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your heel to return to the starting position.",
         "Repeat for the desired number of repetitions, then switch legs."
       ],
-      "thumbnailUrl": "/exercises/images/0809-QpXqiq8.jpg",
-      "videoUrl": "/exercises/videos/0809-QpXqiq8.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0809-QpXqiq8.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0809-QpXqiq8.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -31139,8 +31139,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue kicking for the desired number of repetitions.",
         "Lower your chest and legs back down to the starting position."
       ],
-      "thumbnailUrl": "/exercises/images/3433-SP3hUez.jpg",
-      "videoUrl": "/exercises/videos/3433-SP3hUez.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3433-SP3hUez.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3433-SP3hUez.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -31163,8 +31163,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue the circular motion, swinging your arms and rotating your torso for the desired number of repetitions.",
         "Remember to breathe throughout the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/3318-tnaj0mT.jpg",
-      "videoUrl": "/exercises/videos/3318-tnaj0mT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3318-tnaj0mT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3318-tnaj0mT.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -31187,8 +31187,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1753-DQ0cqkT.jpg",
-      "videoUrl": "/exercises/videos/1753-DQ0cqkT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1753-DQ0cqkT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1753-DQ0cqkT.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31213,8 +31213,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Once the tire is fully flipped, quickly step back and reset your stance.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2459-oZjMu1t.jpg",
-      "videoUrl": "/exercises/videos/2459-oZjMu1t.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2459-oZjMu1t.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2459-oZjMu1t.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -31238,8 +31238,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower the trap bar back down to the ground by bending at the hips and knees, keeping your back straight throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0811-jQGwmxN.jpg",
-      "videoUrl": "/exercises/videos/0811-jQGwmxN.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0811-jQGwmxN.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0811-jQGwmxN.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -31262,8 +31262,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0814-X6C6i5Y.jpg",
-      "videoUrl": "/exercises/videos/0814-X6C6i5Y.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0814-X6C6i5Y.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0814-X6C6i5Y.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31286,8 +31286,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to straighten your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0812-VuoerH0.jpg",
-      "videoUrl": "/exercises/videos/0812-VuoerH0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0812-VuoerH0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0812-VuoerH0.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31310,8 +31310,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0813-Wgbn9qo.jpg",
-      "videoUrl": "/exercises/videos/0813-Wgbn9qo.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0813-Wgbn9qo.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0813-Wgbn9qo.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31335,8 +31335,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Once you reach the bottom of the movement, press down into the chair to straighten your elbows, returning to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0815-7aVz15j.jpg",
-      "videoUrl": "/exercises/videos/0815-7aVz15j.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0815-7aVz15j.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0815-7aVz15j.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31359,8 +31359,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0816-fSrPP6B.jpg",
-      "videoUrl": "/exercises/videos/0816-fSrPP6B.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0816-fSrPP6B.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0816-fSrPP6B.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31383,8 +31383,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the stretch for 15-30 seconds, feeling a gentle stretch in your triceps.",
         "Release the stretch and repeat on the other arm."
       ],
-      "thumbnailUrl": "/exercises/images/0817-uOV3Itw.jpg",
-      "videoUrl": "/exercises/videos/0817-uOV3Itw.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0817-uOV3Itw.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0817-uOV3Itw.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31407,8 +31407,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your shoulder blades and extend your legs back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0871-BMMolZ3.jpg",
-      "videoUrl": "/exercises/videos/0871-BMMolZ3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0871-BMMolZ3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0871-BMMolZ3.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31434,8 +31434,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly release the handles and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0818-rkg41Fb.jpg",
-      "videoUrl": "/exercises/videos/0818-rkg41Fb.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0818-rkg41Fb.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0818-rkg41Fb.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -31459,8 +31459,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Return to the starting position and repeat the twist to the left side.",
         "Continue alternating twists for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1466-AX1kB0o.jpg",
-      "videoUrl": "/exercises/videos/1466-AX1kB0o.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1466-AX1kB0o.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1466-AX1kB0o.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -31485,8 +31485,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time twisting your hips to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2802-C0eCeEt.jpg",
-      "videoUrl": "/exercises/videos/2802-C0eCeEt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2802-C0eCeEt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2802-C0eCeEt.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31510,8 +31510,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the movement, this time twisting your hips to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2801-yT9tk17.jpg",
-      "videoUrl": "/exercises/videos/2801-yT9tk17.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2801-yT9tk17.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2801-yT9tk17.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31534,8 +31534,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3231-p195zsJ.jpg",
-      "videoUrl": "/exercises/videos/3231-p195zsJ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3231-p195zsJ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3231-p195zsJ.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -31559,8 +31559,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "As you raise your arms, squeeze your shoulder blades together.",
         "Hold the stretch for 15-30 seconds, then release and repeat."
       ],
-      "thumbnailUrl": "/exercises/images/1365-GSDioYu.jpg",
-      "videoUrl": "/exercises/videos/1365-GSDioYu.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1365-GSDioYu.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1365-GSDioYu.gif",
       "musclesWorked": {
         "primary": [
           "upper back"
@@ -31584,8 +31584,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few breaths, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1366-01qpYSe.jpg",
-      "videoUrl": "/exercises/videos/1366-01qpYSe.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1366-01qpYSe.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1366-01qpYSe.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -31608,8 +31608,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few seconds, then slowly lower your upper body and legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3420-ZuXu4Eq.jpg",
-      "videoUrl": "/exercises/videos/3420-ZuXu4Eq.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3420-ZuXu4Eq.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3420-ZuXu4Eq.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31632,8 +31632,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0826-ZNgOYQU.jpg",
-      "videoUrl": "/exercises/videos/0826-ZNgOYQU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0826-ZNgOYQU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0826-ZNgOYQU.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31658,8 +31658,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue for the desired duration of your cardio workout.",
         "Gradually decrease the intensity and speed of the machine before stepping off."
       ],
-      "thumbnailUrl": "/exercises/images/2141-rjtuP6X.jpg",
-      "videoUrl": "/exercises/videos/2141-rjtuP6X.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2141-rjtuP6X.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2141-rjtuP6X.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -31684,8 +31684,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating legs and lunging forward, keeping your core engaged and maintaining a steady pace.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3655-J9zIWig.jpg",
-      "videoUrl": "/exercises/videos/3655-J9zIWig.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3655-J9zIWig.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3655-J9zIWig.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -31709,8 +31709,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue alternating legs and walking forward, maintaining a controlled and steady pace.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1460-IZVHb27.jpg",
-      "videoUrl": "/exercises/videos/1460-IZVHb27.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1460-IZVHb27.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1460-IZVHb27.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -31734,8 +31734,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue walking on the incline treadmill for the desired duration of your cardio workout.",
         "Gradually decrease the incline and speed of the treadmill to cool down before stopping."
       ],
-      "thumbnailUrl": "/exercises/images/3666-rjiM4L3.jpg",
-      "videoUrl": "/exercises/videos/3666-rjiM4L3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3666-rjiM4L3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3666-rjiM4L3.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -31760,8 +31760,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Gradually increase the intensity or speed as you become more comfortable with the exercise.",
         "Remember to cool down and stretch after completing the exercise."
       ],
-      "thumbnailUrl": "/exercises/images/2311-j9Q5crt.jpg",
-      "videoUrl": "/exercises/videos/2311-j9Q5crt.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2311-j9Q5crt.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2311-j9Q5crt.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -31784,8 +31784,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0830-MU9HnE7.jpg",
-      "videoUrl": "/exercises/videos/0830-MU9HnE7.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0830-MU9HnE7.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0830-MU9HnE7.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -31809,8 +31809,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower your body back down to the starting position, fully extending your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2987-Gk1r408.jpg",
-      "videoUrl": "/exercises/videos/2987-Gk1r408.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2987-Gk1r408.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2987-Gk1r408.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -31834,8 +31834,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through the heel of the bent leg to return to the starting position.",
         "Repeat on the other side, alternating between legs."
       ],
-      "thumbnailUrl": "/exercises/images/3643-GWoKnIm.jpg",
-      "videoUrl": "/exercises/videos/3643-GWoKnIm.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3643-GWoKnIm.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3643-GWoKnIm.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -31858,8 +31858,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0832-s8nrDXF.jpg",
-      "videoUrl": "/exercises/videos/0832-s8nrDXF.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0832-s8nrDXF.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0832-s8nrDXF.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31882,8 +31882,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3670-EZeDVzO.jpg",
-      "videoUrl": "/exercises/videos/3670-EZeDVzO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3670-EZeDVzO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3670-EZeDVzO.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31906,8 +31906,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your heels back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0833-LmaFNZS.jpg",
-      "videoUrl": "/exercises/videos/0833-LmaFNZS.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0833-LmaFNZS.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0833-LmaFNZS.gif",
       "musclesWorked": {
         "primary": [
           "calves"
@@ -31932,8 +31932,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the push-up motion, dropping down and catching yourself with your hands in the narrower position.",
         "Continue alternating between the wider and narrower hand positions for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1310-PSlvNMs.jpg",
-      "videoUrl": "/exercises/videos/1310-PSlvNMs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1310-PSlvNMs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1310-PSlvNMs.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -31959,8 +31959,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2135-VBAWRPG.jpg",
-      "videoUrl": "/exercises/videos/2135-VBAWRPG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2135-VBAWRPG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2135-VBAWRPG.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -31982,8 +31982,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale and slowly lower the dumbbells back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0834-e4aFmFY.jpg",
-      "videoUrl": "/exercises/videos/0834-e4aFmFY.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0834-e4aFmFY.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0834-e4aFmFY.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -32006,8 +32006,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your legs back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0866-QOA0FD0.jpg",
-      "videoUrl": "/exercises/videos/0866-QOA0FD0.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0866-QOA0FD0.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0866-QOA0FD0.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32030,8 +32030,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your upper body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0835-8urJS9b.jpg",
-      "videoUrl": "/exercises/videos/0835-8urJS9b.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0835-8urJS9b.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0835-8urJS9b.gif",
       "musclesWorked": {
         "primary": [
           "spine"
@@ -32053,8 +32053,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Engage your core and swing the weights up and overhead, keeping your arms straight.",
         "Lower the weights back down to the starting position and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3641-7uFJuXp.jpg",
-      "videoUrl": "/exercises/videos/3641-7uFJuXp.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3641-7uFJuXp.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3641-7uFJuXp.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -32077,8 +32077,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push off with your right foot and return to the starting position, swinging the weights back down.",
         "Repeat with your left foot and continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3644-5WiFcYk.jpg",
-      "videoUrl": "/exercises/videos/3644-5WiFcYk.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3644-5WiFcYk.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3644-5WiFcYk.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -32102,8 +32102,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Slowly lower yourself back down to the starting position, maintaining control throughout the movement.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3286-JsOV1SU.jpg",
-      "videoUrl": "/exercises/videos/3286-JsOV1SU.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3286-JsOV1SU.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3286-JsOV1SU.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -32127,8 +32127,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause at the top of the movement, then slowly lower yourself back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3312-MCkqdKE.jpg",
-      "videoUrl": "/exercises/videos/3312-MCkqdKE.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3312-MCkqdKE.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3312-MCkqdKE.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -32152,8 +32152,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your body back down to the starting position with control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3290-fXfqg1E.jpg",
-      "videoUrl": "/exercises/videos/3290-fXfqg1E.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3290-fXfqg1E.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3290-fXfqg1E.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -32176,8 +32176,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your torso back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0840-xmM75XG.jpg",
-      "videoUrl": "/exercises/videos/0840-xmM75XG.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0840-xmM75XG.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0840-xmM75XG.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32201,8 +32201,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0841-HMzLjXx.jpg",
-      "videoUrl": "/exercises/videos/0841-HMzLjXx.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0841-HMzLjXx.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0841-HMzLjXx.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -32226,8 +32226,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your arms back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0844-VLYXo8S.jpg",
-      "videoUrl": "/exercises/videos/0844-VLYXo8S.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0844-VLYXo8S.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0844-VLYXo8S.gif",
       "musclesWorked": {
         "primary": [
           "delts"
@@ -32251,8 +32251,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then twist your torso to the left, bringing the weight or medicine ball towards the floor on your left side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0846-fZFZ704.jpg",
-      "videoUrl": "/exercises/videos/0846-fZFZ704.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0846-fZFZ704.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0846-fZFZ704.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32276,8 +32276,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then twist your torso to the left, bringing the weight towards the ground on your left side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0845-WU9BLIs.jpg",
-      "videoUrl": "/exercises/videos/0845-WU9BLIs.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0845-WU9BLIs.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0845-WU9BLIs.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32301,8 +32301,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then twist your torso to the left, bringing the weight towards the left side of your body.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2371-YIUAtYf.jpg",
-      "videoUrl": "/exercises/videos/2371-YIUAtYf.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2371-YIUAtYf.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2371-YIUAtYf.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32326,8 +32326,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Inhale and slowly lower the medicine ball back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0847-b4b6afT.jpg",
-      "videoUrl": "/exercises/videos/0847-b4b6afT.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0847-b4b6afT.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0847-b4b6afT.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -32351,8 +32351,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat the rotation to the other side.",
         "Continue alternating sides for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0849-s34Y4LR.jpg",
-      "videoUrl": "/exercises/videos/0849-s34Y4LR.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0849-s34Y4LR.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0849-s34Y4LR.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32375,8 +32375,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then slowly return to the starting position.",
         "Repeat for the desired number of repetitions, then switch sides."
       ],
-      "thumbnailUrl": "/exercises/images/0850-6bOA1Oi.jpg",
-      "videoUrl": "/exercises/videos/0850-6bOA1Oi.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0850-6bOA1Oi.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0850-6bOA1Oi.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32400,8 +32400,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push through your heels to return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0851-0lQnxMZ.jpg",
-      "videoUrl": "/exercises/videos/0851-0lQnxMZ.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0851-0lQnxMZ.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0851-0lQnxMZ.gif",
       "musclesWorked": {
         "primary": [
           "quads"
@@ -32425,8 +32425,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your heels to stand back up, squeezing your glutes at the top.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0852-JZuApnB.jpg",
-      "videoUrl": "/exercises/videos/0852-JZuApnB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0852-JZuApnB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0852-JZuApnB.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -32448,8 +32448,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then inhale as you slowly lower the weights back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0853-M5Y7GPg.jpg",
-      "videoUrl": "/exercises/videos/0853-M5Y7GPg.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0853-M5Y7GPg.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0853-M5Y7GPg.gif",
       "musclesWorked": {
         "primary": [
           "biceps"
@@ -32472,8 +32472,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold the squeeze for a few seconds, then release.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0854-bjqbauy.jpg",
-      "videoUrl": "/exercises/videos/0854-bjqbauy.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0854-bjqbauy.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0854-bjqbauy.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -32495,8 +32495,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3313-Ff18ItA.jpg",
-      "videoUrl": "/exercises/videos/3313-Ff18ItA.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3313-Ff18ItA.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3313-Ff18ItA.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -32520,8 +32520,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Repeat with your left leg.",
         "Continue alternating legs for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3642-13VW2VO.jpg",
-      "videoUrl": "/exercises/videos/3642-13VW2VO.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3642-13VW2VO.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3642-13VW2VO.gif",
       "musclesWorked": {
         "primary": [
           "glutes"
@@ -32544,8 +32544,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the end of the movement, then slowly bring the weight plate back to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0856-I1OBLnn.jpg",
-      "videoUrl": "/exercises/videos/0856-I1OBLnn.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0856-I1OBLnn.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0856-I1OBLnn.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -32568,8 +32568,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the bottom, then push yourself back up to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1754-gtO1ErP.jpg",
-      "videoUrl": "/exercises/videos/1754-gtO1ErP.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1754-gtO1ErP.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1754-gtO1ErP.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -32593,8 +32593,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1755-bZq4bwK.jpg",
-      "videoUrl": "/exercises/videos/1755-bZq4bwK.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1755-bZq4bwK.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1755-bZq4bwK.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -32616,8 +32616,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push through your palms to straighten your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1767-K1vlode.jpg",
-      "videoUrl": "/exercises/videos/1767-K1vlode.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1767-K1vlode.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1767-K1vlode.gif",
       "musclesWorked": {
         "primary": [
           "triceps"
@@ -32641,8 +32641,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then slowly roll the wheel back towards your knees, maintaining control and keeping your abs engaged.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0857-NAgVB3t.jpg",
-      "videoUrl": "/exercises/videos/0857-NAgVB3t.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0857-NAgVB3t.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0857-NAgVB3t.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32665,8 +32665,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Reverse the movement by pulling the wheel back towards your body, using your core and arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/3637-km2Ljzj.jpg",
-      "videoUrl": "/exercises/videos/3637-km2Ljzj.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/3637-km2Ljzj.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/3637-km2Ljzj.gif",
       "musclesWorked": {
         "primary": [
           "cardiovascular system"
@@ -32689,8 +32689,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Lower your body back down to the starting position with control.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1429-Qqi7bko.jpg",
-      "videoUrl": "/exercises/videos/1429-Qqi7bko.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1429-Qqi7bko.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1429-Qqi7bko.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -32714,8 +32714,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower your body back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1367-OYFhXVD.jpg",
-      "videoUrl": "/exercises/videos/1367-OYFhXVD.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1367-OYFhXVD.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1367-OYFhXVD.gif",
       "musclesWorked": {
         "primary": [
           "lats"
@@ -32738,8 +32738,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Push through your palms to extend your arms and return to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1311-JmMVpR3.jpg",
-      "videoUrl": "/exercises/videos/1311-JmMVpR3.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1311-JmMVpR3.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1311-JmMVpR3.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -32761,8 +32761,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment, then push yourself back up to the starting position by straightening your arms.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/2363-O2K9Vb5.jpg",
-      "videoUrl": "/exercises/videos/2363-O2K9Vb5.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/2363-O2K9Vb5.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/2363-O2K9Vb5.gif",
       "musclesWorked": {
         "primary": [
           "pectorals"
@@ -32785,8 +32785,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Continue sprinting for a specific distance or time period.",
         "Rest and repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0858-Qoujh3Q.jpg",
-      "videoUrl": "/exercises/videos/0858-Qoujh3Q.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0858-Qoujh3Q.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0858-Qoujh3Q.gif",
       "musclesWorked": {
         "primary": [
           "abs"
@@ -32810,8 +32810,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Hold this position for a few seconds, then return to the starting position.",
         "Switch sides and repeat the stretch with your left foot forward."
       ],
-      "thumbnailUrl": "/exercises/images/1604-DFGXwZr.jpg",
-      "videoUrl": "/exercises/videos/1604-DFGXwZr.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1604-DFGXwZr.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1604-DFGXwZr.gif",
       "musclesWorked": {
         "primary": [
           "hamstrings"
@@ -32833,8 +32833,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Rotate your wrists in a circular motion, keeping your arms still.",
         "Continue the wrist circles for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/1428-2zNKRUB.jpg",
-      "videoUrl": "/exercises/videos/1428-2zNKRUB.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/1428-2zNKRUB.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/1428-2zNKRUB.gif",
       "musclesWorked": {
         "primary": [
           "forearms"
@@ -32858,8 +32858,8 @@ export const IMPORTED_EXERCISES: Exercise[] = [
         "Pause for a moment at the top, then slowly lower the weight back down to the starting position.",
         "Repeat for the desired number of repetitions."
       ],
-      "thumbnailUrl": "/exercises/images/0859-bd5b860.jpg",
-      "videoUrl": "/exercises/videos/0859-bd5b860.gif",
+      "thumbnailUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/images/0859-bd5b860.jpg",
+      "videoUrl": "https://raw.githubusercontent.com/Kuroshinz/aura.fit/main/public/exercises/videos/0859-bd5b860.gif",
       "musclesWorked": {
         "primary": [
           "forearms"

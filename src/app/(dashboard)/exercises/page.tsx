@@ -85,10 +85,6 @@ export default function ExercisesPage() {
           <span className="text-sm font-mono font-bold text-amber-400 uppercase tracking-widest block mb-1">
             EXERCISE DATABASE ({exercisesList.length}+ EXERCISES)
           </span>
-          {/* DEBUG BLOCK */}
-          <div className="text-xs text-red-500 font-mono">
-            DEBUG: imported length is {exercisesList.length}, filter says {filtered.length}
-          </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-white">
             THƯ VIỆN BÀI TẬP CHUẨN KHOA HỌC
           </h1>
