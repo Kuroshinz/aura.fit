@@ -118,13 +118,36 @@ export const useExerciseStore = create<ExerciseStore>()(
         const { customExercises } = get();
         const existingIds = new Set(EXERCISES_DATABASE.map(ex => ex.id));
         const newImports = IMPORTED_EXERCISES.filter(ex => !existingIds.has(ex.id));
+        
+        // Enrich hardcoded exercises with media URLs from the imported dataset if they are missing
+        const enrichedDb = EXERCISES_DATABASE.map(ex => {
+          if (!ex.metadata?.thumbnailUrl) {
+            const cleanName = ex.name.replace(/\([^)]*\)/g, '').trim().toLowerCase();
+            const match = IMPORTED_EXERCISES.find(i => {
+              const iName = i.name.toLowerCase();
+              return iName === cleanName || cleanName.includes(iName) || iName.includes(cleanName);
+            });
+            if (match && match.metadata) {
+              return {
+                ...ex,
+                metadata: {
+                  ...ex.metadata,
+                  thumbnailUrl: match.metadata.thumbnailUrl,
+                  videoUrl: match.metadata.videoUrl
+                }
+              };
+            }
+          }
+          return ex;
+        });
+
         console.log("DEBUG getAllExercises:", {
           db: EXERCISES_DATABASE.length,
           imports: IMPORTED_EXERCISES.length,
           newImports: newImports.length,
           custom: customExercises.length
         });
-        return [...EXERCISES_DATABASE, ...newImports, ...customExercises];
+        return [...enrichedDb, ...newImports, ...customExercises];
       },
 
       getFilteredExercises: () => {
