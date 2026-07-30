@@ -27,6 +27,46 @@ export function FloatingController({ onFinish }: { onFinish: () => void }) {
     return () => clearInterval(interval)
   }, [isRestTimerRunning, restTimerSeconds, tickRestTimer])
 
+  // Audio & Vibration when Timer ends
+  useEffect(() => {
+    if (restTimerSeconds === 0 && isRestTimerRunning) {
+      const playBeep = () => {
+        try {
+          const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
+          if (!AudioContext) return;
+          const ctx = new AudioContext();
+          
+          // Play 3 short beeps
+          for (let i = 0; i < 3; i++) {
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            
+            osc.type = 'sine';
+            osc.frequency.setValueAtTime(880, ctx.currentTime + i * 0.4);
+            
+            gain.gain.setValueAtTime(0.1, ctx.currentTime + i * 0.4);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.4 + 0.2);
+            
+            osc.start(ctx.currentTime + i * 0.4);
+            osc.stop(ctx.currentTime + i * 0.4 + 0.2);
+          }
+          
+          if ('vibrate' in navigator) {
+            navigator.vibrate([200, 100, 200, 100, 200]);
+          }
+        } catch (e) {
+          console.error('Audio playback failed', e);
+        }
+      }
+
+      playBeep()
+      pauseRestTimer() // Mark timer inactive after beep
+    }
+  }, [restTimerSeconds, isRestTimerRunning, pauseRestTimer])
+
   if (!activeWorkout) return null
 
   const formatTime = (seconds: number) => {
