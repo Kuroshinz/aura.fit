@@ -30,6 +30,7 @@ export const viewport = {
 }
 
 import Script from 'next/script'
+import { InstallPWAPrompt } from '@/components/effects/install-pwa-prompt'
 
 export default function RootLayout({
   children,
@@ -50,6 +51,7 @@ export default function RootLayout({
       </head>
       <body className="bg-[#020206] text-white font-sans selection:bg-amber-400 selection:text-black antialiased overflow-x-hidden">
         {children}
+        <InstallPWAPrompt />
         <Script id="sw-register" strategy="afterInteractive">
           {`
             if ('serviceWorker' in navigator) {

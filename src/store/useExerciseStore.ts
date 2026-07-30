@@ -1,5 +1,6 @@
 import { create } from 'zustand';
-import { persist } from 'zustand/middleware';
+import { persist, createJSONStorage } from 'zustand/middleware';
+import { idbStorage } from '@/lib/utils/idb-storage';
 import type { Exercise } from '@/data/exercises-database';
 import { EXERCISES_DATABASE } from '@/data/exercises-database';
 import { syncStateToCloud } from '@/lib/supabase/user-sync';
@@ -213,6 +214,7 @@ export const useExerciseStore = create<ExerciseStore>()(
         recentlyViewedIds: state.recentlyViewedIds,
         customExercises: state.customExercises,
       }),
+      storage: createJSONStorage(() => idbStorage),
     }
   )
 );

@@ -6,7 +6,7 @@ import { useProfileStore } from '@/store/use-profile-store'
 import { ExerciseLogCard } from '@/components/workout/exercise-log-card'
 import { calculateTotalVolume } from '@/lib/utils/workout-math'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight, RefreshCw } from 'lucide-react'
+import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight, RefreshCw, Cloud, CloudOff, CloudUpload } from 'lucide-react'
 import { useToastStore } from '@/components/effects/toast'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
@@ -65,6 +65,31 @@ export default function WorkoutPage() {
   const [searchQuery, setSearchQuery] = useState('')
   const [muscleFilter, setMuscleFilter] = useState('TẤT CẢ')
   const [elapsedSeconds, setElapsedSeconds] = useState(0)
+  const [syncStatus, setSyncStatus] = useState<'synced' | 'saving' | 'offline'>('synced')
+
+  // Auto-Save UI Sync Listener
+  useEffect(() => {
+    const handleQueued = () => setSyncStatus('saving')
+    const handleSuccess = () => setSyncStatus('synced')
+    const handleOffline = () => setSyncStatus('offline')
+    const handleOnline = () => setSyncStatus('saving') // it will flush shortly
+
+    window.addEventListener('aura-sync-queued', handleQueued)
+    window.addEventListener('aura-sync-success', handleSuccess)
+    window.addEventListener('offline', handleOffline)
+    window.addEventListener('online', handleOnline)
+
+    if (typeof navigator !== 'undefined' && !navigator.onLine) {
+      setSyncStatus('offline')
+    }
+
+    return () => {
+      window.removeEventListener('aura-sync-queued', handleQueued)
+      window.removeEventListener('aura-sync-success', handleSuccess)
+      window.removeEventListener('offline', handleOffline)
+      window.removeEventListener('online', handleOnline)
+    }
+  }, [])
 
   // Elapsed Timer
   useEffect(() => {
@@ -235,10 +260,30 @@ export default function WorkoutPage() {
               <p className="text-xs font-mono text-slate-400">
                 VOLUME: <span className="font-extrabold text-amber-400 text-sm">{totalVolume.toLocaleString()} KG</span>
               </p>
-              <p className="text-xs font-mono text-cyan-300 flex items-center gap-1">
+              <p className="text-xs font-mono text-cyan-300 flex items-center gap-1 border-l border-slate-700 pl-4">
                 <Clock className="w-3 h-3" />
                 <span className="font-extrabold text-sm">{formatElapsed(elapsedSeconds)}</span>
               </p>
+              <div className="flex items-center gap-1.5 border-l border-slate-700 pl-4">
+                {syncStatus === 'synced' && (
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                    <Cloud className="w-3 h-3" />
+                    <span>SAVED</span>
+                  </div>
+                )}
+                {syncStatus === 'saving' && (
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-amber-400 font-bold bg-amber-500/10 px-2 py-0.5 rounded-full border border-amber-500/20">
+                    <CloudUpload className="w-3 h-3 animate-pulse" />
+                    <span>SAVING...</span>
+                  </div>
+                )}
+                {syncStatus === 'offline' && (
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-rose-400 font-bold bg-rose-500/10 px-2 py-0.5 rounded-full border border-rose-500/20">
+                    <CloudOff className="w-3 h-3" />
+                    <span>OFFLINE - SAVED LOCALLY</span>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

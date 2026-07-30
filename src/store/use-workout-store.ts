@@ -1,6 +1,7 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { syncStateToCloud } from '@/lib/supabase/user-sync'
+import { idbStorage } from '@/lib/utils/idb-storage'
 
 export type SetType = 'Normal' | 'Warmup' | 'Drop Set' | 'Failure' | 'Backoff' | 'AMRAP';
 
@@ -350,6 +351,7 @@ export const useWorkoutStore = create<WorkoutState>()(
     }),
     {
       name: 'gym-active-workout-storage',
+      storage: createJSONStorage(() => idbStorage),
     }
   )
 )

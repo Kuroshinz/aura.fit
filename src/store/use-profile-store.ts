@@ -1,6 +1,7 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { syncStateToCloud } from '@/lib/supabase/user-sync'
+import { idbStorage } from '@/lib/utils/idb-storage'
 
 export interface MetricLog {
   date: string
@@ -93,6 +94,7 @@ export const useProfileStore = create<ProfileState>()(
     }),
     {
       name: 'gym-user-profile-storage',
+      storage: createJSONStorage(() => idbStorage),
     }
   )
 )
