@@ -4,9 +4,10 @@ import { useState, useEffect, useMemo } from 'react'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { useProfileStore } from '@/store/use-profile-store'
 import { ExerciseLogCard } from '@/components/workout/exercise-log-card'
+import { FloatingController } from '@/components/workout/floating-controller'
 import { calculateTotalVolume } from '@/lib/utils/workout-math'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight, RefreshCw, Cloud, CloudOff, CloudUpload } from 'lucide-react'
+import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight, RefreshCw, Cloud, CloudOff, CloudUpload, Edit3, Maximize, List } from 'lucide-react'
 import { useToastStore } from '@/components/effects/toast'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
@@ -59,9 +60,11 @@ export default function WorkoutPage() {
     showSummary,
     lastCompletedWorkout,
     dismissSummary,
+    updateSessionNotes,
   } = useWorkoutStore()
 
   const [showAddModal, setShowAddModal] = useState(false)
+  const [isFocusMode, setIsFocusMode] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [muscleFilter, setMuscleFilter] = useState('TẤT CẢ')
   const [elapsedSeconds, setElapsedSeconds] = useState(0)
@@ -244,8 +247,42 @@ export default function WorkoutPage() {
   const allCompletedSets = activeWorkout.exercises.flatMap((e) => e.sets)
   const totalVolume = calculateTotalVolume(allCompletedSets)
 
+  const handleFinishWorkout = () => {
+    if (confirm('Hoàn thành buổi tập và lưu dữ liệu?')) {
+      const vol = totalVolume
+      const routineName = activeWorkout.routine_name || 'Buổi tập tự do'
+      const exCount = activeWorkout.exercises.length
+      const setsCount = allCompletedSets.length
+      const durationMinutes = Math.max(1, Math.round(elapsedSeconds / 60))
+
+      finishWorkout()
+      
+      useToastStore.getState().addToast({
+        variant: 'success',
+        title: 'Hoàn thành buổi tập!',
+        message: `Chúc mừng bạn đã hoàn thành xuất sắc buổi tập '${routineName}' ngày hôm nay!`
+      })
+
+      sendTelegramWebhook({
+        event_type: 'workout_completed',
+        user_email: `${(profile?.name || 'athlete').toLowerCase().replace(/\s+/g, '')}@aura.fit`,
+        user_name: profile?.name || 'Vận động viên AURA',
+        title: `🏋️ HOÀN THÀNH BUỔI TẬP: ${routineName}`,
+        message: `Đã hoàn thành xuất sắc bài tập ${routineName} trong ${durationMinutes} phút với tổng volume ${vol.toLocaleString()} kg!${activeWorkout.session_notes ? `\n\n📝 Ghi chú: ${activeWorkout.session_notes}` : ''}`,
+        telegram_chat_id: profile?.telegram_chat_id || undefined,
+        metrics: {
+          'Tổng Volume': `${vol.toLocaleString()} kg`,
+          'Thời gian': `${durationMinutes} phút`,
+          'Số bài tập': exCount,
+          'Số Set hoàn thành': setsCount
+        }
+      })
+    }
+  }
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-32">
+      <FloatingController onFinish={handleFinishWorkout} />
       {/* Sticky Header Banner with Elapsed Timer */}
       <div className="aura-glass rounded-3xl p-6 sticky top-4 z-30 border-amber-500/30 flex items-center justify-between shadow-2xl">
         <div className="flex items-center gap-4">
@@ -289,44 +326,25 @@ export default function WorkoutPage() {
         </div>
 
         <button
-          onClick={() => {
-            if (confirm('Hoàn thành buổi tập và lưu dữ liệu?')) {
-              const vol = totalVolume
-              const routineName = activeWorkout.routine_name
-              const exCount = activeWorkout.exercises.length
-              const setsCount = allCompletedSets.length
-              const durationMinutes = Math.max(1, Math.round(elapsedSeconds / 60))
-
-              finishWorkout()
-              
-              useToastStore.getState().addToast({
-                variant: 'success',
-                title: 'Hoàn thành buổi tập!',
-                message: `Chúc mừng bạn đã hoàn thành xuất sắc buổi tập '${routineName}' ngày hôm nay!`
-              })
-
-              sendTelegramWebhook({
-                event_type: 'workout_completed',
-                user_email: `${(profile?.name || 'athlete').toLowerCase().replace(/\s+/g, '')}@aura.fit`,
-                user_name: profile?.name || 'Vận động viên AURA',
-                title: `🏋️ HOÀN THÀNH BUỔI TẬP: ${routineName}`,
-                message: `Đã hoàn thành xuất sắc bài tập ${routineName} trong ${durationMinutes} phút với tổng volume ${vol.toLocaleString()} kg!`,
-                telegram_chat_id: profile?.telegram_chat_id || undefined,
-                metrics: {
-                  'Tổng Volume': `${vol.toLocaleString()} kg`,
-                  'Thời gian': `${durationMinutes} phút`,
-                  'Số bài tập': exCount,
-                  'Số Set hoàn thành': setsCount
-                }
-              })
-            }
-          }}
+          onClick={handleFinishWorkout}
           className="px-6 py-3.5 btn-aura-gold text-black font-display font-black rounded-2xl text-xs uppercase tracking-widest flex items-center gap-2"
         >
           <CheckCircle2 className="w-4 h-4 stroke-[3]" />
           HOÀN THÀNH
         </button>
       </div>
+
+      {/* View Toggle */}
+      {activeWorkout.exercises.length > 1 && (
+        <div className="flex justify-end -mt-2 mb-2">
+          <button
+            onClick={() => setIsFocusMode(!isFocusMode)}
+            className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/60 border border-slate-700 text-slate-400 hover:text-amber-400 font-mono text-[10px] uppercase font-bold transition-all"
+          >
+            {isFocusMode ? <><List className="w-3 h-3" /> Chế độ Danh sách</> : <><Maximize className="w-3 h-3" /> Chế độ Focus (Vuốt)</>}
+          </button>
+        </div>
+      )}
 
       {/* Exercises List */}
       {activeWorkout.exercises.length === 0 ? (
@@ -341,15 +359,45 @@ export default function WorkoutPage() {
             CHỌN BÀI TẬP
           </button>
         </div>
+      ) : isFocusMode ? (
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 -mx-4 px-4 [&::-webkit-scrollbar]:hidden">
+          {activeWorkout.exercises.map((ex) => (
+            <div key={ex.exercise_id} className="w-[88vw] sm:w-[500px] shrink-0 snap-center">
+              <ExerciseLogCard
+                exerciseId={ex.exercise_id}
+                exerciseName={ex.exercise_name}
+                muscleGroup={ex.muscle_group}
+              />
+            </div>
+          ))}
+        </div>
       ) : (
-        activeWorkout.exercises.map((ex) => (
-          <ExerciseLogCard
-            key={ex.exercise_id}
-            exerciseId={ex.exercise_id}
-            exerciseName={ex.exercise_name}
-            muscleGroup={ex.muscle_group}
+        <div className="flex flex-col">
+          {activeWorkout.exercises.map((ex) => (
+            <ExerciseLogCard
+              key={ex.exercise_id}
+              exerciseId={ex.exercise_id}
+              exerciseName={ex.exercise_name}
+              muscleGroup={ex.muscle_group}
+            />
+          ))}
+        </div>
+      )}
+
+      {/* Session Notes */}
+      {activeWorkout.exercises.length > 0 && (
+        <div className="aura-glass p-5 rounded-3xl border-slate-800 shadow-xl">
+          <label className="text-[10px] font-mono font-bold text-slate-400 uppercase flex items-center gap-2 mb-3">
+            <Edit3 className="w-4 h-4" />
+            Ghi chú buổi tập
+          </label>
+          <textarea
+            value={activeWorkout.session_notes || ''}
+            onChange={(e) => updateSessionNotes(e.target.value)}
+            placeholder="Bạn cảm thấy thế nào hôm nay? (Năng lượng, chấn thương, giấc ngủ...)"
+            className="w-full bg-[#03030a] border border-slate-700 focus:border-amber-400 text-slate-300 font-sans text-sm p-4 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-400/30 min-h-[100px] resize-y"
           />
-        ))
+        </div>
       )}
 
       {/* Add Exercise Floating Action */}
