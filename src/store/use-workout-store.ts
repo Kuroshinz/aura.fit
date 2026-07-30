@@ -243,7 +243,7 @@ export const useWorkoutStore = create<WorkoutState>()(
         if (!activeWorkout) return
 
         const updatedExercises = activeWorkout.exercises.map((ex) => {
-          if (ex.id === exerciseId) {
+          if (ex.exercise_id === exerciseId) {
             return {
               ...ex,
               sets: ex.sets.map((s) => (s.id === setId ? { ...s, set_type: setType } : s)),
