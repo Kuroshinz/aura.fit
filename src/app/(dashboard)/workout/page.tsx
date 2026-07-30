@@ -131,8 +131,14 @@ export default function WorkoutPage() {
       }
     }
 
+    const handleQuickAdd = () => setShowAddModal(true)
+
     window.addEventListener('keydown', handleGlobalKeyDown)
-    return () => window.removeEventListener('keydown', handleGlobalKeyDown)
+    window.addEventListener('QUICK_ADD_EXERCISE', handleQuickAdd)
+    return () => {
+      window.removeEventListener('keydown', handleGlobalKeyDown)
+      window.removeEventListener('QUICK_ADD_EXERCISE', handleQuickAdd)
+    }
   }, [resetRestTimer, isFocusMode])
 
   // Elapsed Timer
@@ -450,6 +456,7 @@ export default function WorkoutPage() {
             Ghi chú buổi tập
           </label>
           <textarea
+            id="session-note-input"
             value={activeWorkout.session_notes || ''}
             onChange={(e) => updateSessionNotes(e.target.value)}
             placeholder="Bạn cảm thấy thế nào hôm nay? (Năng lượng, chấn thương, giấc ngủ...)"

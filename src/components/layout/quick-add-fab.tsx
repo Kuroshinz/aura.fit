@@ -3,9 +3,14 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Plus, Dumbbell, ListPlus, Edit3, Repeat } from 'lucide-react'
+import { useRouter, usePathname } from 'next/navigation'
+import { useWorkoutStore } from '@/store/use-workout-store'
 
 export function QuickAddFAB() {
   const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter()
+  const pathname = usePathname()
+  const { activeWorkout, startWorkout } = useWorkoutStore()
 
   const actions = [
     { id: 'replace', label: 'Thay Đổi Bài', icon: Repeat },
@@ -33,8 +38,41 @@ export function QuickAddFAB() {
                   animate={{ opacity: 1, x: 0, transition: { delay: i * 0.05 } }}
                   className="flex items-center gap-3 bg-[#070714] border border-slate-700 text-white px-4 py-2 rounded-xl shadow-xl hover:bg-slate-800 transition-colors"
                   onClick={() => {
-                    console.log(`Triggered ${action.id}`);
                     setIsOpen(false);
+                    
+                    if (!activeWorkout && action.id !== 'replace') {
+                      startWorkout();
+                    }
+
+                    if (pathname !== '/workout') {
+                      router.push('/workout');
+                    }
+
+                    setTimeout(() => {
+                      switch (action.id) {
+                        case 'exercise':
+                        case 'replace':
+                          window.dispatchEvent(new CustomEvent('QUICK_ADD_EXERCISE'));
+                          break;
+                        case 'set':
+                          const current = useWorkoutStore.getState().activeWorkout;
+                          if (current && current.exercises.length > 0) {
+                            const lastEx = current.exercises[current.exercises.length - 1];
+                            useWorkoutStore.getState().addSet(lastEx.exercise_id);
+                            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+                          } else {
+                            window.dispatchEvent(new CustomEvent('QUICK_ADD_EXERCISE'));
+                          }
+                          break;
+                        case 'note':
+                          const noteEl = document.getElementById('session-note-input');
+                          if (noteEl) {
+                            noteEl.focus();
+                            noteEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                          }
+                          break;
+                      }
+                    }, 150);
                   }}
                 >
                   <span className="text-xs font-mono font-bold uppercase tracking-wider">{action.label}</span>
