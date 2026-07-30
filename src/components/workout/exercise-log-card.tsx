@@ -1,7 +1,8 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, memo } from 'react'
 import { useWorkoutStore } from '@/store/use-workout-store'
+import { useShallow } from 'zustand/react/shallow'
 import { Check, Plus, Dumbbell, Trophy, Calculator, X, Zap, Save, ChevronDown, ChevronUp, Trash2, Edit3 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
@@ -22,8 +23,21 @@ interface ExerciseLogCardProps {
   muscleGroup: string
 }
 
-export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: ExerciseLogCardProps) {
-  const { activeWorkout, updateSet, updateSetType, toggleCompleteSet, addSet, savePersonalRecord, personalRecords, removeSet, removeExercise, undoLastAction, updateExerciseNotes } = useWorkoutStore()
+export const ExerciseLogCard = memo(function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: ExerciseLogCardProps) {
+  const { updateSet, updateSetType, toggleCompleteSet, addSet, savePersonalRecord, personalRecords, removeSet, removeExercise, undoLastAction, updateExerciseNotes } = useWorkoutStore(useShallow((s) => ({
+    updateSet: s.updateSet,
+    updateSetType: s.updateSetType,
+    toggleCompleteSet: s.toggleCompleteSet,
+    addSet: s.addSet,
+    savePersonalRecord: s.savePersonalRecord,
+    personalRecords: s.personalRecords,
+    removeSet: s.removeSet,
+    removeExercise: s.removeExercise,
+    undoLastAction: s.undoLastAction,
+    updateExerciseNotes: s.updateExerciseNotes
+  })))
+  
+  const exerciseSession = useWorkoutStore(s => s.activeWorkout?.exercises.find(e => e.exercise_id === exerciseId))
   const [showPRBadge, setShowPRBadge] = useState(false)
   const [showNotes, setShowNotes] = useState(false)
   
@@ -32,7 +46,6 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
   const [modalWeight, setModalWeight] = useState(70)
   const [modalReps, setModalReps] = useState(8)
 
-  const exerciseSession = activeWorkout?.exercises.find((e) => e.exercise_id === exerciseId)
   if (!exerciseSession) return null
 
   // Quick 1RM formula calculation (Epley formula)
@@ -148,6 +161,7 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
           </button>
 
           <button
+            aria-label="Xóa bài tập"
             onClick={() => {
               removeExercise(exerciseId)
               useToastStore.getState().addToast({
@@ -361,9 +375,10 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
               {/* Check Box */}
               <div className="col-span-2 flex justify-center items-center gap-1">
                 <motion.button
+                  aria-label={set.is_completed ? "Bỏ hoàn thành set" : "Hoàn thành set"}
                   whileTap={{ scale: 0.85 }}
                   onClick={() => handleSetToggle(set.id, set.is_completed, set.weight_kg, set.reps)}
-                  className={`w-10 h-10 sm:w-12 sm:h-12 rounded-2xl flex items-center justify-center transition-all ${
+                  className={`w-10 h-10 sm:w-12 sm:h-12 rounded-2xl flex items-center justify-center transition-all focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:outline-none ${
                     set.is_completed
                       ? 'btn-aura-gold scale-105 shadow-[0_0_20px_rgba(251,191,36,0.5)]'
                       : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-700'
@@ -372,6 +387,7 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
                   <Check className={`w-6 h-6 sm:w-7 sm:h-7 ${set.is_completed ? 'stroke-[3]' : 'stroke-[2]'}`} />
                 </motion.button>
                 <button
+                  aria-label="Xóa set"
                   onClick={() => {
                     removeSet(exerciseId, set.id)
                     useToastStore.getState().addToast({
@@ -407,4 +423,4 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
       </motion.button>
     </motion.div>
   )
-}
+})

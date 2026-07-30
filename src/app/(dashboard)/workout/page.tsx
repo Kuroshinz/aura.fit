@@ -11,6 +11,8 @@ import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, 
 import { useToastStore } from '@/components/effects/toast'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
+import { useShallow } from 'zustand/react/shallow'
+import { Virtuoso } from 'react-virtuoso'
 
 const allExercises = [
   { id: '1', name: 'Bench Press', muscle: 'Chest' },
@@ -61,7 +63,18 @@ export default function WorkoutPage() {
     lastCompletedWorkout,
     dismissSummary,
     updateSessionNotes,
-  } = useWorkoutStore()
+    resetRestTimer,
+  } = useWorkoutStore(useShallow((s) => ({
+    activeWorkout: s.activeWorkout,
+    startWorkout: s.startWorkout,
+    finishWorkout: s.finishWorkout,
+    addExerciseToWorkout: s.addExerciseToWorkout,
+    showSummary: s.showSummary,
+    lastCompletedWorkout: s.lastCompletedWorkout,
+    dismissSummary: s.dismissSummary,
+    updateSessionNotes: s.updateSessionNotes,
+    resetRestTimer: s.resetRestTimer,
+  })))
 
   const [showAddModal, setShowAddModal] = useState(false)
   const [isFocusMode, setIsFocusMode] = useState(false)
@@ -93,6 +106,34 @@ export default function WorkoutPage() {
       window.removeEventListener('online', handleOnline)
     }
   }, [])
+
+  // Global Keyboard Shortcuts
+  useEffect(() => {
+    const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      // Ignore if typing in input/textarea
+      const activeEl = document.activeElement
+      if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA')) {
+        return
+      }
+
+      if (e.key === 'r' || e.key === 'R') {
+        e.preventDefault()
+        resetRestTimer()
+      } else if (e.key === 'ArrowRight' && isFocusMode) {
+        // Find next exercise visually (not perfectly trivial without state, but basic support)
+        const container = document.querySelector('.snap-x')
+        if (container) container.scrollBy({ left: 300, behavior: 'smooth' })
+      } else if (e.key === 'ArrowLeft' && isFocusMode) {
+        const container = document.querySelector('.snap-x')
+        if (container) container.scrollBy({ left: -300, behavior: 'smooth' })
+      } else if (e.key === 'Escape') {
+        setShowAddModal(false)
+      }
+    }
+
+    window.addEventListener('keydown', handleGlobalKeyDown)
+    return () => window.removeEventListener('keydown', handleGlobalKeyDown)
+  }, [resetRestTimer, isFocusMode])
 
   // Elapsed Timer
   useEffect(() => {
@@ -373,14 +414,31 @@ export default function WorkoutPage() {
         </div>
       ) : (
         <div className="flex flex-col">
-          {activeWorkout.exercises.map((ex) => (
-            <ExerciseLogCard
-              key={ex.exercise_id}
-              exerciseId={ex.exercise_id}
-              exerciseName={ex.exercise_name}
-              muscleGroup={ex.muscle_group}
+          {activeWorkout.exercises.length > 10 ? (
+            <Virtuoso
+              useWindowScroll
+              data={activeWorkout.exercises}
+              itemContent={(_, ex) => (
+                <div className="pb-4">
+                  <ExerciseLogCard
+                    exerciseId={ex.exercise_id}
+                    exerciseName={ex.exercise_name}
+                    muscleGroup={ex.muscle_group}
+                  />
+                </div>
+              )}
             />
-          ))}
+          ) : (
+            activeWorkout.exercises.map((ex) => (
+              <div key={ex.exercise_id} className="pb-4">
+                <ExerciseLogCard
+                  exerciseId={ex.exercise_id}
+                  exerciseName={ex.exercise_name}
+                  muscleGroup={ex.muscle_group}
+                />
+              </div>
+            ))
+          )}
         </div>
       )}
 
