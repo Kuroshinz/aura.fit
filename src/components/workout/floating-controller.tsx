@@ -1,9 +1,11 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Timer, CheckCircle2, Pause, Play, RotateCcw } from 'lucide-react'
+import { Timer, CheckCircle2, Pause, Play, RotateCcw, X, Volume2 } from 'lucide-react'
 import { useWorkoutStore } from '@/store/use-workout-store'
+
+const CIRCUMFERENCE = 2 * Math.PI * 24 // r=24 for a slightly smaller circle in the floating controller
 
 export function FloatingController({ onFinish }: { onFinish: () => void }) {
   const { 
@@ -17,19 +19,33 @@ export function FloatingController({ onFinish }: { onFinish: () => void }) {
     setRestTimer
   } = useWorkoutStore()
 
+  const [soundEnabled, setSoundEnabled] = useState(true)
+  const validSeconds = typeof restTimerSeconds === 'number' && !isNaN(restTimerSeconds) ? restTimerSeconds : 60
+  const totalSecondsRef = useRef(validSeconds)
+
+  useEffect(() => {
+    if (!isRestTimerRunning) {
+      totalSecondsRef.current = validSeconds
+    }
+  }, [validSeconds, isRestTimerRunning])
+
+  const progress = totalSecondsRef.current > 0
+    ? (validSeconds / totalSecondsRef.current)
+    : 1
+
   useEffect(() => {
     let interval: NodeJS.Timeout
-    if (isRestTimerRunning && restTimerSeconds > 0) {
+    if (isRestTimerRunning && validSeconds > 0) {
       interval = setInterval(() => {
         tickRestTimer()
       }, 1000)
     }
     return () => clearInterval(interval)
-  }, [isRestTimerRunning, restTimerSeconds, tickRestTimer])
+  }, [isRestTimerRunning, validSeconds, tickRestTimer])
 
   // Audio & Vibration when Timer ends
   useEffect(() => {
-    if (restTimerSeconds === 0 && isRestTimerRunning) {
+    if (validSeconds === 0 && isRestTimerRunning) {
       const playBeep = () => {
         try {
           const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
@@ -61,19 +77,22 @@ export function FloatingController({ onFinish }: { onFinish: () => void }) {
           console.error('Audio playback failed', e);
         }
       }
-
-      playBeep()
+      if (soundEnabled) playBeep()
       pauseRestTimer() // Mark timer inactive after beep
     }
-  }, [restTimerSeconds, isRestTimerRunning, pauseRestTimer])
+  }, [validSeconds, isRestTimerRunning, pauseRestTimer, soundEnabled])
 
   if (!activeWorkout) return null
 
-  const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60)
-    const s = seconds % 60
-    return `${m}:${s.toString().padStart(2, '0')}`
+  const formatTime = (totalSec: number) => {
+    const safeSec = Math.max(0, Math.floor(totalSec))
+    const m = Math.floor(safeSec / 60)
+    const s = safeSec % 60
+    return `${m < 10 ? '0' : ''}${m}:${s < 10 ? '0' : ''}${s}`
   }
+
+  const strokeDashoffset = CIRCUMFERENCE * (1 - progress)
+  const ringColor = progress > 0.5 ? '#fbbf24' : progress > 0.25 ? '#f59e0b' : '#ef4444'
 
   return (
     <AnimatePresence>
@@ -86,32 +105,60 @@ export function FloatingController({ onFinish }: { onFinish: () => void }) {
         <div className="aura-glass bg-[#0c0e1e]/90 backdrop-blur-xl border border-amber-500/30 p-2 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.8)] flex items-center justify-between">
           
           {/* Rest Timer Module */}
-          <div className="flex items-center gap-2 bg-[#03030a] rounded-full p-1.5 border border-slate-800 flex-1">
-            <div className={`flex items-center justify-center w-10 h-10 rounded-full transition-colors ${isRestTimerRunning ? 'bg-amber-500/20 text-amber-400' : 'bg-slate-900 text-slate-400'}`}>
-              <Timer className={`w-5 h-5 ${isRestTimerRunning ? 'animate-pulse' : ''}`} />
+          <div className="flex items-center gap-2 sm:gap-3 bg-[#03030a] rounded-full p-2 border border-slate-800 flex-1">
+            
+            <div className="relative w-10 h-10 shrink-0">
+              <svg className="w-full h-full -rotate-90" viewBox="0 0 56 56">
+                <circle cx="28" cy="28" r="24" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="3" />
+                <motion.circle
+                  cx="28" cy="28" r="24" fill="none"
+                  stroke={ringColor} strokeWidth="3" strokeLinecap="round"
+                  strokeDasharray={CIRCUMFERENCE} strokeDashoffset={strokeDashoffset}
+                  animate={{ strokeDashoffset }} transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  className="drop-shadow-[0_0_4px_var(--ring-color)]"
+                  style={{ '--ring-color': ringColor } as React.CSSProperties}
+                />
+              </svg>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <Timer className="w-4 h-4 text-amber-400 animate-pulse pointer-events-none" />
+              </div>
             </div>
             
-            <div className="flex flex-col flex-1 px-2">
-              <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest leading-none mb-0.5">Nghỉ ngơi</span>
-              <span className={`font-mono font-black text-lg leading-none ${isRestTimerRunning ? 'text-amber-400' : 'text-white'}`}>
-                {formatTime(restTimerSeconds)}
-              </span>
+            <div className="font-mono text-xl font-extrabold text-white tracking-wider gold-gradient-text min-w-[55px] pointer-events-none select-none">
+              {formatTime(validSeconds)}
             </div>
 
-            <div className="flex items-center gap-1 pr-2">
+            <div className="flex items-center gap-1 sm:gap-2 border-l border-slate-700/80 pl-2 sm:pl-3">
+              <button
+                onClick={() => setSoundEnabled(!soundEnabled)}
+                className={`p-1.5 sm:p-2 rounded-full transition-colors ${
+                  soundEnabled ? 'text-amber-400 bg-amber-500/10' : 'text-slate-500 hover:bg-slate-800'
+                }`}
+              >
+                <Volume2 className="w-4 h-4 sm:w-5 sm:h-5" />
+              </button>
+
               {isRestTimerRunning ? (
-                <button onClick={pauseRestTimer} className="p-2 rounded-full bg-slate-800 text-white hover:bg-slate-700 transition-colors">
-                  <Pause className="w-4 h-4 fill-current" />
+                <button onClick={pauseRestTimer} className="p-2 sm:p-2.5 bg-amber-500 text-black rounded-full hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/20">
+                  <Pause className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
                 </button>
               ) : (
                 <button onClick={() => {
-                  if (restTimerSeconds === 0) setRestTimer(60)
+                  if (validSeconds === 0) setRestTimer(60)
                   startRestTimer()
-                }} className="p-2 rounded-full bg-amber-500/20 text-amber-400 hover:bg-amber-500/30 transition-colors">
-                  <Play className="w-4 h-4 fill-current" />
+                }} className="p-2 sm:p-2.5 btn-aura-gold rounded-full">
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-current ml-0.5" />
                 </button>
               )}
-              <button onClick={resetRestTimer} className="p-2 rounded-full text-slate-500 hover:text-slate-300 transition-colors">
+
+              <button
+                onClick={() => setRestTimer(validSeconds + 30)}
+                className="px-2 py-1 sm:px-2.5 sm:py-1.5 text-[10px] sm:text-xs font-mono font-bold text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-700/50 rounded-full transition-colors"
+              >
+                +30s
+              </button>
+
+              <button onClick={resetRestTimer} className="p-1.5 rounded-full text-slate-500 hover:text-slate-300 transition-colors hidden sm:block">
                 <RotateCcw className="w-4 h-4" />
               </button>
             </div>

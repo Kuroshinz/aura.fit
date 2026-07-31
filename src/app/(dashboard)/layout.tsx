@@ -121,7 +121,7 @@ export default function DashboardLayout({
         </PageTransition>
       </main>
 
-      <RestTimer />
+      {pathname !== '/workout' && <RestTimer />}
 
       <CommandPalette />
       <GlobalAICoach />
