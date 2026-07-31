@@ -216,6 +216,13 @@ async def check_and_send_user_notifications(context: ContextTypes.DEFAULT_TYPE):
     Runs every 5 minutes, but each user only receives once per day.
     """
     logger.info("Checking users for auto routine notifications...")
+    import datetime
+    tz_vn = datetime.timezone(datetime.timedelta(hours=7))
+    now = datetime.datetime.now(tz_vn)
+    
+    if now.hour < 7:
+        logger.info("Current time is before 7 AM. Skipping auto notifications.")
+        return
     
     if not supabase_service.client:
         logger.warning("Supabase client not available, skipping per-user notifications")
@@ -233,7 +240,8 @@ async def check_and_send_user_notifications(context: ContextTypes.DEFAULT_TYPE):
         return
     
     profiles = res.data or []
-    today_str = datetime.datetime.now().strftime("%Y-%m-%d")
+    # Use Vietnam time date string for accurate daily deduplication
+    today_str = now.strftime("%Y-%m-%d")
     
     for profile in profiles:
         chat_id = profile.get("telegram_chat_id", "").strip()
