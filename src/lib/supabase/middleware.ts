@@ -47,7 +47,7 @@ export async function updateSession(request: NextRequest) {
   }
 
   if (user && isAuthPage) {
-    return NextResponse.redirect(new URL('/workout', request.url))
+    return NextResponse.redirect(new URL('/dashboard', request.url))
   }
 
   return response
