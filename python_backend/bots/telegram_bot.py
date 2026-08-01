@@ -37,7 +37,17 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"• `/routine` \\- Today's workout plan\n"
         f"• `/help` \\- Account linking \\& support\n"
     )
-    await msg_obj.reply_text(msg, parse_mode="MarkdownV2")
+    keyboard = [
+        [
+            InlineKeyboardButton("📊 My Stats", callback_data="cmd_stats"),
+            InlineKeyboardButton("📋 Today's Routine", callback_data="cmd_routine")
+        ],
+        [
+            InlineKeyboardButton("🚀 Open AURA.FIT", url="https://aurafitiris.vercel.app")
+        ]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await msg_obj.reply_text(msg, parse_mode="MarkdownV2", reply_markup=reply_markup)
 
 async def stats_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg_obj = update.effective_message
@@ -131,7 +141,26 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"3\\. Paste your Chat ID and enable auto\\-send\n"
         f"4\\. You'll receive daily workouts at 7:00 AM\\!"
     )
-    await msg_obj.reply_text(msg, parse_mode="MarkdownV2")
+    keyboard = [
+        [
+            InlineKeyboardButton("📊 My Stats", callback_data="cmd_stats"),
+            InlineKeyboardButton("📋 Today's Routine", callback_data="cmd_routine")
+        ],
+        [
+            InlineKeyboardButton("🚀 Open AURA.FIT", url="https://aurafitiris.vercel.app")
+        ]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await msg_obj.reply_text(msg, parse_mode="MarkdownV2", reply_markup=reply_markup)
+
+async def button_callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+
+    if query.data == "cmd_stats":
+        await stats_command(update, context)
+    elif query.data == "cmd_routine":
+        await routine_command(update, context)
 
 def build_telegram_app() -> Application:
     """Initialize Telegram application."""
@@ -157,6 +186,7 @@ def build_telegram_app() -> Application:
     app.add_handler(CommandHandler("routine", routine_command))
     app.add_handler(CommandHandler("myid", myid_command))
     app.add_handler(CommandHandler("help", help_command))
+    app.add_handler(CallbackQueryHandler(button_callback_handler))
 
     return app
 
