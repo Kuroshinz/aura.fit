@@ -79,7 +79,7 @@ function SidebarItem({
 // ─── Main Component ───────────────────────────────────────────────
 export function ResponsiveNav() {
   const [collapsed, setCollapsed] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const { profile, setProfile, logout } = useProfileStore()
   const router = useRouter()
