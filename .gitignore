@@ -23,7 +23,6 @@ Thumbs.db
 # public/exercises/
 
 # Secrets and test scripts
-python_backend/config.py
 test_ids.js
 test_next.js
 check_len.js
