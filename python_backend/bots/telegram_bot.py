@@ -127,7 +127,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"• `/help` \\- Show command menu\n\n"
         f"🔗 *Account Linking:*\n"
         f"1\\. Get your `Chat ID` using `/myid`\n"
-        f"2\\. Go to AURA\\.FIT Profile → Telegram section\n"
+        f"2\\. Go to (https://aurafitiris.vercel.app)[https://aurafitiris.vercel.app] Profile → Telegram section\n"
         f"3\\. Paste your Chat ID and enable auto\\-send\n"
         f"4\\. You'll receive daily workouts at 7:00 AM\\!"
     )
