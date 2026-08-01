@@ -22,6 +22,25 @@ export class ErrorBoundary extends Component<Props, State> {
     return { hasError: true, error }
   }
 
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    // We import locally to avoid issues during initial load
+    import('@/lib/supabase/client').then(({ createClient }) => {
+      const supabase = createClient()
+      supabase.from('system_errors').insert([{
+        error_message: error.message,
+        error_stack: info.componentStack,
+        user_agent: typeof window !== 'undefined' ? navigator.userAgent : 'Server'
+      }]).then(() => {
+        // Trigger Webhook alert
+        fetch('/api/report-error', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: error.message, stack: info.componentStack })
+        }).catch(err => console.error("Failed to report error via API", err))
+      })
+    }).catch(err => console.error(err))
+  }
+
   render() {
     if (this.state.hasError) {
       return (

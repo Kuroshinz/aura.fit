@@ -31,6 +31,7 @@ export const viewport = {
 
 import Script from 'next/script'
 import { InstallPWAPrompt } from '@/components/effects/install-pwa-prompt'
+import { ErrorBoundary } from '@/components/effects/error-boundary'
 
 export default function RootLayout({
   children,
@@ -50,7 +51,9 @@ export default function RootLayout({
         <meta name="application-name" content="AURA.FIT" />
       </head>
       <body className="bg-[#020206] text-white font-sans selection:bg-amber-400 selection:text-black antialiased overflow-x-hidden">
-        {children}
+        <ErrorBoundary>
+          {children}
+        </ErrorBoundary>
         <InstallPWAPrompt />
         <Script id="sw-register" strategy="afterInteractive">
           {`

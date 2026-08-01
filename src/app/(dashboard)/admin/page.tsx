@@ -17,6 +17,7 @@ export default function AdminPage() {
     excelExport: true,
     experimental3D: true,
   })
+  const [errors, setErrors] = useState<any[]>([])
 
   // Load real registered accounts from Supabase database
   const refreshAccounts = async () => {
@@ -31,9 +32,24 @@ export default function AdminPage() {
     }
   }
 
+  const fetchErrors = async () => {
+    if (typeof window !== 'undefined') {
+      const supabase = createClient()
+      const { data } = await supabase.from('system_errors').select('*').order('created_at', { ascending: false }).limit(20)
+      if (data) setErrors(data)
+    }
+  }
+
   useEffect(() => {
     refreshAccounts()
+    fetchErrors()
   }, [])
+
+  const resolveError = async (id: string) => {
+    const supabase = createClient()
+    await supabase.from('system_errors').update({ resolved: true }).eq('id', id)
+    fetchErrors()
+  }
 
   const toggleRole = async (id: string, currentRole: string) => {
     const newRole = currentRole === 'admin' ? 'user' : 'admin'
@@ -236,6 +252,42 @@ export default function AdminPage() {
             )
           })}
         </div>
+      </div>
+      {/* System Error Logs & Diagnostics */}
+      <div className="aura-glass rounded-3xl p-6 md:p-8 space-y-6">
+        <h2 className="text-xl font-extrabold text-white flex items-center gap-2">
+          <ShieldCheck className="w-5 h-5 text-red-500" />
+          SYSTEM DIAGNOSTICS & ERROR LOGS
+        </h2>
+
+        {errors.length === 0 ? (
+          <p className="text-emerald-400 font-mono text-sm">System is healthy. No errors logged.</p>
+        ) : (
+          <div className="space-y-4">
+            {errors.map(err => (
+              <div key={err.id} className={`p-4 rounded-xl border ${err.resolved ? 'bg-slate-900/50 border-emerald-500/20 opacity-60' : 'bg-red-500/10 border-red-500/30'}`}>
+                <div className="flex justify-between items-start mb-2">
+                  <span className="font-mono text-xs text-slate-400">{new Date(err.created_at).toLocaleString()}</span>
+                  {!err.resolved && (
+                    <button onClick={() => resolveError(err.id)} className="text-xs bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-md hover:bg-emerald-500/40">
+                      Mark Resolved
+                    </button>
+                  )}
+                </div>
+                <p className="font-bold text-white mb-2">{err.error_message}</p>
+                <p className="font-mono text-xs text-slate-500 truncate">{err.user_agent}</p>
+                {err.error_stack && (
+                  <details className="mt-2">
+                    <summary className="text-xs text-amber-400 cursor-pointer">View Stack Trace</summary>
+                    <pre className="mt-2 text-[10px] text-slate-300 bg-black/50 p-2 rounded-md overflow-x-auto">
+                      {err.error_stack}
+                    </pre>
+                  </details>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   )
