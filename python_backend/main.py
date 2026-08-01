@@ -6,6 +6,7 @@ from fastapi import FastAPI
 from config import config
 from api.webhook import router as webhook_router
 from bots.telegram_bot import build_telegram_app
+from sync.sync_engine import sync_engine
 
 # Ensure UTF-8 encoding on Windows standard streams
 if hasattr(sys.stdout, 'reconfigure'):
@@ -79,6 +80,16 @@ async def start_telegram_bot():
     except Exception as e:
         logger.error(f"Telegram bot exception: {e}")
 
+async def start_sync_worker():
+    """Background task to process the sync queue."""
+    logger.info("⚙️ Starting Universal Sync Engine worker...")
+    while True:
+        try:
+            await sync_engine.process_queue()
+        except Exception as e:
+            logger.error(f"Sync worker error: {e}")
+        await asyncio.sleep(5) # Poll every 5 seconds
+
 async def main():
     """Asynchronous Entry Point running FastAPI and Telegram Bot concurrently."""
     logger.info("🚀 Launching AURA.FIT Telegram Bot & Webhook Service...")
@@ -87,6 +98,7 @@ async def main():
     tasks = [
         asyncio.create_task(start_fastapi_server()),
         asyncio.create_task(start_telegram_bot()),
+        asyncio.create_task(start_sync_worker()),
     ]
     
     try:
