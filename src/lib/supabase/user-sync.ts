@@ -59,17 +59,32 @@ export async function flushSyncQueue() {
       return
     }
 
-    const { error } = await supabase
-      .from('profiles')
-      .update(cleanUpdates)
-      .eq('id', user.id)
+    const queueItems = []
+    
+    // Convert object updates into granular sync_queue rows
+    for (const [key, value] of Object.entries(cleanUpdates)) {
+      queueItems.push({
+        entity_name: 'profiles',
+        entity_id: user.id,
+        operation_type: 'UPDATE',
+        payload: { [key]: value },
+        version: 1, // Store locally tracked version
+        source_platform: 'web',
+        status: 'pending'
+      })
+    }
 
-    if (error) {
-      console.error('Failed to flush sync queue to cloud:', error.message || JSON.stringify(error))
+    if (queueItems.length > 0) {
+      const { error } = await supabase.from('sync_queue').insert(queueItems)
+      if (error) {
+        console.error('Failed to flush sync queue to cloud:', error.message || JSON.stringify(error))
+      } else {
+        console.log('Successfully flushed sync queue to Supabase!')
+        await clearQueue()
+        window.dispatchEvent(new CustomEvent('aura-sync-success'))
+      }
     } else {
-      console.log('Successfully flushed sync queue to Supabase!')
       await clearQueue()
-      // Dispatch custom event for UI updates (Auto-save status)
       window.dispatchEvent(new CustomEvent('aura-sync-success'))
     }
   } catch (err) {
