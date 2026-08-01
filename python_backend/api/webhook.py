@@ -43,6 +43,9 @@ async def receive_webhook(
 
     # Dispatch to Telegram
     target_telegram_chat = payload.telegram_chat_id or config.DEFAULT_TELEGRAM_CHAT_ID
+    
+    # Simple Deduplication: If last_active_at is very recent, maybe skip. But for now, we just dispatch.
+    
     if target_telegram_chat:
         telegram_app = get_telegram_app()
         if telegram_app:

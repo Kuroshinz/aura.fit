@@ -2,8 +2,8 @@ import logging
 import re
 import datetime
 from typing import Optional
-from telegram import Update, Chat
-from telegram.ext import Application, CommandHandler, ContextTypes
+from telegram import Update, Chat, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 from config import config
 from services.supabase_service import supabase_service
 
@@ -37,7 +37,17 @@ async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"• `/routine` \\- Today's workout plan\n"
         f"• `/help` \\- Account linking \\& support\n"
     )
-    await msg_obj.reply_text(msg, parse_mode="MarkdownV2")
+    keyboard = [
+        [
+            InlineKeyboardButton("📊 My Stats", callback_data="cmd_stats"),
+            InlineKeyboardButton("📋 Today's Routine", callback_data="cmd_routine")
+        ],
+        [
+            InlineKeyboardButton("🚀 Open AURA.FIT", url="https://aurafitiris.vercel.app")
+        ]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await msg_obj.reply_text(msg, parse_mode="MarkdownV2", reply_markup=reply_markup)
 
 async def stats_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg_obj = update.effective_message
@@ -131,7 +141,26 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"3\\. Paste your Chat ID and enable auto\\-send\n"
         f"4\\. You'll receive daily workouts at 7:00 AM\\!"
     )
-    await msg_obj.reply_text(msg, parse_mode="MarkdownV2")
+    keyboard = [
+        [
+            InlineKeyboardButton("📊 My Stats", callback_data="cmd_stats"),
+            InlineKeyboardButton("📋 Today's Routine", callback_data="cmd_routine")
+        ],
+        [
+            InlineKeyboardButton("🚀 Open AURA.FIT", url="https://aurafitiris.vercel.app")
+        ]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await msg_obj.reply_text(msg, parse_mode="MarkdownV2", reply_markup=reply_markup)
+
+async def button_callback_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+
+    if query.data == "cmd_stats":
+        await stats_command(update, context)
+    elif query.data == "cmd_routine":
+        await routine_command(update, context)
 
 def build_telegram_app() -> Application:
     """Initialize Telegram application."""
@@ -157,6 +186,7 @@ def build_telegram_app() -> Application:
     app.add_handler(CommandHandler("routine", routine_command))
     app.add_handler(CommandHandler("myid", myid_command))
     app.add_handler(CommandHandler("help", help_command))
+    app.add_handler(CallbackQueryHandler(button_callback_handler))
 
     return app
 
@@ -196,6 +226,10 @@ def _build_routine_message(routine: dict) -> str:
     )
     return msg
 
+def get_webapp_keyboard():
+    keyboard = [[InlineKeyboardButton("🔥 START WORKOUT NOW", url="https://aurafitiris.vercel.app/workout")]]
+    return InlineKeyboardMarkup(keyboard)
+
 async def send_daily_routine_notification(context: ContextTypes.DEFAULT_TYPE):
     """Send daily routine to the default configured chat."""
     chat_id = config.DEFAULT_TELEGRAM_CHAT_ID
@@ -205,7 +239,7 @@ async def send_daily_routine_notification(context: ContextTypes.DEFAULT_TYPE):
     routine = await supabase_service.get_today_routine("unknown")
     msg = _build_routine_message(routine)
     try:
-        await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2")
+        await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2", reply_markup=get_webapp_keyboard())
     except Exception as e:
         logger.error(f"Failed to auto-send daily routine to default chat: {e}")
 
@@ -263,7 +297,7 @@ async def check_and_send_user_notifications(context: ContextTypes.DEFAULT_TYPE):
         msg = _build_routine_message(routine)
         
         try:
-            await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2")
+            await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2", reply_markup=get_webapp_keyboard())
             context.bot_data[sent_key] = True
             logger.info(f"✅ Sent daily routine to {profile.get('full_name', chat_id)} (chat: {chat_id})")
         except Exception as e:
