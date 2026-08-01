@@ -1,6 +1,7 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import { syncStateToCloud } from '@/lib/supabase/user-sync'
+import { idbStorage } from '@/lib/utils/idb-storage'
 
 export type SetType = 'Normal' | 'Warmup' | 'Drop Set' | 'Failure' | 'Backoff' | 'AMRAP';
 
@@ -18,6 +19,7 @@ export interface ExerciseSession {
   exercise_name: string
   muscle_group: string
   sets: SetItem[]
+  notes?: string
 }
 
 export interface ActiveWorkout {
@@ -25,6 +27,7 @@ export interface ActiveWorkout {
   routine_name?: string
   start_time: string
   exercises: ExerciseSession[]
+  session_notes?: string
 }
 
 export interface CompletedWorkout {
@@ -42,6 +45,7 @@ export interface CompletedWorkout {
 
 interface WorkoutState {
   activeWorkout: ActiveWorkout | null
+  previousState: ActiveWorkout | null
   workoutHistory: CompletedWorkout[]
   personalRecords: Record<string, { weight: number, reps: number, oneRM: number, date: string }>
   restTimerSeconds: number
@@ -69,12 +73,16 @@ interface WorkoutState {
   removeSet: (exerciseId: string, setId: string) => void
   removeExercise: (exerciseId: string) => void
   deleteWorkout: (workoutId: string) => void
+  undoLastAction: () => void
+  updateExerciseNotes: (exerciseId: string, notes: string) => void
+  updateSessionNotes: (notes: string) => void
 }
 
 export const useWorkoutStore = create<WorkoutState>()(
   persist(
     (set, get) => ({
       activeWorkout: null,
+      previousState: null,
       workoutHistory: [],
       personalRecords: {},
       restTimerSeconds: 60,
@@ -323,22 +331,58 @@ export const useWorkoutStore = create<WorkoutState>()(
       removeSet: (exerciseId, setId) => {
         set(state => {
           if (!state.activeWorkout) return state
+          
+          // Deep clone the state to prevent mutations when restoring
+          const previousState = JSON.parse(JSON.stringify(state.activeWorkout))
+
           const exercises = state.activeWorkout.exercises.map(ex =>
             ex.exercise_id !== exerciseId ? ex : { ...ex, sets: ex.sets.filter(s => s.id !== setId) }
           )
-          return { activeWorkout: { ...state.activeWorkout, exercises } }
+          
+          return { activeWorkout: { ...state.activeWorkout, exercises }, previousState }
         })
       },
 
       removeExercise: (exerciseId) => {
         set(state => {
           if (!state.activeWorkout) return state
+          
+          const previousState = JSON.parse(JSON.stringify(state.activeWorkout))
+
           return {
             activeWorkout: {
               ...state.activeWorkout,
               exercises: state.activeWorkout.exercises.filter(ex => ex.exercise_id !== exerciseId)
-            }
+            },
+            previousState
           }
+        })
+      },
+
+      undoLastAction: () => {
+        set(state => {
+          if (!state.previousState) return state
+          return {
+            activeWorkout: state.previousState,
+            previousState: null // clear undo stack after restoring
+          }
+        })
+      },
+
+      updateExerciseNotes: (exerciseId: string, notes: string) => {
+        set(state => {
+          if (!state.activeWorkout) return state
+          const exercises = state.activeWorkout.exercises.map(ex => 
+            ex.exercise_id === exerciseId ? { ...ex, notes } : ex
+          )
+          return { activeWorkout: { ...state.activeWorkout, exercises } }
+        })
+      },
+
+      updateSessionNotes: (notes: string) => {
+        set(state => {
+          if (!state.activeWorkout) return state
+          return { activeWorkout: { ...state.activeWorkout, session_notes: notes } }
         })
       },
 
@@ -350,6 +394,7 @@ export const useWorkoutStore = create<WorkoutState>()(
     }),
     {
       name: 'gym-active-workout-storage',
+      storage: createJSONStorage(() => idbStorage),
     }
   )
 )

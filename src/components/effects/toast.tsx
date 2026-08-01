@@ -13,6 +13,10 @@ export interface Toast {
   title: string
   message?: string
   duration?: number
+  action?: {
+    label: string
+    onClick: () => void
+  }
 }
 
 interface ToastStore {
@@ -103,6 +107,17 @@ function ToastItem({ toast }: { toast: Toast }) {
         <p className="text-sm font-bold text-white truncate">{toast.title}</p>
         {toast.message && (
           <p className="text-xs font-mono text-slate-400 mt-0.5 line-clamp-2">{toast.message}</p>
+        )}
+        {toast.action && (
+          <button 
+            onClick={() => {
+              toast.action?.onClick()
+              handleDismiss()
+            }}
+            className="mt-2 text-xs font-bold font-mono px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white transition-colors border border-slate-700 active:scale-95"
+          >
+            {toast.action.label}
+          </button>
         )}
       </div>
       <button

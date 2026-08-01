@@ -1,6 +1,8 @@
 import { createClient } from './client'
+import { get, set } from 'idb-keyval'
 
 let syncTimeout: any = null
+let isFlushing = false
 
 export interface SyncUpdates {
   active_workout?: any | null,
@@ -20,39 +22,84 @@ export interface SyncUpdates {
   metrics_history?: any[]
 }
 
-export function syncStateToCloud(
+const QUEUE_KEY = 'aura-sync-queue'
+
+async function getQueue(): Promise<SyncUpdates> {
+  if (typeof window === 'undefined') return {}
+  return (await get(QUEUE_KEY)) || {}
+}
+
+async function saveQueue(updates: SyncUpdates) {
+  if (typeof window === 'undefined') return
+  await set(QUEUE_KEY, updates)
+}
+
+async function clearQueue() {
+  if (typeof window === 'undefined') return
+  await set(QUEUE_KEY, {})
+}
+
+export async function flushSyncQueue() {
+  if (typeof window === 'undefined' || isFlushing || !navigator.onLine) return
+  
+  const queuedUpdates = await getQueue()
+  const cleanUpdates = Object.fromEntries(
+    Object.entries(queuedUpdates).filter(([_, v]) => v !== undefined)
+  )
+
+  if (Object.keys(cleanUpdates).length === 0) return
+
+  isFlushing = true
+  try {
+    const supabase = createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+    
+    if (!user) {
+      isFlushing = false
+      return
+    }
+
+    const { error } = await supabase
+      .from('profiles')
+      .update(cleanUpdates)
+      .eq('id', user.id)
+
+    if (error) {
+      console.error('Failed to flush sync queue to cloud:', error.message || JSON.stringify(error))
+    } else {
+      console.log('Successfully flushed sync queue to Supabase!')
+      await clearQueue()
+      // Dispatch custom event for UI updates (Auto-save status)
+      window.dispatchEvent(new CustomEvent('aura-sync-success'))
+    }
+  } catch (err) {
+    console.error('Error in flushSyncQueue:', err)
+  } finally {
+    isFlushing = false
+  }
+}
+
+export async function syncStateToCloud(
   updates: SyncUpdates,
   immediate = false
 ) {
+  // Merge new updates into the queue
+  const currentQueue = await getQueue()
+  const mergedQueue = { ...currentQueue, ...updates }
+  await saveQueue(mergedQueue)
+
+  // Notify UI that changes are queued locally
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new CustomEvent('aura-sync-queued'))
+  }
+
   if (syncTimeout) {
     clearTimeout(syncTimeout)
   }
 
-  const performSync = async () => {
-    try {
-      const supabase = createClient()
-      const { data: { user } } = await supabase.auth.getUser()
-      
-      if (!user) return
-
-      const cleanUpdates = Object.fromEntries(
-        Object.entries(updates).filter(([_, v]) => v !== undefined)
-      )
-
-      if (Object.keys(cleanUpdates).length === 0) return
-
-      const { error } = await supabase
-        .from('profiles')
-        .update(cleanUpdates)
-        .eq('id', user.id)
-
-      if (error) {
-        console.error('Failed to sync state to cloud:', error.message || JSON.stringify(error))
-      } else {
-        console.log('Successfully synced state to Supabase!')
-      }
-    } catch (err) {
-      console.error('Error in syncStateToCloud:', err)
+  const performSync = () => {
+    if (typeof window !== 'undefined' && navigator.onLine) {
+      flushSyncQueue()
     }
   }
 
@@ -62,4 +109,12 @@ export function syncStateToCloud(
     // Debounce by 1.5s for keystrokes
     syncTimeout = setTimeout(performSync, 1500)
   }
+}
+
+// Setup network listeners for offline recovery
+if (typeof window !== 'undefined') {
+  window.addEventListener('online', () => {
+    console.log('Network online. Flushing sync queue...')
+    flushSyncQueue()
+  })
 }

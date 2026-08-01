@@ -4,12 +4,15 @@ import { useState, useEffect, useMemo } from 'react'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { useProfileStore } from '@/store/use-profile-store'
 import { ExerciseLogCard } from '@/components/workout/exercise-log-card'
+import { FloatingController } from '@/components/workout/floating-controller'
 import { calculateTotalVolume } from '@/lib/utils/workout-math'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
-import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight, RefreshCw } from 'lucide-react'
+import { Dumbbell, Play, CheckCircle2, Plus, Flame, Sparkles, Activity, Search, X, Clock, Trophy, Zap, ArrowRight, RefreshCw, Cloud, CloudOff, CloudUpload, Edit3, Maximize, List } from 'lucide-react'
 import { useToastStore } from '@/components/effects/toast'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
+import { useShallow } from 'zustand/react/shallow'
+import { Virtuoso } from 'react-virtuoso'
 
 const allExercises = [
   { id: '1', name: 'Bench Press', muscle: 'Chest' },
@@ -59,12 +62,84 @@ export default function WorkoutPage() {
     showSummary,
     lastCompletedWorkout,
     dismissSummary,
-  } = useWorkoutStore()
+    updateSessionNotes,
+    resetRestTimer,
+  } = useWorkoutStore(useShallow((s) => ({
+    activeWorkout: s.activeWorkout,
+    startWorkout: s.startWorkout,
+    finishWorkout: s.finishWorkout,
+    addExerciseToWorkout: s.addExerciseToWorkout,
+    showSummary: s.showSummary,
+    lastCompletedWorkout: s.lastCompletedWorkout,
+    dismissSummary: s.dismissSummary,
+    updateSessionNotes: s.updateSessionNotes,
+    resetRestTimer: s.resetRestTimer,
+  })))
 
   const [showAddModal, setShowAddModal] = useState(false)
+  const [isFocusMode, setIsFocusMode] = useState(false)
   const [searchQuery, setSearchQuery] = useState('')
   const [muscleFilter, setMuscleFilter] = useState('TẤT CẢ')
   const [elapsedSeconds, setElapsedSeconds] = useState(0)
+  const [syncStatus, setSyncStatus] = useState<'synced' | 'saving' | 'offline'>('synced')
+
+  // Auto-Save UI Sync Listener
+  useEffect(() => {
+    const handleQueued = () => setSyncStatus('saving')
+    const handleSuccess = () => setSyncStatus('synced')
+    const handleOffline = () => setSyncStatus('offline')
+    const handleOnline = () => setSyncStatus('saving') // it will flush shortly
+
+    window.addEventListener('aura-sync-queued', handleQueued)
+    window.addEventListener('aura-sync-success', handleSuccess)
+    window.addEventListener('offline', handleOffline)
+    window.addEventListener('online', handleOnline)
+
+    if (typeof navigator !== 'undefined' && !navigator.onLine) {
+      setSyncStatus('offline')
+    }
+
+    return () => {
+      window.removeEventListener('aura-sync-queued', handleQueued)
+      window.removeEventListener('aura-sync-success', handleSuccess)
+      window.removeEventListener('offline', handleOffline)
+      window.removeEventListener('online', handleOnline)
+    }
+  }, [])
+
+  // Global Keyboard Shortcuts
+  useEffect(() => {
+    const handleGlobalKeyDown = (e: KeyboardEvent) => {
+      // Ignore if typing in input/textarea
+      const activeEl = document.activeElement
+      if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA')) {
+        return
+      }
+
+      if (e.key === 'r' || e.key === 'R') {
+        e.preventDefault()
+        resetRestTimer()
+      } else if (e.key === 'ArrowRight' && isFocusMode) {
+        // Find next exercise visually (not perfectly trivial without state, but basic support)
+        const container = document.querySelector('.snap-x')
+        if (container) container.scrollBy({ left: 300, behavior: 'smooth' })
+      } else if (e.key === 'ArrowLeft' && isFocusMode) {
+        const container = document.querySelector('.snap-x')
+        if (container) container.scrollBy({ left: -300, behavior: 'smooth' })
+      } else if (e.key === 'Escape') {
+        setShowAddModal(false)
+      }
+    }
+
+    const handleQuickAdd = () => setShowAddModal(true)
+
+    window.addEventListener('keydown', handleGlobalKeyDown)
+    window.addEventListener('QUICK_ADD_EXERCISE', handleQuickAdd)
+    return () => {
+      window.removeEventListener('keydown', handleGlobalKeyDown)
+      window.removeEventListener('QUICK_ADD_EXERCISE', handleQuickAdd)
+    }
+  }, [resetRestTimer, isFocusMode])
 
   // Elapsed Timer
   useEffect(() => {
@@ -219,8 +294,42 @@ export default function WorkoutPage() {
   const allCompletedSets = activeWorkout.exercises.flatMap((e) => e.sets)
   const totalVolume = calculateTotalVolume(allCompletedSets)
 
+  const handleFinishWorkout = () => {
+    if (confirm('Hoàn thành buổi tập và lưu dữ liệu?')) {
+      const vol = totalVolume
+      const routineName = activeWorkout.routine_name || 'Buổi tập tự do'
+      const exCount = activeWorkout.exercises.length
+      const setsCount = allCompletedSets.length
+      const durationMinutes = Math.max(1, Math.round(elapsedSeconds / 60))
+
+      finishWorkout()
+      
+      useToastStore.getState().addToast({
+        variant: 'success',
+        title: 'Hoàn thành buổi tập!',
+        message: `Chúc mừng bạn đã hoàn thành xuất sắc buổi tập '${routineName}' ngày hôm nay!`
+      })
+
+      sendTelegramWebhook({
+        event_type: 'workout_completed',
+        user_email: `${(profile?.name || 'athlete').toLowerCase().replace(/\s+/g, '')}@aura.fit`,
+        user_name: profile?.name || 'Vận động viên AURA',
+        title: `🏋️ HOÀN THÀNH BUỔI TẬP: ${routineName}`,
+        message: `Đã hoàn thành xuất sắc bài tập ${routineName} trong ${durationMinutes} phút với tổng volume ${vol.toLocaleString()} kg!${activeWorkout.session_notes ? `\n\n📝 Ghi chú: ${activeWorkout.session_notes}` : ''}`,
+        telegram_chat_id: profile?.telegram_chat_id || undefined,
+        metrics: {
+          'Tổng Volume': `${vol.toLocaleString()} kg`,
+          'Thời gian': `${durationMinutes} phút`,
+          'Số bài tập': exCount,
+          'Số Set hoàn thành': setsCount
+        }
+      })
+    }
+  }
+
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 pb-32">
+      <FloatingController onFinish={handleFinishWorkout} />
       {/* Sticky Header Banner with Elapsed Timer */}
       <div className="aura-glass rounded-3xl p-6 sticky top-4 z-30 border-amber-500/30 flex items-center justify-between shadow-2xl">
         <div className="flex items-center gap-4">
@@ -235,53 +344,54 @@ export default function WorkoutPage() {
               <p className="text-xs font-mono text-slate-400">
                 VOLUME: <span className="font-extrabold text-amber-400 text-sm">{totalVolume.toLocaleString()} KG</span>
               </p>
-              <p className="text-xs font-mono text-cyan-300 flex items-center gap-1">
+              <p className="text-xs font-mono text-cyan-300 flex items-center gap-1 border-l border-slate-700 pl-4">
                 <Clock className="w-3 h-3" />
                 <span className="font-extrabold text-sm">{formatElapsed(elapsedSeconds)}</span>
               </p>
+              <div className="flex items-center gap-1.5 border-l border-slate-700 pl-4">
+                {syncStatus === 'synced' && (
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                    <Cloud className="w-3 h-3" />
+                    <span>SAVED</span>
+                  </div>
+                )}
+                {syncStatus === 'saving' && (
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-amber-400 font-bold bg-amber-500/10 px-2 py-0.5 rounded-full border border-amber-500/20">
+                    <CloudUpload className="w-3 h-3 animate-pulse" />
+                    <span>SAVING...</span>
+                  </div>
+                )}
+                {syncStatus === 'offline' && (
+                  <div className="flex items-center gap-1 text-[10px] font-mono text-rose-400 font-bold bg-rose-500/10 px-2 py-0.5 rounded-full border border-rose-500/20">
+                    <CloudOff className="w-3 h-3" />
+                    <span>OFFLINE - SAVED LOCALLY</span>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
 
         <button
-          onClick={() => {
-            if (confirm('Hoàn thành buổi tập và lưu dữ liệu?')) {
-              const vol = totalVolume
-              const routineName = activeWorkout.routine_name
-              const exCount = activeWorkout.exercises.length
-              const setsCount = allCompletedSets.length
-              const durationMinutes = Math.max(1, Math.round(elapsedSeconds / 60))
-
-              finishWorkout()
-              
-              useToastStore.getState().addToast({
-                variant: 'success',
-                title: 'Hoàn thành buổi tập!',
-                message: `Chúc mừng bạn đã hoàn thành xuất sắc buổi tập '${routineName}' ngày hôm nay!`
-              })
-
-              sendTelegramWebhook({
-                event_type: 'workout_completed',
-                user_email: `${(profile?.name || 'athlete').toLowerCase().replace(/\s+/g, '')}@aura.fit`,
-                user_name: profile?.name || 'Vận động viên AURA',
-                title: `🏋️ HOÀN THÀNH BUỔI TẬP: ${routineName}`,
-                message: `Đã hoàn thành xuất sắc bài tập ${routineName} trong ${durationMinutes} phút với tổng volume ${vol.toLocaleString()} kg!`,
-                telegram_chat_id: profile?.telegram_chat_id || undefined,
-                metrics: {
-                  'Tổng Volume': `${vol.toLocaleString()} kg`,
-                  'Thời gian': `${durationMinutes} phút`,
-                  'Số bài tập': exCount,
-                  'Số Set hoàn thành': setsCount
-                }
-              })
-            }
-          }}
+          onClick={handleFinishWorkout}
           className="px-6 py-3.5 btn-aura-gold text-black font-display font-black rounded-2xl text-xs uppercase tracking-widest flex items-center gap-2"
         >
           <CheckCircle2 className="w-4 h-4 stroke-[3]" />
           HOÀN THÀNH
         </button>
       </div>
+
+      {/* View Toggle */}
+      {activeWorkout.exercises.length > 1 && (
+        <div className="flex justify-end -mt-2 mb-2">
+          <button
+            onClick={() => setIsFocusMode(!isFocusMode)}
+            className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900/60 border border-slate-700 text-slate-400 hover:text-amber-400 font-mono text-[10px] uppercase font-bold transition-all"
+          >
+            {isFocusMode ? <><List className="w-3 h-3" /> Chế độ Danh sách</> : <><Maximize className="w-3 h-3" /> Chế độ Focus (Vuốt)</>}
+          </button>
+        </div>
+      )}
 
       {/* Exercises List */}
       {activeWorkout.exercises.length === 0 ? (
@@ -296,15 +406,63 @@ export default function WorkoutPage() {
             CHỌN BÀI TẬP
           </button>
         </div>
+      ) : isFocusMode ? (
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 -mx-4 px-4 [&::-webkit-scrollbar]:hidden">
+          {activeWorkout.exercises.map((ex) => (
+            <div key={ex.exercise_id} className="w-[88vw] sm:w-[500px] shrink-0 snap-center">
+              <ExerciseLogCard
+                exerciseId={ex.exercise_id}
+                exerciseName={ex.exercise_name}
+                muscleGroup={ex.muscle_group}
+              />
+            </div>
+          ))}
+        </div>
       ) : (
-        activeWorkout.exercises.map((ex) => (
-          <ExerciseLogCard
-            key={ex.exercise_id}
-            exerciseId={ex.exercise_id}
-            exerciseName={ex.exercise_name}
-            muscleGroup={ex.muscle_group}
+        <div className="flex flex-col">
+          {activeWorkout.exercises.length > 10 ? (
+            <Virtuoso
+              useWindowScroll
+              data={activeWorkout.exercises}
+              itemContent={(_, ex) => (
+                <div className="pb-4">
+                  <ExerciseLogCard
+                    exerciseId={ex.exercise_id}
+                    exerciseName={ex.exercise_name}
+                    muscleGroup={ex.muscle_group}
+                  />
+                </div>
+              )}
+            />
+          ) : (
+            activeWorkout.exercises.map((ex) => (
+              <div key={ex.exercise_id} className="pb-4">
+                <ExerciseLogCard
+                  exerciseId={ex.exercise_id}
+                  exerciseName={ex.exercise_name}
+                  muscleGroup={ex.muscle_group}
+                />
+              </div>
+            ))
+          )}
+        </div>
+      )}
+
+      {/* Session Notes */}
+      {activeWorkout.exercises.length > 0 && (
+        <div className="aura-glass p-5 rounded-3xl border-slate-800 shadow-xl">
+          <label className="text-[10px] font-mono font-bold text-slate-400 uppercase flex items-center gap-2 mb-3">
+            <Edit3 className="w-4 h-4" />
+            Ghi chú buổi tập
+          </label>
+          <textarea
+            id="session-note-input"
+            value={activeWorkout.session_notes || ''}
+            onChange={(e) => updateSessionNotes(e.target.value)}
+            placeholder="Bạn cảm thấy thế nào hôm nay? (Năng lượng, chấn thương, giấc ngủ...)"
+            className="w-full bg-[#03030a] border border-slate-700 focus:border-amber-400 text-slate-300 font-sans text-sm p-4 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-400/30 min-h-[100px] resize-y"
           />
-        ))
+        </div>
       )}
 
       {/* Add Exercise Floating Action */}

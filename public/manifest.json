@@ -4,8 +4,8 @@
   "description": "Premium AI Athletic Companion",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#03030a",
-  "theme_color": "#03030a",
+  "background_color": "#070714",
+  "theme_color": "#070714",
   "icons": [
     {
       "src": "/favicon.ico",

@@ -1,10 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, memo } from 'react'
 import { useWorkoutStore } from '@/store/use-workout-store'
-import { Check, Plus, Dumbbell, Trophy, Calculator, X, Zap, Save, ChevronDown, ChevronUp, Trash2 } from 'lucide-react'
+import { useShallow } from 'zustand/react/shallow'
+import { Check, Plus, Dumbbell, Trophy, Calculator, X, Zap, Save, ChevronDown, ChevronUp, Trash2, Edit3 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 import confetti from 'canvas-confetti'
+import { useToastStore } from '@/components/effects/toast'
 
 const SET_TYPE_COLORS: Record<string, string> = {
   'Normal': 'text-slate-400 bg-transparent border-transparent',
@@ -21,16 +23,29 @@ interface ExerciseLogCardProps {
   muscleGroup: string
 }
 
-export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: ExerciseLogCardProps) {
-  const { activeWorkout, updateSet, updateSetType, toggleCompleteSet, addSet, savePersonalRecord, personalRecords, removeSet, removeExercise } = useWorkoutStore()
+export const ExerciseLogCard = memo(function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: ExerciseLogCardProps) {
+  const { updateSet, updateSetType, toggleCompleteSet, addSet, savePersonalRecord, personalRecords, removeSet, removeExercise, undoLastAction, updateExerciseNotes } = useWorkoutStore(useShallow((s) => ({
+    updateSet: s.updateSet,
+    updateSetType: s.updateSetType,
+    toggleCompleteSet: s.toggleCompleteSet,
+    addSet: s.addSet,
+    savePersonalRecord: s.savePersonalRecord,
+    personalRecords: s.personalRecords,
+    removeSet: s.removeSet,
+    removeExercise: s.removeExercise,
+    undoLastAction: s.undoLastAction,
+    updateExerciseNotes: s.updateExerciseNotes
+  })))
+  
+  const exerciseSession = useWorkoutStore(s => s.activeWorkout?.exercises.find(e => e.exercise_id === exerciseId))
   const [showPRBadge, setShowPRBadge] = useState(false)
+  const [showNotes, setShowNotes] = useState(false)
   
   // 1RM Inline Calculator State
   const [show1RMCalculator, setShow1RMCalculator] = useState(false)
   const [modalWeight, setModalWeight] = useState(70)
   const [modalReps, setModalReps] = useState(8)
 
-  const exerciseSession = activeWorkout?.exercises.find((e) => e.exercise_id === exerciseId)
   if (!exerciseSession) return null
 
   // Quick 1RM formula calculation (Epley formula)
@@ -117,29 +132,77 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
           </div>
         </div>
 
-        {/* Inline Calculator Toggle Button */}
-        <button
-          onClick={() => setShow1RMCalculator(!show1RMCalculator)}
-          className={`p-3 rounded-xl font-mono text-xs font-bold flex items-center justify-center gap-2 shadow-lg transition-all w-full sm:w-auto ${
-            show1RMCalculator 
-            ? 'bg-slate-800 text-white border border-slate-600' 
-            : 'bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/50 text-amber-300'
-          }`}
-        >
-          <Calculator className="w-4 h-4" />
-          <span>{show1RMCalculator ? 'ĐÓNG MÁY TÍNH' : 'MÁY TÍNH 1RM'}</span>
-          {show1RMCalculator ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-        </button>
-        <button
-          onClick={() => {
-            if (confirm(`Xóa bài "${exerciseName}" khỏi buổi tập?`)) removeExercise(exerciseId)
-          }}
-          className="p-3 rounded-xl text-slate-600 hover:text-red-400 hover:bg-red-500/10 border border-transparent hover:border-red-500/30 transition-all"
-          title="Xóa bài tập"
-        >
-          <Trash2 className="w-4 h-4" />
-        </button>
+        <div className="flex items-center gap-2 w-full sm:w-auto">
+          {/* Notes Toggle Button */}
+          <button
+            onClick={() => setShowNotes(!showNotes)}
+            className={`p-3 rounded-xl font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all ${
+              showNotes 
+              ? 'bg-slate-800 text-white border border-slate-600 shadow-inner' 
+              : 'bg-slate-900/60 hover:bg-slate-800 text-slate-400 border border-transparent'
+            }`}
+            title="Ghi chú bài tập"
+          >
+            <Edit3 className="w-4 h-4" />
+          </button>
+
+          {/* Inline Calculator Toggle Button */}
+          <button
+            onClick={() => setShow1RMCalculator(!show1RMCalculator)}
+            className={`p-3 rounded-xl font-mono text-xs font-bold flex items-center justify-center gap-2 shadow-lg transition-all flex-1 sm:flex-none ${
+              show1RMCalculator 
+              ? 'bg-slate-800 text-white border border-slate-600' 
+              : 'bg-amber-500/20 hover:bg-amber-500/30 border border-amber-400/50 text-amber-300'
+            }`}
+          >
+            <Calculator className="w-4 h-4" />
+            <span>{show1RMCalculator ? 'ĐÓNG MÁY TÍNH' : 'MÁY TÍNH 1RM'}</span>
+            {show1RMCalculator ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+          </button>
+
+          <button
+            aria-label="Xóa bài tập"
+            onClick={() => {
+              removeExercise(exerciseId)
+              useToastStore.getState().addToast({
+                variant: 'info',
+                title: 'Đã xóa bài tập',
+                message: `Đã xóa "${exerciseName}" khỏi buổi tập.`,
+                duration: 5000,
+                action: {
+                  label: 'HOÀN TÁC',
+                  onClick: () => undoLastAction()
+                }
+              })
+            }}
+            className="p-3 rounded-xl text-slate-600 hover:text-red-400 hover:bg-red-500/10 border border-transparent hover:border-red-500/30 transition-all"
+            title="Xóa bài tập"
+          >
+            <Trash2 className="w-4 h-4" />
+          </button>
+        </div>
       </div>
+
+      {/* Notes Panel */}
+      <AnimatePresence>
+        {showNotes && (
+          <motion.div
+            initial={{ opacity: 0, height: 0, marginBottom: 0 }}
+            animate={{ opacity: 1, height: 'auto', marginBottom: 24 }}
+            exit={{ opacity: 0, height: 0, marginBottom: 0 }}
+            className="overflow-hidden"
+          >
+            <div className="relative">
+              <textarea
+                value={exerciseSession.notes || ''}
+                onChange={(e) => updateExerciseNotes(exerciseId, e.target.value)}
+                placeholder="Ghi chú cho bài tập này (cảm nhận cơ, setup, v.v...)"
+                className="w-full bg-[#03030a] border border-slate-700 focus:border-amber-400 text-slate-300 font-sans text-sm p-4 rounded-2xl focus:outline-none focus:ring-2 focus:ring-amber-400/30 min-h-[100px] resize-y"
+              />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Inline 1RM Calculator Panel */}
       <AnimatePresence>
@@ -312,9 +375,10 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
               {/* Check Box */}
               <div className="col-span-2 flex justify-center items-center gap-1">
                 <motion.button
+                  aria-label={set.is_completed ? "Bỏ hoàn thành set" : "Hoàn thành set"}
                   whileTap={{ scale: 0.85 }}
                   onClick={() => handleSetToggle(set.id, set.is_completed, set.weight_kg, set.reps)}
-                  className={`w-10 h-10 sm:w-12 sm:h-12 rounded-2xl flex items-center justify-center transition-all ${
+                  className={`w-10 h-10 sm:w-12 sm:h-12 rounded-2xl flex items-center justify-center transition-all focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:outline-none ${
                     set.is_completed
                       ? 'btn-aura-gold scale-105 shadow-[0_0_20px_rgba(251,191,36,0.5)]'
                       : 'bg-slate-900 text-slate-400 hover:text-white border border-slate-700'
@@ -323,7 +387,19 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
                   <Check className={`w-6 h-6 sm:w-7 sm:h-7 ${set.is_completed ? 'stroke-[3]' : 'stroke-[2]'}`} />
                 </motion.button>
                 <button
-                  onClick={() => removeSet(exerciseId, set.id)}
+                  aria-label="Xóa set"
+                  onClick={() => {
+                    removeSet(exerciseId, set.id)
+                    useToastStore.getState().addToast({
+                      variant: 'info',
+                      title: 'Đã xóa Set',
+                      duration: 5000,
+                      action: {
+                        label: 'HOÀN TÁC',
+                        onClick: () => undoLastAction()
+                      }
+                    })
+                  }}
                   className="p-1.5 rounded-lg text-slate-700 hover:text-red-400 hover:bg-red-500/10 transition-all"
                   title="Xóa set"
                 >
@@ -347,4 +423,4 @@ export function ExerciseLogCard({ exerciseId, exerciseName, muscleGroup }: Exerc
       </motion.button>
     </motion.div>
   )
-}
+})
