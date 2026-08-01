@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { useProfileStore } from '@/store/use-profile-store'
+import { createClient } from '@/lib/supabase/client'
 import {
   LayoutDashboard, Calendar, Dumbbell, Play, Calculator,
   User, ShieldAlert, LogOut, Menu, X, ChevronLeft, ChevronRight,
@@ -77,13 +78,33 @@ function SidebarItem({
 
 // ─── Main Component ───────────────────────────────────────────────
 export function ResponsiveNav() {
-  const pathname = usePathname()
-  const router = useRouter()
-  const { profile, logout } = useProfileStore()
   const [collapsed, setCollapsed] = useState(false)
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const { profile, setProfile, logout } = useProfileStore()
+  const router = useRouter()
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const supabase = createClient()
+    const channel = supabase.channel('schema-db-changes')
+      .on(
+        'postgres_changes',
+        { event: 'UPDATE', schema: 'public', table: 'profiles' },
+        (payload) => {
+          if (payload.new && profile?.id === payload.new.id) {
+            console.log('Realtime sync payload received:', payload.new)
+            setProfile(payload.new as any)
+          }
+        }
+      )
+      .subscribe()
+
+    return () => {
+      supabase.removeChannel(channel)
+    }
+  }, [profile?.id, setProfile])
 
   useEffect(() => {
     const check = () => setIsMobile(window.innerWidth < 1024)
