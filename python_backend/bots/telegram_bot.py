@@ -2,8 +2,8 @@ import logging
 import re
 import datetime
 from typing import Optional
-from telegram import Update, Chat
-from telegram.ext import Application, CommandHandler, ContextTypes
+from telegram import Update, Chat, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 from config import config
 from services.supabase_service import supabase_service
 
@@ -196,6 +196,10 @@ def _build_routine_message(routine: dict) -> str:
     )
     return msg
 
+def get_webapp_keyboard():
+    keyboard = [[InlineKeyboardButton("🔥 START WORKOUT NOW", url="https://aurafitiris.vercel.app/workout")]]
+    return InlineKeyboardMarkup(keyboard)
+
 async def send_daily_routine_notification(context: ContextTypes.DEFAULT_TYPE):
     """Send daily routine to the default configured chat."""
     chat_id = config.DEFAULT_TELEGRAM_CHAT_ID
@@ -205,7 +209,7 @@ async def send_daily_routine_notification(context: ContextTypes.DEFAULT_TYPE):
     routine = await supabase_service.get_today_routine("unknown")
     msg = _build_routine_message(routine)
     try:
-        await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2")
+        await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2", reply_markup=get_webapp_keyboard())
     except Exception as e:
         logger.error(f"Failed to auto-send daily routine to default chat: {e}")
 
@@ -263,7 +267,7 @@ async def check_and_send_user_notifications(context: ContextTypes.DEFAULT_TYPE):
         msg = _build_routine_message(routine)
         
         try:
-            await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2")
+            await context.bot.send_message(chat_id=chat_id, text=msg, parse_mode="MarkdownV2", reply_markup=get_webapp_keyboard())
             context.bot_data[sent_key] = True
             logger.info(f"✅ Sent daily routine to {profile.get('full_name', chat_id)} (chat: {chat_id})")
         except Exception as e:
