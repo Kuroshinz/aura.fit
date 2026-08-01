@@ -387,9 +387,11 @@ export const useWorkoutStore = create<WorkoutState>()(
       },
 
       deleteWorkout: (workoutId) => {
-        set(state => ({
-          workoutHistory: state.workoutHistory.filter(w => w.id !== workoutId)
-        }))
+        set(state => {
+          const newHistory = state.workoutHistory.filter(w => w.id !== workoutId)
+          syncStateToCloud({ workout_history: newHistory }, true)
+          return { workoutHistory: newHistory }
+        })
       },
     }),
     {
