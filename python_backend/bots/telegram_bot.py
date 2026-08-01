@@ -56,7 +56,18 @@ async def stats_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = str(update.effective_chat.id) if update.effective_chat else "unknown"
     # Look up Supabase user by their telegram_chat_id
     user_profile = await supabase_service.get_user_profile_by_chat_id(chat_id)
-    user_id = user_profile.get("id") if user_profile else chat_id
+    if not user_profile:
+        await msg_obj.reply_text(
+            "❌ *Account Not Linked*\n\n"
+            "Please link your Telegram account to AURA\\.FIT first\\.\n\n"
+            "1\\. Type `/myid` to get your Chat ID\\.\n"
+            "2\\. Go to [AURA\\.FIT Profile](https://aurafitiris.vercel.app/profile) and paste it there\\.",
+            parse_mode="MarkdownV2", 
+            disable_web_page_preview=True
+        )
+        return
+        
+    user_id = user_profile.get("id")
     stats = await supabase_service.get_user_stats(user_id)
 
     pr_lines = [f"• *{escape_markdown(pr['exercise'])}*: `{pr['weight_kg']} kg` x {pr['reps']}" for pr in stats['top_prs']]
@@ -80,7 +91,18 @@ async def routine_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = str(update.effective_chat.id) if update.effective_chat else "unknown"
     # Look up Supabase user by their telegram_chat_id to get their real routine
     user_profile = await supabase_service.get_user_profile_by_chat_id(chat_id)
-    user_id = user_profile.get("id") if user_profile else "unknown"
+    if not user_profile:
+        await msg_obj.reply_text(
+            "❌ *Account Not Linked*\n\n"
+            "Please link your Telegram account to AURA\\.FIT first\\.\n\n"
+            "1\\. Type `/myid` to get your Chat ID\\.\n"
+            "2\\. Go to [AURA\\.FIT Profile](https://aurafitiris.vercel.app/profile) and paste it there\\.",
+            parse_mode="MarkdownV2", 
+            disable_web_page_preview=True
+        )
+        return
+        
+    user_id = user_profile.get("id")
     routine = await supabase_service.get_today_routine(user_id)
 
     ex_lines = []

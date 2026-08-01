@@ -101,26 +101,36 @@ class SupabaseService:
     async def get_user_stats(self, email_or_id: str) -> Dict[str, Any]:
         """Fetch total volume, streak, and top PRs for a user."""
         if not self.client:
-            return {
-                "total_volume": 148500,
-                "current_streak": 7,
-                "top_prs": [
-                    {"exercise": "Bench Press", "weight_kg": 110.0, "reps": 5},
-                    {"exercise": "Squat", "weight_kg": 140.0, "reps": 3},
-                    {"exercise": "Deadlift", "weight_kg": 170.0, "reps": 1}
-                ]
-            }
+            return {"total_volume": 0, "current_streak": 0, "top_prs": []}
         try:
-            history_res = self.client.table("workout_history").select("*").or_(f"user_email.eq.{email_or_id},user_id.eq.{email_or_id}").execute()
-            history = history_res.data or []
+            profile_res = self.client.table("profiles").select("workout_history, personal_records").or_(f"email.eq.{email_or_id},id.eq.{email_or_id}").execute()
+            if not profile_res.data:
+                return {"total_volume": 0, "current_streak": 0, "top_prs": []}
+            
+            profile = profile_res.data[0]
+            history = profile.get("workout_history") or []
+            prs = profile.get("personal_records") or {}
+            
             total_vol = sum(w.get("total_volume", 0) for w in history)
+            
+            top_prs = []
+            for ex_id, pr_data in prs.items():
+                if isinstance(pr_data, dict):
+                    # We might not have the exercise name readily available if it's an ID, 
+                    # but typically the key in the PR dict is the name or ID. Let's assume the key is the name or we format it nicely.
+                    name = pr_data.get('exercise_name', ex_id)
+                    top_prs.append({
+                        "exercise": name,
+                        "weight_kg": pr_data.get("weight", 0),
+                        "reps": pr_data.get("reps", 0)
+                    })
+            
+            top_prs = sorted(top_prs, key=lambda x: x["weight_kg"], reverse=True)[:5]
+
             return {
                 "total_volume": total_vol,
                 "current_streak": len(history),
-                "top_prs": [
-                    {"exercise": "Bench Press", "weight_kg": 105.0, "reps": 5},
-                    {"exercise": "Barbell Squat", "weight_kg": 135.0, "reps": 3}
-                ]
+                "top_prs": top_prs
             }
         except Exception as e:
             logger.error(f"Error querying Supabase stats: {e}")
