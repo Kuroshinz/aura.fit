@@ -1,0 +1,69 @@
+'use client';
+
+import * as React from 'react';
+import { UserTable } from '@/modules/users/components/user-table';
+import { userService } from '@/services/users/user-service';
+import { AdminUserRecord } from '@/repositories/users/user-repository';
+import { PermissionGuard } from '@/lib/permissions/PermissionGuard';
+import { Users, Search } from 'lucide-react';
+
+export default function AdminUsersPage() {
+  const [users, setUsers] = React.useState<AdminUserRecord[]>([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    async function loadUsers() {
+      const response = await userService.getAllUsers();
+      if (response.success && response.data) {
+        setUsers(response.data);
+      }
+      setLoading(false);
+    }
+    loadUsers();
+  }, []);
+
+  return (
+    <PermissionGuard permission="manage:users" fallback={<div>Unauthorized</div>}>
+      <div className="space-y-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-black text-white tracking-tight flex items-center gap-3">
+              <Users className="w-8 h-8 text-amber-500" />
+              Enterprise Users
+            </h1>
+            <p className="text-slate-400 mt-1">Manage platform users, roles, and subscriptions.</p>
+          </div>
+          <button className="px-4 py-2 bg-amber-500 text-black font-bold rounded-lg hover:bg-amber-400 transition-colors">
+            Invite User
+          </button>
+        </div>
+
+        <div className="flex items-center gap-4 bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+          <div className="relative flex-1">
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+            <input
+              type="text"
+              placeholder="Search by name or email..."
+              className="w-full bg-slate-950 border border-slate-700 rounded-lg pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors"
+            />
+          </div>
+          <div className="flex gap-2">
+            <select className="bg-slate-950 border border-slate-700 rounded-lg px-4 py-2 text-sm text-slate-300 focus:outline-none focus:border-amber-500">
+              <option value="all">All Roles</option>
+              <option value="admin">Admin</option>
+              <option value="user">User</option>
+            </select>
+          </div>
+        </div>
+
+        {loading ? (
+          <div className="h-64 flex items-center justify-center border border-slate-800 rounded-xl bg-slate-900/20">
+            <div className="w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
+          </div>
+        ) : (
+          <UserTable users={users} />
+        )}
+      </div>
+    </PermissionGuard>
+  );
+}
