@@ -2,8 +2,13 @@
 
 import * as React from 'react';
 import { analyticsDashboardService, DashboardStats, ChartDataPoint } from '@/services/analytics/dashboard';
-import { DAUChart } from '@/modules/analytics/components/dau-chart';
+import dynamic from 'next/dynamic';
 import { PermissionGuard } from '@/lib/permissions/PermissionGuard';
+
+const DAUChart = dynamic(
+  () => import('@/modules/analytics/components/dau-chart').then(mod => mod.DAUChart),
+  { ssr: false, loading: () => <div className="h-72 w-full animate-pulse bg-slate-800 rounded-xl mt-4" /> }
+);
 import { BarChart3, Users, Activity, Dumbbell, ListTodo } from 'lucide-react';
 
 export default function AdminAnalyticsPage() {
