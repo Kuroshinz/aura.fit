@@ -30,9 +30,17 @@ export class UserRepository extends BaseRepository<AdminUserRecord> {
     })) as AdminUserRecord[];
   }
 
-  async suspendUser(id: string): Promise<boolean> {
-    // We update a status flag in profiles (requires adding 'status' to profiles later)
-    const { error } = await this.table.update({ role: 'suspended' }).eq('id', id);
+  async suspendUser(id: string, isSuspended: boolean): Promise<boolean> {
+    // Suspend by changing role to suspended or toggling a status flag
+    // Currently, role is string. We could use 'suspended' or a separate column.
+    // For now, let's assume we map it into a status column or just set role to 'suspended'
+    const newRole = isSuspended ? 'suspended' : 'user';
+    const { error } = await this.table.update({ role: newRole }).eq('id', id);
+    return !error;
+  }
+
+  async updateUserRole(id: string, role: string): Promise<boolean> {
+    const { error } = await this.table.update({ role }).eq('id', id);
     return !error;
   }
 }

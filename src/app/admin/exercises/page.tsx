@@ -11,6 +11,8 @@ export default function AdminExercisesPage() {
   const [exercises, setExercises] = React.useState<ExerciseRecord[]>([]);
   const [loading, setLoading] = React.useState(true);
 
+  const [editingEx, setEditingEx] = React.useState<ExerciseRecord | null>(null);
+
   React.useEffect(() => {
     async function loadExercises() {
       const response = await exerciseService.getAllExercises();
@@ -21,6 +23,25 @@ export default function AdminExercisesPage() {
     }
     loadExercises();
   }, []);
+
+  async function handleDelete(id: string, name: string) {
+    if (!confirm(`Are you sure you want to delete "${name}"?`)) return;
+    
+    // Optimistic
+    setExercises(prev => prev.filter(ex => ex.id !== id));
+    
+    const res = await exerciseService.deleteExercise(id);
+    if (!res.success) {
+      alert(`Failed to delete exercise: ${res.error?.message}`);
+      // Revert optimism by reloading
+      const response = await exerciseService.getAllExercises();
+      if (response.success && response.data) setExercises(response.data);
+    }
+  }
+
+  function handleEdit(ex: ExerciseRecord) {
+    setEditingEx(ex);
+  }
 
   return (
     <PermissionGuard permission="manage:exercises" fallback={<div>Unauthorized</div>}>
@@ -64,9 +85,36 @@ export default function AdminExercisesPage() {
             <div className="w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
           </div>
         ) : (
-          <ExerciseTable exercises={exercises} />
+          <ExerciseTable exercises={exercises} onEdit={handleEdit} onDelete={handleDelete} />
         )}
       </div>
+
+      {/* Basic Edit Modal */}
+      {editingEx && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
+          <div className="bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-md p-6">
+            <h2 className="text-xl font-bold text-white mb-4">Edit Exercise</h2>
+            <div className="space-y-4">
+              <div>
+                <label className="text-xs text-slate-400 font-bold uppercase">Name</label>
+                <input type="text" defaultValue={editingEx.name} className="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white" />
+              </div>
+              <div>
+                <label className="text-xs text-slate-400 font-bold uppercase">Muscle Group</label>
+                <input type="text" defaultValue={editingEx.muscle_group || ''} className="w-full mt-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-white" />
+              </div>
+            </div>
+            <div className="mt-6 flex justify-end gap-3">
+              <button onClick={() => setEditingEx(null)} className="px-4 py-2 text-slate-300 hover:bg-slate-800 rounded-lg font-medium">
+                Cancel
+              </button>
+              <button onClick={() => { alert('Save functionality not fully connected yet.'); setEditingEx(null); }} className="px-4 py-2 bg-amber-500 text-black font-bold rounded-lg hover:bg-amber-400">
+                Save Changes
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </PermissionGuard>
   );
 }
