@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { ResponsiveNav } from '@/components/layout/responsive-nav'
 import { CommandPalette } from '@/components/layout/command-palette'
 import { GlobalAICoach } from '@/components/layout/global-ai-coach'
+import { flushSyncQueue } from '@/lib/supabase/user-sync'
 import { RestTimer } from '@/components/workout/rest-timer'
 import { SnowEffect } from '@/components/effects/snow-effect'
 import { PageTransition } from '@/components/effects/page-transition'
@@ -65,14 +66,27 @@ export default function DashboardLayout({
                 customExercises: profileData.exercise_state.customExercises || []
               })
             }
-            if (profileData.workout_history) {
-              useWorkoutStore.setState({ workoutHistory: profileData.workout_history })
-            }
-            if (profileData.personal_records) {
-              useWorkoutStore.setState({ personalRecords: profileData.personal_records })
-            }
-            if (profileData.active_workout) {
-              useWorkoutStore.setState({ activeWorkout: profileData.active_workout })
+
+            // Robust Synchronization: Only overwrite local workout data if there are NO pending offline syncs.
+            // If the user just deleted a workout offline or right before refresh, we must preserve their local state!
+            const queueStr = typeof window !== 'undefined' ? localStorage.getItem('aura_sync_queue') : null
+            const pendingQueue = queueStr ? JSON.parse(queueStr) : {}
+            const hasPendingSyncs = Object.keys(pendingQueue).length > 0
+
+            if (!hasPendingSyncs) {
+              if (profileData.workout_history) {
+                useWorkoutStore.setState({ workoutHistory: profileData.workout_history })
+              }
+              if (profileData.personal_records) {
+                useWorkoutStore.setState({ personalRecords: profileData.personal_records })
+              }
+              if (profileData.active_workout !== undefined) {
+                useWorkoutStore.setState({ activeWorkout: profileData.active_workout })
+              }
+            } else {
+              // We have pending syncs that haven't reached the server yet.
+              // Attempt to flush them immediately.
+              flushSyncQueue()
             }
           }
         }
