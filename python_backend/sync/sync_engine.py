@@ -2,6 +2,7 @@ import asyncio
 import logging
 from services.supabase_service import supabase_service
 from sync.conflict_resolver import ConflictResolver
+from config import config
 
 logger = logging.getLogger("aura_fit.sync.engine")
 
@@ -48,8 +49,29 @@ class SyncEngine:
                     'sync_status': 'conflict_resolved' if is_conflict else 'success'
                 }).execute()
                 
+                # Automated Admin Reporting for Conflicts
+                if is_conflict:
+                    from bots.telegram_bot import get_telegram_app, send_telegram_notification
+                    tele_app = get_telegram_app()
+                    if tele_app and config.DEFAULT_TELEGRAM_CHAT_ID:
+                        await send_telegram_notification(
+                            app=tele_app,
+                            chat_id=config.DEFAULT_TELEGRAM_CHAT_ID,
+                            text=f"⚠️ *SYNC CONFLICT SELF\\-CORRECTED*\nEntity: `{item['entity_name']}`\nID: `{item['entity_id']}`\nResolved using Last\\-Write\\-Wins\\."
+                        )
+                
             except Exception as e:
                 logger.error(f"Failed to process sync item {item['id']}: {e}")
                 supabase_service.client.table('sync_queue').update({'status': 'error'}).eq('id', item['id']).execute()
+                
+                # Automated Admin Reporting for Unfixable Errors
+                from bots.telegram_bot import get_telegram_app, send_telegram_notification
+                tele_app = get_telegram_app()
+                if tele_app and config.DEFAULT_TELEGRAM_CHAT_ID:
+                    await send_telegram_notification(
+                        app=tele_app,
+                        chat_id=config.DEFAULT_TELEGRAM_CHAT_ID,
+                        text=f"🚨 *CRITICAL SYNC ERROR*\nItem ID: `{item['id']}`\nError: `{e}`\nCould not self\\-correct\\. Check Admin Panel\\."
+                    )
 
 sync_engine = SyncEngine()
