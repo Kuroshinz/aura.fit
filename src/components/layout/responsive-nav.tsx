@@ -213,7 +213,7 @@ export function ResponsiveNav() {
           </Link>
 
           {/* Notification Bell */}
-          <div className="flex items-center justify-center mb-2">
+          <div className="flex items-center justify-center w-full mb-2">
             <NotificationBell />
           </div>
 

@@ -111,7 +111,7 @@ export function NotificationBell() {
   const unreadCount = notifications.filter(n => !n.read).length
 
   return (
-    <div className="relative" ref={bellRef}>
+    <div className="relative flex justify-center w-full" ref={bellRef}>
       {/* Bell Button — sleek, compact */}
       <button
         onClick={() => setIsOpen(!isOpen)}
