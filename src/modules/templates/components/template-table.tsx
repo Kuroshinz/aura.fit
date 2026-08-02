@@ -6,7 +6,11 @@ import { RoutineRecord } from '@/repositories/templates/template-repository';
 import { DataTable } from '@/components/ui/data-table';
 import { ListTodo, Copy, Trash2, Edit } from 'lucide-react';
 
-export const templateColumns: ColumnDef<RoutineRecord>[] = [
+export const getTemplateColumns = (
+  onDuplicate: (id: string) => void,
+  onEdit: (template: RoutineRecord) => void,
+  onDelete: (id: string, name: string) => void
+): ColumnDef<RoutineRecord>[] => [
   {
     accessorKey: 'name',
     header: 'Template Name',
@@ -43,15 +47,28 @@ export const templateColumns: ColumnDef<RoutineRecord>[] = [
     id: 'actions',
     header: 'Actions',
     cell: ({ row }) => {
+      const tpl = row.original;
       return (
         <div className="flex items-center gap-2">
-          <button className="p-1.5 text-slate-400 hover:text-cyan-400 hover:bg-cyan-400/10 rounded-lg transition-colors" title="Duplicate">
+          <button 
+            onClick={() => onDuplicate(tpl.id)}
+            className="p-1.5 text-slate-400 hover:text-cyan-400 hover:bg-cyan-400/10 rounded-lg transition-colors" 
+            title="Duplicate"
+          >
             <Copy className="w-4 h-4" />
           </button>
-          <button className="p-1.5 text-slate-400 hover:text-amber-400 hover:bg-amber-400/10 rounded-lg transition-colors" title="Edit">
+          <button 
+            onClick={() => onEdit(tpl)}
+            className="p-1.5 text-slate-400 hover:text-amber-400 hover:bg-amber-400/10 rounded-lg transition-colors" 
+            title="Edit"
+          >
             <Edit className="w-4 h-4" />
           </button>
-          <button className="p-1.5 text-slate-400 hover:text-red-400 hover:bg-red-400/10 rounded-lg transition-colors" title="Archive/Delete">
+          <button 
+            onClick={() => onDelete(tpl.id, tpl.name)}
+            className="p-1.5 text-slate-400 hover:text-red-400 hover:bg-red-400/10 rounded-lg transition-colors" 
+            title="Archive/Delete"
+          >
             <Trash2 className="w-4 h-4" />
           </button>
         </div>
@@ -62,8 +79,12 @@ export const templateColumns: ColumnDef<RoutineRecord>[] = [
 
 interface TemplateTableProps {
   templates: RoutineRecord[];
+  onDuplicate: (id: string) => void;
+  onEdit: (template: RoutineRecord) => void;
+  onDelete: (id: string, name: string) => void;
 }
 
-export function TemplateTable({ templates }: TemplateTableProps) {
-  return <DataTable columns={templateColumns} data={templates} />;
+export function TemplateTable({ templates, onDuplicate, onEdit, onDelete }: TemplateTableProps) {
+  const columns = React.useMemo(() => getTemplateColumns(onDuplicate, onEdit, onDelete), [onDuplicate, onEdit, onDelete]);
+  return <DataTable columns={columns} data={templates} />;
 }

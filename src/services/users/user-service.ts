@@ -11,15 +11,27 @@ export class UserService {
     }
   }
 
-  async suspendUser(userId: string): Promise<ApiResponse<null>> {
+  async suspendUser(userId: string, isSuspended: boolean): Promise<ApiResponse<null>> {
     try {
-      const success = await userRepository.suspendUser(userId);
+      const success = await userRepository.suspendUser(userId, isSuspended);
       if (success) {
-        return createSuccessResponse(null, 'User successfully suspended.');
+        return createSuccessResponse(null, `User successfully ${isSuspended ? 'suspended' : 'restored'}.`);
       }
-      return createErrorResponse('USER_SUSPEND_ERROR', 'Failed to suspend user.');
+      return createErrorResponse('USER_SUSPEND_ERROR', `Failed to ${isSuspended ? 'suspend' : 'restore'} user.`);
     } catch (error: any) {
       return createErrorResponse('USER_SUSPEND_ERROR', error.message);
+    }
+  }
+
+  async updateUserRole(userId: string, role: string): Promise<ApiResponse<null>> {
+    try {
+      const success = await userRepository.updateUserRole(userId, role);
+      if (success) {
+        return createSuccessResponse(null, `User role successfully updated to ${role}.`);
+      }
+      return createErrorResponse('USER_ROLE_UPDATE_ERROR', 'Failed to update user role.');
+    } catch (error: any) {
+      return createErrorResponse('USER_ROLE_UPDATE_ERROR', error.message);
     }
   }
 }

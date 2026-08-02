@@ -22,6 +22,30 @@ export class TemplateService {
       return createErrorResponse('TEMPLATE_DELETE_ERROR', error.message);
     }
   }
+
+  async duplicateTemplate(id: string): Promise<ApiResponse<RoutineRecord>> {
+    try {
+      const template = await templateRepository.findById(id);
+      if (!template) {
+        return createErrorResponse('TEMPLATE_NOT_FOUND', 'Template not found for duplication.');
+      }
+
+      // Create a duplicate with a new name and new ID
+      const { id: oldId, created_at, updated_at, ...rest } = template;
+      const payload: Partial<RoutineRecord> = {
+        ...rest,
+        name: `${template.name} (Copy)`
+      };
+
+      const newTemplate = await templateRepository.create(payload);
+      if (newTemplate) {
+        return createSuccessResponse(newTemplate, 'Template duplicated successfully.');
+      }
+      return createErrorResponse('TEMPLATE_DUPLICATE_ERROR', 'Failed to create duplicate.');
+    } catch (error: any) {
+      return createErrorResponse('TEMPLATE_DUPLICATE_ERROR', error.message);
+    }
+  }
 }
 
 export const templateService = new TemplateService();

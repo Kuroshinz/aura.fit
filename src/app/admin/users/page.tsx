@@ -22,6 +22,27 @@ export default function AdminUsersPage() {
     loadUsers();
   }, []);
 
+  async function handleUpdateRole(id: string, role: string) {
+    // Optimistic Update
+    setUsers(prev => prev.map(u => u.id === id ? { ...u, role } : u));
+    const res = await userService.updateUserRole(id, role);
+    if (!res.success) {
+      // Revert if failed
+      loadUsers();
+      alert(`Failed to update role: ${res.error?.message}`);
+    }
+  }
+
+  async function handleSuspend(id: string, suspend: boolean) {
+    // Optimistic Update
+    setUsers(prev => prev.map(u => u.id === id ? { ...u, role: suspend ? 'suspended' : 'user' } : u));
+    const res = await userService.suspendUser(id, suspend);
+    if (!res.success) {
+      loadUsers();
+      alert(`Failed to suspend/restore user: ${res.error?.message}`);
+    }
+  }
+
   return (
     <PermissionGuard permission="manage:users" fallback={<div>Unauthorized</div>}>
       <div className="space-y-6">
@@ -61,7 +82,7 @@ export default function AdminUsersPage() {
             <div className="w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
           </div>
         ) : (
-          <UserTable users={users} />
+          <UserTable users={users} onUpdateRole={handleUpdateRole} onSuspend={handleSuspend} />
         )}
       </div>
     </PermissionGuard>
