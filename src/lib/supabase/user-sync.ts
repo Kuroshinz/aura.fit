@@ -75,9 +75,16 @@ export async function flushSyncQueue() {
     }
 
     if (queueItems.length > 0) {
-      const { error } = await supabase.from('sync_queue').insert(queueItems)
-      if (error) {
-        console.error('Failed to flush sync queue to cloud:', error.message || JSON.stringify(error))
+      // 1. Direct Fast-Path Update for Instant Consistency
+      const { error: directError } = await supabase.from('profiles').update(cleanUpdates).eq('id', user.id)
+      if (directError) {
+        console.error('Direct sync failed:', directError)
+      }
+
+      // 2. Audit Trail & Offline Queue Log
+      const { error: queueError } = await supabase.from('sync_queue').insert(queueItems)
+      if (queueError) {
+        console.error('Failed to flush sync queue to cloud:', queueError.message || JSON.stringify(queueError))
       } else {
         console.log('Successfully flushed sync queue to Supabase!')
         await clearQueue()
