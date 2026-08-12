@@ -1,4 +1,6 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -55,6 +57,8 @@ export default function RootLayout({
           {children}
         </ErrorBoundary>
         <InstallPWAPrompt />
+        <Analytics />
+        <SpeedInsights />
         <Script id="sw-register" strategy="afterInteractive">
           {`
             if ('serviceWorker' in navigator) {
