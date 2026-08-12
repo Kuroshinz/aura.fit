@@ -12,6 +12,7 @@ export interface SetItem {
   reps: number
   is_completed: boolean
   set_type?: SetType
+  previous_history?: { weight_kg: number, reps: number }
 }
 
 export interface ExerciseSession {
@@ -167,11 +168,20 @@ export const useWorkoutStore = create<WorkoutState>()(
       },
 
       addExerciseToWorkout: (exercise_id, exercise_name, muscle_group) => {
-        const { activeWorkout } = get()
+        const { activeWorkout, workoutHistory } = get()
         if (!activeWorkout) return
 
         const exists = activeWorkout.exercises.find((e) => e.exercise_id === exercise_id)
         if (exists) return
+
+        let previousHistory = undefined
+        const lastWorkoutWithEx = workoutHistory.find(w => w.exercises.some(e => e.exercise_id === exercise_id))
+        if (lastWorkoutWithEx) {
+           const prevEx = lastWorkoutWithEx.exercises.find(e => e.exercise_id === exercise_id)
+           if (prevEx && prevEx.sets.length > 0) {
+               previousHistory = { weight_kg: prevEx.sets[0].weight_kg, reps: prevEx.sets[0].reps }
+           }
+        }
 
         const newExercise: ExerciseSession = {
           exercise_id,
@@ -184,6 +194,7 @@ export const useWorkoutStore = create<WorkoutState>()(
               weight_kg: 0,
               reps: 0,
               is_completed: false,
+              previous_history: previousHistory
             },
           ],
         }
@@ -198,13 +209,24 @@ export const useWorkoutStore = create<WorkoutState>()(
       },
 
       addSet: (exerciseId) => {
-        const { activeWorkout } = get()
+        const { activeWorkout, workoutHistory } = get()
         if (!activeWorkout) return
 
         const updatedExercises = activeWorkout.exercises.map((ex) => {
           if (ex.exercise_id === exerciseId) {
             const nextSetNum = ex.sets.length + 1
             const lastSet = ex.sets[ex.sets.length - 1]
+
+            let previousHistory = undefined
+            const lastWorkoutWithEx = workoutHistory.find(w => w.exercises.some(e => e.exercise_id === exerciseId))
+            if (lastWorkoutWithEx) {
+               const prevEx = lastWorkoutWithEx.exercises.find(e => e.exercise_id === exerciseId)
+               if (prevEx && prevEx.sets.length >= nextSetNum) {
+                   const prevSet = prevEx.sets[nextSetNum - 1]
+                   previousHistory = { weight_kg: prevSet.weight_kg, reps: prevSet.reps }
+               }
+            }
+
             return {
               ...ex,
               sets: [
@@ -215,6 +237,7 @@ export const useWorkoutStore = create<WorkoutState>()(
                   weight_kg: lastSet ? lastSet.weight_kg : 0,
                   reps: lastSet ? lastSet.reps : 0,
                   is_completed: false,
+                  previous_history: previousHistory
                 },
               ],
             }

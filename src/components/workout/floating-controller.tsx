@@ -102,11 +102,10 @@ export function FloatingController({ onFinish }: { onFinish: () => void }) {
         exit={{ y: 100, opacity: 0 }}
         className="fixed bottom-[85px] left-4 right-4 z-40 mx-auto max-w-md pointer-events-auto"
       >
-        <div className="aura-glass bg-[#0c0e1e]/90 backdrop-blur-xl border border-amber-500/30 p-2 rounded-[2rem] shadow-[0_10px_40px_rgba(0,0,0,0.8)] flex items-center justify-between">
+        <div className="aura-glass bg-[#0c0e1e]/95 backdrop-blur-xl border border-amber-500/30 p-2 rounded-full shadow-[0_20px_40px_rgba(0,0,0,0.8)] flex items-center justify-between w-full">
           
-          {/* Rest Timer Module */}
-          <div className="flex items-center gap-2 sm:gap-3 bg-[#03030a] rounded-full p-2 border border-slate-800 flex-1">
-            
+          {/* Left: Timer Ring & Text */}
+          <div className="flex items-center gap-2 sm:gap-3 pl-1 shrink-0">
             <div className="relative w-10 h-10 shrink-0">
               <svg className="w-full h-full -rotate-90" viewBox="0 0 56 56">
                 <circle cx="28" cy="28" r="24" fill="none" stroke="rgba(255,255,255,0.08)" strokeWidth="3" />
@@ -114,7 +113,7 @@ export function FloatingController({ onFinish }: { onFinish: () => void }) {
                   cx="28" cy="28" r="24" fill="none"
                   stroke={ringColor} strokeWidth="3" strokeLinecap="round"
                   strokeDasharray={CIRCUMFERENCE} strokeDashoffset={strokeDashoffset}
-                  animate={{ strokeDashoffset }} transition={{ duration: 0.3, ease: 'easeInOut' }}
+                  animate={{ strokeDashoffset }} transition={{ duration: 1, ease: 'linear' }}
                   className="drop-shadow-[0_0_4px_var(--ring-color)]"
                   style={{ '--ring-color': ringColor } as React.CSSProperties}
                 />
@@ -124,53 +123,50 @@ export function FloatingController({ onFinish }: { onFinish: () => void }) {
               </div>
             </div>
             
-            <div className="font-mono text-xl font-extrabold text-white tracking-wider gold-gradient-text min-w-[55px] pointer-events-none select-none">
+            <div className="font-mono text-lg sm:text-xl font-extrabold text-white tracking-wider gold-gradient-text min-w-[60px] sm:min-w-[65px] text-left shrink-0">
               {formatTime(validSeconds)}
-            </div>
-
-            <div className="flex items-center gap-1 sm:gap-2 border-l border-slate-700/80 pl-2 sm:pl-3">
-              <button
-                onClick={() => setSoundEnabled(!soundEnabled)}
-                className={`p-1.5 sm:p-2 rounded-full transition-colors ${
-                  soundEnabled ? 'text-amber-400 bg-amber-500/10' : 'text-slate-500 hover:bg-slate-800'
-                }`}
-              >
-                <Volume2 className="w-4 h-4 sm:w-5 sm:h-5" />
-              </button>
-
-              {isRestTimerRunning ? (
-                <button onClick={pauseRestTimer} className="p-2 sm:p-2.5 bg-amber-500 text-black rounded-full hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/20">
-                  <Pause className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
-                </button>
-              ) : (
-                <button onClick={() => {
-                  if (validSeconds === 0) setRestTimer(60)
-                  startRestTimer()
-                }} className="p-2 sm:p-2.5 btn-aura-gold rounded-full">
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-current ml-0.5" />
-                </button>
-              )}
-
-              <button
-                onClick={() => setRestTimer(validSeconds + 30)}
-                className="px-2 py-1 sm:px-2.5 sm:py-1.5 text-[10px] sm:text-xs font-mono font-bold text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-700/50 rounded-full transition-colors"
-              >
-                +30s
-              </button>
-
-              <button onClick={resetRestTimer} className="p-1.5 rounded-full text-slate-500 hover:text-slate-300 transition-colors hidden sm:block">
-                <RotateCcw className="w-4 h-4" />
-              </button>
             </div>
           </div>
 
-          {/* Finish Button */}
+          {/* Center: Controls */}
+          <div className="flex items-center justify-center gap-2 sm:gap-4 flex-1">
+            <button
+              onClick={() => setSoundEnabled(!soundEnabled)}
+              className={`p-2 rounded-full transition-colors ${
+                soundEnabled ? 'text-amber-400 bg-amber-500/10' : 'text-slate-500 hover:bg-slate-800'
+              }`}
+            >
+              <Volume2 className="w-4 h-4 sm:w-5 sm:h-5" />
+            </button>
+
+            {isRestTimerRunning ? (
+              <button onClick={pauseRestTimer} className="p-2.5 sm:p-3 bg-amber-500 text-black rounded-full hover:bg-amber-400 transition-colors shadow-lg shadow-amber-500/20">
+                <Pause className="w-4 h-4 sm:w-5 sm:h-5 fill-current" />
+              </button>
+            ) : (
+              <button onClick={() => {
+                if (validSeconds === 0) setRestTimer(60)
+                startRestTimer()
+              }} className="p-2.5 sm:p-3 btn-aura-gold rounded-full">
+                <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-current ml-0.5" />
+              </button>
+            )}
+
+            <button
+              onClick={() => setRestTimer(validSeconds + 30)}
+              className="px-2.5 py-1.5 sm:px-3 sm:py-1.5 text-[10px] sm:text-xs font-mono font-bold text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-700/50 rounded-full transition-colors shrink-0"
+            >
+              +30s
+            </button>
+          </div>
+
+          {/* Right: Finish Button */}
           <button 
             onClick={onFinish}
-            className="ml-2 h-[52px] px-5 rounded-[1.5rem] btn-aura-gold text-black font-display font-black text-xs tracking-widest uppercase flex items-center gap-2 shrink-0"
+            className="h-[44px] sm:h-[50px] px-4 sm:px-6 rounded-full btn-aura-gold text-black font-display font-black text-xs sm:text-sm tracking-widest uppercase flex items-center justify-center gap-1.5 shrink-0"
           >
-            <CheckCircle2 className="w-5 h-5 stroke-[3]" />
-            Xong
+            <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 stroke-[3]" />
+            <span className="hidden sm:inline-block">XONG</span>
           </button>
         </div>
       </motion.div>
