@@ -1,3 +1,5 @@
+'use client';
+
 import * as React from 'react';
 import { UserTable } from '@/modules/users/components/user-table';
 import { RoleBuilder } from '@/modules/admin-shell/components/role-builder';
