@@ -22,16 +22,18 @@ import { PermissionGuard } from '@/lib/permissions/PermissionGuard';
 
 const ADMIN_LINKS = [
   { href: '/admin', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/admin/analytics', label: 'Analytics', icon: BarChart3, permission: 'view:analytics' as const },
-  { href: '/admin/users', label: 'Users', icon: Users, permission: 'manage:users' as const },
-  { href: '/admin/exercises', label: 'Exercises', icon: Dumbbell, permission: 'manage:exercises' as const },
-  { href: '/admin/templates', label: 'Templates', icon: ListTodo, permission: 'manage:templates' as const },
-  { href: '/admin/media', label: 'Media Manager', icon: HardDrive, permission: 'manage:media' as const },
-  { href: '/admin/feedback', label: 'Feedback', icon: MessageSquare, permission: 'manage:feedback' as const },
-  { href: '/admin/announcements', label: 'Announcements', icon: FileText, permission: 'manage:announcements' as const },
-  { href: '/admin/audit', label: 'Audit Logs', icon: ShieldAlert, permission: 'view:audit_logs' as const },
-  { href: '/admin/system', label: 'System Health', icon: Activity, permission: 'manage:settings' as const },
-  { href: '/admin/settings', label: 'Settings', icon: Settings, permission: 'manage:settings' as const },
+  { href: '/admin/analytics', label: 'Analytics', icon: BarChart3, permission: 'view:analytics' },
+  { href: '/admin/users', label: 'Users', icon: Users, permission: 'manage:users' },
+  { href: '/admin/roles', label: 'Roles & Permissions', icon: ShieldAlert, permission: 'manage:roles' },
+  { href: '/admin/subscriptions', label: 'Subscriptions', icon: ListTodo, permission: 'manage:subscriptions' },
+  { href: '/admin/exercises', label: 'Exercises', icon: Dumbbell, permission: 'manage:exercises' },
+  { href: '/admin/templates', label: 'Templates', icon: ListTodo, permission: 'manage:templates' },
+  { href: '/admin/media', label: 'Media Manager', icon: HardDrive, permission: 'manage:media' },
+  { href: '/admin/feedback', label: 'Feedback', icon: MessageSquare, permission: 'manage:feedback' },
+  { href: '/admin/announcements', label: 'Announcements', icon: FileText, permission: 'manage:announcements' },
+  { href: '/admin/audit', label: 'Audit Logs', icon: ShieldAlert, permission: 'view:audit_logs' },
+  { href: '/admin/system', label: 'System Health', icon: Activity, permission: 'manage:settings' },
+  { href: '/admin/settings', label: 'Settings', icon: Settings, permission: 'manage:settings' },
 ];
 
 export function AdminSidebar() {
