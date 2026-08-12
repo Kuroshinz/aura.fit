@@ -9,36 +9,47 @@ import { Users, Search } from 'lucide-react';
 
 export default function AdminUsersPage() {
   const [users, setUsers] = React.useState<AdminUserRecord[]>([]);
+  const [roles, setRoles] = React.useState<{id: string, name: string}[]>([]);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    async function loadUsers() {
-      const response = await userService.getAllUsers();
-      if (response.success && response.data) {
-        setUsers(response.data);
+    async function loadData() {
+      const [usersRes, rolesRes] = await Promise.all([
+        userService.getAllUsers(),
+        userService.getAllRoles()
+      ]);
+      
+      if (usersRes.success && usersRes.data) {
+        setUsers(usersRes.data);
+      }
+      if (rolesRes.success && rolesRes.data) {
+        setRoles(rolesRes.data);
       }
       setLoading(false);
     }
-    loadUsers();
+    loadData();
   }, []);
 
-  async function handleUpdateRole(id: string, role: string) {
+  async function handleUpdateRole(id: string, role_id: string) {
     // Optimistic Update
-    setUsers(prev => prev.map(u => u.id === id ? { ...u, role } : u));
-    const res = await userService.updateUserRole(id, role);
+    const newRole = roles.find(r => r.id === role_id);
+    setUsers(prev => prev.map(u => u.id === id ? { ...u, role_id, roles: newRole || u.roles } : u));
+    const res = await userService.updateUserRole(id, role_id);
     if (!res.success) {
       // Revert if failed
-      loadUsers();
+      const [usersRes] = await Promise.all([userService.getAllUsers()]);
+      if (usersRes.success && usersRes.data) setUsers(usersRes.data);
       alert(`Failed to update role: ${res.error?.message}`);
     }
   }
 
   async function handleSuspend(id: string, suspend: boolean) {
     // Optimistic Update
-    setUsers(prev => prev.map(u => u.id === id ? { ...u, role: suspend ? 'suspended' : 'user' } : u));
+    setUsers(prev => prev.map(u => u.id === id ? { ...u, status: suspend ? 'suspended' : 'active' } : u));
     const res = await userService.suspendUser(id, suspend);
     if (!res.success) {
-      loadUsers();
+      const [usersRes] = await Promise.all([userService.getAllUsers()]);
+      if (usersRes.success && usersRes.data) setUsers(usersRes.data);
       alert(`Failed to suspend/restore user: ${res.error?.message}`);
     }
   }
@@ -71,8 +82,7 @@ export default function AdminUsersPage() {
           <div className="flex gap-2">
             <select className="bg-slate-950 border border-slate-700 rounded-lg px-4 py-2 text-sm text-slate-300 focus:outline-none focus:border-amber-500">
               <option value="all">All Roles</option>
-              <option value="admin">Admin</option>
-              <option value="user">User</option>
+              {roles.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
             </select>
           </div>
         </div>
@@ -82,7 +92,7 @@ export default function AdminUsersPage() {
             <div className="w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
           </div>
         ) : (
-          <UserTable users={users} onUpdateRole={handleUpdateRole} onSuspend={handleSuspend} />
+          <UserTable users={users} onUpdateRole={handleUpdateRole} onSuspend={handleSuspend} roles={roles} />
         )}
       </div>
     </PermissionGuard>

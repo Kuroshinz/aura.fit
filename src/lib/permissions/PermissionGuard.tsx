@@ -2,19 +2,19 @@
 
 import React from 'react';
 import { useProfileStore } from '@/store/use-profile-store';
-import { hasPermission, Permission, Role } from './rbac';
+import { hasPermission } from './rbac';
 
 interface PermissionGuardProps {
-  permission: Permission;
+  permission: string;
   children: React.ReactNode;
   fallback?: React.ReactNode;
 }
 
 export function PermissionGuard({ permission, children, fallback = null }: PermissionGuardProps) {
   const { profile } = useProfileStore();
-  const role = (profile?.role as Role) || 'user';
+  const permissions = (profile as any)?.permissions || [];
 
-  if (hasPermission(role, permission)) {
+  if (hasPermission(permissions, permission)) {
     return <>{children}</>;
   }
 

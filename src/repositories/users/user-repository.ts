@@ -9,15 +9,22 @@ export interface AdminUserRecord extends UserProfile {
   created_at: string;
   last_sign_in_at?: string;
   workout_count?: number;
+  role_id?: string;
+  subscription_id?: string;
+  status?: string;
+  roles?: { id: string, name: string };
+  subscriptions?: { id: string, tier_name: string };
 }
 
 export class UserRepository extends BaseRepository<AdminUserRecord> {
   protected tableName = 'profiles';
 
   async getEnterpriseUsers(): Promise<AdminUserRecord[]> {
-    // In a real scenario, this might join auth.users via a secure RPC or Edge Function
-    // Since profiles has role and metrics, we fetch from profiles directly.
-    const { data, error } = await this.table.select('*').order('created_at', { ascending: false });
+    const { data, error } = await this.table.select(`
+      *,
+      roles ( id, name ),
+      subscriptions ( id, tier_name )
+    `).order('created_at', { ascending: false });
     
     if (error) {
       console.error('Error fetching enterprise users:', error);
@@ -31,16 +38,13 @@ export class UserRepository extends BaseRepository<AdminUserRecord> {
   }
 
   async suspendUser(id: string, isSuspended: boolean): Promise<boolean> {
-    // Suspend by changing role to suspended or toggling a status flag
-    // Currently, role is string. We could use 'suspended' or a separate column.
-    // For now, let's assume we map it into a status column or just set role to 'suspended'
-    const newRole = isSuspended ? 'suspended' : 'user';
-    const { error } = await this.table.update({ role: newRole }).eq('id', id);
+    const status = isSuspended ? 'suspended' : 'active';
+    const { error } = await this.table.update({ status }).eq('id', id);
     return !error;
   }
 
-  async updateUserRole(id: string, role: string): Promise<boolean> {
-    const { error } = await this.table.update({ role }).eq('id', id);
+  async updateUserRole(id: string, role_id: string): Promise<boolean> {
+    const { error } = await this.table.update({ role_id }).eq('id', id);
     return !error;
   }
 }
