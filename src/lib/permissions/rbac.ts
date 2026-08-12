@@ -1,56 +1,14 @@
-export type Role = 'owner' | 'admin' | 'moderator' | 'editor' | 'viewer' | 'user';
-
-export type Permission =
-  | 'manage:users'
-  | 'manage:roles'
-  | 'manage:settings'
-  | 'view:analytics'
-  | 'manage:exercises'
-  | 'manage:templates'
-  | 'manage:media'
-  | 'manage:feedback'
-  | 'manage:announcements'
-  | 'manage:feature_flags'
-  | 'view:audit_logs'
-  | 'manage:backups';
-
-const PERMISSION_MATRIX: Record<Role, Permission[]> = {
-  owner: [
-    'manage:users', 'manage:roles', 'manage:settings', 'view:analytics',
-    'manage:exercises', 'manage:templates', 'manage:media', 'manage:feedback',
-    'manage:announcements', 'manage:feature_flags', 'view:audit_logs', 'manage:backups'
-  ],
-  admin: [
-    'manage:users', 'view:analytics', 'manage:exercises', 'manage:templates',
-    'manage:media', 'manage:feedback', 'manage:announcements', 'manage:feature_flags',
-    'view:audit_logs'
-  ],
-  moderator: [
-    'manage:feedback', 'manage:announcements', 'view:analytics'
-  ],
-  editor: [
-    'manage:exercises', 'manage:templates', 'manage:media'
-  ],
-  viewer: [
-    'view:analytics'
-  ],
-  user: []
-};
+export type PermissionString = string;
 
 /**
- * Check if a role has a specific permission
+ * Check if user permissions array has a specific permission
+ * e.g., hasPermission(['users:manage', 'exercises:view'], 'users:manage')
  */
-export function hasPermission(role: Role | undefined, permission: Permission): boolean {
-  if (!role) return false;
-  const permissions = PERMISSION_MATRIX[role];
-  if (!permissions) return false;
-  return permissions.includes(permission);
-}
-
-/**
- * Get all permissions for a role
- */
-export function getPermissions(role: Role | undefined): Permission[] {
-  if (!role) return [];
-  return PERMISSION_MATRIX[role] || [];
+export function hasPermission(userPermissions: string[] | undefined, permission: string): boolean {
+  if (!userPermissions || !Array.isArray(userPermissions)) return false;
+  
+  // Wildcard admin support or specific match
+  if (userPermissions.includes('*') || userPermissions.includes('*:*')) return true;
+  
+  return userPermissions.includes(permission);
 }
