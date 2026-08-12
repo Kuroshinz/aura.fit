@@ -1,6 +1,8 @@
 import { userRepository, AdminUserRecord } from '@/repositories/users/user-repository';
 import { ApiResponse, createSuccessResponse, createErrorResponse } from '@/lib/api/response';
 
+import { createClient } from '@/lib/supabase/client';
+
 export class UserService {
   async getAllUsers(): Promise<ApiResponse<AdminUserRecord[]>> {
     try {
@@ -23,15 +25,40 @@ export class UserService {
     }
   }
 
-  async updateUserRole(userId: string, role: string): Promise<ApiResponse<null>> {
+  async updateUserRole(userId: string, role_id: string): Promise<ApiResponse<null>> {
     try {
-      const success = await userRepository.updateUserRole(userId, role);
+      const success = await userRepository.updateUserRole(userId, role_id);
       if (success) {
-        return createSuccessResponse(null, `User role successfully updated to ${role}.`);
+        return createSuccessResponse(null, `User role successfully updated.`);
       }
       return createErrorResponse('USER_ROLE_UPDATE_ERROR', 'Failed to update user role.');
     } catch (error: any) {
       return createErrorResponse('USER_ROLE_UPDATE_ERROR', error.message);
+    }
+  }
+
+  async getAllRoles(): Promise<ApiResponse<any[]>> {
+    try {
+      const supabase = createClient();
+      const { data, error } = await supabase.from('roles').select('*');
+      if (error) return createErrorResponse('FETCH_ROLES_ERROR', error.message);
+      return createSuccessResponse(data, 'Fetched roles');
+    } catch (error: any) {
+      return createErrorResponse('FETCH_ROLES_ERROR', error.message);
+    }
+  }
+
+  async getPermissionsForRole(roleId: string): Promise<ApiResponse<any[]>> {
+    try {
+      const supabase = createClient();
+      const { data, error } = await supabase
+        .from('role_permissions')
+        .select('permissions(*)')
+        .eq('role_id', roleId);
+      if (error) return createErrorResponse('FETCH_PERMISSIONS_ERROR', error.message);
+      return createSuccessResponse(data.map((d: any) => d.permissions), 'Fetched permissions');
+    } catch (error: any) {
+      return createErrorResponse('FETCH_PERMISSIONS_ERROR', error.message);
     }
   }
 }
