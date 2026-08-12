@@ -310,7 +310,7 @@ export const ExerciseLogCard = memo(function ExerciseLogCard({ exerciseId, exerc
       </div>
 
       {/* Set Items List */}
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-1.5">
         {exerciseSession.sets.map((set, idx) => {
           const estimated1RM = calculate1RM(set.weight_kg, set.reps)
 
@@ -318,7 +318,7 @@ export const ExerciseLogCard = memo(function ExerciseLogCard({ exerciseId, exerc
             <motion.div
               key={set.id}
               whileHover={{ scale: 1.01 }}
-              className={`grid grid-cols-12 gap-2 sm:gap-3 items-center p-2 sm:p-3 rounded-2xl border transition-all ${
+              className={`grid grid-cols-12 gap-2 sm:gap-3 items-center p-1.5 sm:p-2 rounded-xl border transition-all ${
                 set.is_completed
                   ? 'bg-gradient-to-r from-amber-500/20 via-emerald-950/40 to-slate-900/60 border-amber-400 shadow-[0_0_15px_rgba(251,191,36,0.15)]'
                   : 'bg-[#070714] border-slate-700 hover:border-slate-500'
@@ -346,27 +346,65 @@ export const ExerciseLogCard = memo(function ExerciseLogCard({ exerciseId, exerc
               </div>
 
               {/* Weight Input */}
-              <div className="col-span-4">
+              <div className="col-span-4 relative pb-4">
                 <input
                   type="number"
+                  inputMode="decimal"
+                  enterKeyHint="next"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                      const formElements = Array.from(document.querySelectorAll('input, button'));
+                      const index = formElements.indexOf(e.currentTarget);
+                      if (index > -1 && index + 1 < formElements.length) {
+                         (formElements[index + 1] as HTMLElement).focus();
+                      }
+                    }
+                  }}
                   value={set.weight_kg || ''}
                   onChange={(e) => updateSet(exerciseId, set.id, 'weight_kg', parseFloat(e.target.value) || 0)}
                   placeholder="0"
-                  className="w-full bg-[#03030a] border border-slate-700 focus:border-amber-400 text-center text-white font-mono font-black text-lg sm:text-xl py-2.5 sm:py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400/40 shadow-inner"
+                  className="w-full bg-[#03030a] border border-slate-700 focus:border-amber-400 text-center text-white font-mono font-black text-lg sm:text-xl py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400/40 shadow-inner"
                 />
+                {set.previous_history && (
+                  <div className="absolute bottom-0 left-0 w-full text-center">
+                    <span className="text-[9px] text-slate-500 whitespace-nowrap font-mono">
+                      (Trc: {set.previous_history.weight_kg}kg)
+                    </span>
+                  </div>
+                )}
               </div>
 
               {/* Reps Input & Live 1RM Badge */}
-              <div className="col-span-4 relative">
+              <div className="col-span-4 relative pb-4">
                 <input
                   type="number"
+                  inputMode="decimal"
+                  enterKeyHint="next"
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault();
+                      const formElements = Array.from(document.querySelectorAll('input, button'));
+                      const index = formElements.indexOf(e.currentTarget);
+                      if (index > -1 && index + 1 < formElements.length) {
+                         (formElements[index + 1] as HTMLElement).focus();
+                      }
+                    }
+                  }}
                   value={set.reps || ''}
                   onChange={(e) => updateSet(exerciseId, set.id, 'reps', parseInt(e.target.value) || 0)}
                   placeholder="0"
-                  className="w-full bg-[#03030a] border border-slate-700 focus:border-amber-400 text-center text-white font-mono font-black text-lg sm:text-xl py-2.5 sm:py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400/40 shadow-inner"
+                  className="w-full bg-[#03030a] border border-slate-700 focus:border-amber-400 text-center text-white font-mono font-black text-lg sm:text-xl py-2 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400/40 shadow-inner"
                 />
+                {set.previous_history && (
+                  <div className="absolute bottom-0 left-0 w-full text-center">
+                    <span className="text-[9px] text-slate-500 whitespace-nowrap font-mono">
+                      (Trc: {set.previous_history.reps} reps)
+                    </span>
+                  </div>
+                )}
                 {estimated1RM > 0 && (
-                  <span className="absolute right-1 sm:right-2 bottom-1 text-[8px] sm:text-[9px] font-mono font-bold text-amber-400 bg-slate-900/90 px-1 py-0.5 rounded border border-amber-400/30 whitespace-nowrap">
+                  <span className="absolute right-0 top-0 -mt-1.5 -mr-1 text-[8px] font-mono font-bold text-amber-400 bg-slate-900/90 px-1 rounded border border-amber-400/30 whitespace-nowrap z-10">
                     1RM: {estimated1RM}
                   </span>
                 )}
