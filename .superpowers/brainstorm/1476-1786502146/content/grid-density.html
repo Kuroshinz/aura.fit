@@ -1,0 +1,26 @@
+<h2>Chi tiết giao diện Compact Grid</h2>
+<p class="subtitle">Với thiết kế dạng lưới (Grid), bạn muốn mức độ hiển thị thông tin như thế nào trên mỗi hàng (row) bài tập?</p>
+
+<div class="options">
+  <div class="option" data-choice="simple" onclick="toggleSelect(this)">
+    <div class="letter">1</div>
+    <div class="content">
+      <h3>Lưới tối giản (Minimal Grid)</h3>
+      <p>Chỉ hiển thị tên bài tập và các ô nhập liệu Trọng lượng (kg) / Số Reps trống. Cực kỳ gọn gàng, hiển thị được 7-8 bài tập trên một màn hình điện thoại.</p>
+      <div class="mockup-body" style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">
+         Row: [Bench Press] [ ___ kg] x [ ___ reps ] [✓]
+      </div>
+    </div>
+  </div>
+  <div class="option" data-choice="history" onclick="toggleSelect(this)">
+    <div class="letter">2</div>
+    <div class="content">
+      <h3>Lưới kèm Lịch sử (History-inline Grid)</h3>
+      <p>Bên dưới mỗi ô nhập liệu sẽ hiện mờ (placeholder) số tạ/reps của buổi tập gần nhất. Giúp người tập biết ngay hôm nay cần đẩy bao nhiêu mà không cần mở tab lịch sử.</p>
+      <div class="mockup-body" style="margin-top: 10px; opacity: 0.8; font-size: 0.9em;">
+         Row: [Bench Press] [ ___ kg] x [ ___ reps ] [✓]<br/>
+         <span style="color: gray; font-size: 0.8em; margin-left: 100px;">(Previous: 60kg x 10)</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -4,15 +4,16 @@ import { Database } from '@/types/supabase';
 export interface ExerciseRecord {
   id: string;
   name: string;
-  muscle: string;
+  muscle_group: string;
   equipment: string;
-  isCustom?: boolean;
-  user_id?: string;
+  is_custom?: boolean;
+  created_by?: string;
   created_at?: string;
   description?: string;
   instructions?: string[];
   media_urls?: string[];
   difficulty?: string;
+  target?: string;
 }
 
 export class ExerciseRepository extends BaseRepository<ExerciseRecord> {

@@ -35,7 +35,7 @@ export function ExerciseSlideover({ isOpen, onClose, exercise, onSave, onDelete 
   }, [exercise]);
 
   const handleSave = () => {
-    if (!formData.name || !formData.muscle || !formData.equipment) {
+    if (!formData.name || !formData.muscle_group || !formData.equipment) {
       alert('Name, Muscle, and Equipment are required.');
       return;
     }
@@ -117,8 +117,8 @@ export function ExerciseSlideover({ isOpen, onClose, exercise, onSave, onDelete 
                   <div>
                     <label className="text-xs font-bold text-slate-500 uppercase block mb-1">Target Muscle *</label>
                     <select 
-                      value={formData.muscle || ''} 
-                      onChange={e => setFormData({ ...formData, muscle: e.target.value })}
+                      value={formData.muscle_group || ''} 
+                      onChange={e => setFormData({ ...formData, muscle_group: e.target.value })}
                       className="w-full bg-slate-950 border border-slate-700 rounded-lg px-3 py-3 text-sm text-white outline-none focus:border-amber-500"
                     >
                       <option value="">Select Muscle</option>
