@@ -6,6 +6,11 @@
  * Lịch: Mỗi ngày 00:00 UTC = 07:00 sáng giờ Việt Nam
  */
 const { Pool } = require('pg');
+const dns = require('dns');
+
+// GitHub Actions runners sometimes have no IPv6 route — force IPv4.
+// Fixes: ENETUNREACH 2406:da1c:...:5432
+dns.setDefaultResultOrder('ipv4first');
 
 const DATABASE_URL = process.env.DATABASE_URL;
 const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'https://aura-fit-bot.onrender.com/api/webhook';
@@ -39,7 +44,11 @@ async function main() {
     process.exit(0);
   }
 
-  const pool = new Pool({ connectionString: DATABASE_URL, max: 5 });
+  const pool = new Pool({
+    connectionString: DATABASE_URL,
+    max: 5,
+    family: 4, // force IPv4 (GitHub Actions has no IPv6 route)
+  });
   try {
     const { rows } = await pool.query(`
       SELECT p.id, p.email, p.full_name, p.telegram_chat_id,
