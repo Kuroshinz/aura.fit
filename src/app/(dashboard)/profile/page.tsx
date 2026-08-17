@@ -10,6 +10,7 @@ import { sendTelegramWebhook } from '@/lib/telegram-webhook'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { exportWorkoutDataCSV } from '@/lib/utils/export-data'
 import { resetAllUserData } from '@/lib/supabase/user-data-reset'
+import { createClient } from '@/lib/supabase/client'
 
 export default function ProfilePage() {
   const router = useRouter()
@@ -147,8 +148,15 @@ export default function ProfilePage() {
 
   // ─── Full reset (Danger Zone): wipe server + browser data, keep account ───
   const handleFullReset = async () => {
-    if (!profile?.id) return
-    const userEmail = profile.email || (currentProfile.name?.toLowerCase().replace(/\s+/g, '') + '@aura.fit')
+    const supabase = createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+
+    if (!user?.id) {
+      setResetError('Không thể xác thực tài khoản. Vui lòng đăng nhập lại.')
+      return
+    }
+
+    const userEmail = user.email || ''
     if (resetEmailInput.trim().toLowerCase() !== userEmail.toLowerCase()) {
       setResetError('Email xác nhận không khớp với email tài khoản của bạn!')
       return
@@ -157,7 +165,7 @@ export default function ProfilePage() {
     setIsResetting(true)
     setResetError('')
 
-    const result = await resetAllUserData(profile.id)
+    const result = await resetAllUserData(user.id)
     if (!result.success) {
       setResetError(result.error || 'Lỗi không xác định khi xóa dữ liệu. Vui lòng thử lại.')
       setIsResetting(false)
@@ -687,7 +695,7 @@ export default function ProfilePage() {
                       type="email"
                       value={resetEmailInput}
                       onChange={(e) => { setResetEmailInput(e.target.value); setResetError('') }}
-                      placeholder={profile?.email || 'email@example.com'}
+                      placeholder="Nhập email đăng nhập của bạn"
                       disabled={isResetting}
                       className="w-full bg-[#070714] border border-red-500/30 rounded-xl px-4 py-3 text-white focus:border-red-400 focus:outline-none placeholder-slate-600"
                     />
