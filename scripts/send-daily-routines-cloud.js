@@ -13,6 +13,12 @@ const dns = require('dns');
 dns.setDefaultResultOrder('ipv4first');
 
 const DATABASE_URL = process.env.DATABASE_URL;
+// Supabase pooler (transaction mode) — has IPv4 records, works on GitHub Actions.
+// Direct DB host is IPv6-only (AAAA), which GitHub Actions cannot reach.
+// Format: postgresql://postgres.<project-ref>:<password>@aws-0-<region>.pooler.supabase.com:6543/postgres
+const POOLER_URL = process.env.POOLER_URL ||
+  'postgresql://postgres.ojaqmtpjorszxwpkacus:nguyenthiennhan3062010@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres';
+const ACTIVE_URL = POOLER_URL || DATABASE_URL;
 const WEBHOOK_URL = process.env.NEXT_PUBLIC_WEBHOOK_URL || 'https://aura-fit-bot.onrender.com/api/webhook';
 const WEBHOOK_SECRET = process.env.NEXT_PUBLIC_WEBHOOK_SECRET || '';
 
@@ -30,7 +36,7 @@ function getTodayInfo() {
 }
 
 async function main() {
-  if (!DATABASE_URL) {
+  if (!ACTIVE_URL) {
     console.error('❌ DATABASE_URL is not set');
     process.exit(1);
   }
@@ -45,7 +51,7 @@ async function main() {
   }
 
   const pool = new Pool({
-    connectionString: DATABASE_URL,
+    connectionString: ACTIVE_URL,
     max: 5,
     family: 4, // force IPv4 (GitHub Actions has no IPv6 route)
   });
