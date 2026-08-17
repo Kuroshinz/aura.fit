@@ -18,7 +18,6 @@ export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerP
   const bottomTabHrefs = ['/dashboard', '/routines', '/exercises', '/records']
   const drawerItems = NAV_ITEMS
     .filter(item => !bottomTabHrefs.includes(item.href))
-    .filter(item => !item.adminOnly || isAdmin)
     .map(item => ({
       label: item.label.charAt(0) + item.label.slice(1).toLowerCase(),
       href: item.href,

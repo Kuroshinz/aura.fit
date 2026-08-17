@@ -2,13 +2,15 @@
 
 import {
   LayoutDashboard, Calendar, Dumbbell, Calculator,
-  User, ShieldAlert, Trophy
+  User, Trophy
 } from 'lucide-react'
 
 /**
  * Single source of truth for ALL navigation items.
  * Used by: Desktop Sidebar (PC), Mobile Bottom Tab Bar, Mobile Menu Drawer.
  * Keeping one config ensures PC and Mobile are always in sync.
+ * NOTE: Admin Panel is intentionally NOT listed here — it lives on the
+ * standalone NEXUS ADMIN website (see NEXT_PUBLIC_ADMIN_URL).
  */
 export const NAV_ITEMS = [
   { label: 'DASHBOARD', href: '/dashboard', icon: LayoutDashboard, shortcut: 'G D' },
@@ -17,7 +19,6 @@ export const NAV_ITEMS = [
   { label: 'MÁY TÍNH 1RM', href: '/calculator', icon: Calculator, shortcut: 'G C' },
   { label: 'KỶ LỤC', href: '/records', icon: Trophy, shortcut: 'G K' },
   { label: 'HỒ SƠ', href: '/profile', icon: User, shortcut: 'G P' },
-  { label: 'ADMIN PANEL', href: process.env.NEXT_PUBLIC_ADMIN_URL || 'http://localhost:3001', icon: ShieldAlert, shortcut: 'G A', adminOnly: true, external: true },
 ]
 
 /** Which routes show in the compact mobile bottom tab bar (max 5). */

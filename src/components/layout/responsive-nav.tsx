@@ -149,10 +149,8 @@ export function ResponsiveNav() {
     }
   }
 
-  // Filter items for current user
-  const visibleItems = navItems.filter(
-    (item) => !item.adminOnly || profile?.role === 'admin'
-  )
+  // All nav items are for regular users now (admin lives on separate site).
+  const visibleItems = navItems
 
   // ─── DESKTOP SIDEBAR ──────────────────────────────────────────
   const sidebar = (
