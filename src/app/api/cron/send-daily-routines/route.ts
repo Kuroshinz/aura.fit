@@ -18,8 +18,15 @@ const DATABASE_URL = process.env.DATABASE_URL || process.env.SUPABASE_DB_URL || 
  */
 export async function GET(request: Request) {
   const auth = request.headers.get('x-cron-secret')
+  // Vercel Cron Jobs send: Authorization: Bearer $CRON_SECRET
+  const vercelAuth = request.headers.get('authorization')
+  const vercelSecret = vercelAuth?.startsWith('Bearer ') ? vercelAuth.slice(7) : null
   const expected = process.env.CRON_SECRET
-  if (expected && auth !== expected) {
+  const authorized = expected
+    ? auth === expected || vercelSecret === expected
+    : true // No secret configured → allow (dev only)
+
+  if (!authorized) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
   if (!DATABASE_URL) {
