@@ -9,6 +9,7 @@ import { useExerciseStore } from '@/store/useExerciseStore'
 import { Lock, Mail, ArrowRight, Sparkles, ShieldCheck, AlertCircle, Loader2 } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { createClient } from '@/lib/supabase/client'
+import { recordAttempt, clearAttempts, isBanned, formatLockout } from '@/lib/supabase/security'
 
 export default function LoginPage() {
   const [email, setEmail] = useState('')
@@ -30,12 +31,28 @@ export default function LoginPage() {
     setIsLoading(true)
 
     const cleanEmail = email.toLowerCase().trim()
+
+    // ─── SECURITY: IP rate limit (3 per IP) + ban check ───
+    const attempt = await recordAttempt('login', cleanEmail)
+    if (!attempt.allowed) {
+      setErrorMessage(`⚠️ Quá nhiều lần thử từ IP này. Tạm khóa trong ${formatLockout(attempt.blockedUntil!)}.`)
+      setIsLoading(false)
+      return
+    }
+    const ban = await isBanned(cleanEmail)
+    if (ban.banned) {
+      setErrorMessage('⛔ Tài khoản của bạn đã bị khóa. Liên hệ quản trị viên.')
+      setIsLoading(false)
+      return
+    }
+
     const { data, error } = await supabase.auth.signInWithPassword({
       email: cleanEmail,
       password: password,
     })
 
     if (error) {
+      await recordAttempt('login', cleanEmail) // count failure
       if (error.message === 'Email not confirmed') {
         setErrorMessage('Tài khoản chưa được xác thực. Vui lòng kiểm tra email của bạn.')
       } else if (error.message.includes('rate limit')) {
@@ -46,6 +63,9 @@ export default function LoginPage() {
       setIsLoading(false)
       return
     }
+
+    // Clear attempts on success
+    await clearAttempts('login')
 
     // Fetch profile
     if (data.user) {
