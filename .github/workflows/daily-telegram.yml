@@ -25,6 +25,7 @@ jobs:
       - name: Send today's routines to Telegram
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          POOLER_URL: ${{ secrets.POOLER_URL }}
           NEXT_PUBLIC_WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
           NEXT_PUBLIC_WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
         run: node scripts/send-daily-routines-cloud.js

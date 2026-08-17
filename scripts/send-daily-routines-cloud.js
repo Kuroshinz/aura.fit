@@ -7,10 +7,23 @@
  */
 const { Pool } = require('pg');
 const dns = require('dns');
+const fs = require('fs');
+const path = require('path');
 
 // GitHub Actions runners sometimes have no IPv6 route — force IPv4.
 // Fixes: ENETUNREACH 2406:da1c:...:5432
 dns.setDefaultResultOrder('ipv4first');
+
+// Auto-load .env.local so local runs pick up secrets too
+try {
+  const envPath = path.join(__dirname, '..', '.env.local');
+  if (fs.existsSync(envPath)) {
+    for (const line of fs.readFileSync(envPath, 'utf8').split(/\r?\n/)) {
+      const m = line.match(/^([A-Z0-9_]+)=(.*)$/);
+      if (m && process.env[m[1]] === undefined) process.env[m[1]] = m[2];
+    }
+  }
+} catch { /* ignore */ }
 
 const DATABASE_URL = process.env.DATABASE_URL;
 // Supabase pooler (transaction mode) — has IPv4 records, works on GitHub Actions.
@@ -115,8 +128,18 @@ async function main() {
         });
 
         if (res.ok) {
-          sent.push(p.email || 'unknown');
-          console.log(`✅ Gửi thành công → ${p.email || 'unknown'}`);
+          // Parse body — webhook returns 200 even if Telegram delivery failed
+          const data = await res.json().catch(() => ({}));
+          if (data.dispatched && data.dispatched.telegram === false) {
+            failed.push({
+              email: p.email,
+              reason: data.dispatched.telegram_error || 'Telegram delivery failed',
+            });
+            console.error(`❌ Telegram fail → ${p.email}: ${data.dispatched.telegram_error || 'unknown'}`);
+          } else {
+            sent.push(p.email || 'unknown');
+            console.log(`✅ Gửi thành công → ${p.email || 'unknown'}`);
+          }
         } else {
           failed.push({ email: p.email, reason: `HTTP ${res.status}` });
           console.error(`❌ HTTP ${res.status} → ${p.email}`);
