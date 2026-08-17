@@ -2,7 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { User, Calculator, ShieldAlert, Settings, LogOut, X } from 'lucide-react'
+import { User, Calculator, ShieldAlert, LogOut, X, History, Library } from 'lucide-react'
 
 interface DrawerProps {
   isOpen: boolean
@@ -15,7 +15,8 @@ export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerP
   const menuItems = [
     { label: 'Hồ Sơ (Profile)', href: '/profile', icon: User },
     { label: 'Máy Tính (Calculator)', href: '/calculator', icon: Calculator },
-    { label: 'Cài Đặt (Settings)', href: '/settings', icon: Settings },
+    { label: 'Lịch Sử Tập (History)', href: '/exercises/history', icon: History },
+    { label: 'Thư Viện (Library)', href: '/library', icon: Library },
   ]
   // Admin Panel now lives in the standalone aura-admin portal.
   if (isAdmin) {
