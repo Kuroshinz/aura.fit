@@ -13,17 +13,10 @@ import {
 import { motion, AnimatePresence } from 'framer-motion'
 import { NotificationBell } from '@/components/effects/notification-bell'
 import { MobileMenuDrawer } from './mobile-menu-drawer'
+import { NAV_ITEMS, MOBILE_TAB_HREFS } from './nav-config'
 
-// ─── Navigation Items ──────────────────────────────────────────────
-const navItems = [
-  { label: 'DASHBOARD', href: '/dashboard', icon: LayoutDashboard, shortcut: 'G D' },
-  { label: 'LỊCH TẬP', href: '/routines', icon: Calendar, shortcut: 'G R' },
-  { label: 'THƯ VIỆN', href: '/exercises', icon: Dumbbell, shortcut: 'G E' },
-  { label: 'MÁY TÍNH 1RM', href: '/calculator', icon: Calculator, shortcut: 'G C' },
-  { label: 'KỶ LỤC', href: '/records', icon: Trophy, shortcut: 'G K' },
-  { label: 'HỒ SƠ', href: '/profile', icon: User, shortcut: 'G P' },
-  { label: 'ADMIN PANEL', href: '/admin', icon: ShieldAlert, shortcut: 'G A', adminOnly: true },
-]
+// ─── Navigation Items (single source of truth from nav-config.ts) ─────
+const navItems = NAV_ITEMS
 
 // ─── Get initials from name ───────────────────────────────────────
 function getInitials(name: string): string {
@@ -47,6 +40,45 @@ function SidebarItem({
 }) {
   const Icon = item.icon
 
+  const inner = (
+    <>
+      <Icon className={`w-5 h-5 shrink-0 ${isActive ? 'text-black' : 'text-amber-400'}`} />
+      {!collapsed && <span>{item.label}</span>}
+
+      {/* Tooltip on collapsed */}
+      {collapsed && (
+        <div className="absolute left-full ml-3 px-3 py-1.5 bg-slate-900 text-white text-xs font-mono font-bold rounded-xl border border-slate-700 opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl z-50">
+          {item.label}
+          <span className="ml-2 text-slate-500">{item.shortcut}</span>
+        </div>
+      )}
+    </>
+  )
+
+  // External links (e.g. standalone admin portal) must use a plain <a>
+  if ((item as any).external) {
+    return (
+      <a
+        href={item.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`
+          group relative flex items-center gap-3.5 px-4 py-3.5 rounded-2xl font-bold text-sm
+          tracking-wider transition-all duration-200
+          ${isActive
+            ? 'bg-amber-400 text-black font-extrabold shadow-[0_0_20px_rgba(251,191,36,0.4)]'
+            : 'text-slate-300 hover:text-white hover:bg-slate-900/60'
+          }
+          ${collapsed ? 'justify-center px-0 mx-2' : ''}
+          overflow-hidden
+        `}
+        title={collapsed ? item.label : undefined}
+      >
+        {inner}
+      </a>
+    )
+  }
+
   return (
     <Link
       href={item.href}
@@ -62,16 +94,7 @@ function SidebarItem({
       `}
       title={collapsed ? item.label : undefined}
     >
-      <Icon className={`w-5 h-5 shrink-0 ${isActive ? 'text-black' : 'text-amber-400'}`} />
-      {!collapsed && <span>{item.label}</span>}
-
-      {/* Tooltip on collapsed */}
-      {collapsed && (
-        <div className="absolute left-full ml-3 px-3 py-1.5 bg-slate-900 text-white text-xs font-mono font-bold rounded-xl border border-slate-700 opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-xl z-50">
-          {item.label}
-          <span className="ml-2 text-slate-500">{item.shortcut}</span>
-        </div>
-      )}
+      {inner}
     </Link>
   )
 }
@@ -126,10 +149,8 @@ export function ResponsiveNav() {
     }
   }
 
-  // Filter items for current user
-  const visibleItems = navItems.filter(
-    (item) => !item.adminOnly || profile?.role === 'admin'
-  )
+  // All nav items are for regular users now (admin lives on separate site).
+  const visibleItems = navItems
 
   // ─── DESKTOP SIDEBAR ──────────────────────────────────────────
   const sidebar = (
@@ -250,7 +271,7 @@ export function ResponsiveNav() {
 
       {/* Tab Bar */}
       <div className="aura-glass border-t border-slate-700/80 px-2 py-2 flex justify-around items-center pt-8">
-        {navItems.filter(item => ['/dashboard', '/routines', '/exercises', '/records'].includes(item.href)).map((item) => {
+        {navItems.filter(item => MOBILE_TAB_HREFS.includes(item.href)).map((item) => {
           const Icon = item.icon
           const isActive = pathname === item.href
 

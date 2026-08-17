@@ -2,7 +2,8 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { User, Calculator, ShieldAlert, Settings, LogOut, X } from 'lucide-react'
+import { LogOut, X } from 'lucide-react'
+import { NAV_ITEMS } from './nav-config'
 
 interface DrawerProps {
   isOpen: boolean
@@ -12,14 +13,17 @@ interface DrawerProps {
 }
 
 export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerProps) {
-  const menuItems = [
-    { label: 'Hồ Sơ (Profile)', href: '/profile', icon: User },
-    { label: 'Máy Tính (Calculator)', href: '/calculator', icon: Calculator },
-    { label: 'Cài Đặt (Settings)', href: '/settings', icon: Settings },
-  ]
-  if (isAdmin) {
-    menuItems.push({ label: 'Admin Panel', href: '/admin', icon: ShieldAlert })
-  }
+  // Build drawer items from the SHARED nav config so mobile always matches PC.
+  // Exclude routes already visible in the bottom tab bar.
+  const bottomTabHrefs = ['/dashboard', '/routines', '/exercises', '/records']
+  const drawerItems = NAV_ITEMS
+    .filter(item => !bottomTabHrefs.includes(item.href))
+    .map(item => ({
+      label: item.label.charAt(0) + item.label.slice(1).toLowerCase(),
+      href: item.href,
+      icon: item.icon,
+      external: (item as any).external,
+    }))
 
   return (
     <AnimatePresence>
@@ -48,14 +52,30 @@ export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerP
               </div>
 
               <div className="space-y-3">
-                {menuItems.map(item => {
+                {drawerItems.map(item => {
                   const Icon = item.icon;
+                  const className = "flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors";
+                  if ((item as any).external) {
+                    return (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={onClose}
+                        className={className}
+                      >
+                        <Icon className="w-5 h-5 text-amber-400" />
+                        {item.label}
+                      </a>
+                    );
+                  }
                   return (
                     <Link
                       key={item.href}
                       href={item.href}
                       onClick={onClose}
-                      className="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors"
+                      className={className}
                     >
                       <Icon className="w-5 h-5 text-amber-400" />
                       {item.label}

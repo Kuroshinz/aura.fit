@@ -1,8 +1,20 @@
 import { BaseRepository } from '../base-repository';
 import { Database } from '@/types/supabase';
 
-// We map to the generic Row type for exercises from Supabase
-export type ExerciseRecord = Database['public']['Tables']['exercises']['Row'];
+export interface ExerciseRecord {
+  id: string;
+  name: string;
+  muscle_group: string;
+  equipment: string;
+  is_custom?: boolean;
+  created_by?: string;
+  created_at?: string;
+  description?: string;
+  instructions?: string[];
+  media_urls?: string[];
+  difficulty?: string;
+  target?: string;
+}
 
 export class ExerciseRepository extends BaseRepository<ExerciseRecord> {
   protected tableName = 'exercises';

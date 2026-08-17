@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import { Lock, Mail, User, ArrowRight, Sparkles, ShieldCheck, Loader2, AlertCircle } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
+import { recordAttempt, clearAttempts, isBanned, formatLockout } from '@/lib/supabase/security'
 
 export default function RegisterPage() {
   const [fullName, setFullName] = useState('')
@@ -27,6 +28,20 @@ export default function RegisterPage() {
     const cleanEmail = email.toLowerCase().trim()
     const cleanName = fullName.trim()
 
+    // ─── SECURITY: register limit (3 per IP) + ban check ───
+    const attempt = await recordAttempt('register', cleanEmail)
+    if (!attempt.allowed) {
+      setErrorMessage(`⚠️ IP của bạn đã đăng ký quá nhiều lần. Tạm khóa trong ${formatLockout(attempt.blockedUntil!)}.`)
+      setIsLoading(false)
+      return
+    }
+    const ban = await isBanned(cleanEmail)
+    if (ban.banned) {
+      setErrorMessage('⛔ IP/Email của bạn đã bị khóa. Liên hệ quản trị viên.')
+      setIsLoading(false)
+      return
+    }
+
     const { data, error } = await supabase.auth.signUp({
       email: cleanEmail,
       password: password,
@@ -38,6 +53,7 @@ export default function RegisterPage() {
     })
 
     if (error) {
+      await recordAttempt('register', cleanEmail) // count failure
       if (error.message.includes('rate limit')) {
         setErrorMessage('Bạn đã thử quá nhiều lần. Vui lòng đợi một lát rồi thử lại.')
       } else {
@@ -46,6 +62,8 @@ export default function RegisterPage() {
       setIsLoading(false)
       return
     }
+
+    await clearAttempts('register')
 
     if (data.user && !data.session) {
       setSuccessMessage('Đăng ký thành công! Vui lòng kiểm tra hộp thư email của bạn để xác nhận tài khoản.')

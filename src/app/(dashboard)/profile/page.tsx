@@ -4,11 +4,13 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { useProfileStore, goalLabels, experienceLabels, UserProfile } from '@/store/use-profile-store'
 import { SpatialCard } from '@/components/effects/spatial-card'
-import { User, Scale, Ruler, Activity, Flame, Edit3, Save, RotateCcw, ShieldCheck, Zap, LogOut, Send, Bell, CheckCircle, AlertCircle } from 'lucide-react'
-import { motion } from 'framer-motion'
+import { User, Scale, Ruler, Activity, Flame, Edit3, Save, RotateCcw, ShieldCheck, Zap, LogOut, Send, Bell, CheckCircle, AlertCircle, AlertTriangle, Trash2, Loader2 } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 import { sendTelegramWebhook } from '@/lib/telegram-webhook'
 import { useWorkoutStore } from '@/store/use-workout-store'
 import { exportWorkoutDataCSV } from '@/lib/utils/export-data'
+import { resetAllUserData } from '@/lib/supabase/user-data-reset'
+import { createClient } from '@/lib/supabase/client'
 
 export default function ProfilePage() {
   const router = useRouter()
@@ -30,6 +32,12 @@ export default function ProfilePage() {
   const [telegramTestStatus, setTelegramTestStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
   const [telegramSaveStatus, setTelegramSaveStatus] = useState<{ type: 'success' | 'error'; message: string } | null>(null)
   const [saveSuccess, setSaveSuccess] = useState(false)
+
+  // Danger Zone (Reset All Data) states
+  const [resetModalOpen, setResetModalOpen] = useState(false)
+  const [resetEmailInput, setResetEmailInput] = useState('')
+  const [isResetting, setIsResetting] = useState(false)
+  const [resetError, setResetError] = useState('')
 
   const currentProfile = profile || {
     name: 'Vận động viên AURA',
@@ -136,6 +144,45 @@ export default function ProfilePage() {
       resetProfile()
       router.push('/onboarding')
     }
+  }
+
+  // ─── Full reset (Danger Zone): wipe server + browser data, keep account ───
+  const handleFullReset = async () => {
+    const supabase = createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+
+    if (!user?.id) {
+      setResetError('Không thể xác thực tài khoản. Vui lòng đăng nhập lại.')
+      return
+    }
+
+    const userEmail = user.email || ''
+    if (resetEmailInput.trim().toLowerCase() !== userEmail.toLowerCase()) {
+      setResetError('Email xác nhận không khớp với email tài khoản của bạn!')
+      return
+    }
+
+    setIsResetting(true)
+    setResetError('')
+
+    const result = await resetAllUserData(user.id)
+    if (!result.success) {
+      setResetError(result.error || 'Lỗi không xác định khi xóa dữ liệu. Vui lòng thử lại.')
+      setIsResetting(false)
+      return
+    }
+
+    // Clear browser storage
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('gym-user-profile-storage')
+      localStorage.removeItem('gym-active-workout-storage')
+      localStorage.removeItem('aura_custom_routine')
+      localStorage.removeItem('aura_register_temp_name')
+    }
+
+    resetProfile()
+    setResetModalOpen(false)
+    router.push('/onboarding')
   }
 
   // ─── Get initials from name ────────────────────────────────────────
@@ -580,6 +627,109 @@ export default function ProfilePage() {
           ⬇ XUẤT CSV
         </button>
       </div>
+
+      {/* Danger Zone - Reset All Data */}
+      <div className="rounded-3xl border-2 border-red-500/30 bg-red-500/5 p-6 md:p-8 space-y-4 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 to-transparent pointer-events-none" />
+        <div className="relative">
+          <h3 className="text-lg font-extrabold text-red-400 flex items-center gap-2">
+            <AlertTriangle className="w-5 h-5" />
+            VÙNG NGUY HIỂM — XÓA TẤT CẢ DỮ LIỆU
+          </h3>
+          <p className="text-xs text-slate-400 font-mono leading-relaxed mt-2 max-w-2xl">
+            Xóa toàn bộ lịch sử tập luyện, giáo án cá nhân, kỷ lục và hồ sơ của bạn trên <strong className="text-red-300">cả máy chủ lẫn trình duyệt</strong>.
+            Bạn sẽ được đưa về trang khởi tạo (Onboarding) để bắt đầu lại từ đầu. <strong className="text-amber-300">Tài khoản đăng nhập sẽ được giữ nguyên.</strong>
+          </p>
+          <button
+            onClick={() => { setResetModalOpen(true); setResetEmailInput(''); setResetError('') }}
+            className="mt-4 px-6 py-3 bg-red-500/20 hover:bg-red-500/40 text-red-300 font-black text-xs uppercase tracking-wider rounded-xl border border-red-500/50 transition-all flex items-center gap-2 shadow-xl hover:shadow-red-500/20"
+          >
+            <Trash2 className="w-4 h-4" />
+            XÓA TẤT CẢ DỮ LIỆU
+          </button>
+        </div>
+      </div>
+
+      {/* Reset Confirmation Modal */}
+      <AnimatePresence>
+        {resetModalOpen && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm z-[80]"
+              onClick={() => !isResetting && setResetModalOpen(false)}
+            />
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              className="fixed inset-0 z-[90] flex items-center justify-center p-4 pointer-events-none"
+            >
+              <div className="pointer-events-auto w-full max-w-md rounded-3xl border-2 border-red-500/40 bg-[#0a0a14] shadow-2xl shadow-red-500/20 overflow-hidden">
+                <div className="p-6 space-y-4">
+                  <div className="flex items-center gap-3">
+                    <div className="w-11 h-11 rounded-2xl bg-red-500/20 border border-red-500/40 flex items-center justify-center">
+                      <AlertTriangle className="w-6 h-6 text-red-400" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-black text-red-300">⚠️ XÓA TOÀN BỘ DỮ LIỆU?</h3>
+                      <p className="text-[11px] text-slate-400 font-mono">Hành động này KHÔNG THỂ hoàn tác.</p>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 text-xs text-slate-300 font-mono bg-red-500/5 border border-red-500/20 rounded-xl p-4">
+                    <p>🗑️ Lịch sử buổi tập (workout logs)</p>
+                    <p>🗑️ Chi tiết hiệp tập (set logs)</p>
+                    <p>🗑️ Giáo án cá nhân + bài tập</p>
+                    <p>♻️ Hồ sơ, kỷ lục, số đo — reset về mặc định</p>
+                    <p>✅ Giữ nguyên: Tài khoản đăng nhập</p>
+                  </div>
+
+                  <div>
+                    <label className="text-xs font-bold text-slate-400 mb-1 block">
+                      Gõ email của bạn để xác nhận:
+                    </label>
+                    <input
+                      type="email"
+                      value={resetEmailInput}
+                      onChange={(e) => { setResetEmailInput(e.target.value); setResetError('') }}
+                      placeholder="Nhập email đăng nhập của bạn"
+                      disabled={isResetting}
+                      className="w-full bg-[#070714] border border-red-500/30 rounded-xl px-4 py-3 text-white focus:border-red-400 focus:outline-none placeholder-slate-600"
+                    />
+                    {resetError && (
+                      <p className="mt-2 text-xs font-bold text-red-400">❌ {resetError}</p>
+                    )}
+                  </div>
+
+                  <div className="flex gap-3">
+                    <button
+                      onClick={() => setResetModalOpen(false)}
+                      disabled={isResetting}
+                      className="flex-1 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold rounded-xl transition-colors disabled:opacity-50"
+                    >
+                      HỦY
+                    </button>
+                    <button
+                      onClick={handleFullReset}
+                      disabled={isResetting}
+                      className="flex-1 py-3 bg-red-600 hover:bg-red-500 text-white font-black rounded-xl transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                    >
+                      {isResetting ? (
+                        <><Loader2 className="w-4 h-4 animate-spin" /> ĐANG XÓA...</>
+                      ) : (
+                        <><Trash2 className="w-4 h-4" /> XÓA NGAY</>
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
 
       {/* Tele Bot Version */}
       <div className="text-center pt-4 pb-8">
