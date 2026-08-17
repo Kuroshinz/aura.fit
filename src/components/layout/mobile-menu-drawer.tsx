@@ -2,7 +2,8 @@
 
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
-import { User, Calculator, ShieldAlert, LogOut, X, History, Library } from 'lucide-react'
+import { LogOut, X } from 'lucide-react'
+import { NAV_ITEMS } from './nav-config'
 
 interface DrawerProps {
   isOpen: boolean
@@ -12,16 +13,18 @@ interface DrawerProps {
 }
 
 export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerProps) {
-  const menuItems = [
-    { label: 'Hồ Sơ (Profile)', href: '/profile', icon: User },
-    { label: 'Máy Tính (Calculator)', href: '/calculator', icon: Calculator },
-    { label: 'Lịch Sử Tập (History)', href: '/exercises/history', icon: History },
-    { label: 'Thư Viện (Library)', href: '/library', icon: Library },
-  ]
-  // Admin Panel now lives in the standalone aura-admin portal.
-  if (isAdmin) {
-    menuItems.push({ label: 'Admin Panel', href: process.env.NEXT_PUBLIC_ADMIN_URL || 'http://localhost:3001', icon: ShieldAlert, external: true })
-  }
+  // Build drawer items from the SHARED nav config so mobile always matches PC.
+  // Exclude routes already visible in the bottom tab bar.
+  const bottomTabHrefs = ['/dashboard', '/routines', '/exercises', '/records']
+  const drawerItems = NAV_ITEMS
+    .filter(item => !bottomTabHrefs.includes(item.href))
+    .filter(item => !item.adminOnly || isAdmin)
+    .map(item => ({
+      label: item.label.charAt(0) + item.label.slice(1).toLowerCase(),
+      href: item.href,
+      icon: item.icon,
+      external: (item as any).external,
+    }))
 
   return (
     <AnimatePresence>
@@ -50,7 +53,7 @@ export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerP
               </div>
 
               <div className="space-y-3">
-                {menuItems.map(item => {
+                {drawerItems.map(item => {
                   const Icon = item.icon;
                   const className = "flex items-center gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800 text-white font-bold hover:bg-slate-800 transition-colors";
                   if ((item as any).external) {

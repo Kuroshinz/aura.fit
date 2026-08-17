@@ -13,17 +13,10 @@ import {
 import { motion, AnimatePresence } from 'framer-motion'
 import { NotificationBell } from '@/components/effects/notification-bell'
 import { MobileMenuDrawer } from './mobile-menu-drawer'
+import { NAV_ITEMS, MOBILE_TAB_HREFS } from './nav-config'
 
-// ─── Navigation Items ──────────────────────────────────────────────
-const navItems = [
-  { label: 'DASHBOARD', href: '/dashboard', icon: LayoutDashboard, shortcut: 'G D' },
-  { label: 'LỊCH TẬP', href: '/routines', icon: Calendar, shortcut: 'G R' },
-  { label: 'THƯ VIỆN', href: '/exercises', icon: Dumbbell, shortcut: 'G E' },
-  { label: 'MÁY TÍNH 1RM', href: '/calculator', icon: Calculator, shortcut: 'G C' },
-  { label: 'KỶ LỤC', href: '/records', icon: Trophy, shortcut: 'G K' },
-  { label: 'HỒ SƠ', href: '/profile', icon: User, shortcut: 'G P' },
-  { label: 'ADMIN PANEL', href: process.env.NEXT_PUBLIC_ADMIN_URL || 'http://localhost:3001', icon: ShieldAlert, shortcut: 'G A', adminOnly: true, external: true },
-]
+// ─── Navigation Items (single source of truth from nav-config.ts) ─────
+const navItems = NAV_ITEMS
 
 // ─── Get initials from name ───────────────────────────────────────
 function getInitials(name: string): string {
@@ -280,7 +273,7 @@ export function ResponsiveNav() {
 
       {/* Tab Bar */}
       <div className="aura-glass border-t border-slate-700/80 px-2 py-2 flex justify-around items-center pt-8">
-        {navItems.filter(item => ['/dashboard', '/routines', '/exercises', '/records'].includes(item.href)).map((item) => {
+        {navItems.filter(item => MOBILE_TAB_HREFS.includes(item.href)).map((item) => {
           const Icon = item.icon
           const isActive = pathname === item.href
 
