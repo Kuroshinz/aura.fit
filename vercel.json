@@ -4,20 +4,5 @@
       "path": "/api/cron/send-daily-routines",
       "schedule": "0 0 * * *"
     }
-  ],
-  "services": {
-    "aura-fit-bot": {
-      "root": ".",
-      "framework": "nextjs"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": {
-        "type": "service",
-        "service": "aura-fit-bot"
-      }
-    }
   ]
 }

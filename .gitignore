@@ -30,3 +30,5 @@ check_len.js
 Nexus.worktrees/
 .vercel
 .env*
+
+render.yaml
