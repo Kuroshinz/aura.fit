@@ -120,28 +120,31 @@ export default function DashboardLayout({
     )
   }
 
+  // Hide AURA.FIT chrome on admin pages — admin has its own sidebar
+  const isAdminArea = pathname.startsWith('/dashboard/admin')
+
   return (
     <div className="flex min-h-screen bg-transparent text-slate-100 relative overflow-x-hidden">
       {/* Interactive Glowing Snow Effect */}
-      <SnowEffect />
+      {!isAdminArea && <SnowEffect />}
 
-      <ResponsiveNav />
+      {!isAdminArea && <ResponsiveNav />}
 
       {/* Toast Notifications */}
       <ToastContainer />
 
       {/* Main Content */}
-      <main className="flex-1 lg:pl-64 p-3 lg:p-8 pb-32 md:pb-8 w-full relative z-20 overflow-x-hidden">
+      <main className={`flex-1 p-3 lg:p-8 pb-32 md:pb-8 w-full relative z-20 overflow-x-hidden ${isAdminArea ? 'lg:pl-0 p-0' : 'lg:pl-64'}`}>
         <PageTransition>
           {children}
         </PageTransition>
       </main>
 
-      {pathname !== '/workout' && <RestTimer />}
+      {pathname !== '/workout' && !isAdminArea && <RestTimer />}
 
-      <CommandPalette />
-      <GlobalAICoach />
-      <QuickAddFAB />
+      {!isAdminArea && <CommandPalette />}
+      {!isAdminArea && <GlobalAICoach />}
+      {!isAdminArea && <QuickAddFAB />}
 
       {/* Back to Top Button */}
       <AnimatePresence>

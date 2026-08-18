@@ -10,7 +10,8 @@ import {
   BarChart3,
   ShieldAlert,
   ListTodo,
-  ShieldCheck
+  ShieldCheck,
+  ArrowLeft
 } from 'lucide-react';
 import { useProfileStore } from '@/store/use-profile-store';
 import { Role } from '@/lib/permissions/rbac';
@@ -89,6 +90,13 @@ export function AdminSidebar() {
             <p className="text-xs text-slate-500 uppercase tracking-widest">{profile?.role || 'admin'}</p>
           </div>
         </div>
+        <Link
+          href="/dashboard"
+          className="w-full py-2 mb-2 bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 text-sm font-bold rounded-lg transition-colors border border-amber-500/20 flex items-center justify-center gap-2"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Quay lại AURA.FIT
+        </Link>
         <button 
           onClick={async () => {
             const { logout } = useProfileStore.getState();
