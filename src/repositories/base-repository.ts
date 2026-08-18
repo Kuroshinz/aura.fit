@@ -2,7 +2,7 @@ import { createClient } from '@/lib/supabase/client';
 import { SupabaseClient } from '@supabase/supabase-js';
 import { Database } from '@/types/supabase';
 
-export abstract class BaseRepository<T extends Record<string, any>> {
+export abstract class BaseRepository<T extends { [key: string]: any }> {
   protected supabase: SupabaseClient<Database>;
   protected abstract tableName: string;
 
@@ -49,7 +49,7 @@ export abstract class BaseRepository<T extends Record<string, any>> {
   }
 
   async create(payload: Partial<T>): Promise<T | null> {
-    const { data, error } = await this.table.insert(payload).select().single();
+    const { data, error } = await this.table.insert(payload as any).select().single();
     if (error) {
       console.error(`Error creating in ${this.tableName}:`, error);
       return null;
@@ -58,7 +58,7 @@ export abstract class BaseRepository<T extends Record<string, any>> {
   }
 
   async update(id: string, payload: Partial<T>): Promise<T | null> {
-    const { data, error } = await this.table.update(payload).eq('id', id).select().single();
+    const { data, error } = await this.table.update(payload as any).eq('id', id).select().single();
     if (error) {
       console.error(`Error updating ${this.tableName} id ${id}:`, error);
       return null;

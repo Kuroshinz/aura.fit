@@ -22,7 +22,7 @@ const navItems = [
   { label: 'MÁY TÍNH 1RM', href: '/calculator', icon: Calculator, shortcut: 'G C' },
   { label: 'KỶ LỤC', href: '/records', icon: Trophy, shortcut: 'G K' },
   { label: 'HỒ SƠ', href: '/profile', icon: User, shortcut: 'G P' },
-  { label: 'ADMIN PANEL', href: '/admin', icon: ShieldAlert, shortcut: 'G A', adminOnly: true },
+  { label: 'ADMIN PANEL', href: '/dashboard/admin', icon: ShieldAlert, shortcut: 'G A', adminOnly: true },
 ]
 
 // ─── Get initials from name ───────────────────────────────────────
@@ -127,8 +127,9 @@ export function ResponsiveNav() {
   }
 
   // Filter items for current user
+  const isAdmin = profile?.role === 'admin' || profile?.role === 'owner'
   const visibleItems = navItems.filter(
-    (item) => !item.adminOnly || profile?.role === 'admin'
+    (item) => !item.adminOnly || isAdmin
   )
 
   // ─── DESKTOP SIDEBAR ──────────────────────────────────────────

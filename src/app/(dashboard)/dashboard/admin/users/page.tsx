@@ -1,0 +1,123 @@
+'use client';
+
+import * as React from 'react';
+import { UserTable } from '@/modules/users/components/user-table';
+import { userService } from '@/services/users/user-service';
+import { AdminUserRecord } from '@/repositories/users/user-repository';
+import { PermissionGuard } from '@/lib/permissions/PermissionGuard';
+import { Users, Search } from 'lucide-react';
+import { createClient } from '@/lib/supabase/client';
+
+export default function AdminUsersPage() {
+  const [users, setUsers] = React.useState<AdminUserRecord[]>([]);
+  const [roles, setRoles] = React.useState<{id: string, name: string}[]>([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    async function loadData() {
+      const [usersRes, rolesRes] = await Promise.all([
+        userService.getAllUsers(),
+        userService.getAllRoles()
+      ]);
+      
+      if (usersRes.success && usersRes.data) {
+        setUsers(usersRes.data);
+      }
+      if (rolesRes.success && rolesRes.data) {
+        setRoles(rolesRes.data);
+      }
+      setLoading(false);
+    }
+    loadData();
+  }, []);
+
+  async function handleUpdateRole(id: string, role_id: string) {
+    const newRole = roles.find(r => r.id === role_id);
+    setUsers(prev => prev.map(u => u.id === id ? { ...u, role_id, roles: newRole || u.roles } : u));
+    const res = await userService.updateUserRole(id, role_id);
+    if (!res.success) {
+      const [usersRes] = await Promise.all([userService.getAllUsers()]);
+      if (usersRes.success && usersRes.data) setUsers(usersRes.data);
+      alert(`Failed to update role: ${res.error?.message}`);
+    }
+  }
+
+  async function handleSuspend(id: string, suspend: boolean) {
+    setUsers(prev => prev.map(u => u.id === id ? { ...u, status: suspend ? 'suspended' : 'active' } : u));
+    const res = await userService.suspendUser(id, suspend);
+    if (!res.success) {
+      const [usersRes] = await Promise.all([userService.getAllUsers()]);
+      if (usersRes.success && usersRes.data) setUsers(usersRes.data);
+      alert(`Failed to suspend/restore user: ${res.error?.message}`);
+    }
+  }
+
+  // ─── KICK: force logout via RPC ───
+  async function handleKick(id: string) {
+    const supabase = createClient();
+    const { error } = await supabase.rpc('kick_user', { target_user_id: id });
+    if (error) {
+      alert(`Kick failed: ${error.message}`);
+    } else {
+      alert('✅ User kicked — they have been logged out immediately.');
+    }
+  }
+
+  // ─── BAN: permanent ban via RPC ───
+  async function handleBan(id: string) {
+    const supabase = createClient();
+    const { error } = await supabase.rpc('ban_user', { target_user_id: id, ban_reason: 'Banned by administrator' });
+    if (error) {
+      alert(`Ban failed: ${error.message}`);
+    } else {
+      const [usersRes] = await Promise.all([userService.getAllUsers()]);
+      if (usersRes.success && usersRes.data) setUsers(usersRes.data);
+      alert('⛔ User banned permanently — all sessions terminated.');
+    }
+  }
+
+  return (
+    <PermissionGuard permission="manage:users" fallback={<div>Unauthorized</div>}>
+      <div className="space-y-6">
+        <div className="flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-black text-white tracking-tight flex items-center gap-3">
+              <Users className="w-8 h-8 text-amber-500" />
+              Users Directory
+            </h1>
+            <p className="text-slate-400 mt-1">Manage platform users and assign roles.</p>
+          </div>
+          <button className="px-4 py-2 bg-amber-500 text-black font-bold rounded-lg hover:bg-amber-400 transition-colors">
+            Invite User
+          </button>
+        </div>
+
+        {loading ? (
+          <div className="h-64 flex items-center justify-center border border-slate-800 rounded-xl bg-slate-900/20">
+            <div className="w-8 h-8 border-4 border-amber-500 border-t-transparent rounded-full animate-spin" />
+          </div>
+        ) : (
+          <div className="space-y-4">
+            <div className="flex items-center gap-4 bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+              <div className="relative flex-1">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+                <input
+                  type="text"
+                  placeholder="Search by name or email..."
+                  className="w-full bg-slate-950 border border-slate-700 rounded-lg pl-10 pr-4 py-2 text-sm text-white focus:outline-none focus:border-amber-500 transition-colors"
+                />
+              </div>
+              <div className="flex gap-2">
+                <select className="bg-slate-950 border border-slate-700 rounded-lg px-4 py-2 text-sm text-slate-300 focus:outline-none focus:border-amber-500">
+                  <option value="all">All Roles</option>
+                  {roles.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
+                </select>
+              </div>
+            </div>
+            <UserTable users={users} onUpdateRole={handleUpdateRole} onSuspend={handleSuspend} onKick={handleKick} onBan={handleBan} roles={roles} />
+          </div>
+        )}
+      </div>
+    </PermissionGuard>
+  );
+}

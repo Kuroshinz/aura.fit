@@ -2,11 +2,11 @@ import { createClient } from '@/lib/supabase/client';
 import { ApiResponse, createSuccessResponse, createErrorResponse } from '@/lib/api/response';
 
 export interface StorageFile {
-  id: string;
+  id: string | null;
   name: string;
   url: string;
   size: number;
-  created_at: string;
+  created_at: string | null;
   type: 'image' | 'video' | 'gif' | 'unknown';
 }
 
