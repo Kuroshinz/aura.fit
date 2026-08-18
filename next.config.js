@@ -6,25 +6,8 @@ const nextConfig = {
   turbopack: {},
 };
 
-const withPWA = require('next-pwa')({
-  dest: 'public',
-  disable: process.env.NODE_ENV === 'development',
-  register: true,
-  skipWaiting: true,
-  clientsClaim: true,
-  cleanupOutdatedCaches: true,
-  dynamicStartUrl: true,
-  runtimeCaching: [
-    {
-      // Chỉ cache các file tĩnh ổn định — KHÔNG cache chunks JS/HTML sau deploy
-      urlPattern: /^https:\/\/aurafitiris\.vercel\.app\/_next\/static\/media\/.*/i,
-      handler: 'CacheFirst',
-      options: {
-        cacheName: 'static-media',
-        expiration: { maxEntries: 100, maxAgeSeconds: 7 * 24 * 60 * 60 },
-      },
-    },
-  ],
-});
+// PWA (next-pwa) DISABLED — service worker gây blank page sau mỗi deploy
+// vì cache chunk cũ → 404. App là web app trên Vercel, không cần offline.
+// public/sw.js sẽ tự-unregister để dọn SW cũ trên trình duyệt người dùng.
 
-module.exports = withPWA(nextConfig);
+module.exports = nextConfig;
