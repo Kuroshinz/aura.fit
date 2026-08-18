@@ -26,10 +26,12 @@ export class ErrorBoundary extends Component<Props, State> {
     // We import locally to avoid issues during initial load
     import('@/lib/supabase/client').then(({ createClient }) => {
       const supabase = createClient()
-      supabase.from('system_errors').insert([{
-        error_message: error.message,
-        error_stack: info.componentStack,
-        user_agent: typeof window !== 'undefined' ? navigator.userAgent : 'Server'
+      supabase.from('admin_audit_logs').insert([{
+        email: 'system',
+        action: 'frontend_error',
+        status: 'error',
+        user_agent: typeof window !== 'undefined' ? navigator.userAgent : 'Server',
+        ip_address: 'client'
       }]).then(() => {
         // Trigger Webhook alert
         fetch('/api/report-error', {

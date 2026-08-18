@@ -40,54 +40,56 @@ export default function DashboardLayout({
       } else {
         if (!mounted) return
         setIsAuthenticated(true)
-        // Only hydrate profile from cloud if store is empty (first load)
-        if (!profile) {
-          const { data: profileData } = await supabase.from('profiles').select('*').eq('id', session.user.id).single()
-          if (profileData && mounted) {
-            setProfile({
-              name: profileData.full_name || session.user.email,
-              age: profileData.age || 20,
-              gender: profileData.gender || 'male',
-              height_cm: profileData.height_cm || 170,
-              weight_kg: profileData.weight_kg || 65,
-              body_fat: profileData.body_fat || null,
-              experience: profileData.experience || 'beginner',
-              goal: profileData.goal || 'recomposition',
-              sessions_per_week: profileData.sessions_per_week || 3,
-              metrics_history: profileData.metrics_history || [],
-              role: profileData.role || 'user'
+        // Always refetch role from cloud (profiles.role is source of truth).
+        const { data: profileData } = await supabase.from('profiles').select('*').eq('id', session.user.id).single()
+        if (profileData && mounted) {
+          // Merge cloud role into existing profile (handles stale localStorage without role)
+          if (profile && profileData.role && profile.role !== profileData.role) {
+            setProfile({ ...profile, role: profileData.role })
+          }
+          setProfile({
+            name: profileData.full_name || session.user.email,
+            age: profileData.age || 20,
+            gender: profileData.gender || 'male',
+            height_cm: profileData.height_cm || 170,
+            weight_kg: profileData.weight_kg || 65,
+            body_fat: profileData.body_fat || null,
+            experience: profileData.experience || 'beginner',
+            goal: profileData.goal || 'recomposition',
+            sessions_per_week: profileData.sessions_per_week || 3,
+            metrics_history: profileData.metrics_history || [],
+            role: profileData.role || profile?.role || 'user'
+          })
+
+          // Hydrate all state
+          if (profileData.exercise_state) {
+            useExerciseStore.setState({
+              favoriteExerciseIds: profileData.exercise_state.favoriteExerciseIds || [],
+              recentlyViewedIds: profileData.exercise_state.recentlyViewedIds || [],
+              customExercises: profileData.exercise_state.customExercises || []
             })
+          }
 
-            // Hydrate all state
-            if (profileData.exercise_state) {
-              useExerciseStore.setState({
-                favoriteExerciseIds: profileData.exercise_state.favoriteExerciseIds || [],
-                recentlyViewedIds: profileData.exercise_state.recentlyViewedIds || [],
-                customExercises: profileData.exercise_state.customExercises || []
-              })
+          // Robust Synchronization: Only overwrite local workout data if there are NO pending offline syncs.
+          // If the user just deleted a workout offline or right before refresh, we must preserve their local state!
+          const queueStr = typeof window !== 'undefined' ? localStorage.getItem('aura_sync_queue') : null
+          const pendingQueue = queueStr ? JSON.parse(queueStr) : {}
+          const hasPendingSyncs = Object.keys(pendingQueue).length > 0
+
+          if (!hasPendingSyncs) {
+            if (profileData.workout_history) {
+              useWorkoutStore.setState({ workoutHistory: profileData.workout_history })
             }
-
-            // Robust Synchronization: Only overwrite local workout data if there are NO pending offline syncs.
-            // If the user just deleted a workout offline or right before refresh, we must preserve their local state!
-            const queueStr = typeof window !== 'undefined' ? localStorage.getItem('aura_sync_queue') : null
-            const pendingQueue = queueStr ? JSON.parse(queueStr) : {}
-            const hasPendingSyncs = Object.keys(pendingQueue).length > 0
-
-            if (!hasPendingSyncs) {
-              if (profileData.workout_history) {
-                useWorkoutStore.setState({ workoutHistory: profileData.workout_history })
-              }
-              if (profileData.personal_records) {
-                useWorkoutStore.setState({ personalRecords: profileData.personal_records })
-              }
-              if (profileData.active_workout !== undefined) {
-                useWorkoutStore.setState({ activeWorkout: profileData.active_workout })
-              }
-            } else {
-              // We have pending syncs that haven't reached the server yet.
-              // Attempt to flush them immediately.
-              flushSyncQueue()
+            if (profileData.personal_records) {
+              useWorkoutStore.setState({ personalRecords: profileData.personal_records })
             }
+            if (profileData.active_workout !== undefined) {
+              useWorkoutStore.setState({ activeWorkout: profileData.active_workout })
+            }
+          } else {
+            // We have pending syncs that haven't reached the server yet.
+            // Attempt to flush them immediately.
+            flushSyncQueue()
           }
         }
       }

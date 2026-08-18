@@ -18,7 +18,7 @@ export function MobileMenuDrawer({ isOpen, onClose, onLogout, isAdmin }: DrawerP
     { label: 'Cài Đặt (Settings)', href: '/settings', icon: Settings },
   ]
   if (isAdmin) {
-    menuItems.push({ label: 'Admin Panel', href: '/admin', icon: ShieldAlert })
+    menuItems.push({ label: 'Admin Panel', href: '/dashboard/admin', icon: ShieldAlert })
   }
 
   return (

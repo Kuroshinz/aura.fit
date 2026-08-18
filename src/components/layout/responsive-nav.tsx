@@ -309,7 +309,7 @@ export function ResponsiveNav() {
         isOpen={drawerOpen} 
         onClose={() => setDrawerOpen(false)} 
         onLogout={handleLogout} 
-        isAdmin={profile?.role === 'admin'} 
+        isAdmin={profile?.role === 'admin' || profile?.role === 'owner'} 
       />
 
       {/* Spacer for mobile bottom nav */}
