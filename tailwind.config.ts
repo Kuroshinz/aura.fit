@@ -5,6 +5,9 @@ const config: Config = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/modules/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/repositories/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/services/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     screens: {
