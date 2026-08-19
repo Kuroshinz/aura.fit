@@ -2,9 +2,10 @@
 
 import * as React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Save, Trash2, Plus, GripVertical } from 'lucide-react';
+import { X, Save, Trash2, Plus, GripVertical, Check, Loader2 } from 'lucide-react';
 import { ExerciseRecord } from '@/repositories/exercises/exercise-repository';
 import { MediaUploader } from './media-uploader';
+import { createClient } from '@/lib/supabase/client';
 
 interface ExerciseSlideoverProps {
   isOpen: boolean;
@@ -20,6 +21,11 @@ const DIFFICULTIES = ['beginner', 'intermediate', 'advanced'];
 
 export function ExerciseSlideover({ isOpen, onClose, exercise, onSave, onDelete }: ExerciseSlideoverProps) {
   const [formData, setFormData] = React.useState<Partial<ExerciseRecord>>({});
+  const [autoSaving, setAutoSaving] = React.useState(false);
+  const [autoSavedAt, setAutoSavedAt] = React.useState<string | null>(null);
+  const [autoSaveError, setAutoSaveError] = React.useState<string | null>(null);
+  const autoSaveTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+  const firstRender = React.useRef(true);
 
   React.useEffect(() => {
     if (exercise) {
@@ -32,7 +38,42 @@ export function ExerciseSlideover({ isOpen, onClose, exercise, onSave, onDelete 
     } else {
       setFormData({});
     }
-  }, [exercise]);
+    // Reset auto-save state khi mở slideover
+    setAutoSaving(false);
+    setAutoSavedAt(null);
+    setAutoSaveError(null);
+    firstRender.current = true;
+  }, [exercise, isOpen]);
+
+  // ==================== AUTO-SAVE (debounce 1.2s) ====================
+  // Mỗi khi formData đổi và có id (đang sửa bài có sẵn) → tự lưu
+  React.useEffect(() => {
+    if (firstRender.current) { firstRender.current = false; return; }
+    if (!formData.id) return; // bài mới: chỉ lưu khi bấm nút Save
+    if (!formData.name || !formData.muscle_group || !formData.equipment) return;
+
+    if (autoSaveTimer.current) clearTimeout(autoSaveTimer.current);
+    setAutoSaving(true);
+    setAutoSaveError(null);
+
+    autoSaveTimer.current = setTimeout(async () => {
+      try {
+        const supabase = createClient();
+        const { id, created_at, ...updates } = formData;
+        const { error } = await supabase.from('exercises').update(updates).eq('id', id as string);
+        if (error) throw error;
+        setAutoSavedAt(new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+      } catch (e: any) {
+        setAutoSaveError(e.message || 'Lỗi lưu');
+      } finally {
+        setAutoSaving(false);
+      }
+    }, 1200);
+
+    return () => {
+      if (autoSaveTimer.current) clearTimeout(autoSaveTimer.current);
+    };
+  }, [formData]);
 
   const handleSave = () => {
     if (!formData.name || !formData.muscle_group || !formData.equipment) {
@@ -83,7 +124,18 @@ export function ExerciseSlideover({ isOpen, onClose, exercise, onSave, onDelete 
               <h2 className="text-xl font-bold text-white">
                 {formData.id ? 'Edit Exercise' : 'Create Exercise'}
               </h2>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
+                {formData.id && (
+                  <div className="text-[11px] font-bold flex items-center gap-1.5">
+                    {autoSaving ? (
+                      <span className="text-amber-400 flex items-center gap-1"><Loader2 className="w-3 h-3 animate-spin" /> Đang lưu...</span>
+                    ) : autoSaveError ? (
+                      <span className="text-red-400">⚠️ {autoSaveError.slice(0, 40)}</span>
+                    ) : autoSavedAt ? (
+                      <span className="text-emerald-400 flex items-center gap-1"><Check className="w-3 h-3" /> Đã lưu {autoSavedAt}</span>
+                    ) : null}
+                  </div>
+                )}
                 {formData.id && onDelete && (
                   <button onClick={() => onDelete(formData.id as string)} className="p-2 text-slate-500 hover:text-red-400 hover:bg-red-500/10 rounded-full transition-colors">
                     <Trash2 className="w-5 h-5" />
@@ -222,12 +274,17 @@ export function ExerciseSlideover({ isOpen, onClose, exercise, onSave, onDelete 
 
             {/* Footer */}
             <div className="p-6 border-t border-slate-800 bg-slate-950">
+              {formData.id && (
+                <p className="text-[11px] text-slate-500 text-center mb-3">
+                  💾 Thay đổi được tự động lưu. Nút dưới dùng để đóng & xác nhận.
+                </p>
+              )}
               <button 
                 onClick={handleSave}
                 className="w-full flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 text-black font-black py-4 rounded-xl shadow-lg shadow-amber-500/20 transition-all active:scale-[0.98]"
               >
                 <Save className="w-5 h-5" />
-                SAVE EXERCISE
+                {formData.id ? 'DONE — ĐÃ TỰ ĐỘNG LƯU' : 'SAVE EXERCISE'}
               </button>
             </div>
           </motion.div>

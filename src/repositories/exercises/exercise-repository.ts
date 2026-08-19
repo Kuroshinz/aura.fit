@@ -14,13 +14,14 @@ export interface ExerciseRecord {
   media_urls?: string[];
   difficulty?: string;
   target?: string;
+  sort_order?: number;
 }
 
 export class ExerciseRepository extends BaseRepository<ExerciseRecord> {
   protected tableName = 'exercises';
 
   async getAdminExercises(): Promise<ExerciseRecord[]> {
-    const { data, error } = await this.table.select('*').order('name', { ascending: true });
+    const { data, error } = await this.table.select('*').order('sort_order', { ascending: true }).order('name', { ascending: true });
     
     if (error) {
       console.error('Error fetching admin exercises:', error);

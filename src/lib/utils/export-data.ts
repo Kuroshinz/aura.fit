@@ -1,4 +1,5 @@
 import { CompletedWorkout } from '@/store/use-workout-store'
+import * as XLSX from 'xlsx'
 
 // Export Workout History to CSV based on real user data
 export function exportWorkoutDataCSV(workoutHistory: CompletedWorkout[] = []) {
@@ -48,30 +49,44 @@ export function exportWorkoutDataCSV(workoutHistory: CompletedWorkout[] = []) {
   document.body.removeChild(link)
 }
 
-// Export routine as Excel-compatible CSV (used by routines page)
-export function exportRoutineToExcel(routineName: string, exercises: { name: string; sets: { weight: number; reps: number }[] }[]) {
-  if (!exercises || exercises.length === 0) {
+// Export routine as real Excel .xlsx (used by routines page)
+// Nhận schedule_data.days: { dayName: string; exercises: ParsedExercise[] }[]
+// ParsedExercise = { exerciseName, muscleGroup, sets, reps, weightKg, notes }
+export function exportRoutineToExcel(routineName: string, days: { dayName: string; exercises: { exerciseName: string; sets: number; reps: string | number; weightKg?: string | number }[] }[]) {
+  if (!days || days.length === 0) {
     alert('Không có bài tập nào để xuất.')
     return
   }
 
-  const rows: string[][] = []
-  rows.push(['Bài tập', 'Set', 'Weight (kg)', 'Reps'])
+  const workbook = XLSX.utils.book_new()
 
-  exercises.forEach((ex, idx) => {
-    ex.sets.forEach((set, sIdx) => {
-      rows.push([idx === 0 ? ex.name : '', `Set ${sIdx + 1}`, String(set.weight), String(set.reps)])
+  // Sheet 1: Tổng quan từng ngày
+  const overviewRows: (string | number)[][] = [['Ngày', 'Bài tập', 'Số Set', 'Tổng Reps']]
+  days.forEach((day) => {
+    if (!day.exercises) return
+    day.exercises.forEach((ex, idx) => {
+      const numSets = typeof ex.sets === 'number' ? ex.sets : parseInt(String(ex.sets || '0')) || 0
+      const repsStr = String(ex.reps ?? '')
+      overviewRows.push([idx === 0 ? day.dayName : '', ex.exerciseName, numSets, repsStr])
     })
   })
+  const overviewSheet = XLSX.utils.aoa_to_sheet(overviewRows)
+  overviewSheet['!cols'] = [{ wch: 20 }, { wch: 40 }, { wch: 10 }, { wch: 10 }]
+  XLSX.utils.book_append_sheet(workbook, overviewSheet, 'Tổng quan')
 
-  const csv = rows.map(r => r.join(',')).join('\n')
-  const blob = new Blob(['\uFEFF' + csv], { type: 'text/csv;charset=utf-8;' })
-  const url = URL.createObjectURL(blob)
-  const link = document.createElement('a')
-  link.href = url
-  link.download = `AURA_Routine_${routineName.replace(/\s+/g, '_')}.csv`
-  document.body.appendChild(link)
-  link.click()
-  document.body.removeChild(link)
-  URL.revokeObjectURL(url)
+  // Sheet 2: Chi tiết từng buổi (giống file GymOS)
+  days.forEach((day) => {
+    if (!day.exercises) return
+    const detailRows: (string | number)[][] = [['Bài tập', 'Số Set', 'Reps', 'Weight (kg)']]
+    day.exercises.forEach((ex) => {
+      const numSets = typeof ex.sets === 'number' ? ex.sets : parseInt(String(ex.sets || '0')) || 0
+      detailRows.push([ex.exerciseName, numSets, String(ex.reps ?? ''), String(ex.weightKg ?? '')])
+    })
+    const sheet = XLSX.utils.aoa_to_sheet(detailRows)
+    sheet['!cols'] = [{ wch: 40 }, { wch: 8 }, { wch: 10 }, { wch: 12 }]
+    XLSX.utils.book_append_sheet(workbook, sheet, day.dayName.slice(0, 31))
+  })
+
+  const safeName = (routineName || 'Routine').replace(/[\\/:*?"<>|]/g, '_').replace(/\s+/g, '_')
+  XLSX.writeFile(workbook, `AURA_Routine_${safeName}.xlsx`)
 }
